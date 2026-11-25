@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "experiment_type": "math_l4_base_rl",
+  "synthetic": false,
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "adapter_identity": "405f6e2032962df3666ebff1b4792f676636d8eab048b043ff642ef209ac0a95",
+  "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+  "selected_step": 384,
+  "protocol_id": "cfff6ee294f5ed4ae7df15c5fa87e865cae23649ce602bc78a555c68340df2a6",
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 262144,
+    "max_prompt_length": 2048,
+    "seed": 314159,
+    "context_limit": 262144,
+    "length_policy": "native_context_minus_actual_prompt",
+    "generation_guard": {
+      "version": "exact-periodic-suffix-v1",
+      "check_every_tokens": 32,
+      "min_generated_tokens": 1024,
+      "min_repeat_span_tokens": 1024,
+      "max_period_tokens": 256,
+      "min_repeats": 4,
+      "heartbeat_seconds": 5,
+      "no_token_timeout_seconds": 120,
+      "stop_grace_seconds": 15,
+      "max_worker_restarts": 2,
+      "answer_timeout_seconds": 300
+    },
+    "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+    "dtype": "bfloat16",
+    "backend": "transformers-sdpa",
+    "batch_size": 1,
+    "world_size": 1,
+    "add_special_tokens": true,
+    "stopping_rule": "tokenizer-eos-or-native-context-or-guard",
+    "repetition_penalty": 1.0,
+    "eos_token_id": 248044,
+    "package_versions": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.3.0",
+      "peft": "0.18.1",
+      "accelerate": "1.10.1",
+      "datasets": "4.8.5",
+      "trl": "1.16.0",
+      "safetensors": "0.8.0",
+      "flash-linear-attention": null,
+      "fla-core": null,
+      "causal-conv1d": null
+    }
+  },
+  "question_count": 200,
+  "family_count": 200,
+  "n_samples": 16,
+  "bootstrap": 2000,
+  "bootstrap_seed": 42,
+  "interval_method": "paired family-cluster percentile bootstrap,95%,linear quantiles",
+  "metrics": {
+    "base_pass_at_1": {
+      "estimate": 0.4353125,
+      "ci95": [
+        0.387796875,
+        0.48064062499999993
+      ],
+      "unknown_bounds": [
+        0.4353125,
+        0.50125
+      ]
+    },
+    "rl_pass_at_1": {
+      "estimate": 0.609375,
+      "ci95": [
+        0.5590625,
+        0.6584375
+      ],
+      "unknown_bounds": [
+        0.609375,
+        0.6525
+      ]
+    },
+    "delta_pass_at_1": {
+      "estimate": 0.1740625,
+      "ci95": [
+        0.1446875,
+        0.20375
+      ],
+      "unknown_bounds": [
+        0.108125,
+        0.2171875
+      ]
+    },
+    "base_pass_at_4": {
+      "estimate": 0.6963296703296704,
+      "ci95": [
+        0.646258447802198,
+        0.747496771978022
+      ],
+      "unknown_bounds": [
+        0.6963296703296704,
+        0.8141840659340663
+      ]
+    },
+    "rl_pass_at_4": {
+      "estimate": 0.8144725274725279,
+      "ci95": [
+        0.7699141483516487,
+        0.8562936813186816
+      ],
+      "unknown_bounds": [
+        0.8144725274725279,
+        0.8889313186813195
+      ]
+    },
+    "delta_pass_at_4": {
+      "estimate": 0.11814285714285713,
+      "ci95": [
+        0.08439464285714282,
+        0.15198928571428577
+      ],
+      "unknown_bounds": [
+        0.0002884615384615241,
+        0.19260164835164836
+      ]
+    },
+    "base_pass_at_16": {
+      "estimate": 0.855,
+      "ci95": [
+        0.805,
+        0.9001249999999993
+      ],
+      "unknown_bounds": [
+        0.855,
+        0.965
+      ]
+    },
+    "rl_pass_at_16": {
+      "estimate": 0.935,
+      "ci95": [
+        0.9,
+        0.965
+      ],
+      "unknown_bounds": [
+        0.935,
+        0.995
+      ]
+    },
+    "delta_pass_at_16": {
+      "estimate": 0.08,
+      "ci95": [
+        0.035,
+        0.125
+      ],
+      "unknown_bounds": [
+        -0.03,
+        0.14
+      ]
+    },
+    "delta_pass_at_1_minus_delta_pass_at_16": {
+      "estimate": 0.0940625,
+      "ci95": [
+        0.043117187499999994,
+        0.146875
+      ]
+    }
+  },
+  "observed_coverage_counts": {
+    "both": 167,
+    "rl_only": 20,
+    "neither": 9,
+    "base_only": 4
+  },
+  "diagnostics": {
+    "base": {
+      "requested_count": 3200,
+      "correct_count": 1393,
+      "completed_count": 2770,
+      "completed_only_accuracy": 0.5028880866425993,
+      "termination_counts": {
+        "eos": 2770,
+        "answer_timeout": 219,
+        "repetition_guard": 211
+      },
+      "status_counts": {
+        "incorrect": 1160,
+        "timeout": 219,
+        "correct": 1393,
+        "unscored": 211,
+        "ambiguous": 41,
+        "extraction_failed": 176
+      },
+      "unknown_count": 211,
+      "mean_output_tokens": 1441.933125,
+      "summed_answer_seconds": 113641.05081334338
+    },
+    "rl": {
+      "requested_count": 3200,
+      "correct_count": 1950,
+      "completed_count": 2742,
+      "completed_only_accuracy": 0.7111597374179431,
+      "termination_counts": {
+        "eos": 2742,
+        "answer_timeout": 320,
+        "repetition_guard": 138
+      },
+      "status_counts": {
+        "incorrect": 700,
+        "timeout": 320,
+        "correct": 1950,
+        "unscored": 138,
+        "extraction_failed": 92
+      },
+      "unknown_count": 138,
+      "mean_output_tokens": 1403.3596875,
+      "summed_answer_seconds": 183040.58411095105
+    }
+  },
+  "identity": {
+    "base": {
+      "manifest_sha256": "a634d4fd0f64d3d3f6e1f130f8ec7279c98885e50fe37e3645a6b5a2214e77d9",
+      "samples_sha256": "801e935948145e550b4c1a4e47266af26c6469fe9893148b37c83a135a902fb1"
+    },
+    "rl": {
+      "manifest_sha256": "a8af1bfa4de93c263700d358cccae0258fccbb71ad4be77ea2df9da3aeda82f3",
+      "samples_sha256": "1ed133041d186d5e2ea3a32d8fdb85ae60662e17b5e5b554d9adcd05b647c5c1"
+    },
+    "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+    "bootstrap": 2000,
+    "seed": 42,
+    "analyzer_sha256": "3cfdf3dd6a650a72fb68ad1a5f3411869b8a8be2a265105a04fdb38eae08a028"
+  },
+  "limitations": [
+    "Primary estimates are operational success under the fixed native-context/300-second/repetition policy. Unknown stopped attempts contribute no confirmed success; this does not label them mathematical errors.",
+    "Answer timeouts are zero by the prespecified policy. Exact repetition, no-token stalls and context stops retain unknown correctness; unknown bounds are not confidence intervals.",
+    "Base and RL use the same questions, deterministic sample seeds, scorer, prompt, dtype, backend and generation settings; the only intended model difference is the selected LoRA adapter.",
+    "Checkpoint selection used all predeclared epoch candidates on development only; test outcomes never choose a checkpoint.",
+    "Confidence intervals use paired whole-question-family bootstrap; repeated answers are not independent questions. Intervals are marginal, not multiplicity adjusted.",
+    "Zero observed success in16 attempts does not establish zero capability; pass@16 is limited-sample coverage, not a complete reasoning boundary.",
+    "This is one training seed and one source-filtered Level4 subset. It does not establish universal RL effects or validate every reasoning step."
+  ]
+}

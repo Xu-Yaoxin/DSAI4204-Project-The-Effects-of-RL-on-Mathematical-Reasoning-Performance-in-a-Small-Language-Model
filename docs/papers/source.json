@@ -1,0 +1,29 @@
+{
+  "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+  "authors": [
+    "Yang Yue",
+    "Zhiqi Chen",
+    "Rui Lu",
+    "Andrew Zhao",
+    "Zhaokai Wang",
+    "Yang Yue",
+    "Shiji Song",
+    "Gao Huang"
+  ],
+  "author_name_note": "The first author is Yang Yue (乐洋); the sixth author is Yang Yue (乐阳), as stated in the PDF first-page footnote.",
+  "arxiv_id": "2504.13837",
+  "version": "v5",
+  "first_submitted_date": "2025-04-18",
+  "version_submitted_at": "2025-11-24T06:11:04Z",
+  "pdf_first_page_date": "2025-11-25",
+  "abstract_url": "https://arxiv.org/abs/2504.13837v5",
+  "pdf_url": "https://arxiv.org/pdf/2504.13837v5",
+  "doi": "10.48550/arXiv.2504.13837",
+  "local_file": "2504.13837v5_RLVR_reasoning_capacity.pdf",
+  "bytes": 2191668,
+  "sha256": "76139ea0ba0e9155569c7aa7b8153502f6a5b23fed717af0ca9934ec9d764f9a",
+  "page_count": 31,
+  "retrieved_at_utc": "2026-11-06T02:07:24+00:00",
+  "verification": "Official arXiv version page checked; PDF header, title, authors, version marker, and page count inspected with pdfinfo/pdftotext. PDF bytes kept unchanged.",
+  "project_scope": "Small-scale adaptation using Qwen3.5-2B-Base, GRPO and LoRA, with 16 samples per problem in the main evaluation. This is not a reproduction of all paper settings or conclusions."
+}

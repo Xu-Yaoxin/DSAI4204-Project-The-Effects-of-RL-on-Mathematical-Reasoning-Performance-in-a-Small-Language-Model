@@ -1,0 +1,52 @@
+{
+  "release": "boundary-1.0",
+  "created_utc": "2026-10-31T14:07:26.550202+00:00",
+  "dataset_sha256": "c4dc85fa10b9123a07749a45a1b9031ec1c6765166497d1795954b8af6b0e40c",
+  "expected_base_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "validation": {
+    "cpu_suites_passed": 24,
+    "linear_production_scripts_checked": 28,
+    "gpu_inference_tested": false,
+    "gpu_parallel_speedup_tested": false,
+    "package_plans": [
+      "parallel",
+      "quick",
+      "sequential"
+    ],
+    "relative_model_path": "../models/Qwen3.5-2B-Base",
+    "question_count": 100,
+    "responses": 400,
+    "workers": 2,
+    "per_worker_question_count": 50,
+    "per_worker_per_group": 10,
+    "bootstrap_replicates": 2000
+  },
+  "files_sha256": {
+    "READM.md": "9e9c8f186ceff0a985eacd5685a1070db18eb0e377b66cae128689702d966816",
+    "README.md": "a59dbd67ef4d9cf54226b03f5171b3eee17a2fdd6c1a927d138f9359781e1291",
+    "configs/boundary_v1.json": "dd1510c6ca4db9ffde713cb7664c90ea831383fb6283a1e0133dfc5f558a0101",
+    "data/boundary_v1/README.md": "b0fd7b19dbb42aaf41a77708890a41836ed1ab4ecd47bb090eb1e05f769090c0",
+    "data/boundary_v1/manifest.json": "8dfceece115631b9c41ad61c0e07288607b766833b0a40c0ea1fd07de35f80d3",
+    "data/boundary_v1/questions.jsonl": "c4dc85fa10b9123a07749a45a1b9031ec1c6765166497d1795954b8af6b0e40c",
+    "data/boundary_v1/questions.md": "fdf78b7166d4cf76be6c281417ee3ba7bd1b9b402ec27df9c9efca3e9ed46c39",
+    "data/boundary_v1/raw/gsm_symbolic/LICENSE.md": "e43bf419611d42cbebfa3d658f24168e5d6d0c75e1c80b2dc593e5f601599902",
+    "data/boundary_v1/raw/gsm_symbolic/README.md": "6b457a1e3aca588973c0ba97e617be343e438e02af8ace1abdcf9047bce8470a",
+    "data/boundary_v1/raw/math500/ORIGINAL_MATH_LICENSE": "8f6401fb0b1fbfcac17aac8d61e4e1b0d2de9aa190d8aa655fedc5fd783b2ace",
+    "data/boundary_v1/raw/math500/README.md": "5d32f78943f75423da61419c5bb98cee964d5a29183b11a5294f661fb96f69f7",
+    "memory.md": "245e50e3faa1ba8c895a73cc071658dd3c59474af857bf3f5fed9572041f00f1",
+    "run_boundary.sh": "444e0afef04af18af92d8b039432fcdcd54b02fa1197d023aeb376fa7ecb6173",
+    "run_boundary_parallel.sh": "afae8e55331faabb0358fbeb98d8903a52b53c3e5396211a8ea1d0cb3f39e90b",
+    "scripts/analyze_boundary.py": "56b5b6e4e30a75dfff237d486710cb3cc4183d8ef6fe6c4372e6c474fdfc164e",
+    "scripts/evaluate_boundary.py": "728393f2b1589643b4985f015765745d4907b40e95a7749af90574c20b28f862",
+    "scripts/fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+    "scripts/load_model.py": "3fbff753e3257c2dd50f581471bf45caed1c0dea3d711c1eefb7ab3d651942f6",
+    "scripts/merge_boundary.py": "ff9b2431081aadc518841907c169df96d382083e827862480a8cf14f3d05e04b",
+    "scripts/run_boundary_parallel.py": "9316df5edd007663aca38f56d845088a10f772cd374bce7b26d884e0720b53ef",
+    "scripts/verify_answers.py": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+    "validation/parallel_plan.txt": "076bf9428838edfdeabb118b46c19d4d92a82d4e39c831943dbbe0c1ad625bed",
+    "validation/quick_plan.txt": "86a28c8f8d9ec663654768fc67599b90f7082915f703205c8155c88b3f02df5f",
+    "validation/release_check.json": "0a2055dc941aa65233f97c6bd75a2af8de2079c7c82e8c64afd4764bbb0802e2",
+    "validation/sequential_plan.txt": "6fe63ed34addb88cc13651dbd1b6f2859bc65dd8e5a7aa908a181cf4598a2131",
+    "validation/test_report.json": "f42f8bd23a085e2f66477484954ae5f1ad50af8714a56bb55cab8d4c8a211879"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dataset": "GSM8K",
+  "files": {
+    "license": {
+      "bytes": 1062,
+      "local_path": "data/raw/gsm8k/LICENSE",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE"
+    },
+    "test": {
+      "bytes": 749738,
+      "local_path": "data/raw/gsm8k/test.jsonl",
+      "rows": 1319,
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/test.jsonl"
+    },
+    "train": {
+      "bytes": 4166206,
+      "local_path": "data/raw/gsm8k/train.jsonl",
+      "rows": 7473,
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/train.jsonl"
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/openai/grade-school-math",
+  "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+  "schema_version": 2,
+  "variant": "main"
+}

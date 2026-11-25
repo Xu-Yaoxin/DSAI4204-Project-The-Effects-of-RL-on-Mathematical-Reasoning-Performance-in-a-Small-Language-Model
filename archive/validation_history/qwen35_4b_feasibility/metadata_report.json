@@ -1,0 +1,139 @@
+{
+  "retrieved_utc": "2026-10-30T09:12:01.712494+00:00",
+  "models": [
+    {
+      "name": "2B",
+      "repo": "Qwen/Qwen3.5-2B-Base",
+      "revision": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+      "api_sha256": "1f7efb0cfd58b9591277e1fcd19c367c2487a402f7212e66b760aa36b1678ffa",
+      "metadata_files": {
+        "config.json": {
+          "bytes": 2908,
+          "git_blob_sha1": "d30a15be1bbfd610f58ad80f1fbeb6778f58a80f",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/resolve/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/config.json"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 64460,
+          "git_blob_sha1": "10fd4fbf87dc5e198b28d9e0598c70a9780b72c1",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/resolve/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/model.safetensors.index.json"
+        },
+        "README.md": {
+          "bytes": 3721,
+          "git_blob_sha1": "f89cd1b857c5300003c202ec1c9fe47ffb34dcbd",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/resolve/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/README.md"
+        }
+      },
+      "weights": [
+        {
+          "filename": "model.safetensors-00001-of-00001.safetensors",
+          "bytes": 4548221488,
+          "expected_full_file_sha256": "928acbf11878c32185bbd863514d191769285065ab9ea14fbfe431303f5fdf2d",
+          "header_bytes": 76648,
+          "header_sha256": "ccba2c1f645fe59268f89ee7ea552e02ce6bf0c8a087bf332fb0e3bd99bfee9d",
+          "full_weight_hash_verified": false
+        }
+      ],
+      "tensor_groups": {
+        "text": {
+          "parameters": 1881825088,
+          "stored_bytes": 3763655360,
+          "tensors": 320,
+          "dtypes": {
+            "F32": 2592,
+            "BF16": 1881822496
+          }
+        },
+        "vision": {
+          "parameters": 331416576,
+          "stored_bytes": 662833152,
+          "tensors": 297,
+          "dtypes": {
+            "BF16": 331416576
+          }
+        },
+        "other": {
+          "parameters": 60828160,
+          "stored_bytes": 121656320,
+          "tensors": 15,
+          "dtypes": {
+            "BF16": 60828160
+          }
+        }
+      },
+      "total_download_bytes_if_all_repository_files": 4571206192,
+      "full_weights_downloaded": false,
+      "gpu_execution": false
+    },
+    {
+      "name": "4B",
+      "repo": "Qwen/Qwen3.5-4B-Base",
+      "revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "api_sha256": "59ce3402e41e343531ee5f25e60f218930e835fd650c0437ab265dccfa6c9f8c",
+      "metadata_files": {
+        "config.json": {
+          "bytes": 3161,
+          "git_blob_sha1": "557d961b205319c6a7da5f757f565b69b3967b7d",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/resolve/1001bb4d826a52d1f399e183466143f4da7b741b/config.json"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 76196,
+          "git_blob_sha1": "7586335c0c85f13864338166a651bc2afbf49849",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/resolve/1001bb4d826a52d1f399e183466143f4da7b741b/model.safetensors.index.json"
+        },
+        "README.md": {
+          "bytes": 3722,
+          "git_blob_sha1": "f66751fce75ca423e0993107b38d4c5408f677fb",
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/resolve/1001bb4d826a52d1f399e183466143f4da7b741b/README.md"
+        }
+      },
+      "weights": [
+        {
+          "filename": "model.safetensors-00001-of-00002.safetensors",
+          "bytes": 5329398712,
+          "expected_full_file_sha256": "df547074dce70532a0493e5433152bd17a65efb89088cfabc2e7e2371a93d712",
+          "header_bytes": 11184,
+          "header_sha256": "fa629a16cefab536c4ba5442902746905f255551965731603cf034f9843d7d80",
+          "full_weight_hash_verified": false
+        },
+        {
+          "filename": "model.safetensors-00002-of-00002.safetensors",
+          "bytes": 3990429344,
+          "expected_full_file_sha256": "590fbaac095dd31db886c322d9d2f7df47777966391acf306ddddc3e4e3a15ef",
+          "header_bytes": 79000,
+          "header_sha256": "144fb1b3c226308cb9cf23b62863fad02b334c61b83b47fe6bc03567ded6aa7c",
+          "full_weight_hash_verified": false
+        }
+      ],
+      "tensor_groups": {
+        "text": {
+          "parameters": 4205751296,
+          "stored_bytes": 8411510272,
+          "tensors": 426,
+          "dtypes": {
+            "BF16": 4205747456,
+            "F32": 3840
+          }
+        },
+        "other": {
+          "parameters": 120599552,
+          "stored_bytes": 241199104,
+          "tensors": 15,
+          "dtypes": {
+            "BF16": 120599552
+          }
+        },
+        "vision": {
+          "parameters": 333514240,
+          "stored_bytes": 667028480,
+          "tensors": 297,
+          "dtypes": {
+            "BF16": 333514240
+          }
+        }
+      },
+      "total_download_bytes_if_all_repository_files": 9342824751,
+      "full_weights_downloaded": false,
+      "gpu_execution": false
+    }
+  ]
+}

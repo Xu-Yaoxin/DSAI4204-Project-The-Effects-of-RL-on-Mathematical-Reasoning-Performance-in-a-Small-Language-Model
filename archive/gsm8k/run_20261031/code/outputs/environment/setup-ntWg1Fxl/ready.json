@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-10-30T04:13:17.682061+00:00",
+  "ready": true,
+  "repo_id": "Qwen/Qwen3.5-2B-Base",
+  "revision": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+  "model_manifest_sha256": "adb02b7362ba3aefa4360ba229fa4477c5c18b7162bc43e89a612072c97fd917",
+  "model_files_verified": true,
+  "tokenizer_checked": true,
+  "data_ready": true,
+  "selected_gpu_count": 1,
+  "hardware_checked": true,
+  "qwen_model_loaded": false,
+  "training_executed": false,
+  "note": "Dependencies, pinned model files, tokenizer, data and small GPU operations verified. Run engineering to measure model memory and training."
+}

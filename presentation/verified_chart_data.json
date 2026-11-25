@@ -1,0 +1,106 @@
+{
+  "source": "../results/final/summary.json",
+  "source_sha256": "7ee8777a21f78f12cafba9ce4ee6e229b31ae5759d2ade5f69226df936ed8754",
+  "unit": "percent or percentage points as labelled",
+  "questions": 200,
+  "samples_per_model_per_question": 16,
+  "pass_at_k": [
+    {
+      "k": 1,
+      "base": {
+        "estimate": 43.53125,
+        "ci95": [
+          38.7796875,
+          48.06406249999999
+        ]
+      },
+      "rl": {
+        "estimate": 61.5,
+        "ci95": [
+          56.46875,
+          66.2828125
+        ]
+      },
+      "delta": {
+        "estimate": 17.96875,
+        "ci95": [
+          15.092968749999999,
+          20.90625
+        ]
+      }
+    },
+    {
+      "k": 4,
+      "base": {
+        "estimate": 69.63296703296704,
+        "ci95": [
+          64.6258447802198,
+          74.7496771978022
+        ]
+      },
+      "rl": {
+        "estimate": 81.9277472527473,
+        "ci95": [
+          77.54898351648349,
+          85.96437500000003
+        ]
+      },
+      "delta": {
+        "estimate": 12.29478021978022,
+        "ci95": [
+          8.939931318681323,
+          15.701833791208788
+        ]
+      }
+    },
+    {
+      "k": 16,
+      "base": {
+        "estimate": 85.5,
+        "ci95": [
+          80.5,
+          90.01249999999993
+        ]
+      },
+      "rl": {
+        "estimate": 94.0,
+        "ci95": [
+          90.5,
+          97.0
+        ]
+      },
+      "delta": {
+        "estimate": 8.5,
+        "ci95": [
+          4.0,
+          13.0
+        ]
+      }
+    }
+  ],
+  "observed_coverage_counts": {
+    "both": 167,
+    "rl_only": 21,
+    "neither": 8,
+    "base_only": 4
+  },
+  "scoring_changes": {
+    "base": {
+      "eos_rescored": 2770,
+      "stopped_preserved": 430
+    },
+    "rl": {
+      "eos_rescored": 2742,
+      "stopped_preserved": 458,
+      "changed_samples": 25,
+      "correctness_changes": 18,
+      "false_to_true": 18,
+      "true_to_false": 0,
+      "field_correct": 18,
+      "field_reward": 18,
+      "field_extracted": 25,
+      "field_status": 25,
+      "field_format_compliant": 14
+    }
+  }
+}

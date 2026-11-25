@@ -1,0 +1,175 @@
+{
+  "version": "3.0.0",
+  "scorer_sha256": "f133f1b99257d0c4677b11c44145577a87edefcc55a3d2cb42bcebbe9aa7944f",
+  "test_sha256": "8f0e5a60b7862eee955ac760f953ae882b4f956ff5ffb0c5f96ceb6e7796fed9",
+  "cpu_checks": 294,
+  "cpu_tests_passed": true,
+  "gpu_or_model_called": false,
+  "source_samples_sha256": "912e7c96611eac53f3bbe47947fa83f053a28bd9adcda496d18904527c25b9e8",
+  "source_unchanged": true,
+  "source_total_attempts": 800,
+  "rescored_eos_count": 736,
+  "preserved_non_eos_count": 64,
+  "old_correct_by_group": {
+    "gsm_main_confirm": 256,
+    "math_l4_confirm": 175
+  },
+  "new_correct_by_group": {
+    "gsm_main_confirm": 259,
+    "math_l4_confirm": 179
+  },
+  "wrong_to_correct_changes": [
+    {
+      "id": "gsm-main-confirm-0039-24",
+      "sample_index": 0,
+      "group_id": "gsm_main_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "90",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm-main-confirm-0677-25",
+      "sample_index": 3,
+      "group_id": "gsm_main_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "3",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm-main-confirm-1141-30",
+      "sample_index": 1,
+      "group_id": "gsm_main_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "41",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math-l4-confirm-algebra-0062",
+      "sample_index": 1,
+      "group_id": "math_l4_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "78",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math-l4-confirm-algebra-0667",
+      "sample_index": 1,
+      "group_id": "math_l4_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "4/13",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math-l4-confirm-intermediate_algebra-0677",
+      "sample_index": 0,
+      "group_id": "math_l4_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "6",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math-l4-confirm-intermediate_algebra-0821",
+      "sample_index": 1,
+      "group_id": "math_l4_confirm",
+      "old_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "new_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "17",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    }
+  ],
+  "correct_to_wrong_count": 0,
+  "official_previous_run_modified": false,
+  "percentage_policy": "Percent suffixes remain unsupported without explicit dataset quantity semantics; the two GSM60% cases are not counted as repaired.",
+  "self_correction_policy": "Conflicting public candidates remain ambiguous or extraction_failed; seven cases are not promoted.",
+  "decimal_policy": "Exact Fraction arithmetic; the700/3 decimal approximation remains non-correct."
+}

@@ -1,0 +1,13 @@
+{
+  "source": "User pasted fields from /root/code/outputs/v1_2/pilot/report.json on 2026-10-30",
+  "retrieved_directly_from_server": false,
+  "ssh_read_attempt": "BatchMode connection to the user-provided server failed authentication; no remote command executed",
+  "model": "Qwen/Qwen3.5-2B-Base",
+  "status": "completed",
+  "peak_cuda_allocated_bytes": 4307286528,
+  "peak_cuda_reserved_bytes": 4435476480,
+  "training_seconds": 13121.818159399554,
+  "peak_cuda_allocated_gib": 4.011473178863525,
+  "peak_cuda_reserved_gib": 4.130859375,
+  "scope": "Completed 2B pilot, as reported by user; not a 4B GPU measurement or current formal-run peak"
+}

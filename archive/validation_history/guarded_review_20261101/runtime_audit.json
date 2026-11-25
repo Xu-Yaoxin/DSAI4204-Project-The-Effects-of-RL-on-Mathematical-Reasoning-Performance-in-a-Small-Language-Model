@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "live_traces_verified": 800,
+  "trace_chunks": 733721,
+  "trace_tokens": 733721,
+  "source_code_hash_matches": {
+    "evaluate_boundary.py": true,
+    "verify_answers.py": true,
+    "load_model.py": true,
+    "fingerprint_model.py": true,
+    "repetition_guard.py": true,
+    "validate_guarded_sample.py": true
+  },
+  "runtime": {
+    "checked_utc": "2026-10-31T17:37:55.388596+00:00",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_free_gib": 23.13067626953125,
+    "gpu_total_gib": 23.5164794921875,
+    "ram_available_gib": 55.5691032409668,
+    "cpu_capacity": 13.0,
+    "cpu_threads_per_worker": 4,
+    "concurrent_workers": 1,
+    "required_free_gpu_gib": 11,
+    "required_available_ram_gib": 16,
+    "status": "completed",
+    "supervisor_pid": 1513,
+    "evaluation_wall_seconds": 18415.828386001056,
+    "new_answers": 800,
+    "new_output_tokens": 733721,
+    "aggregate_new_tokens_per_second": 39.841867800948016,
+    "wall_seconds": 18457.25039886986,
+    "worker_exit_codes": [
+      0,
+      0
+    ],
+    "worker_attempts": [
+      {
+        "worker_index": 0,
+        "pid": 1525,
+        "started_at_unix": 1793468275.3909001,
+        "restart_number": 0,
+        "handled_before": 0,
+        "exit_code": 0,
+        "finished_at_unix": 1793477599.9982967,
+        "handled_after": 400
+      },
+      {
+        "worker_index": 1,
+        "pid": 3285,
+        "started_at_unix": 1793477599.9985974,
+        "restart_number": 0,
+        "handled_before": 0,
+        "exit_code": 0,
+        "finished_at_unix": 1793486691.2177558,
+        "handled_after": 400
+      }
+    ],
+    "restarts_used": 0,
+    "restart_counts": [
+      0,
+      0
+    ],
+    "restart_limit_per_invocation": 2,
+    "handled_attempts": 800
+  },
+  "strictly_sequential": true,
+  "all_answer_seconds": 18361.606718283147,
+  "guarded_answer_seconds": 11752.204047120875,
+  "guarded_time_share": 0.6400422483408758,
+  "timeout_time_share": 0.5394076873911793,
+  "groups": {
+    "gsm_main_confirm": {
+      "questions": 100,
+      "attempts": 400,
+      "correct_per_question_histogram": {
+        "0": 15,
+        "1": 16,
+        "2": 11,
+        "3": 14,
+        "4": 44
+      },
+      "question_coverage": 0.85,
+      "termination": {
+        "eos": {
+          "count": 398,
+          "seconds_sum": 2039.5748766886536,
+          "seconds_median": 3.514427675982006,
+          "seconds_min": 0.5760540070477873,
+          "seconds_max": 241.00738590583205,
+          "output_tokens_sum": 78964,
+          "output_tokens_min": 15,
+          "output_tokens_max": 9585
+        },
+        "repetition_guard": {
+          "count": 2,
+          "seconds_sum": 70.77562008867972,
+          "seconds_median": 35.38781004433986,
+          "seconds_min": 28.06033105379902,
+          "seconds_max": 42.7152890348807,
+          "output_tokens_sum": 2848,
+          "output_tokens_min": 1152,
+          "output_tokens_max": 1696
+        }
+      },
+      "subjects": {
+        "not_applicable": {
+          "questions": 100,
+          "attempts": 400,
+          "correct": 256,
+          "success_rate": 0.64
+        }
+      }
+    },
+    "math_l4_confirm": {
+      "questions": 100,
+      "attempts": 400,
+      "correct_per_question_histogram": {
+        "0": 32,
+        "1": 17,
+        "2": 14,
+        "3": 18,
+        "4": 19
+      },
+      "question_coverage": 0.68,
+      "termination": {
+        "answer_timeout": {
+          "count": 33,
+          "seconds_sum": 9904.391816695454,
+          "seconds_median": 300.13410118594766,
+          "seconds_min": 300.1098422501236,
+          "seconds_max": 300.14585113106295,
+          "output_tokens_sum": 399315,
+          "output_tokens_min": 11849,
+          "output_tokens_max": 12327
+        },
+        "eos": {
+          "count": 338,
+          "seconds_sum": 4569.827794473618,
+          "seconds_median": 7.703685405431315,
+          "seconds_min": 1.4975309690926224,
+          "seconds_max": 248.3437826510053,
+          "output_tokens_sum": 181426,
+          "output_tokens_min": 51,
+          "output_tokens_max": 10143
+        },
+        "repetition_guard": {
+          "count": 29,
+          "seconds_sum": 1777.0366103367414,
+          "seconds_median": 50.12383407889865,
+          "seconds_min": 29.976433377945796,
+          "seconds_max": 268.7061587849166,
+          "output_tokens_sum": 71168,
+          "output_tokens_min": 1184,
+          "output_tokens_max": 10720
+        }
+      },
+      "subjects": {
+        "algebra": {
+          "questions": 28,
+          "attempts": 112,
+          "correct": 79,
+          "success_rate": 0.7053571428571429
+        },
+        "counting_and_probability": {
+          "questions": 8,
+          "attempts": 32,
+          "correct": 2,
+          "success_rate": 0.0625
+        },
+        "geometry": {
+          "questions": 5,
+          "attempts": 20,
+          "correct": 10,
+          "success_rate": 0.5
+        },
+        "intermediate_algebra": {
+          "questions": 22,
+          "attempts": 88,
+          "correct": 14,
+          "success_rate": 0.1590909090909091
+        },
+        "number_theory": {
+          "questions": 14,
+          "attempts": 56,
+          "correct": 19,
+          "success_rate": 0.3392857142857143
+        },
+        "prealgebra": {
+          "questions": 17,
+          "attempts": 68,
+          "correct": 50,
+          "success_rate": 0.7352941176470589
+        },
+        "precalculus": {
+          "questions": 6,
+          "attempts": 24,
+          "correct": 1,
+          "success_rate": 0.041666666666666664
+        }
+      }
+    }
+  },
+  "gpu_peak_allocated_gib": [
+    3.68548583984375,
+    3.6894607543945312
+  ],
+  "weights_rehashed_locally": false,
+  "downloaded_files_unchanged": 825
+}

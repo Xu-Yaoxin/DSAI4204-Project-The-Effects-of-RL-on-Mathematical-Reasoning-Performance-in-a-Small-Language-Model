@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.matplotlib/
+node_modules/
+/.venv/
+/presentation/.chart-data-*/
+/presentation/.build/*
+!/presentation/.build/build.mjs
+!/presentation/.build/build_canva.mjs
+!/presentation/.build/review/
+/presentation/.build/review/*
+!/presentation/.build/review/design_brief.txt
+!/presentation/.build/review/speaker_notes_draft.md

@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "experiment_type": "exploratory_baseline_calibration",
+  "synthetic": false,
+  "model_label": "base",
+  "adapter_identity": null,
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "protocol_id": "4e6f81605778b92053264fa08e15e2936cb8d7ab9bd95c9d57a77598a1a2311e",
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 1024,
+    "max_prompt_length": 2048,
+    "seed": 271828,
+    "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+    "dtype": "bfloat16",
+    "backend": "transformers-sdpa",
+    "batch_size": 1,
+    "world_size": 1,
+    "add_special_tokens": true,
+    "stopping_rule": "tokenizer-eos-or-max_new_tokens",
+    "repetition_penalty": 1.0,
+    "package_versions": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.3.0",
+      "peft": "0.18.1",
+      "accelerate": "1.10.1",
+      "datasets": "4.8.5",
+      "trl": "1.16.0",
+      "safetensors": "0.8.0",
+      "flash-linear-attention": null,
+      "fla-core": null,
+      "causal-conv1d": null
+    }
+  },
+  "provenance": {
+    "input_manifest_sha256": "132fc7114e897fe2ac01c81e4db74c82a5e1fbfa810a1375aa4001375fe231e2",
+    "samples_sha256": "e417701a8ff320f445dd146dd800bf62aa18919b5206d6f4d651e120cbb79786",
+    "dataset_sha256": "c4dc85fa10b9123a07749a45a1b9031ec1c6765166497d1795954b8af6b0e40c",
+    "dataset_manifest_sha256": "8dfceece115631b9c41ad61c0e07288607b766833b0a40c0ea1fd07de35f80d3",
+    "analyzer_sha256": "56b5b6e4e30a75dfff237d486710cb3cc4183d8ef6fe6c4372e6c474fdfc164e",
+    "verifier_sha256": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+    "bootstrap": 2000,
+    "seed": 42
+  },
+  "question_count": 100,
+  "total_samples": 400,
+  "n_samples": 4,
+  "target": {
+    "metric": "pass_at_1",
+    "lower": 0.4,
+    "upper": 0.5,
+    "center": 0.45
+  },
+  "groups": [
+    {
+      "group_id": "gsm_symbolic",
+      "group_label": "GSM-Symbolic main",
+      "question_count": 20,
+      "family_count": 20,
+      "sample_count": 80,
+      "n_samples": 4,
+      "pass_at_1": {
+        "estimate": 0.5125,
+        "ci_low": 0.3875,
+        "ci_high": 0.6375,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "degenerate_interval": false,
+      "pass_at_4": 0.85,
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": true,
+      "distance_to_target_center": 0.062499999999999944,
+      "low_precision": true,
+      "status_counts": {
+        "incorrect": 30,
+        "correct": 41,
+        "extraction_failed": 9
+      },
+      "format_compliance_rate": 0.5,
+      "extraction_failure_rate": 0.1125,
+      "ambiguous_rate": 0.0,
+      "truncation_rate": 0.0625,
+      "length_budget_concern": false,
+      "mean_output_tokens": 247.8
+    },
+    {
+      "group_id": "gsm_p1",
+      "group_label": "GSM-Symbolic P1",
+      "question_count": 20,
+      "family_count": 20,
+      "sample_count": 80,
+      "n_samples": 4,
+      "pass_at_1": {
+        "estimate": 0.3,
+        "ci_low": 0.15,
+        "ci_high": 0.45,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "degenerate_interval": false,
+      "pass_at_4": 0.55,
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": true,
+      "distance_to_target_center": 0.15000000000000002,
+      "low_precision": true,
+      "status_counts": {
+        "incorrect": 46,
+        "extraction_failed": 10,
+        "correct": 24
+      },
+      "format_compliance_rate": 0.425,
+      "extraction_failure_rate": 0.125,
+      "ambiguous_rate": 0.0,
+      "truncation_rate": 0.0375,
+      "length_budget_concern": false,
+      "mean_output_tokens": 268.7125
+    },
+    {
+      "group_id": "gsm_p2",
+      "group_label": "GSM-Symbolic P2",
+      "question_count": 20,
+      "family_count": 20,
+      "sample_count": 80,
+      "n_samples": 4,
+      "pass_at_1": {
+        "estimate": 0.2375,
+        "ci_low": 0.125,
+        "ci_high": 0.3625,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "degenerate_interval": false,
+      "pass_at_4": 0.6,
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "distance_to_target_center": 0.21250000000000002,
+      "low_precision": true,
+      "status_counts": {
+        "correct": 19,
+        "incorrect": 50,
+        "extraction_failed": 11
+      },
+      "format_compliance_rate": 0.475,
+      "extraction_failure_rate": 0.1375,
+      "ambiguous_rate": 0.0,
+      "truncation_rate": 0.0375,
+      "length_budget_concern": false,
+      "mean_output_tokens": 317.7125
+    },
+    {
+      "group_id": "math_l1_3",
+      "group_label": "MATH-500 scalar Level1-3",
+      "question_count": 20,
+      "family_count": 20,
+      "sample_count": 80,
+      "n_samples": 4,
+      "pass_at_1": {
+        "estimate": 0.6875,
+        "ci_low": 0.55,
+        "ci_high": 0.825,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "degenerate_interval": false,
+      "pass_at_4": 0.95,
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "distance_to_target_center": 0.2375,
+      "low_precision": true,
+      "status_counts": {
+        "correct": 55,
+        "extraction_failed": 13,
+        "incorrect": 12
+      },
+      "format_compliance_rate": 0.3875,
+      "extraction_failure_rate": 0.1625,
+      "ambiguous_rate": 0.0,
+      "truncation_rate": 0.1,
+      "length_budget_concern": true,
+      "mean_output_tokens": 311.325
+    },
+    {
+      "group_id": "math_l4_5",
+      "group_label": "MATH-500 scalar Level4-5",
+      "question_count": 20,
+      "family_count": 20,
+      "sample_count": 80,
+      "n_samples": 4,
+      "pass_at_1": {
+        "estimate": 0.25,
+        "ci_low": 0.1375,
+        "ci_high": 0.375,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "degenerate_interval": false,
+      "pass_at_4": 0.55,
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "distance_to_target_center": 0.2,
+      "low_precision": true,
+      "status_counts": {
+        "incorrect": 35,
+        "extraction_failed": 24,
+        "correct": 20,
+        "ambiguous": 1
+      },
+      "format_compliance_rate": 0.3375,
+      "extraction_failure_rate": 0.3,
+      "ambiguous_rate": 0.0125,
+      "truncation_rate": 0.2875,
+      "length_budget_concern": true,
+      "mean_output_tokens": 551.8
+    }
+  ],
+  "limitations": [
+    "Exploratory difficulty screening; no claim that a selected group is confirmed to have 40-50% success.",
+    "Each group contains few questions. Repeated answers do not turn 20 questions into 80 independent questions; intervals are marginal, not simultaneous.",
+    "A degenerate bootstrap interval reflects zero empirical variation in the collected question scores, not certainty about future performance.",
+    "The target applies to pass@1, not success within four attempts. No individual questions are selected using model outcomes.",
+    "Dataset/level labels are source-defined strata, not a demonstrated total ordering of difficulty for this model.",
+    "MATH rows are text-only scalar-answer subsets, not full MATH benchmark scores. Final-value correctness does not establish reasoning validity.",
+    "Review extraction failures and truncation before interpreting low scores as model inability. Results are conditional on the recorded generation budget.",
+    "Choose future source strata using baseline calibration, then evaluate Base/RL on fresh questions. For symbolic variants, keep entire original-template families out of confirmation data."
+  ]
+}

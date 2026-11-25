@@ -1,0 +1,52 @@
+{
+  "suite_count": 4,
+  "passed": true,
+  "gpu_training_tested": false,
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "results": [
+    {
+      "suite": "test_analysis.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 21 analysis regression scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_data_verifier.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 37 exact-verifier behavior cases\n[PASS] deterministic official-split isolation, nested subsets, hashes, and immutable conflict\n[PASS] 40 controlled pairs in 4 template families, independent arithmetic, distinct relational answers, pending manual review\n[PASS] structural generation rejects prepared-data tampering\n[PASS] cross-official-split leakage rejected before any output\n[PASS] All data/verifier tests passed without model dependencies.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 10 evaluation planning and freeze scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 11 training reward/audit scenarios passed; GPU training was not executed\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "scripts/analyze.py": "2167ddffa38d6f0867d9aa8f2d4c7605153f562103db849ec51a8b4768d30c9d",
+    "scripts/build_variants.py": "4bd7e47c5aa47eb5a3c7a23b910c7c9666c5cfebc243299b32749c0e62548278",
+    "scripts/doctor.py": "00050d89aff3d3454621bf49133bcd08c2aeb8981d4c54a327d482f61e063742",
+    "scripts/download_data.py": "0d5a08587993f23f48a965b4608d9e9fdb7379952a606ab666973a53e2bf3987",
+    "scripts/evaluate.py": "4279f1d65361494b1be68addd6a350d8d0b57653bf35dcc58fa758f17fd1e29d",
+    "scripts/fingerprint_model.py": "40bcdf532378cd2a17aff1dba5556caf54383fa8636dd9a00d1c55809bf88e27",
+    "scripts/load_model.py": "0be372f65446e58e5d29bf2e400d53c51c45e45c5a18c8b810a695881d557540",
+    "scripts/plot_results.py": "1a1370fab164797bb78e4df7ef0750d99a6390de263f55b7686b4f5efb580200",
+    "scripts/prepare_data.py": "fc8f5a6c39d9bf1f9611618d4960990a8131aff3309c04b957f7bfe70f126d3e",
+    "scripts/select_checkpoint.py": "ebed9d3c6710480dcf655866cd61993eb7e9db07241be861dd82eb7d4984ac4b",
+    "scripts/smoke_demo.py": "a2dacd44fb377d4e4b886a70763ad04664dce7b46337fd1d3e8b9969c28a55c8",
+    "scripts/train_grpo.py": "0e6a0d143079d8d47c2df323bc9e05f030b4458c7e5c6627e5e91db85ff827c5",
+    "scripts/verify_answers.py": "7316a9ad397255825220efaab69d76c0d386b2c95830e5c1a080cf3e24daf8e6",
+    "tests/test_analysis.py": "19553ffe95304cbe00275151674dd629fd55bfe54266b04a30c6f4ab4c03906a",
+    "tests/test_data_verifier.py": "bbddc6307724c18ed8a0a469660195e6e1fe4ff9484bf463342f67766466c654",
+    "tests/test_evaluation.py": "bb0dbbc0df39642eba44cfb915d7d9a210af824e3d272e24fc3b1707bcc35a50",
+    "tests/test_training.py": "28533b9d989be929a94492331676798d8922f31f6f014469c954d1fe15beead1",
+    "configs/v1.json": "8a9e466d2bb108d7aeac31335daf2706e081444c8c4f6feaca2a484cf1320783"
+  }
+}

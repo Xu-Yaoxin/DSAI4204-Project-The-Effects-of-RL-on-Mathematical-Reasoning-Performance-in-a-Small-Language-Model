@@ -1,0 +1,79 @@
+{
+  "release": "math-l4-rl-split-1.2.1",
+  "checked_utc": "2026-11-04T14:55:06.656383+00:00",
+  "cpu_checks_passed": 234,
+  "suites": [
+    {
+      "suite": "test_shards.py",
+      "checks": 55,
+      "passed": true
+    },
+    {
+      "suite": "test_transfer.py",
+      "checks": 45,
+      "passed": true
+    },
+    {
+      "suite": "test_worker_tools.py",
+      "checks": 36,
+      "passed": true
+    },
+    {
+      "suite": "test_pidfd_compat.py",
+      "checks": 49,
+      "passed": true
+    },
+    {
+      "suite": "test_direct_transfer.py",
+      "checks": 49,
+      "passed": true
+    }
+  ],
+  "python_shell_and_documented_command_syntax_passed": true,
+  "original_frozen_files_verified_unchanged": 81,
+  "existing_shard_cache_fingerprint_unchanged": true,
+  "actual_frozen_source_stop_only_plan_passed": true,
+  "resume_fixture": {
+    "initial_answers": 1598,
+    "additional_generation_calls": 2,
+    "final_answers": 1600,
+    "prefix_preserved": true,
+    "complete_cache_generation_calls": 0,
+    "model_backend_mocked": true
+  },
+  "network_used": false,
+  "gpu_or_model_inference_executed": false,
+  "real_linux_process_signals_sent": false,
+  "new_machine_host_and_port": {
+    "host": "root@xj-member.bitahub.com",
+    "source_base_port": 42172,
+    "shard_0_port": 42369,
+    "shard_1_port": 42186,
+    "user_supplied": true,
+    "remote_verified": false
+  },
+  "release_manifest_sha256": "7d6edbaeed0c163b6ee1a3d9737cb30b89e55b6c10d465faf53ad24423df24f3",
+  "pidfd_kernel_calls_mocked": true,
+  "remote_compatibility_probe_executed": false,
+  "reported_server": {
+    "python": "3.11.15 conda-forge",
+    "kernel": "5.15.0-105-generic",
+    "architecture": "x86_64",
+    "python_pidfd_open": false,
+    "python_pidfd_send_signal": false
+  },
+  "direct_transfer": {
+    "checks": 49,
+    "passed": true,
+    "inventory_files": 110,
+    "real_local_rsync_tested": true,
+    "cross_server_ssh_tested": false,
+    "suites_rerun_this_release": [
+      "test_direct_transfer.py"
+    ],
+    "prior_suites_carried_forward": "Other suites unchanged since recorded passes",
+    "production_source_arguments_tested": true,
+    "macos_absolute_relative_bug_reproduced": true
+  },
+  "old_stop_controller_user_report": "PIDFD READY supported=true; WAIT BASE TEST BASE confirmed by user log"
+}

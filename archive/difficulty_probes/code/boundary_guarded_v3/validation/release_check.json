@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-31T17:34:34.718164+00:00",
+  "cpu_suites": 7,
+  "cpu_scenarios": 320,
+  "all_passed": true,
+  "gpu_inference_tested": false,
+  "native_budget_preserved": true,
+  "answer_timeout_seconds": 300,
+  "parallelism": 1,
+  "shell_syntax_checked": true,
+  "upload_filter_relocation_plan_passed": true,
+  "old_v2_files_checked_unchanged": 43,
+  "same_data_and_scorer": true,
+  "dependencies_added": []
+}

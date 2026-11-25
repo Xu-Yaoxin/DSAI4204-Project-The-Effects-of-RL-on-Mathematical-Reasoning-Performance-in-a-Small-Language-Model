@@ -1,0 +1,774 @@
+{
+  "complete": false,
+  "complete_packages": [
+    {
+      "bytes": 374909,
+      "filename": "accelerate-1.10.1-py3-none-any.whl",
+      "name": "accelerate",
+      "sha256": "3621cff60b9a27ce798857ece05e2b9f56fcc71631cfb31ccf71f0359c311f11",
+      "verified": true,
+      "version": "1.10.1"
+    },
+    {
+      "bytes": 15038,
+      "filename": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "name": "aiohappyeyeballs",
+      "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+      "verified": true,
+      "version": "2.7.1"
+    },
+    {
+      "bytes": 1929915,
+      "filename": "aiohttp-3.14.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "aiohttp",
+      "sha256": "50a195903119008fe9cc68710535eb37f556ffffd6a7759afe70a2c145587045",
+      "verified": true,
+      "version": "3.14.5"
+    },
+    {
+      "bytes": 7490,
+      "filename": "aiosignal-1.4.0-py3-none-any.whl",
+      "name": "aiosignal",
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+      "verified": true,
+      "version": "1.4.0"
+    },
+    {
+      "bytes": 5302,
+      "filename": "annotated_doc-0.0.5-py3-none-any.whl",
+      "name": "annotated-doc",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "verified": true,
+      "version": "0.0.5"
+    },
+    {
+      "bytes": 132079,
+      "filename": "anyio-4.15.1-py3-none-any.whl",
+      "name": "anyio",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "verified": true,
+      "version": "4.15.1"
+    },
+    {
+      "bytes": 67548,
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "name": "attrs",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "verified": true,
+      "version": "26.1.0"
+    },
+    {
+      "bytes": 135082,
+      "filename": "certifi-2026.10.23-py3-none-any.whl",
+      "name": "certifi",
+      "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1",
+      "verified": true,
+      "version": "2026.10.23"
+    },
+    {
+      "bytes": 269972,
+      "filename": "charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "charset-normalizer",
+      "sha256": "211d5a3eb6af8f513b8d4ca19a8c1b7accab1b5f0d3175f9826b03c1a920dc1f",
+      "verified": true,
+      "version": "3.5.2"
+    },
+    {
+      "bytes": 125251,
+      "filename": "click-8.5.0-py3-none-any.whl",
+      "name": "click",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "verified": true,
+      "version": "8.5.0"
+    },
+    {
+      "bytes": 355238,
+      "filename": "contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "contourpy",
+      "sha256": "51e79c1f7470158e838808d4a996fa9bac72c498e93d8ebe5119bc1e6becb0db",
+      "verified": true,
+      "version": "1.3.3"
+    },
+    {
+      "bytes": 12210593,
+      "filename": "cuda_bindings-12.9.4-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "cuda-bindings",
+      "sha256": "c912a3d9e6b6651853eed8eed96d6800d69c08e94052c292fec3f282c5a817c9",
+      "verified": true,
+      "version": "12.9.4"
+    },
+    {
+      "bytes": 62594,
+      "filename": "cuda_pathfinder-1.8.4-py3-none-any.whl",
+      "name": "cuda-pathfinder",
+      "sha256": "85a4e708c725d603f576042ef32781a3d1737c51e84c35fe361d2680191af65a",
+      "verified": true,
+      "version": "1.8.4"
+    },
+    {
+      "bytes": 8321,
+      "filename": "cycler-0.12.1-py3-none-any.whl",
+      "name": "cycler",
+      "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+      "verified": true,
+      "version": "0.12.1"
+    },
+    {
+      "bytes": 528973,
+      "filename": "datasets-4.8.5-py3-none-any.whl",
+      "name": "datasets",
+      "sha256": "5079900781719c0e063a8efdd2cd95a31ad0c63209178669cd23cf1b926149ff",
+      "verified": true,
+      "version": "4.8.5"
+    },
+    {
+      "bytes": 120019,
+      "filename": "dill-0.4.1-py3-none-any.whl",
+      "name": "dill",
+      "sha256": "1e1ce33e978ae97fcfcff5638477032b801c46c7c65cf717f95fbc2248f79a9d",
+      "verified": true,
+      "version": "0.4.1"
+    },
+    {
+      "bytes": 162475,
+      "filename": "filelock-4.2.4-py3-none-any.whl",
+      "name": "filelock",
+      "sha256": "301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e",
+      "verified": true,
+      "version": "4.2.4"
+    },
+    {
+      "bytes": 5458613,
+      "filename": "fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "fonttools",
+      "sha256": "59f44309ce78851c9621ee88e3f667ca3fbcc89dc0e8641336be3f12ba06bfd4",
+      "verified": true,
+      "version": "4.67.0"
+    },
+    {
+      "bytes": 231067,
+      "filename": "frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "name": "frozenlist",
+      "sha256": "2552f44204b744fba866e573be4c1f9048d6a324dfe14475103fd51613eb1d1f",
+      "verified": true,
+      "version": "1.8.0"
+    },
+    {
+      "bytes": 202505,
+      "filename": "fsspec-2026.2.0-py3-none-any.whl",
+      "name": "fsspec",
+      "sha256": "98de475b5cb3bd66bedd5c4679e87b4fdfe1a3bf4d707b151b3c07e58c9a2437",
+      "verified": true,
+      "version": "2026.2.0"
+    },
+    {
+      "bytes": 37515,
+      "filename": "h11-0.16.0-py3-none-any.whl",
+      "name": "h11",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "verified": true,
+      "version": "0.16.0"
+    },
+    {
+      "bytes": 4212180,
+      "filename": "hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "hf-xet",
+      "sha256": "2814a6e999d13464c4d679b788cc5d784eb5a4edfc638a31f10e9a11ab531ef8",
+      "verified": true,
+      "version": "1.7.0"
+    },
+    {
+      "bytes": 78784,
+      "filename": "httpcore-1.0.9-py3-none-any.whl",
+      "name": "httpcore",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "verified": true,
+      "version": "1.0.9"
+    },
+    {
+      "bytes": 73517,
+      "filename": "httpx-0.28.1-py3-none-any.whl",
+      "name": "httpx",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "verified": true,
+      "version": "0.28.1"
+    },
+    {
+      "bytes": 846435,
+      "filename": "huggingface_hub-1.33.0-py3-none-any.whl",
+      "name": "huggingface-hub",
+      "sha256": "04e434b06e100eddbce9a6e817d72693a7884b10a79bd67ab48080d5c07eb899",
+      "verified": true,
+      "version": "1.33.0"
+    },
+    {
+      "bytes": 69583,
+      "filename": "idna-3.20-py3-none-any.whl",
+      "name": "idna",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "verified": true,
+      "version": "3.20"
+    },
+    {
+      "bytes": 134899,
+      "filename": "jinja2-3.1.6-py3-none-any.whl",
+      "name": "jinja2",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "verified": true,
+      "version": "3.1.6"
+    },
+    {
+      "bytes": 1438206,
+      "filename": "kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "kiwisolver",
+      "sha256": "95a02752aa032eef4aed01cda6d9b687c669bd0396bf4519eef8bba22a286720",
+      "verified": true,
+      "version": "1.5.1"
+    },
+    {
+      "bytes": 91687,
+      "filename": "markdown_it_py-4.2.0-py3-none-any.whl",
+      "name": "markdown-it-py",
+      "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+      "verified": true,
+      "version": "4.2.0"
+    },
+    {
+      "bytes": 22961,
+      "filename": "markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "markupsafe",
+      "sha256": "6da83a088f8ef93b2d483a8232a4dbf4d69d3d8496b568a03c56becac43e1808",
+      "verified": true,
+      "version": "3.0.4"
+    },
+    {
+      "bytes": 9854405,
+      "filename": "matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "matplotlib",
+      "sha256": "07d9b9fa60cd4c393692f50d0bb03123242ddf61c99bb0e95e75feb354e7c1a8",
+      "verified": true,
+      "version": "3.11.2"
+    },
+    {
+      "bytes": 9979,
+      "filename": "mdurl-0.1.2-py3-none-any.whl",
+      "name": "mdurl",
+      "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "verified": true,
+      "version": "0.1.2"
+    },
+    {
+      "bytes": 536198,
+      "filename": "mpmath-1.3.0-py3-none-any.whl",
+      "name": "mpmath",
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "verified": true,
+      "version": "1.3.0"
+    },
+    {
+      "bytes": 510054,
+      "filename": "multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "multidict",
+      "sha256": "3b7542fad2706595c1b1853b46f2c3c4ae5cc5a6252b7225f294d607a29e1bdf",
+      "verified": true,
+      "version": "7.2.1"
+    },
+    {
+      "bytes": 144457,
+      "filename": "multiprocess-0.70.19-py311-none-any.whl",
+      "name": "multiprocess",
+      "sha256": "928851ae7973aea4ce0eaf330bbdafb2e01398a91518d5c8818802845564f45c",
+      "verified": true,
+      "version": "0.70.19"
+    },
+    {
+      "bytes": 2068504,
+      "filename": "networkx-3.6.1-py3-none-any.whl",
+      "name": "networkx",
+      "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+      "verified": true,
+      "version": "3.6.1"
+    },
+    {
+      "bytes": 16918164,
+      "filename": "numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "name": "numpy",
+      "sha256": "89cd468399cfd2504718f0ba50e410dca55a170b61a02ad92bb18c8a65186e93",
+      "verified": true,
+      "version": "2.4.6"
+    },
+    {
+      "bytes": 10248621,
+      "filename": "nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "nvidia-cuda-cupti-cu12",
+      "sha256": "ea0cb07ebda26bb9b29ba82cda34849e73c166c18162d3913575b0c9db9a6182",
+      "verified": true,
+      "version": "12.8.90"
+    },
+    {
+      "bytes": 954765,
+      "filename": "nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "nvidia-cuda-runtime-cu12",
+      "sha256": "adade8dcbd0edf427b7204d480d6066d33902cab2a4707dcfc48a2d0fd44ab90",
+      "verified": true,
+      "version": "12.8.90"
+    },
+    {
+      "bytes": 1197834,
+      "filename": "nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "nvidia-cufile-cu12",
+      "sha256": "1d069003be650e131b21c932ec3d8969c1715379251f8d23a1860554b1cb24fc",
+      "verified": true,
+      "version": "1.13.1.3"
+    },
+    {
+      "bytes": 39254836,
+      "filename": "nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+      "name": "nvidia-nvjitlink-cu12",
+      "sha256": "81ff63371a7ebd6e6451970684f916be2eab07321b73c9d244dc2b4da7f73b88",
+      "verified": true,
+      "version": "12.8.93"
+    },
+    {
+      "bytes": 89954,
+      "filename": "nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "name": "nvidia-nvtx-cu12",
+      "sha256": "5b17e2001cc0d751a5bc2c6ec6d26ad95913324a4adb86788c944f8ce9ba441f",
+      "verified": true,
+      "version": "12.8.90"
+    },
+    {
+      "bytes": 129956,
+      "filename": "packaging-26.3-py3-none-any.whl",
+      "name": "packaging",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "verified": true,
+      "version": "26.3"
+    }
+  ],
+  "complete_verified_bytes": 111326478,
+  "complete_verified_packages": 43,
+  "download_lock_available": true,
+  "download_only_resume_command": "bash download_packages.sh",
+  "local_download_active": false,
+  "lock_sha256": "a95889909c4f9882335563280813efb2088f8cbdc2b7832b5188b74ed27a8bd0",
+  "missing_complete_packages": [
+    "nvidia-cublas-cu12",
+    "nvidia-cuda-nvrtc-cu12",
+    "nvidia-cudnn-cu12",
+    "nvidia-cufft-cu12",
+    "nvidia-curand-cu12",
+    "nvidia-cusolver-cu12",
+    "nvidia-cusparse-cu12",
+    "nvidia-cusparselt-cu12",
+    "nvidia-nccl-cu12",
+    "nvidia-nvshmem-cu12",
+    "pandas",
+    "peft",
+    "pillow",
+    "pip",
+    "propcache",
+    "psutil",
+    "pyarrow",
+    "pygments",
+    "pyparsing",
+    "python-dateutil",
+    "pyyaml",
+    "regex",
+    "requests",
+    "rich",
+    "safetensors",
+    "setuptools",
+    "shellingham",
+    "six",
+    "sympy",
+    "tokenizers",
+    "torch",
+    "tqdm",
+    "transformers",
+    "triton",
+    "trl",
+    "typer",
+    "typing-extensions",
+    "tzdata",
+    "urllib3",
+    "xxhash",
+    "yarl"
+  ],
+  "notes": [
+    "Completed wheels passed whole-file SHA256 and size checks.",
+    "Partial ranges are retained for resume and are not claimed to pass the final wheel hash.",
+    "No package installation or GPU runtime test occurred on this Mac.",
+    "No background download remains; a new explicit server command is needed to resume."
+  ],
+  "offline_ready": false,
+  "package_manifest_sha256": "50039c60a256a9eacfd181e1d11ebac2c30a7f7a08dcaff07dfd2b8a683f44af",
+  "partial_bytes": 160949685,
+  "partial_file_count": 34,
+  "partial_files": [
+    {
+      "bytes_on_disk": 12582912,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cublas-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 16777216,
+      "complete_part": true,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cuda-nvrtc-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 13631488,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cudnn-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 11534336,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cufft-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 23068672,
+      "complete_part": false,
+      "expected_part_bytes": 63619976,
+      "filename": "nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000063619975",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-curand-cu12",
+      "range_end": 63619975,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 16777216,
+      "complete_part": true,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cusolver-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 16777216,
+      "complete_part": true,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cusparse-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 5242880,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-cusparselt-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 6291456,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_nccl_cu12-2.27.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-nccl-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 13631488,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "nvidia-nvshmem-cu12",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 3145728,
+      "complete_part": false,
+      "expected_part_bytes": 12330371,
+      "filename": "pandas-3.1.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000012330370",
+      "full_wheel_sha256_verified": false,
+      "package": "pandas",
+      "range_end": 12330370,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 556960,
+      "complete_part": true,
+      "expected_part_bytes": 556960,
+      "filename": "peft-0.18.1-py3-none-any.whl.part-000000000000-000000556959",
+      "full_wheel_sha256_verified": false,
+      "package": "peft",
+      "range_end": 556959,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 6291456,
+      "complete_part": false,
+      "expected_part_bytes": 7140667,
+      "filename": "pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000007140666",
+      "full_wheel_sha256_verified": false,
+      "package": "pillow",
+      "range_end": 7140666,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 1819850,
+      "complete_part": true,
+      "expected_part_bytes": 1819850,
+      "filename": "pip-26.2.2-py3-none-any.whl.part-000000000000-000001819849",
+      "full_wheel_sha256_verified": false,
+      "package": "pip",
+      "range_end": 1819849,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 235381,
+      "complete_part": true,
+      "expected_part_bytes": 235381,
+      "filename": "propcache-0.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000235380",
+      "full_wheel_sha256_verified": false,
+      "package": "propcache",
+      "range_end": 235380,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 155560,
+      "complete_part": true,
+      "expected_part_bytes": 155560,
+      "filename": "psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000155559",
+      "full_wheel_sha256_verified": false,
+      "package": "psutil",
+      "range_end": 155559,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 4194304,
+      "complete_part": false,
+      "expected_part_bytes": 53904793,
+      "filename": "pyarrow-26.0.0-cp311-cp311-manylinux_2_28_x86_64.whl.part-000000000000-000053904792",
+      "full_wheel_sha256_verified": false,
+      "package": "pyarrow",
+      "range_end": 53904792,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 1250147,
+      "complete_part": true,
+      "expected_part_bytes": 1250147,
+      "filename": "pygments-2.21.0-py3-none-any.whl.part-000000000000-000001250146",
+      "full_wheel_sha256_verified": false,
+      "package": "pygments",
+      "range_end": 1250146,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 126420,
+      "complete_part": true,
+      "expected_part_bytes": 126420,
+      "filename": "pyparsing-3.3.3-py3-none-any.whl.part-000000000000-000000126419",
+      "full_wheel_sha256_verified": false,
+      "package": "pyparsing",
+      "range_end": 126419,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 94659,
+      "complete_part": true,
+      "expected_part_bytes": 94659,
+      "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl.part-000000000000-000000094658",
+      "full_wheel_sha256_verified": false,
+      "package": "python-dateutil",
+      "range_end": 94658,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 806638,
+      "complete_part": true,
+      "expected_part_bytes": 806638,
+      "filename": "pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000806637",
+      "full_wheel_sha256_verified": false,
+      "package": "pyyaml",
+      "range_end": 806637,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 804978,
+      "complete_part": true,
+      "expected_part_bytes": 804978,
+      "filename": "regex-2026.9.29-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000804977",
+      "full_wheel_sha256_verified": false,
+      "package": "regex",
+      "range_end": 804977,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 73075,
+      "complete_part": true,
+      "expected_part_bytes": 73075,
+      "filename": "requests-2.34.2-py3-none-any.whl.part-000000000000-000000073074",
+      "full_wheel_sha256_verified": false,
+      "package": "requests",
+      "range_end": 73074,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 310654,
+      "complete_part": true,
+      "expected_part_bytes": 310654,
+      "filename": "rich-15.0.0-py3-none-any.whl.part-000000000000-000000310653",
+      "full_wheel_sha256_verified": false,
+      "package": "rich",
+      "range_end": 310653,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 516040,
+      "complete_part": true,
+      "expected_part_bytes": 516040,
+      "filename": "safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.part-000000000000-000000516039",
+      "full_wheel_sha256_verified": false,
+      "package": "safetensors",
+      "range_end": 516039,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 1006223,
+      "complete_part": true,
+      "expected_part_bytes": 1006223,
+      "filename": "setuptools-82.0.1-py3-none-any.whl.part-000000000000-000001006222",
+      "full_wheel_sha256_verified": false,
+      "package": "setuptools",
+      "range_end": 1006222,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 9755,
+      "complete_part": true,
+      "expected_part_bytes": 9755,
+      "filename": "shellingham-1.5.4-py2.py3-none-any.whl.part-000000000000-000000009754",
+      "full_wheel_sha256_verified": false,
+      "package": "shellingham",
+      "range_end": 9754,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 11050,
+      "complete_part": true,
+      "expected_part_bytes": 11050,
+      "filename": "six-1.17.0-py2.py3-none-any.whl.part-000000000000-000000011049",
+      "full_wheel_sha256_verified": false,
+      "package": "six",
+      "range_end": 11049,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 3145728,
+      "complete_part": false,
+      "expected_part_bytes": 6299353,
+      "filename": "sympy-1.14.0-py3-none-any.whl.part-000000000000-000006299352",
+      "full_wheel_sha256_verified": false,
+      "package": "sympy",
+      "range_end": 6299352,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 0,
+      "complete_part": false,
+      "expected_part_bytes": 3274982,
+      "filename": "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.part-000000000000-000003274981",
+      "full_wheel_sha256_verified": false,
+      "package": "tokenizers",
+      "range_end": 3274981,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 0,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "torch-2.10.0+cu128-cp311-cp311-manylinux_2_28_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "torch",
+      "range_end": 16777215,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 80199,
+      "complete_part": true,
+      "expected_part_bytes": 80199,
+      "filename": "tqdm-4.70.1-py3-none-any.whl.part-000000000000-000000080198",
+      "full_wheel_sha256_verified": false,
+      "package": "tqdm",
+      "range_end": 80198,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 0,
+      "complete_part": false,
+      "expected_part_bytes": 10661827,
+      "filename": "transformers-5.3.0-py3-none-any.whl.part-000000000000-000010661826",
+      "full_wheel_sha256_verified": false,
+      "package": "transformers",
+      "range_end": 10661826,
+      "range_start": 0
+    },
+    {
+      "bytes_on_disk": 0,
+      "complete_part": false,
+      "expected_part_bytes": 16777216,
+      "filename": "triton-3.6.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000016777215",
+      "full_wheel_sha256_verified": false,
+      "package": "triton",
+      "range_end": 16777215,
+      "range_start": 0
+    }
+  ],
+  "received_bytes_including_unverified_parts": 272276163,
+  "recorded_at_utc": "2026-10-26T15:43:15.380780+00:00",
+  "remaining_network_bytes_estimate": 3997716831,
+  "required_bytes": 4269992994,
+  "required_packages": 84,
+  "schema_version": 1,
+  "server_online_install_command": "bash setup_gpu.sh",
+  "stop_verification": {
+    "managers_stopped": 1,
+    "remaining_project_download_workers": 0,
+    "workers_stopped": 8
+  },
+  "target": {
+    "compute_capability": "8.9",
+    "cuda": "12.8",
+    "driver_min": "570.26",
+    "glibc_min": "2.28",
+    "gpu": "RTX 4090",
+    "id": "linux-cp311-cu128",
+    "machine": "x86_64",
+    "os": "Linux",
+    "python": "3.11"
+  },
+  "user_decision": "Download and install on the RTX4090 server; local bulk transfer stopped"
+}

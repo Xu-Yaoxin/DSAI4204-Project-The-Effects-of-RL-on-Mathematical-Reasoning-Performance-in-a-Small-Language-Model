@@ -1,0 +1,188 @@
+{
+  "source": "/Users/xu./Downloads/math_l4_snapshot_20261103",
+  "audited_utc": "2026-11-03T00:56:32.194894+00:00",
+  "passed": true,
+  "failures": [],
+  "downloaded_files": 810,
+  "downloaded_bytes": 5622554314,
+  "frozen_bundle_files_verified": 81,
+  "training_completion_artifacts_verified": 21,
+  "sealed_checkpoints": [
+    {
+      "mode": "engineering",
+      "step": 1,
+      "sealed_files": 12
+    },
+    {
+      "mode": "engineering",
+      "step": 2,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 16,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 32,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 48,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 64,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 80,
+      "sealed_files": 12
+    },
+    {
+      "mode": "pilot",
+      "step": 96,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 112,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 128,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 144,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 16,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 160,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 176,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 192,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 208,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 224,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 240,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 256,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 272,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 288,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 304,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 32,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 320,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 336,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 352,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 368,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 384,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 48,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 64,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 80,
+      "sealed_files": 12
+    },
+    {
+      "mode": "formal",
+      "step": 96,
+      "sealed_files": 12
+    }
+  ],
+  "split_counts": {
+    "train": 512,
+    "dev": 128,
+    "test": 200,
+    "engineering": 32,
+    "pilot": 128
+  },
+  "snapshot_phase": "DEV CHECKPOINT 128",
+  "snapshot_phase_seconds": 11724.717070998158,
+  "snapshot_pipeline_seconds": 153790.31182262208,
+  "source_unchanged_during_audit": true,
+  "limits": [
+    "Hashes validate saved artifacts, not semantic correctness of gold labels.",
+    "Base weights were not downloaded or rehashed. No GPU execution or optimizer deserialization.",
+    "Live output files were copied at different times and do not form an atomic remote snapshot."
+  ]
+}

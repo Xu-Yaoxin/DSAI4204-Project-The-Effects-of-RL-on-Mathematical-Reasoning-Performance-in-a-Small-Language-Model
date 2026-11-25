@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "analysis_type": "post_hoc_nested_marker_scoring_sensitivity",
+  "primary_results_replaced": false,
+  "training_repeated": false,
+  "checkpoint_reselected": false,
+  "scope": "Same saved generated text and originally frozen checkpoint; both models rescored by the same narrowly changed verifier.",
+  "sample_count_per_model": 3200,
+  "question_count": 200,
+  "n_samples": 16,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 42,
+    "unit": "question",
+    "method": "paired percentile, linear quantiles"
+  },
+  "metrics": {
+    "base_1": {
+      "estimate": 0.5890625,
+      "ci_low": 0.5490546875,
+      "ci_high": 0.628125
+    },
+    "base_2": {
+      "estimate": 0.7622916666666667,
+      "ci_low": 0.7182072916666665,
+      "ci_high": 0.8028770833333332
+    },
+    "base_4": {
+      "estimate": 0.8603928571428571,
+      "ci_low": 0.8187957417582418,
+      "ci_high": 0.8965910027472528
+    },
+    "base_8": {
+      "estimate": 0.9137680652680653,
+      "ci_low": 0.8784616355866356,
+      "ci_high": 0.9439923465423464
+    },
+    "base_16": {
+      "estimate": 0.945,
+      "ci_low": 0.91,
+      "ci_high": 0.975
+    },
+    "rl_1": {
+      "estimate": 0.790625,
+      "ci_low": 0.7446875,
+      "ci_high": 0.8340625
+    },
+    "rl_2": {
+      "estimate": 0.8532916666666667,
+      "ci_low": 0.8114468749999999,
+      "ci_high": 0.8901260416666668
+    },
+    "rl_4": {
+      "estimate": 0.8975412087912088,
+      "ci_low": 0.8604716346153846,
+      "ci_high": 0.9296644917582416
+    },
+    "rl_8": {
+      "estimate": 0.9320617715617716,
+      "ci_low": 0.899142871017871,
+      "ci_high": 0.9608125777000778
+    },
+    "rl_16": {
+      "estimate": 0.955,
+      "ci_low": 0.925,
+      "ci_high": 0.98
+    },
+    "delta_1": {
+      "estimate": 0.2015625,
+      "ci_low": 0.1784296875,
+      "ci_high": 0.225
+    },
+    "delta_2": {
+      "estimate": 0.09100000000000001,
+      "ci_low": 0.07050000000000002,
+      "ci_high": 0.11238020833333331
+    },
+    "delta_4": {
+      "estimate": 0.037148351648351646,
+      "ci_low": 0.017653846153846152,
+      "ci_high": 0.05827548076923076
+    },
+    "delta_8": {
+      "estimate": 0.018293706293706292,
+      "ci_low": -0.0017795940170940163,
+      "ci_high": 0.03953407148407145
+    },
+    "delta_16": {
+      "estimate": 0.01,
+      "ci_low": -0.015,
+      "ci_high": 0.035
+    },
+    "delta1_minus_delta16": {
+      "estimate": 0.1915625,
+      "ci_low": 0.1565625,
+      "ci_high": 0.224375
+    }
+  },
+  "coverage": {
+    "both": 187,
+    "base_only": 2,
+    "rl_only": 4,
+    "neither": 7
+  },
+  "sources": {
+    "base": {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/server_results_review_20261031/nested_marker_diagnostic/base.jsonl",
+      "sha256": "31f5077f032b273c50dd0d9722b1d0060c41e34fa513ad8ca3a8f87f62ba7233"
+    },
+    "rl": {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/server_results_review_20261031/nested_marker_diagnostic/rl.jsonl",
+      "sha256": "81f100a2d2820ce1b55d9badd2972e9f1426b56137a736c1b0866b539f0df855"
+    }
+  },
+  "caveats": [
+    "Post-hoc diagnostic, not the originally specified primary endpoint.",
+    "Original training and development checkpoint selection used the original verifier.",
+    "This narrow parser change does not resolve all semantically valid answer formats or verify reasoning.",
+    "Intervals describe question uncertainty for one fixed training run, not training-seed uncertainty."
+  ]
+}

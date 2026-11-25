@@ -1,0 +1,18 @@
+{
+  "cpu_suites_passed": 24,
+  "linear_production_scripts_checked": 28,
+  "gpu_inference_tested": false,
+  "gpu_parallel_speedup_tested": false,
+  "package_plans": [
+    "parallel",
+    "quick",
+    "sequential"
+  ],
+  "relative_model_path": "../models/Qwen3.5-2B-Base",
+  "question_count": 100,
+  "responses": 400,
+  "workers": 2,
+  "per_worker_question_count": 50,
+  "per_worker_per_group": 10,
+  "bootstrap_replicates": 2000
+}

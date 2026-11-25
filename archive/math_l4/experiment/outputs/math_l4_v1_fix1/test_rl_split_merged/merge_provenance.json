@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "verified-question-shard-merge-v1",
+  "sources": [
+    {
+      "shard_index": 0,
+      "path": "outputs/math_l4_v1_fix1/rl_shards/shard_0",
+      "manifest_sha256": "87adb48161fd4b52c25179ac0e3e874dba4d9bd7c4558c2a97a8025534558574",
+      "samples_sha256": "f4d9bcc65bb894a6bac3ae906ff615e571339dcac8b23c9142636b04086cf12e",
+      "execution_extension": {
+        "schema_version": 1,
+        "kind": "math-l4-two-machine-question-shards-v1",
+        "original_evaluator_sha256": "21321104395abad6bac1e37ab2ee5dc608de4928e6f43575c8c3550532bac244",
+        "transformed_evaluator_sha256": "660035864a3ebfb59dc87e234b8c9fed19a6ac2aa1c4623ac92dd7051aafbdc0",
+        "wrapper_sha256": "2c181d6aacc06a7d34ebde71473d7e663b86983075757764e0912e9ef0a73564",
+        "patches": [
+          "allow_two_shards",
+          "question_index_modulo",
+          "bind_execution_extension"
+        ],
+        "assignment": "question_index_modulo",
+        "shard_count": 2,
+        "shard_index": 0,
+        "assigned_question_ids_sha256": "28628a3889394f7874038b3434a2ff68d889d9d28503f6440d3fed945fcf0bbd",
+        "assigned_questions": 100,
+        "samples_per_question": 16,
+        "dataset_sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d",
+        "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+        "original_bundle_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32",
+        "generation_scoring_and_seed_code_unchanged": true
+      }
+    },
+    {
+      "shard_index": 1,
+      "path": "outputs/math_l4_v1_fix1/rl_shards/shard_1",
+      "manifest_sha256": "a76e1d28d2682199b3ba51719539bfd24ff33ca92c37f68ea64e86c3181fe6ad",
+      "samples_sha256": "7b5ca4fad2248c714ecf7002cfa1000f68aeacf09f73d9b3810aaa4d835a823e",
+      "execution_extension": {
+        "schema_version": 1,
+        "kind": "math-l4-two-machine-question-shards-v1",
+        "original_evaluator_sha256": "21321104395abad6bac1e37ab2ee5dc608de4928e6f43575c8c3550532bac244",
+        "transformed_evaluator_sha256": "660035864a3ebfb59dc87e234b8c9fed19a6ac2aa1c4623ac92dd7051aafbdc0",
+        "wrapper_sha256": "2c181d6aacc06a7d34ebde71473d7e663b86983075757764e0912e9ef0a73564",
+        "patches": [
+          "allow_two_shards",
+          "question_index_modulo",
+          "bind_execution_extension"
+        ],
+        "assignment": "question_index_modulo",
+        "shard_count": 2,
+        "shard_index": 1,
+        "assigned_question_ids_sha256": "35932b079387c13b883dc7157ec815f3e38308043f002a5999e86456ff3b7efa",
+        "assigned_questions": 100,
+        "samples_per_question": 16,
+        "dataset_sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d",
+        "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+        "original_bundle_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32",
+        "generation_scoring_and_seed_code_unchanged": true
+      }
+    }
+  ],
+  "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+  "merge_script_sha256": "486d04da74c1a66469034876ca94c0a6133af8cfac69b305cce0da02e2be2802",
+  "original_validator_sha256": "7b33b9962b57cc1a2d83a8508a8332ce459f12d017110e6950de483085757c8c",
+  "extended_validator_sha256": "e0ea3360c79c4527b398a700c2456cb835dbfd73ea9c71c445960878c02b1b2c",
+  "base_reference_sha256": "b783182fb8e89d81806627f98566e24a2bbc7fe18c42ed3a629c532c231b9fbe",
+  "question_count": 200,
+  "samples_per_question": 16,
+  "total_samples": 3200,
+  "sample_content_modified": false,
+  "original_scientific_protocol_preserved": true
+}

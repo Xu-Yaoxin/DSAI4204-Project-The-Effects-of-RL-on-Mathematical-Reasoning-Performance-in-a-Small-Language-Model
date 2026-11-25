@@ -1,0 +1,100 @@
+{
+  "checked_utc": "2026-10-26T15:44:58.331382+00:00",
+  "suite_count": 9,
+  "passed": true,
+  "gpu_training_tested": false,
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "results": [
+    {
+      "suite": "test_analysis.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 24 analysis regression scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_data_verifier.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 37 exact-verifier behavior cases\n[PASS] deterministic official-split isolation, nested subsets, hashes, and immutable conflict\n[PASS] 40 controlled pairs in 4 template families, independent arithmetic, distinct relational answers, pending manual review\n[PASS] structural generation rejects prepared-data tampering\n[PASS] cross-official-split leakage rejected before any output\n[PASS] All data/verifier tests passed without model dependencies.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_dependencies.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 12 dependency lock/download/setup checks; GPU installation and training remain unrun on this host\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_download_data.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 14 downloader/provenance/Unicode scenarios; all network responses mocked, no external downloads during tests\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 27 evaluation planning and freeze scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation_cache.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 27 cache integrity, GPU-skip and relocation scenarios passed; temporary fixtures only\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_loader.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 23 loader/data-readiness/batch-plan scenarios passed; no model packages or GPU execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_pipeline.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 44 launcher/GPU-selection scenarios; plans, masks, worker failures, retry preservation and serial evaluation verified\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 19 training reward/audit scenarios passed; GPU training was not executed\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "scripts/analyze.py": "936bf0962ca58747951a782bd6800ddd48be936477a787dc53be9d46ff5cf7f8",
+    "scripts/build_variants.py": "d93ebe253e81aaa2641a9c6003f9b0addfdf18bb3faba5e154d08b2053f95298",
+    "scripts/check_gpu.py": "abb94fddac78c1201119cabd8ecec7707ae383be9faa585029ba861ad27b37d7",
+    "scripts/doctor.py": "695d5f8e1ac895dcb2cff1bd6ef38fc91197652f8c8e768e8e293b3a42ed9f9f",
+    "scripts/download_data.py": "a1dc1f1a6d528a608132a72a233105ed9792b1971a99b5bd0888ea6dc32ef04f",
+    "scripts/evaluate.py": "eafcfc35049bb33a7987a6e2a4233197c29c7fd5012c0cfb7de3ba2a382cd8a0",
+    "scripts/fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+    "scripts/load_model.py": "3fbff753e3257c2dd50f581471bf45caed1c0dea3d711c1eefb7ab3d651942f6",
+    "scripts/plot_results.py": "a21ee199cebb23912ca8bf75923248f6307132c98890ed796c270d0c478d05ea",
+    "scripts/prepare_data.py": "b01f28b154861b99957ecfc1dd786e76a2e545406d059e320b433aee81319753",
+    "scripts/prepare_packages.py": "269466604674b0e7e38ffcfb2f5e3fd6762121bd8bc9e33ea5927f3c47be8c54",
+    "scripts/resolve_gpus.py": "e90c3ef1b7679f9ccf4da44439263bcbf85a16989504de6987ce57a5186d8c54",
+    "scripts/run_pipeline.py": "5f6bb4b95c7f193542de175b308a90d85a0871f3d0a307ee5bd893dd125b0550",
+    "scripts/select_checkpoint.py": "69b6abc895506b6adda355f23d11d15bcb3143321060ea664b1c8d9f8bf313d2",
+    "scripts/smoke_demo.py": "a2dacd44fb377d4e4b886a70763ad04664dce7b46337fd1d3e8b9969c28a55c8",
+    "scripts/train_grpo.py": "13fc39fd6f84eeb35a28c7269d3db71eceb54ba7335e87b3ef9a222f0ad53da9",
+    "scripts/verify_answers.py": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+    "tests/test_analysis.py": "647dfa5519b0a19a7ae687e47b5b6c8fe43e545356b732d20f29a5f0ef67d7d7",
+    "tests/test_data_verifier.py": "de5ebd3ce7fe0f675890e63d6b0944e77d620b41cdd2ab8ebe67ec9f66fa0abd",
+    "tests/test_dependencies.py": "12f61fd4fce03e76a445372c83762586f9fcf0af0c8ab8c041a453983b41e5a7",
+    "tests/test_download_data.py": "acf2299c37262f7aa5e386556b91c6eca416ba2f9209d3ffc7a0d3ad0d87e0cd",
+    "tests/test_evaluation.py": "22b3f8b21baac22ddd9efafb209e92554f32651a187dd8ef8c572aa2057e7937",
+    "tests/test_evaluation_cache.py": "7f6293dec5469170dcc9f712426beae7aec927ea2ff24270de31d3c8faa27596",
+    "tests/test_loader.py": "911afce15458cedb06d66efe3adb10303f2b8addd710efe15e70f523c6cc9f9c",
+    "tests/test_pipeline.py": "cb53b4e1ea33e1c04e705ef6a41d943c8559a667c37a088b531e532f577b12ac",
+    "tests/test_training.py": "476ea232a4cfeec95e75359972ac913ca6fc893c4f22b919ea4434d33535dd41",
+    "tests/run_all.py": "43958d616050524c4fcb016500d6e083a5f98c0fa9eac7aa1275f65027545f14",
+    "configs/v1.json": "c46991d391c8debfdc810198ddce029baaf67675a0e2e2d40bb089e8840e24c0",
+    "download_packages.sh": "108060276ef104c24bbc3b1023011ff44e0e83968c42690345e35e04ba289af8",
+    "run.sh": "f37d2a68c981bcb6dacf916864f72d78ab15cf675e7cfc1629d84aa08c01fe70",
+    "run_v1.sh": "e6cc4010fe83aacfbc0320bafca0653e18f82c421ec891082f95d2cbd876f066",
+    "setup_gpu.sh": "e18071e795850b43a6a59cbd0f4e9326901447a90186881f6127eb040a829539",
+    "requirements-gpu.txt": "2c6b5fcd8eb14e5cc2815a5944bf54ea251ef698e6db33fe11934875f881c9aa",
+    "packages/linux-cp311-cu128/manifest.json": "50039c60a256a9eacfd181e1d11ebac2c30a7f7a08dcaff07dfd2b8a683f44af",
+    "packages/linux-cp311-cu128/requirements-lock.txt": "a95889909c4f9882335563280813efb2088f8cbdc2b7832b5188b74ed27a8bd0"
+  }
+}

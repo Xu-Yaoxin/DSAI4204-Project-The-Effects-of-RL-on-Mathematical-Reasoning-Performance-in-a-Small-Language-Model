@@ -1,0 +1,952 @@
+{
+  "status": "completed",
+  "scope": "project only",
+  "authorization": "User approved project cleanup and deleting old GSM8K continuation states; keep old experiment code/model/answers/results and all MATH evidence; do not copy public Base weights",
+  "hashing_note": "Deleted caches and obsolete continuation states recorded by path/size without downloading or hashing them; retained scientific evidence verified separately",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 10244
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/.DS_Store",
+      "bytes": 6148
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "archive/math_l4/.DS_Store",
+      "bytes": 6148
+    },
+    {
+      "path": "code/.DS_Store",
+      "bytes": 14340
+    },
+    {
+      "path": "code/maintenance/README.md",
+      "bytes": 3248
+    },
+    {
+      "path": "code/maintenance/cleanup_old_math_server.sh",
+      "bytes": 4445
+    },
+    {
+      "path": "code/maintenance/download_gpu_environment.sh",
+      "bytes": 2467
+    },
+    {
+      "path": "code/maintenance/export_gpu_snapshot.py",
+      "bytes": 14189
+    },
+    {
+      "path": "code/maintenance/repair_pandas.sh",
+      "bytes": 1166
+    },
+    {
+      "path": "code/maintenance/reuse_wheels_from_source.sh",
+      "bytes": 3674
+    },
+    {
+      "path": "code/maintenance/stop_wheel_download.py",
+      "bytes": 7849
+    },
+    {
+      "path": "code/maintenance/test_stop_wheel_download.py",
+      "bytes": 8395
+    },
+    {
+      "path": "code/maintenance/validation/final_backup_20261105.json",
+      "bytes": 1112
+    },
+    {
+      "path": "code/maintenance/validation/wheel_reuse.json",
+      "bytes": 672
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/COMMANDS.md",
+      "bytes": 4079
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/READM.md",
+      "bytes": 9678
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/README.md",
+      "bytes": 9678
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/bundle_manifest.json",
+      "bytes": 9071
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/configs/math_l4.json",
+      "bytes": 2622
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/README.md",
+      "bytes": 2918
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/dev.jsonl",
+      "bytes": 123229
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/engineering.jsonl",
+      "bytes": 31428
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/manifest.json",
+      "bytes": 55086
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/pilot.jsonl",
+      "bytes": 124829
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/test.jsonl",
+      "bytes": 192225
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/processed/train.jsonl",
+      "bytes": 496444
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/algebra/test-00000-of-00001.parquet",
+      "bytes": 353114
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/algebra/train-00000-of-00001.parquet",
+      "bytes": 505186
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/counting_and_probability/test-00000-of-00001.parquet",
+      "bytes": 175032
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/counting_and_probability/train-00000-of-00001.parquet",
+      "bytes": 329354
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/geometry/test-00000-of-00001.parquet",
+      "bytes": 263835
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/geometry/train-00000-of-00001.parquet",
+      "bytes": 549388
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet",
+      "bytes": 394797
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/intermediate_algebra/train-00000-of-00001.parquet",
+      "bytes": 575154
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/number_theory/test-00000-of-00001.parquet",
+      "bytes": 182003
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/number_theory/train-00000-of-00001.parquet",
+      "bytes": 308653
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/prealgebra/test-00000-of-00001.parquet",
+      "bytes": 267729
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/prealgebra/train-00000-of-00001.parquet",
+      "bytes": 383626
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/precalculus/test-00000-of-00001.parquet",
+      "bytes": 242241
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/data/raw/math_full/precalculus/train-00000-of-00001.parquet",
+      "bytes": 353745
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/memory.md",
+      "bytes": 3693
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-128/manifest.json",
+      "bytes": 7769
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-128/samples.jsonl",
+      "bytes": 9617377
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-256/manifest.json",
+      "bytes": 7770
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-256/samples.jsonl",
+      "bytes": 7581391
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-384/manifest.json",
+      "bytes": 7770
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/dev/checkpoint-384/samples.jsonl",
+      "bytes": 8642053
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-128/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-128/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-128/resume_state.json",
+      "bytes": 19977
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-256/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-256/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-256/resume_state.json",
+      "bytes": 19978
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/resume_state.json",
+      "bytes": 19979
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/manifest.json",
+      "bytes": 58524
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/module_audit.json",
+      "bytes": 34112
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/report.json",
+      "bytes": 19686
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/reward_audit.jsonl",
+      "bytes": 31354760
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/reward_audit.rank-0.jsonl",
+      "bytes": 31354760
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/formal/trainer_logs.json",
+      "bytes": 357696
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/outputs/math_l4_v1_fix1/selection.json",
+      "bytes": 4559
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/prepare.sh",
+      "bytes": 110
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/provenance/README.md",
+      "bytes": 1864
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/provenance/eligible_pool.jsonl",
+      "bytes": 1737991
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/provenance/gold_parser.py",
+      "bytes": 9027
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/provenance/history_exclusions.json",
+      "bytes": 709103
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/provenance/math_source_tree.json",
+      "bytes": 5405
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/run.sh",
+      "bytes": 911
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/analyze.py",
+      "bytes": 12662
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/doctor.py",
+      "bytes": 15555
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/evaluate.py",
+      "bytes": 40369
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/monitor.py",
+      "bytes": 2486
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/preflight.py",
+      "bytes": 6406
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/prepare_data.py",
+      "bytes": 14689
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/repetition_guard.py",
+      "bytes": 2575
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/run_experiment.py",
+      "bytes": 12542
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/select_checkpoint.py",
+      "bytes": 1922
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/train_grpo.py",
+      "bytes": 60481
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/training_checkpoint_event.py",
+      "bytes": 1700
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/training_resume.py",
+      "bytes": 14325
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/validate_evaluation.py",
+      "bytes": 8234
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/validate_guarded_sample.py",
+      "bytes": 6980
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/validate_selection.py",
+      "bytes": 9091
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/scripts/verify_answers.py",
+      "bytes": 14528
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/run_all.py",
+      "bytes": 1506
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_analysis.py",
+      "bytes": 15520
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_data.py",
+      "bytes": 8578
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_evaluation.py",
+      "bytes": 27157
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_pipeline.py",
+      "bytes": 13034
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_preflight.py",
+      "bytes": 7887
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_repetition_guard.py",
+      "bytes": 5988
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_scorer.py",
+      "bytes": 207606
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_training.py",
+      "bytes": 11593
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_training_resume.py",
+      "bytes": 13806
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_training_resume_integration.py",
+      "bytes": 13522
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/tests/test_training_resume_run_guard.py",
+      "bytes": 9934
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/data_check.json",
+      "bytes": 11680
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/data_prepare.txt",
+      "bytes": 2891
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/data_tests.txt",
+      "bytes": 116
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/full_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/protected_check.json",
+      "bytes": 137
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/release_check.json",
+      "bytes": 1226
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/scorer_policy.md",
+      "bytes": 3422
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/scorer_test_results.json",
+      "bytes": 232
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/scorer_validation.json",
+      "bytes": 4832
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/test_report.json",
+      "bytes": 1038
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/test_results.txt",
+      "bytes": 3167
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/thread_mock_fix/report.json",
+      "bytes": 6220
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/thread_mock_fix/reproduction.txt",
+      "bytes": 1705
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/thread_mock_fix/targeted.txt",
+      "bytes": 110
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/math_l4_v1/validation/upload_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/packages/linux-cp311-cu128/manifest.json",
+      "bytes": 130863
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/packages/linux-cp311-cu128/requirements-lock.txt",
+      "bytes": 8302
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/code/scripts/prepare_packages.py",
+      "bytes": 28674
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/payload/ready.json",
+      "bytes": 15197
+    },
+    {
+      "path": "code/outputs/.DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "code/outputs/FINAL_RESULTS.md",
+      "bytes": 2479
+    },
+    {
+      "path": "code/outputs/matplotlib-cache/fontlist-v330.json",
+      "bytes": 230308
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/.download.lock",
+      "bytes": 0
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/accelerate-1.10.1-py3-none-any.whl",
+      "bytes": 374909
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "bytes": 15038
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/aiohttp-3.14.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 1929915
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/aiosignal-1.4.0-py3-none-any.whl",
+      "bytes": 7490
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/attrs-26.1.0-py3-none-any.whl",
+      "bytes": 67548
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 269972
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 355238
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/cuda_bindings-12.9.4-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 12210593
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/cuda_pathfinder-1.8.4-py3-none-any.whl",
+      "bytes": 62594
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/cycler-0.12.1-py3-none-any.whl",
+      "bytes": 8321
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/datasets-4.8.5-py3-none-any.whl",
+      "bytes": 528973
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/dill-0.4.1-py3-none-any.whl",
+      "bytes": 120019
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/filelock-4.2.4-py3-none-any.whl",
+      "bytes": 162475
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 5458613
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "bytes": 231067
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/fsspec-2026.2.0-py3-none-any.whl",
+      "bytes": 202505
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 4212180
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/huggingface_hub-1.33.0-py3-none-any.whl",
+      "bytes": 846435
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/idna-3.20-py3-none-any.whl",
+      "bytes": 69583
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/jinja2-3.1.6-py3-none-any.whl",
+      "bytes": 134899
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 1438206
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/markdown_it_py-4.2.0-py3-none-any.whl",
+      "bytes": 91687
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 22961
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 9854405
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/mdurl-0.1.2-py3-none-any.whl",
+      "bytes": 9979
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/mpmath-1.3.0-py3-none-any.whl",
+      "bytes": 536198
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 510054
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/multiprocess-0.70.19-py311-none-any.whl",
+      "bytes": 144457
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/networkx-3.6.1-py3-none-any.whl",
+      "bytes": 2068504
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 16918164
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 12582912
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 10248621
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 16777216
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 954765
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 13631488
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 11534336
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 1197834
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000063619975",
+      "bytes": 23068672
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 16777216
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 16777216
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 5242880
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_nccl_cu12-2.27.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 6291456
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+      "bytes": 39254836
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 13631488
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 89954
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pandas-3.1.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000012330370",
+      "bytes": 3145728
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/peft-0.18.1-py3-none-any.whl.part-000000000000-000000556959",
+      "bytes": 556960
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000007140666",
+      "bytes": 6291456
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pip-26.2.2-py3-none-any.whl.part-000000000000-000001819849",
+      "bytes": 1819850
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/propcache-0.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000235380",
+      "bytes": 235381
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000155559",
+      "bytes": 155560
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pyarrow-26.0.0-cp311-cp311-manylinux_2_28_x86_64.whl.part-000000000000-000053904792",
+      "bytes": 4194304
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pygments-2.21.0-py3-none-any.whl.part-000000000000-000001250146",
+      "bytes": 1250147
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pyparsing-3.3.3-py3-none-any.whl.part-000000000000-000000126419",
+      "bytes": 126420
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/python_dateutil-3.0.0-py2.py3-none-any.whl.part-000000000000-000000094658",
+      "bytes": 94659
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000806637",
+      "bytes": 806638
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/regex-2026.9.29-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000000804977",
+      "bytes": 804978
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/requests-2.34.2-py3-none-any.whl.part-000000000000-000000073074",
+      "bytes": 73075
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/rich-15.0.0-py3-none-any.whl.part-000000000000-000000310653",
+      "bytes": 310654
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.part-000000000000-000000516039",
+      "bytes": 516040
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/setuptools-82.0.1-py3-none-any.whl.part-000000000000-000001006222",
+      "bytes": 1006223
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/shellingham-1.5.4-py2.py3-none-any.whl.part-000000000000-000000009754",
+      "bytes": 9755
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/six-1.17.0-py2.py3-none-any.whl.part-000000000000-000000011049",
+      "bytes": 11050
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/sympy-1.14.0-py3-none-any.whl.part-000000000000-000006299352",
+      "bytes": 3145728
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.part-000000000000-000003274981",
+      "bytes": 0
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/torch-2.10.0+cu128-cp311-cp311-manylinux_2_28_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 0
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/tqdm-4.70.1-py3-none-any.whl.part-000000000000-000000080198",
+      "bytes": 80199
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/transformers-5.3.0-py3-none-any.whl.part-000000000000-000010661826",
+      "bytes": 0
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/wheels/triton-3.6.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.part-000000000000-000016777215",
+      "bytes": 0
+    },
+    {
+      "path": "code/scripts/__pycache__/load_model.cpython-311.pyc",
+      "bytes": 9777
+    },
+    {
+      "path": "code/scripts/__pycache__/prepare_confirmation_data.cpython-311.pyc",
+      "bytes": 30795
+    },
+    {
+      "path": "code/scripts/__pycache__/prepare_packages.cpython-311.pyc",
+      "bytes": 45746
+    },
+    {
+      "path": "code/scripts/__pycache__/train_grpo.cpython-311.pyc",
+      "bytes": 64394
+    },
+    {
+      "path": "server_results/.DS_Store",
+      "bytes": 8196
+    }
+  ],
+  "file_count": 235,
+  "total_bytes": 1245561473,
+  "completed_utc": "2026-11-06T02:09:18.213276+00:00",
+  "all_deleted_paths_absent": true
+}

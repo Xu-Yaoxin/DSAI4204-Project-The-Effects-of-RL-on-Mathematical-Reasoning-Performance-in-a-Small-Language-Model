@@ -1,0 +1,487 @@
+{
+  "source": "/Users/xu./Downloads/math_l4_snapshot_20261103",
+  "run": "outputs/math_l4_v1_fix1",
+  "scorer_sha256": "f133f1b99257d0c4677b11c44145577a87edefcc55a3d2cb42bcebbe9aa7944f",
+  "gpu_used": false,
+  "model_loaded": false,
+  "source_mutated": false,
+  "training_runs": {
+    "engineering": {
+      "status": "completed",
+      "optimizer_steps": 2,
+      "training_seconds": 613.3622358408757,
+      "training_hours": 0.1703783988446877,
+      "epochs_completed": 0.25,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "changed_adapter_tensor_count": 192,
+      "adapter_max_abs_delta": 1.0006720913224854e-05,
+      "base_hash_unchanged_in_recorded_audit": true,
+      "resume_history": [],
+      "peak_cuda_allocated_gib": 4.701602935791016,
+      "peak_cuda_reserved_gib": 4.732421875,
+      "counts": {
+        "reward_groups": 8,
+        "completion_count": 64,
+        "mixed_reward_groups": 3,
+        "correct_completion_count": 10,
+        "truncation_count": 16,
+        "format_compliant_count": 9,
+        "effective_update_steps": 2
+      },
+      "unique_questions": 8,
+      "reward_replay_checked": 64,
+      "reward_replay_mismatches": [],
+      "trainer_log_vs_reward_audit_mismatches": [],
+      "nonfinite_metrics": [],
+      "zero_gradient_steps": [],
+      "zero_gradient_steps_all_groups_uniform_reward": true,
+      "loss_absolute_max": 1.6763806343078613e-08,
+      "epochs": [
+        {
+          "epoch": 1,
+          "steps": [
+            1,
+            2
+          ],
+          "questions": 8,
+          "responses": 64,
+          "correct": 10,
+          "reward_rate": 0.15625,
+          "unfinished": 16,
+          "unfinished_rate": 0.25,
+          "mixed_reward_group_rate": 0.375,
+          "mean_output_tokens": 890.71875,
+          "median_output_tokens": 515.5,
+          "eos_correct_rate": 0.20833333333333334,
+          "verifier_status_counts": {
+            "unfinished": 16,
+            "extraction_failed": 21,
+            "correct": 10,
+            "incorrect": 16,
+            "ambiguous": 1
+          },
+          "format_compliant_rate": 0.140625,
+          "entropy_mean": 0.8069281040225178,
+          "grad_norm_mean": 0.14037500694394112,
+          "positive_grad_steps": 2,
+          "step_time_mean_seconds": 305.88849503477104,
+          "logged_step_time_sum_seconds": 611.7769900695421
+        }
+      ],
+      "paired_training_questions_epoch1_vs3": null,
+      "windows": {
+        "first_32_updates": {
+          "reward": 0.15625,
+          "completions/clipped_ratio": 0.25,
+          "completions/mean_length": 890.71875,
+          "entropy": 0.8069281040225178,
+          "grad_norm": 0.14037500694394112,
+          "step_time": 305.88849503477104,
+          "count": 2
+        },
+        "last_32_updates": {
+          "reward": 0.15625,
+          "completions/clipped_ratio": 0.25,
+          "completions/mean_length": 890.71875,
+          "entropy": 0.8069281040225178,
+          "grad_norm": 0.14037500694394112,
+          "step_time": 305.88849503477104,
+          "count": 2
+        }
+      },
+      "verifier_status_counts": {
+        "unfinished": 16,
+        "extraction_failed": 21,
+        "correct": 10,
+        "incorrect": 16,
+        "ambiguous": 1
+      },
+      "notes": [
+        "Saved audit data and logs were replayed without loading model or optimizer files.",
+        "Recorded base hashes and update gates are cross-checked evidence, not an independent re-execution of GPU training."
+      ]
+    },
+    "pilot": {
+      "status": "completed",
+      "optimizer_steps": 96,
+      "training_seconds": 30320.50934961508,
+      "training_hours": 8.422363708226412,
+      "epochs_completed": 3.0,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "changed_adapter_tensor_count": 192,
+      "adapter_max_abs_delta": 0.0003644973039627075,
+      "base_hash_unchanged_in_recorded_audit": true,
+      "resume_history": [],
+      "peak_cuda_allocated_gib": 4.783176422119141,
+      "peak_cuda_reserved_gib": 4.8046875,
+      "counts": {
+        "reward_groups": 384,
+        "completion_count": 3072,
+        "mixed_reward_groups": 225,
+        "correct_completion_count": 582,
+        "truncation_count": 848,
+        "format_compliant_count": 627,
+        "effective_update_steps": 94
+      },
+      "unique_questions": 128,
+      "reward_replay_checked": 3072,
+      "reward_replay_mismatches": [],
+      "trainer_log_vs_reward_audit_mismatches": [],
+      "nonfinite_metrics": [],
+      "zero_gradient_steps": [
+        41,
+        82
+      ],
+      "zero_gradient_steps_all_groups_uniform_reward": true,
+      "loss_absolute_max": 2.7939677238464355e-08,
+      "epochs": [
+        {
+          "epoch": 1,
+          "steps": [
+            1,
+            32
+          ],
+          "questions": 128,
+          "responses": 1024,
+          "correct": 162,
+          "reward_rate": 0.158203125,
+          "unfinished": 245,
+          "unfinished_rate": 0.2392578125,
+          "mixed_reward_group_rate": 0.5390625,
+          "mean_output_tokens": 879.607421875,
+          "median_output_tokens": 510.5,
+          "eos_correct_rate": 0.2079589216944801,
+          "verifier_status_counts": {
+            "incorrect": 310,
+            "extraction_failed": 277,
+            "correct": 162,
+            "unfinished": 245,
+            "ambiguous": 30
+          },
+          "format_compliant_rate": 0.171875,
+          "entropy_mean": 0.9074850324323052,
+          "grad_norm_mean": 0.2127442379714921,
+          "positive_grad_steps": 32,
+          "step_time_mean_seconds": 310.51972004546406,
+          "logged_step_time_sum_seconds": 9936.63104145485
+        },
+        {
+          "epoch": 2,
+          "steps": [
+            33,
+            64
+          ],
+          "questions": 128,
+          "responses": 1024,
+          "correct": 208,
+          "reward_rate": 0.203125,
+          "unfinished": 265,
+          "unfinished_rate": 0.2587890625,
+          "mixed_reward_group_rate": 0.59375,
+          "mean_output_tokens": 933.6181640625,
+          "median_output_tokens": 601.5,
+          "eos_correct_rate": 0.2740447957839262,
+          "verifier_status_counts": {
+            "incorrect": 329,
+            "ambiguous": 26,
+            "extraction_failed": 196,
+            "correct": 208,
+            "unfinished": 265
+          },
+          "format_compliant_rate": 0.2265625,
+          "entropy_mean": 0.7537830100300198,
+          "grad_norm_mean": 0.16418501664884388,
+          "positive_grad_steps": 31,
+          "step_time_mean_seconds": 315.6394583796646,
+          "logged_step_time_sum_seconds": 10100.462668149266
+        },
+        {
+          "epoch": 3,
+          "steps": [
+            65,
+            96
+          ],
+          "questions": 128,
+          "responses": 1024,
+          "correct": 212,
+          "reward_rate": 0.20703125,
+          "unfinished": 338,
+          "unfinished_rate": 0.330078125,
+          "mixed_reward_group_rate": 0.625,
+          "mean_output_tokens": 1054.5703125,
+          "median_output_tokens": 744.0,
+          "eos_correct_rate": 0.30903790087463556,
+          "verifier_status_counts": {
+            "correct": 212,
+            "extraction_failed": 181,
+            "incorrect": 280,
+            "unfinished": 338,
+            "ambiguous": 13
+          },
+          "format_compliant_rate": 0.2138671875,
+          "entropy_mean": 0.6961537977913395,
+          "grad_norm_mean": 0.16754347598180175,
+          "positive_grad_steps": 31,
+          "step_time_mean_seconds": 321.14912657759123,
+          "logged_step_time_sum_seconds": 10276.77205048292
+        }
+      ],
+      "paired_training_questions_epoch1_vs3": {
+        "questions": 128,
+        "mean_epoch3_minus_epoch1_reward": 0.048828125,
+        "improved_questions": 46,
+        "unchanged_questions": 57,
+        "worsened_questions": 25,
+        "note": "Descriptive paired results for the same training questions, eight generated answers per question per epoch; not a held-out or Base comparison."
+      },
+      "windows": {
+        "first_32_updates": {
+          "reward": 0.158203125,
+          "completions/clipped_ratio": 0.2392578125,
+          "completions/mean_length": 879.607421875,
+          "entropy": 0.9074850324323052,
+          "grad_norm": 0.2127442379714921,
+          "step_time": 310.51972004546406,
+          "count": 32
+        },
+        "last_32_updates": {
+          "reward": 0.20703125,
+          "completions/clipped_ratio": 0.330078125,
+          "completions/mean_length": 1054.5703125,
+          "entropy": 0.6961537977913395,
+          "grad_norm": 0.16754347598180175,
+          "step_time": 321.14912657759123,
+          "count": 32
+        }
+      },
+      "verifier_status_counts": {
+        "incorrect": 919,
+        "extraction_failed": 654,
+        "correct": 582,
+        "unfinished": 848,
+        "ambiguous": 69
+      },
+      "notes": [
+        "Saved audit data and logs were replayed without loading model or optimizer files.",
+        "Recorded base hashes and update gates are cross-checked evidence, not an independent re-execution of GPU training."
+      ]
+    },
+    "formal": {
+      "status": "completed",
+      "optimizer_steps": 384,
+      "training_seconds": 110979.20444629388,
+      "training_hours": 30.82755679063719,
+      "epochs_completed": 3.0,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "changed_adapter_tensor_count": 192,
+      "adapter_max_abs_delta": 0.0012674657627940178,
+      "base_hash_unchanged_in_recorded_audit": true,
+      "resume_history": [],
+      "peak_cuda_allocated_gib": 4.783176422119141,
+      "peak_cuda_reserved_gib": 4.802734375,
+      "counts": {
+        "reward_groups": 1536,
+        "completion_count": 12288,
+        "mixed_reward_groups": 991,
+        "correct_completion_count": 4563,
+        "truncation_count": 3004,
+        "format_compliant_count": 5402,
+        "effective_update_steps": 376
+      },
+      "unique_questions": 512,
+      "reward_replay_checked": 12288,
+      "reward_replay_mismatches": [],
+      "trainer_log_vs_reward_audit_mismatches": [],
+      "nonfinite_metrics": [],
+      "zero_gradient_steps": [
+        9,
+        40,
+        114,
+        136,
+        194,
+        298,
+        329,
+        333
+      ],
+      "zero_gradient_steps_all_groups_uniform_reward": true,
+      "loss_absolute_max": 3.725290298461914e-08,
+      "epochs": [
+        {
+          "epoch": 1,
+          "steps": [
+            1,
+            128
+          ],
+          "questions": 512,
+          "responses": 4096,
+          "correct": 894,
+          "reward_rate": 0.21826171875,
+          "unfinished": 1123,
+          "unfinished_rate": 0.274169921875,
+          "mixed_reward_group_rate": 0.62109375,
+          "mean_output_tokens": 959.795654296875,
+          "median_output_tokens": 615.5,
+          "eos_correct_rate": 0.3007063572149344,
+          "verifier_status_counts": {
+            "incorrect": 1183,
+            "unfinished": 1123,
+            "extraction_failed": 798,
+            "correct": 894,
+            "ambiguous": 98
+          },
+          "format_compliant_rate": 0.245361328125,
+          "entropy_mean": 0.7015701206555605,
+          "grad_norm_mean": 0.18870640743989497,
+          "positive_grad_steps": 125,
+          "step_time_mean_seconds": 318.7530902859871,
+          "logged_step_time_sum_seconds": 40800.39555660635
+        },
+        {
+          "epoch": 2,
+          "steps": [
+            129,
+            256
+          ],
+          "questions": 512,
+          "responses": 4096,
+          "correct": 1603,
+          "reward_rate": 0.391357421875,
+          "unfinished": 980,
+          "unfinished_rate": 0.2392578125,
+          "mixed_reward_group_rate": 0.677734375,
+          "mean_output_tokens": 897.14404296875,
+          "median_output_tokens": 548.0,
+          "eos_correct_rate": 0.5144415917843389,
+          "verifier_status_counts": {
+            "unfinished": 980,
+            "incorrect": 1187,
+            "extraction_failed": 286,
+            "correct": 1603,
+            "ambiguous": 40
+          },
+          "format_compliant_rate": 0.453125,
+          "entropy_mean": 0.43908231309887924,
+          "grad_norm_mean": 0.1721002740378026,
+          "positive_grad_steps": 126,
+          "step_time_mean_seconds": 292.8042875932806,
+          "logged_step_time_sum_seconds": 37478.94881193992
+        },
+        {
+          "epoch": 3,
+          "steps": [
+            257,
+            384
+          ],
+          "questions": 512,
+          "responses": 4096,
+          "correct": 2066,
+          "reward_rate": 0.50439453125,
+          "unfinished": 901,
+          "unfinished_rate": 0.219970703125,
+          "mixed_reward_group_rate": 0.63671875,
+          "mean_output_tokens": 866.015625,
+          "median_output_tokens": 505.5,
+          "eos_correct_rate": 0.6466353677621284,
+          "verifier_status_counts": {
+            "unfinished": 901,
+            "incorrect": 970,
+            "correct": 2066,
+            "extraction_failed": 152,
+            "ambiguous": 7
+          },
+          "format_compliant_rate": 0.620361328125,
+          "entropy_mean": 0.3210821478719481,
+          "grad_norm_mean": 0.15864858764689416,
+          "positive_grad_steps": 125,
+          "step_time_mean_seconds": 255.23300780958743,
+          "logged_step_time_sum_seconds": 32669.82499962719
+        }
+      ],
+      "paired_training_questions_epoch1_vs3": {
+        "questions": 512,
+        "mean_epoch3_minus_epoch1_reward": 0.2861328125,
+        "improved_questions": 380,
+        "unchanged_questions": 111,
+        "worsened_questions": 21,
+        "note": "Descriptive paired results for the same training questions, eight generated answers per question per epoch; not a held-out or Base comparison."
+      },
+      "windows": {
+        "first_32_updates": {
+          "reward": 0.173828125,
+          "completions/clipped_ratio": 0.224609375,
+          "completions/mean_length": 840.4375,
+          "entropy": 0.8115846604923718,
+          "grad_norm": 0.21204721741378307,
+          "step_time": 308.9889349409568,
+          "count": 32
+        },
+        "last_32_updates": {
+          "reward": 0.541015625,
+          "completions/clipped_ratio": 0.216796875,
+          "completions/mean_length": 873.7861328125,
+          "entropy": 0.2815214868678595,
+          "grad_norm": 0.15217604907229543,
+          "step_time": 244.33883381909982,
+          "count": 32
+        }
+      },
+      "verifier_status_counts": {
+        "incorrect": 3340,
+        "unfinished": 3004,
+        "extraction_failed": 1236,
+        "correct": 4563,
+        "ambiguous": 145
+      },
+      "notes": [
+        "Saved audit data and logs were replayed without loading model or optimizer files.",
+        "Recorded base hashes and update gates are cross-checked evidence, not an independent re-execution of GPU training."
+      ]
+    }
+  },
+  "errors": [],
+  "interpretation": "Training rewards describe sampled answers on repeated training questions. Engineering gates and improved training reward do not establish held-out improvement.",
+  "training_reward_replays": 15424,
+  "passed": true
+}

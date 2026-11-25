@@ -1,0 +1,163 @@
+{
+  "schema": "project-relocation-v1",
+  "created_utc": "2026-11-06T02:09:17.602178+00:00",
+  "project_root_at_reorganization": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project",
+  "original_math_ready_sha256": "c434b9ce94a8592064a33b9fd6e941f389ac10ea5334649071b66e3ffe3f9ce1",
+  "mappings": [
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106",
+      "new_relative": "archive/math_l4"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106",
+      "new_relative": "results/final"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/server_results/run_20261031",
+      "new_relative": "archive/gsm8k/run_20261031"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_v1_4",
+      "new_relative": "archive/gsm8k/rescore_v1_4"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/server_results/boundary_20261031",
+      "new_relative": "archive/difficulty_probes/run_20261031"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/boundary_probe_v1",
+      "new_relative": "archive/difficulty_probes/code/boundary_probe_v1"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/boundary_confirm_v2",
+      "new_relative": "archive/difficulty_probes/code/boundary_confirm_v2"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/boundary_guarded_v3",
+      "new_relative": "archive/difficulty_probes/code/boundary_guarded_v3"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/AI_HANDOFF_RL_20261104.md",
+      "new_relative": "archive/notes/AI_HANDOFF_RL_20261104.md"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/DSAI4207_LLM_Proposal_Overleaf(4).pdf",
+      "new_relative": "docs/DSAI4207_LLM_Proposal_Overleaf(4).pdf"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/base_complete_review_20261105",
+      "new_relative": "archive/validation_history/base_complete_review_20261105"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/boundary_review_20261031",
+      "new_relative": "archive/validation_history/boundary_review_20261031"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/boundary_v1",
+      "new_relative": "archive/validation_history/boundary_v1"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/confirmation_preparation_20261031",
+      "new_relative": "archive/validation_history/confirmation_preparation_20261031"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/confirmation_preparation_20261101",
+      "new_relative": "archive/validation_history/confirmation_preparation_20261101"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/demo",
+      "new_relative": "archive/validation_history/demo"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/final_2026_10_30",
+      "new_relative": "archive/validation_history/final_2026_10_30"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/guarded_review_20261101",
+      "new_relative": "archive/validation_history/guarded_review_20261101"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/math_l4_snapshot_review_20261103",
+      "new_relative": "archive/validation_history/math_l4_snapshot_review_20261103"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/qwen35_4b_feasibility",
+      "new_relative": "archive/validation_history/qwen35_4b_feasibility"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/server_results_review_20261031",
+      "new_relative": "archive/validation_history/server_results_review_20261031"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/shard0_review_20261105",
+      "new_relative": "archive/validation_history/shard0_review_20261105"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_0",
+      "new_relative": "archive/validation_history/v1_0"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_1",
+      "new_relative": "archive/validation_history/v1_1"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_2",
+      "new_relative": "archive/validation_history/v1_2"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_2_2",
+      "new_relative": "archive/validation_history/v1_2_2"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_2_2_pathfix",
+      "new_relative": "archive/validation_history/v1_2_2_pathfix"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_3",
+      "new_relative": "archive/validation_history/v1_3"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_3_resume",
+      "new_relative": "archive/validation_history/v1_3_resume"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_3_resume_upstream",
+      "new_relative": "archive/validation_history/v1_3_resume_upstream"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_4",
+      "new_relative": "archive/validation_history/v1_4"
+    },
+    {
+      "old_absolute": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_4_interpretation",
+      "new_relative": "archive/validation_history/v1_4_interpretation"
+    }
+  ],
+  "immutable_metadata_policy": "Original ready/manifest/identity files retain historical absolute paths and bytes. Resolve them through this external relocation map; do not edit recorded provenance.",
+  "exports": [
+    {
+      "source_relative": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "export_relative": "results/raw/baseline.jsonl",
+      "sha256": "801e935948145e550b4c1a4e47266af26c6469fe9893148b37c83a135a902fb1",
+      "bytes": 48967205
+    },
+    {
+      "source_relative": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/samples.jsonl",
+      "export_relative": "results/raw/rl.jsonl",
+      "sha256": "1ed133041d186d5e2ea3a32d8fdb85ae60662e17b5e5b554d9adcd05b647c5c1",
+      "bytes": 47894654
+    },
+    {
+      "source_relative": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_config.json",
+      "export_relative": "models/rl_checkpoint384/adapter_config.json",
+      "sha256": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+      "bytes": 1063
+    },
+    {
+      "source_relative": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_model.safetensors",
+      "export_relative": "models/rl_checkpoint384/adapter_model.safetensors",
+      "sha256": "b04865188d7a2d37cb43e3b32ebb09e2aa71d3818fc0888eeb301e62ccc1a063",
+      "bytes": 43672224
+    }
+  ]
+}

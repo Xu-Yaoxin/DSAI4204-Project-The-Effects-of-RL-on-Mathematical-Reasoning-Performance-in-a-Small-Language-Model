@@ -1,0 +1,42 @@
+{
+  "scope": "Two in-memory formatting counterfactuals; frozen scores unchanged; not a full semantic audit",
+  "cases": [
+    {
+      "id": "math-l4-test-algebra-0739",
+      "sample_index": 11,
+      "frozen_status": "extraction_failed",
+      "gold": "2",
+      "removed_heading_lines": [
+        "#### Part A: $\\frac{4}{\\sqrt{24}}$",
+        "#### Part B: $\\frac{\\sqrt{3456}}{9}$",
+        "#### Part C: $\\sqrt{6}$"
+      ],
+      "diagnostic_same_gold_status": "correct",
+      "counterfactual_gold_3_status": "incorrect",
+      "source_was_modified": false
+    },
+    {
+      "id": "math-l4-test-algebra-0739",
+      "sample_index": 14,
+      "frozen_status": "extraction_failed",
+      "gold": "2",
+      "removed_heading_lines": [
+        "#### Term 1: $\\frac{4}{\\sqrt{24}}$",
+        "#### Term 2: $\\frac{\\sqrt{3456}}{9}$",
+        "#### Term 3: $\\sqrt{6}$"
+      ],
+      "diagnostic_same_gold_status": "correct",
+      "counterfactual_gold_3_status": "incorrect",
+      "source_was_modified": false
+    }
+  ],
+  "improvement_example": {
+    "id": "math-l4-test-intermediate_algebra-0794",
+    "base_successes": 6,
+    "rl_successes": 16,
+    "answers_each": 16,
+    "correct_max_integer": 90,
+    "radicand_at_90": 200,
+    "radicand_at_91": -202
+  }
+}

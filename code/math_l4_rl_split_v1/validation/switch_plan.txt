@@ -1,0 +1,1 @@
+[SWITCH PLAN] {"phase": null, "status": null, "base_complete_marker": false, "shard_index": 0, "action": "Stop original runner after Base", "signals_sent": 0}

@@ -1,0 +1,1485 @@
+{
+  "status": "passed",
+  "scope": "Full-sized model construction and LoRA injection on meta tensors; no weights or numerical execution",
+  "package_versions": {
+    "torch": "2.10.0",
+    "transformers": "5.3.0",
+    "peft": "0.18.1",
+    "accelerate": "1.10.1"
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.5",
+  "torch_cuda_build": null,
+  "gpu_executed": false,
+  "weights_loaded": false,
+  "forward_backward_executed": false,
+  "optimizer_executed": false,
+  "training_memory_measured": false,
+  "sources": {
+    "transformers.models.qwen3_5.modeling_qwen3_5": {
+      "file": "/private/tmp/rlvr-fourb-meta-env/lib/python3.11/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+      "sha256": "0e7410f5251e5c324a5628c5340ee3551f7a6a505ce398569fcc3b5f3ac07f7a"
+    },
+    "transformers.models.qwen3_5.configuration_qwen3_5": {
+      "file": "/private/tmp/rlvr-fourb-meta-env/lib/python3.11/site-packages/transformers/models/qwen3_5/configuration_qwen3_5.py",
+      "sha256": "2ec132e5ec5610d3c8110c65ed71cb4f49c98c49f1b79ead0ec973cdb949dd61"
+    },
+    "peft.tuners.lora.layer": {
+      "file": "/private/tmp/rlvr-fourb-meta-env/lib/python3.11/site-packages/peft/tuners/lora/layer.py",
+      "sha256": "e8a47a49cf69f92ded68bf7ab286aeaf068f0ac809ab3465ad16f78a8f9f8b63"
+    },
+    "peft.peft_model": {
+      "file": "/private/tmp/rlvr-fourb-meta-env/lib/python3.11/site-packages/peft/peft_model.py",
+      "sha256": "b847795c28bc4b00b3224c0dcea90edbee40ee60384cd104fdafd7056afcb13e"
+    }
+  },
+  "models": [
+    {
+      "model": "Qwen/Qwen3.5-2B-Base",
+      "config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "text_model_class": "Qwen3_5ForCausalLM",
+      "text_hidden_size": 2048,
+      "text_num_layers": 24,
+      "text_parameters": 1881825088,
+      "bf16_text_weight_bytes": 3763650176,
+      "bf16_text_weight_gib": 3.505172371864319,
+      "tied_input_output_embeddings": true,
+      "target_module_count": 96,
+      "target_leaves": {
+        "gate_proj": 24,
+        "up_proj": 24,
+        "down_proj": 24,
+        "q_proj": 6,
+        "k_proj": 6,
+        "v_proj": 6,
+        "o_proj": 6
+      },
+      "lora_trainable_parameters": 10911744,
+      "lora_parameter_bytes": 43646976,
+      "lora_parameter_dtypes": {
+        "torch.float32": 192
+      },
+      "lora_rank": 16,
+      "target_modules": [
+        {
+          "name": "model.layers.0.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.0.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.0.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.1.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.1.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.1.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.2.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.2.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.2.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.3.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.3.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.3.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.3.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.3.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.3.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.3.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.4.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.4.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.4.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.5.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.5.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.5.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.6.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.6.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.6.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.7.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.7.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.7.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.7.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.7.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.7.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.7.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.8.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.8.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.8.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.9.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.9.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.9.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.10.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.10.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.10.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.11.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.11.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.11.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.11.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.11.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.11.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.11.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.12.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.12.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.12.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.13.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.13.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.13.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.14.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.14.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.14.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.15.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.15.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.15.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.15.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.15.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.15.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.15.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.16.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.16.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.16.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.17.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.17.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.17.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.18.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.18.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.18.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.19.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.19.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.19.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.19.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.19.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.19.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.19.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.20.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.20.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.20.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.21.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.21.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.21.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.22.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.22.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.22.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.23.self_attn.q_proj",
+          "in_features": 2048,
+          "out_features": 4096,
+          "lora_parameters": 98304
+        },
+        {
+          "name": "model.layers.23.self_attn.k_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.23.self_attn.v_proj",
+          "in_features": 2048,
+          "out_features": 512,
+          "lora_parameters": 40960
+        },
+        {
+          "name": "model.layers.23.self_attn.o_proj",
+          "in_features": 2048,
+          "out_features": 2048,
+          "lora_parameters": 65536
+        },
+        {
+          "name": "model.layers.23.mlp.gate_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.23.mlp.up_proj",
+          "in_features": 2048,
+          "out_features": 6144,
+          "lora_parameters": 131072
+        },
+        {
+          "name": "model.layers.23.mlp.down_proj",
+          "in_features": 6144,
+          "out_features": 2048,
+          "lora_parameters": 131072
+        }
+      ],
+      "all_parameters_meta": true,
+      "checkpoint_header_sources": [
+        {
+          "file": "2B_model.safetensors-00001-of-00001.safetensors.header.json",
+          "sha256": "ccba2c1f645fe59268f89ee7ea552e02ce6bf0c8a087bf332fb0e3bd99bfee9d"
+        }
+      ],
+      "checkpoint_unique_text_tensor_count": 320,
+      "checkpoint_text_keys_and_shapes_match": true,
+      "checkpoint_text_dtype_counts": {
+        "F32": 36,
+        "BF16": 284
+      },
+      "excluded_nontext_tensor_count": 312,
+      "conversion": "Pinned Transformers qwen3_5_text renames ^model.language_model to model; tied lm_head aliases embedding"
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B-Base",
+      "config_sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "text_model_class": "Qwen3_5ForCausalLM",
+      "text_hidden_size": 2560,
+      "text_num_layers": 32,
+      "text_parameters": 4205751296,
+      "bf16_text_weight_bytes": 8411502592,
+      "bf16_text_weight_gib": 7.833822250366211,
+      "tied_input_output_embeddings": true,
+      "target_module_count": 128,
+      "target_leaves": {
+        "gate_proj": 32,
+        "up_proj": 32,
+        "down_proj": 32,
+        "q_proj": 8,
+        "k_proj": 8,
+        "v_proj": 8,
+        "o_proj": 8
+      },
+      "lora_trainable_parameters": 21233664,
+      "lora_parameter_bytes": 84934656,
+      "lora_parameter_dtypes": {
+        "torch.float32": 256
+      },
+      "lora_rank": 16,
+      "target_modules": [
+        {
+          "name": "model.layers.0.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.0.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.0.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.1.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.1.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.1.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.2.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.2.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.2.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.3.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.3.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.3.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.3.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.3.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.3.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.3.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.4.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.4.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.4.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.5.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.5.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.5.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.6.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.6.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.6.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.7.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.7.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.7.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.7.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.7.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.7.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.7.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.8.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.8.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.8.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.9.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.9.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.9.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.10.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.10.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.10.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.11.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.11.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.11.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.11.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.11.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.11.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.11.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.12.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.12.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.12.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.13.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.13.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.13.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.14.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.14.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.14.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.15.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.15.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.15.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.15.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.15.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.15.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.15.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.16.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.16.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.16.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.17.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.17.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.17.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.18.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.18.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.18.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.19.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.19.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.19.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.19.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.19.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.19.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.19.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.20.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.20.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.20.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.21.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.21.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.21.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.22.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.22.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.22.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.23.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.23.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.23.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.23.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.23.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.23.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.23.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.24.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.24.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.24.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.25.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.25.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.25.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.26.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.26.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.26.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.27.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.27.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.27.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.27.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.27.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.27.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.27.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.28.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.28.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.28.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.29.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.29.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.29.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.30.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.30.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.30.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.31.self_attn.q_proj",
+          "in_features": 2560,
+          "out_features": 8192,
+          "lora_parameters": 172032
+        },
+        {
+          "name": "model.layers.31.self_attn.k_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.31.self_attn.v_proj",
+          "in_features": 2560,
+          "out_features": 1024,
+          "lora_parameters": 57344
+        },
+        {
+          "name": "model.layers.31.self_attn.o_proj",
+          "in_features": 4096,
+          "out_features": 2560,
+          "lora_parameters": 106496
+        },
+        {
+          "name": "model.layers.31.mlp.gate_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.31.mlp.up_proj",
+          "in_features": 2560,
+          "out_features": 9216,
+          "lora_parameters": 188416
+        },
+        {
+          "name": "model.layers.31.mlp.down_proj",
+          "in_features": 9216,
+          "out_features": 2560,
+          "lora_parameters": 188416
+        }
+      ],
+      "all_parameters_meta": true,
+      "checkpoint_header_sources": [
+        {
+          "file": "4B_model.safetensors-00001-of-00002.safetensors.header.json",
+          "sha256": "fa629a16cefab536c4ba5442902746905f255551965731603cf034f9843d7d80"
+        },
+        {
+          "file": "4B_model.safetensors-00002-of-00002.safetensors.header.json",
+          "sha256": "144fb1b3c226308cb9cf23b62863fad02b334c61b83b47fe6bc03567ded6aa7c"
+        }
+      ],
+      "checkpoint_unique_text_tensor_count": 426,
+      "checkpoint_text_keys_and_shapes_match": true,
+      "checkpoint_text_dtype_counts": {
+        "BF16": 378,
+        "F32": 48
+      },
+      "excluded_nontext_tensor_count": 312,
+      "conversion": "Pinned Transformers qwen3_5_text renames ^model.language_model to model; tied lm_head aliases embedding"
+    }
+  ],
+  "ratios": {
+    "text_parameters_4b_over_2b": 2.2349321001293823,
+    "lora_parameters_4b_over_2b": 1.945945945945946
+  },
+  "script_sha256": "1957ed1347851c0693fb4b4f9002af312864d43835c7eca9cf2f19bbffe7e848",
+  "limitations": [
+    "Mac ARM64 torch build, not Linux CUDA runtime",
+    "Meta tensors have no storage and do not measure VRAM",
+    "No checkpoint loading, generation, GRPO optimization, real math benchmark or training peak measured",
+    "Current production loader rejects 4B until separately adapted and tested"
+  ]
+}

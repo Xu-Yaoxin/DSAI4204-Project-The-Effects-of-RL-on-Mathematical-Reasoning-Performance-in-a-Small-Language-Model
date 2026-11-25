@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-06T01:55:00.653976+00:00",
+  "cause": "macOS UF_HIDDEN flags on current result directory, descendants and merged raw RL directory",
+  "visibility_repaired": true,
+  "paths_unhidden": [
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/summary.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/changes.jsonl",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/per_question.jsonl",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/ready.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/rl",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/base",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/rl/manifest.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/rl/samples.jsonl",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/base/manifest.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/base/samples.jsonl",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/merge_provenance.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/manifest.json",
+    "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/samples.jsonl"
+  ],
+  "content_hashes_unchanged": true,
+  "scorer_executed": false,
+  "current_experiment": "MATH Level 4, scorer 4.0.0",
+  "older_directory": "outputs/rescore_v1_4 is the 2026-10-31 GSM8K experiment",
+  "files": [
+    {
+      "model": "baseline",
+      "original_answers": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "final_scored_answers": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/base/samples.jsonl",
+      "records": 3200,
+      "questions": 200,
+      "correct": 1393,
+      "raw_sha256": "801e935948145e550b4c1a4e47266af26c6469fe9893148b37c83a135a902fb1",
+      "final_sha256": "9c809731dec7719936e372178b439e228db75e3d3852afa310b19fb1a4d07ffa"
+    },
+    {
+      "model": "rl",
+      "original_answers": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/samples.jsonl",
+      "final_scored_answers": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/rl/samples.jsonl",
+      "records": 3200,
+      "questions": 200,
+      "correct": 1968,
+      "raw_sha256": "1ed133041d186d5e2ea3a32d8fdb85ae60662e17b5e5b554d9adcd05b647c5c1",
+      "final_sha256": "0ff98160404de766b42b9d9dd6e5cc654516db8f16ca017371054ec413980720"
+    }
+  ],
+  "summary": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/summary.json"
+}

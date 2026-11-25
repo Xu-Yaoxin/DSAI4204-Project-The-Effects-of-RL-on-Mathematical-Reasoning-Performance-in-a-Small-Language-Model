@@ -1,0 +1,363 @@
+{
+  "snapshot": "/Users/xu./Downloads/math_l4_snapshot_20261103",
+  "evaluations": {
+    "engineering_base": {
+      "manifest_complete": true,
+      "model_label": "base",
+      "split": "engineering",
+      "requested_questions": 32,
+      "samples_per_question": 1,
+      "requested_answers": 32,
+      "downloaded_complete_answers": 32,
+      "complete_questions": 32,
+      "partial_questions": 0,
+      "unstarted_questions": 0,
+      "trailing_incomplete_bytes_excluded": 0,
+      "ordered_prefix": true,
+      "replayed_answer_count": 32,
+      "replay_failures": 0,
+      "correct": 14,
+      "wrong": 15,
+      "unknown": 3,
+      "observed_answer_accuracy_lower": 0.4375,
+      "observed_answer_accuracy_upper": 0.53125,
+      "complete_question_pass1_lower": 0.4375,
+      "complete_question_pass1_upper": 0.53125,
+      "complete_question_pass_at_n_lower": 0.4375,
+      "complete_question_pass_at_n_upper": 0.53125,
+      "complete_questions_with_confirmed_success": 14,
+      "complete_questions_with_possible_success": 17,
+      "scoring_status": {
+        "incorrect": 12,
+        "correct": 14,
+        "unscored": 3,
+        "timeout": 2,
+        "ambiguous": 1
+      },
+      "termination": {
+        "eos": {
+          "count": 27,
+          "answer_fraction": 0.84375,
+          "seconds_sum": 347.01257360726595,
+          "time_fraction": 0.31950752960900625,
+          "seconds_mean": 12.85231754100985,
+          "seconds_median": 8.322690583067015,
+          "tokens_mean": 510.962962962963
+        },
+        "repetition_guard": {
+          "count": 3,
+          "answer_fraction": 0.09375,
+          "seconds_sum": 138.78727015922777,
+          "time_fraction": 0.12778666020309337,
+          "seconds_mean": 46.26242338640926,
+          "seconds_median": 47.58640779112466,
+          "tokens_mean": 1856
+        },
+        "answer_timeout": {
+          "count": 2,
+          "answer_fraction": 0.0625,
+          "seconds_sum": 600.2859021059703,
+          "time_fraction": 0.5527058101879003,
+          "seconds_mean": 300.14295105298515,
+          "seconds_median": 300.14295105298515,
+          "tokens_mean": 12143.5
+        }
+      },
+      "subjects": {
+        "algebra": {
+          "answers": 9,
+          "questions_started": 9,
+          "questions_in_frozen_split": 9,
+          "correct": 5,
+          "unknown": 0,
+          "accuracy_lower": 0.5555555555555556,
+          "accuracy_upper": 0.5555555555555556,
+          "termination": {
+            "eos": 9
+          }
+        },
+        "precalculus": {
+          "answers": 2,
+          "questions_started": 2,
+          "questions_in_frozen_split": 2,
+          "correct": 1,
+          "unknown": 0,
+          "accuracy_lower": 0.5,
+          "accuracy_upper": 0.5,
+          "termination": {
+            "eos": 2
+          }
+        },
+        "counting_and_probability": {
+          "answers": 4,
+          "questions_started": 4,
+          "questions_in_frozen_split": 4,
+          "correct": 1,
+          "unknown": 0,
+          "accuracy_lower": 0.25,
+          "accuracy_upper": 0.25,
+          "termination": {
+            "eos": 4
+          }
+        },
+        "prealgebra": {
+          "answers": 5,
+          "questions_started": 5,
+          "questions_in_frozen_split": 5,
+          "correct": 4,
+          "unknown": 0,
+          "accuracy_lower": 0.8,
+          "accuracy_upper": 0.8,
+          "termination": {
+            "eos": 5
+          }
+        },
+        "intermediate_algebra": {
+          "answers": 6,
+          "questions_started": 6,
+          "questions_in_frozen_split": 6,
+          "correct": 0,
+          "unknown": 3,
+          "accuracy_lower": 0.0,
+          "accuracy_upper": 0.5,
+          "termination": {
+            "eos": 1,
+            "repetition_guard": 3,
+            "answer_timeout": 2
+          }
+        },
+        "number_theory": {
+          "answers": 4,
+          "questions_started": 4,
+          "questions_in_frozen_split": 4,
+          "correct": 3,
+          "unknown": 0,
+          "accuracy_lower": 0.75,
+          "accuracy_upper": 0.75,
+          "termination": {
+            "eos": 4
+          }
+        },
+        "geometry": {
+          "answers": 2,
+          "questions_started": 2,
+          "questions_in_frozen_split": 2,
+          "correct": 0,
+          "unknown": 0,
+          "accuracy_lower": 0.0,
+          "accuracy_upper": 0.0,
+          "termination": {
+            "eos": 2
+          }
+        }
+      },
+      "answer_seconds_sum": 1086.085745872464,
+      "mean_answer_seconds": 33.9401795585145,
+      "median_answer_seconds": 9.412259572651237,
+      "output_tokens_sum": 43651,
+      "mean_output_tokens": 1364.09375,
+      "manifest_sha256": "4df573d58bf4ddea64e32526005171886f93001c6e74761a270cc7f84aa7ad2b",
+      "samples_sha256_snapshot": "a6aaf5c0d41dd6ade6806baf4d5f8faceaba21a3219d3c629c9d013b9b19da62",
+      "first_question_id": "math-l4-train-algebra-1059",
+      "last_question_id": "math-l4-train-algebra-0999",
+      "last_sample_index": 0,
+      "adapter_bytes_verified": false
+    },
+    "dev/checkpoint-128": {
+      "manifest_complete": false,
+      "model_label": "rl",
+      "split": "dev",
+      "requested_questions": 128,
+      "samples_per_question": 4,
+      "requested_answers": 512,
+      "downloaded_complete_answers": 210,
+      "complete_questions": 52,
+      "partial_questions": 1,
+      "unstarted_questions": 75,
+      "trailing_incomplete_bytes_excluded": 0,
+      "ordered_prefix": true,
+      "replayed_answer_count": 210,
+      "replay_failures": 0,
+      "correct": 106,
+      "wrong": 93,
+      "unknown": 11,
+      "observed_answer_accuracy_lower": 0.5047619047619047,
+      "observed_answer_accuracy_upper": 0.5571428571428572,
+      "complete_question_pass1_lower": 0.5096153846153846,
+      "complete_question_pass1_upper": 0.5625,
+      "complete_question_pass_at_n_lower": 0.7884615384615384,
+      "complete_question_pass_at_n_upper": 0.8846153846153846,
+      "complete_questions_with_confirmed_success": 41,
+      "complete_questions_with_possible_success": 46,
+      "scoring_status": {
+        "correct": 106,
+        "incorrect": 62,
+        "unscored": 11,
+        "extraction_failed": 7,
+        "timeout": 18,
+        "ambiguous": 6
+      },
+      "termination": {
+        "eos": {
+          "count": 181,
+          "answer_fraction": 0.861904761904762,
+          "seconds_sum": 5308.330054449383,
+          "time_fraction": 0.45960780400867085,
+          "seconds_mean": 29.32779035607394,
+          "seconds_median": 13.362325915601104,
+          "tokens_mean": 884.6574585635359
+        },
+        "repetition_guard": {
+          "count": 11,
+          "answer_fraction": 0.05238095238095238,
+          "seconds_sum": 838.9252285854891,
+          "time_fraction": 0.07263613567405494,
+          "seconds_mean": 76.2659298714081,
+          "seconds_median": 58.28342987690121,
+          "tokens_mean": 2309.818181818182
+        },
+        "answer_timeout": {
+          "count": 18,
+          "answer_fraction": 0.08571428571428572,
+          "seconds_sum": 5402.439931342378,
+          "time_fraction": 0.4677560603172742,
+          "seconds_mean": 300.13555174124326,
+          "seconds_median": 300.13337749731727,
+          "tokens_mean": 9106.111111111111
+        }
+      },
+      "subjects": {
+        "counting_and_probability": {
+          "answers": 32,
+          "questions_started": 8,
+          "questions_in_frozen_split": 16,
+          "correct": 18,
+          "unknown": 0,
+          "accuracy_lower": 0.5625,
+          "accuracy_upper": 0.5625,
+          "termination": {
+            "eos": 30,
+            "answer_timeout": 2
+          }
+        },
+        "algebra": {
+          "answers": 48,
+          "questions_started": 12,
+          "questions_in_frozen_split": 35,
+          "correct": 32,
+          "unknown": 3,
+          "accuracy_lower": 0.6666666666666666,
+          "accuracy_upper": 0.7291666666666666,
+          "termination": {
+            "eos": 45,
+            "repetition_guard": 3
+          }
+        },
+        "prealgebra": {
+          "answers": 44,
+          "questions_started": 11,
+          "questions_in_frozen_split": 20,
+          "correct": 31,
+          "unknown": 1,
+          "accuracy_lower": 0.7045454545454546,
+          "accuracy_upper": 0.7272727272727273,
+          "termination": {
+            "eos": 42,
+            "answer_timeout": 1,
+            "repetition_guard": 1
+          }
+        },
+        "geometry": {
+          "answers": 8,
+          "questions_started": 2,
+          "questions_in_frozen_split": 7,
+          "correct": 4,
+          "unknown": 0,
+          "accuracy_lower": 0.5,
+          "accuracy_upper": 0.5,
+          "termination": {
+            "eos": 8
+          }
+        },
+        "number_theory": {
+          "answers": 28,
+          "questions_started": 7,
+          "questions_in_frozen_split": 18,
+          "correct": 14,
+          "unknown": 2,
+          "accuracy_lower": 0.5,
+          "accuracy_upper": 0.5714285714285714,
+          "termination": {
+            "eos": 23,
+            "repetition_guard": 2,
+            "answer_timeout": 3
+          }
+        },
+        "intermediate_algebra": {
+          "answers": 42,
+          "questions_started": 11,
+          "questions_in_frozen_split": 24,
+          "correct": 7,
+          "unknown": 4,
+          "accuracy_lower": 0.16666666666666666,
+          "accuracy_upper": 0.2619047619047619,
+          "termination": {
+            "eos": 27,
+            "repetition_guard": 4,
+            "answer_timeout": 11
+          }
+        },
+        "precalculus": {
+          "answers": 8,
+          "questions_started": 2,
+          "questions_in_frozen_split": 8,
+          "correct": 0,
+          "unknown": 1,
+          "accuracy_lower": 0.0,
+          "accuracy_upper": 0.125,
+          "termination": {
+            "eos": 6,
+            "repetition_guard": 1,
+            "answer_timeout": 1
+          }
+        }
+      },
+      "answer_seconds_sum": 11549.69521437725,
+      "mean_answer_seconds": 54.998548639891666,
+      "median_answer_seconds": 16.6293394677341,
+      "output_tokens_sum": 349441,
+      "mean_output_tokens": 1664.0047619047618,
+      "manifest_sha256": "497cfb2483fdd885c2a7f6d4550ecd89683a55ce6ac666f7771bb0d26d4608bc",
+      "samples_sha256_snapshot": "193db30e8d661ce81df768fefd07210f77b711ec9f35b58303b9022f5252759d",
+      "first_question_id": "math-l4-train-counting_and_probability-0098",
+      "last_question_id": "math-l4-train-intermediate_algebra-0981",
+      "last_sample_index": 1,
+      "adapter_bytes_verified": true
+    }
+  },
+  "limitations": [
+    "This is a running-job download, not an atomic server filesystem snapshot.",
+    "Partial dev rows are an ordered prefix; descriptive scores do not establish full-dev or held-out-test accuracy.",
+    "There is no matched Base evaluation on these dev questions in this snapshot.",
+    "Original Base model content is not included; its recorded content inventory identity is checked, not its physical weight bytes.",
+    "No model inference, GPU, network, pickle or PT deserialization is used."
+  ],
+  "runtime_projection": {
+    "remaining_answers_at_samples_snapshot": 7726,
+    "projected_hours_at_observed_dev_answer_mean": 118.0329963310564,
+    "observed_dev_answer_seconds_sum": 11549.69521437725,
+    "state_phase": "DEV CHECKPOINT 128",
+    "state_phase_elapsed_seconds": 11724.717070998158,
+    "state_total_elapsed_seconds": 153790.31182262208,
+    "scope": "Conditional projection using completed checkpoint-128 dev answers only; later subjects, adapters and Base/RL lengths may differ.",
+    "state_termination_counts": {
+      "eos": 181,
+      "repetition_guard": 11,
+      "answer_timeout": 18
+    },
+    "state_current_question": "math-l4-train-intermediate_algebra-0981",
+    "state_current_sample": 2
+  },
+  "audit_elapsed_seconds": 6.708250042000145,
+  "all_available_evaluation_records_replayed": true
+}

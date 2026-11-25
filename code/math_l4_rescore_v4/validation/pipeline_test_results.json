@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "returncode": 0,
+  "stdout": "PASS [POSTHOC PIPELINE] 35 checks: complete_real_subprocess, all_generation_fields_preserved, eos_rescored, timeout_and_repetition_not_rescored, frozen_generation_provenance, exact_changed_rows_audit, audit_nonboolean_score_changes, paired_statistics_ignore_source_row_order, deterministic_verified_reuse, all_frozen_source_bytes_preserved, reject_unbound_hash, reject_duplicate, reject_missing, reject_wrong_gold, reject_sample_seed, reject_eos_score, reject_interrupted_score, reject_selection, reject_config, reject_split, reject_model_label, reject_protocol, reject_adapter, reject_reuse_changed_valid_source, reject_source_code_before_execution, reject_changed_scorer.py, reject_changed_rescore.py, reject_reuse_tampered_samples, reject_reuse_missing_summary, reject_reuse_incomplete_ready, reject_partial_output, reject_output_source, reject_output_source_descendant, reject_output_source_ancestor, reject_output_symlink\n",
+  "stderr": "",
+  "gpu_used": false,
+  "network_used": false
+}

@@ -1,0 +1,717 @@
+{
+  "scope": "Offline post-hoc diagnostic of 400 archived outputs; original archive and official results unchanged. No GPU, model or network calls. Not new benchmark evidence.",
+  "source_path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/server_results/boundary_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/base/samples.jsonl",
+  "source_sha256": "e417701a8ff320f445dd146dd800bf62aa18919b5206d6f4d651e120cbb79786",
+  "scorer_version": "2.0.0",
+  "scorer_sha256": "ba7ce102acac0087dabfdae20db0b088a294e0692bbe69c497a5d4642c57ecc7",
+  "question_count": 100,
+  "sample_count": 400,
+  "correct_before": {
+    "gsm_symbolic": 41,
+    "gsm_p1": 24,
+    "gsm_p2": 19,
+    "math_l1_3": 55,
+    "math_l4_5": 20
+  },
+  "correct_after": {
+    "gsm_symbolic": 44,
+    "gsm_p1": 27,
+    "gsm_p2": 22,
+    "math_l1_3": 61,
+    "math_l4_5": 21
+  },
+  "restored_correct_count": 17,
+  "lost_correct_count": 1,
+  "policy_notes": [
+    "Paired think blocks excluded entirely; unbalanced blocks fail closed.",
+    "Explicit numerical-final labels, Unicode currency prefixes and balanced displayed scalar wrappers are supported.",
+    "Empty #### does not supply an answer but does not invalidate another explicit scalar.",
+    "Percent suffixes remain unsupported. gsm_symbolic-0184-15 sample0 now fails extraction because Final numerical answer: 25% is recognized; this is a parser-policy rejection, not evidence of a mathematical mistake.",
+    "All 15 previously audited nontruncated clear-final misses are recognized.",
+    "No rule was tuned to restore or protect old accuracy."
+  ],
+  "changes": [
+    {
+      "id": "gsm_symbolic-0116-42",
+      "sample_index": 0,
+      "group_id": "gsm_symbolic",
+      "gold": "728",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "728",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_symbolic-0158-39",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "gold": "221",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "221",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_symbolic-0184-15",
+      "sample_index": 0,
+      "group_id": "gsm_symbolic",
+      "gold": "25",
+      "before": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "25",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_symbolic-0365-02",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "gold": "21",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "21",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_symbolic-0491-40",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "gold": "62",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "62",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_symbolic-0984-29",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "gold": "12",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "1308",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "gsm_symbolic-0984-29",
+      "sample_index": 3,
+      "group_id": "gsm_symbolic",
+      "gold": "12",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "144",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0099-49",
+      "sample_index": 1,
+      "group_id": "gsm_p1",
+      "gold": "548",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "510",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0125-23",
+      "sample_index": 2,
+      "group_id": "gsm_p1",
+      "gold": "25",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "25",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0158-39",
+      "sample_index": 0,
+      "group_id": "gsm_p1",
+      "gold": "306",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "306",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0158-39",
+      "sample_index": 1,
+      "group_id": "gsm_p1",
+      "gold": "306",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "306",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0458-10",
+      "sample_index": 2,
+      "group_id": "gsm_p1",
+      "gold": "80",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "1352972972972973/2000000000000",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p1-0984-29",
+      "sample_index": 1,
+      "group_id": "gsm_p1",
+      "gold": "1",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "226",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "gsm_p1-0984-29",
+      "sample_index": 3,
+      "group_id": "gsm_p1",
+      "gold": "1",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "-360",
+        "status": "incorrect",
+        "format_compliant": true,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "gsm_p1-1165-23",
+      "sample_index": 0,
+      "group_id": "gsm_p1",
+      "gold": "2891",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "42126/5",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p2-0099-49",
+      "sample_index": 3,
+      "group_id": "gsm_p2",
+      "gold": "664",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "589",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p2-0365-02",
+      "sample_index": 2,
+      "group_id": "gsm_p2",
+      "gold": "25",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "25",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p2-0496-26",
+      "sample_index": 3,
+      "group_id": "gsm_p2",
+      "gold": "25",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "34",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p2-0984-29",
+      "sample_index": 3,
+      "group_id": "gsm_p2",
+      "gold": "17",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "153",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "gsm_p2-1031-24",
+      "sample_index": 2,
+      "group_id": "gsm_p2",
+      "gold": "12",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "12",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "gsm_p2-1268-41",
+      "sample_index": 0,
+      "group_id": "gsm_p2",
+      "gold": "30",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "30",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0065",
+      "sample_index": 1,
+      "group_id": "math_l1_3",
+      "gold": "1",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "1",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0259",
+      "sample_index": 1,
+      "group_id": "math_l1_3",
+      "gold": "22",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "22",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0395",
+      "sample_index": 0,
+      "group_id": "math_l1_3",
+      "gold": "4",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "4",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0430",
+      "sample_index": 2,
+      "group_id": "math_l1_3",
+      "gold": "9/2",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "9/2",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0111",
+      "sample_index": 1,
+      "group_id": "math_l1_3",
+      "gold": "210",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "210",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0174",
+      "sample_index": 2,
+      "group_id": "math_l1_3",
+      "gold": "2",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "2",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": true
+      }
+    },
+    {
+      "id": "math500-0075",
+      "sample_index": 3,
+      "group_id": "math_l4_5",
+      "gold": "11/36",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "5/18",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "id": "math500-0353",
+      "sample_index": 3,
+      "group_id": "math_l4_5",
+      "gold": "480",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "480",
+        "status": "correct",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "math500-0063",
+      "sample_index": 3,
+      "group_id": "math_l4_5",
+      "gold": "10",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "6",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    },
+    {
+      "id": "math500-0163",
+      "sample_index": 0,
+      "group_id": "math_l4_5",
+      "gold": "-35/9",
+      "before": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": "-15/4",
+        "status": "incorrect",
+        "format_compliant": false,
+        "truncated": true
+      },
+      "after": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": true
+      }
+    }
+  ]
+}

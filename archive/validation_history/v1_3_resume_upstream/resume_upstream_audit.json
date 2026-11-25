@@ -1,0 +1,1587 @@
+{
+  "status": "passed",
+  "scope": "Actual hash-locked upstream sampler, sharding, GRPO buffer helpers and CPU RNG",
+  "gpu_executed": false,
+  "model_executed": false,
+  "optimizer_restore_executed": false,
+  "ddp_collectives_executed": false,
+  "generation": "random CPU tensor fixture, not a language model",
+  "host_torch": "2.1.2",
+  "sources": [
+    {
+      "package": "trl",
+      "version": "1.16.0",
+      "wheel_sha256": "c4726e139dd40e1a41661511c639c8a68416782b2e3e8c0befebd77bb7ba0396",
+      "member": "trl/trainer/utils.py",
+      "member_sha256": "a3c44bd9e7f332f3087ef1943e89ea6f4ee99c0480ff64f13d586c72a51578b1"
+    },
+    {
+      "package": "trl",
+      "version": "1.16.0",
+      "wheel_sha256": "c4726e139dd40e1a41661511c639c8a68416782b2e3e8c0befebd77bb7ba0396",
+      "member": "trl/trainer/grpo_trainer.py",
+      "member_sha256": "1c3dc2253fb3653269c11dfce4f946f74201a4cb63e0887a37e8e3bb4a3f5503"
+    },
+    {
+      "package": "transformers",
+      "version": "5.3.0",
+      "wheel_sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
+      "member": "transformers/trainer.py",
+      "member_sha256": "060eda6fcd587e79caeca7c3f246ea7bab1af410479c9776584470b8f4ac48a8"
+    },
+    {
+      "package": "accelerate",
+      "version": "1.10.1",
+      "wheel_sha256": "3621cff60b9a27ce798857ece05e2b9f56fcc71631cfb31ccf71f0359c311f11",
+      "member": "accelerate/data_loader.py",
+      "member_sha256": "21a3edfdd4bb5b85bdc291a5ef5405729496fb9ca2cf8c9ddf8d2d9598ded8d0"
+    }
+  ],
+  "sampler_case_count": 147,
+  "sampler_cases": [
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 768,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 736,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 544,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 512,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 480,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 32,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 384,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 368,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 272,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 256,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 240,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 384,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 368,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 272,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 256,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 240,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 192,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 184,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 136,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 120,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 192,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 184,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 136,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 120,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 192,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 184,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 136,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 120,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 192,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 184,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 7,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 136,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 8,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 9,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 120,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 23,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 24,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3072,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2080,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2048,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2016,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 32,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1536,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1024,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1008,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1536,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1024,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 1008,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 768,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 760,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 512,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 504,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 768,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 760,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 512,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 504,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 768,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 760,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 512,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 504,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 768,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 760,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 31,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 520,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 32,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 512,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 33,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 504,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 95,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 96,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 12288,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 12256,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8224,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8192,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8160,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 32,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "rank": 0,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 6144,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 6128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4112,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4096,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4080,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 0,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 6144,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 6128,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4112,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4096,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 4080,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 16,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "rank": 1,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3072,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3064,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2056,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2048,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 0,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3072,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3064,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2056,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2048,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 1,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3072,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3064,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2056,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2048,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 2,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 0,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3072,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 1,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 3064,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 127,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2056,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 128,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2048,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 129,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 2040,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 383,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 8,
+      "buffer_boundary": true
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "rank": 3,
+      "checkpoint_step": 384,
+      "restored_epoch_permutation": true,
+      "remaining_microbatches": 0,
+      "buffer_boundary": true
+    }
+  ],
+  "unfixed_epoch_resume_failures_reproduced": 3,
+  "buffer_rng_case_count": 27,
+  "buffer_rng_cases": [
+    {
+      "world_size": 1,
+      "checkpoint_step": 0,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 1,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 7,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 8,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 9,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 15,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 16,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 23,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 1,
+      "checkpoint_step": 24,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 0,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 1,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 7,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 8,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 9,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 15,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 16,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 23,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 2,
+      "checkpoint_step": 24,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 0,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 1,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 7,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 8,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 9,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 15,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 16,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 23,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    },
+    {
+      "world_size": 4,
+      "checkpoint_step": 24,
+      "actual_upstream_prepare_inputs": true,
+      "same_remaining_slices": true,
+      "same_final_rng_state": true,
+      "same_next_random_draw": true
+    }
+  ],
+  "script_sha256": "982f3531dcaeb83ff27bd4a67dec1201d369ea6727a8e950d95f2e289fb9eabb"
+}

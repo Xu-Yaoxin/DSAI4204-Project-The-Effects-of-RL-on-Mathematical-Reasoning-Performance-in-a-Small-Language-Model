@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_analysis.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_data.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_evaluation.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_pipeline.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_preflight.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_repetition_guard.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_scorer.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume_integration.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume_run_guard.py",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 73.10775083299814,
+  "gpu_training_tested": false,
+  "network_used": false,
+  "scenario_count": 661,
+  "launcher_cpu_threads": 4,
+  "release": "math-l4-1.0.1"
+}

@@ -1,0 +1,16 @@
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=200 | groups=2 | samples/question=4
+[SHARD] index=0/2 | assigned_questions=100/200 | assignment=question_index_modulo
+[BUDGET] responses=400 | max_output_tokens=104857600 | exploratory pass@1 target=40%-50%
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=200 | groups=2 | samples/question=4
+[SHARD] index=1/2 | assigned_questions=100/200 | assignment=question_index_modulo
+[BUDGET] responses=400 | max_output_tokens=104857600 | exploratory pass@1 target=40%-50%
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+[PARALLEL PLAN] shards=2 | concurrent_workers=1 | same visible GPU | batch/worker=1
+✅ [PARALLEL PLAN COMPLETE] No weights, GPU or output files touched

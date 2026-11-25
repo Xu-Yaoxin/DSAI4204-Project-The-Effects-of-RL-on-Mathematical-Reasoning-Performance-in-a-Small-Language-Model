@@ -1,0 +1,20 @@
+{
+  "final_design": {
+    "id": "DAHaKn4-WfM",
+    "title": "DSAI4207 RLVR: Final 10-Minute Presentation",
+    "urls": {
+      "edit_url": "https://www.canva.com/d/LOOPQ54pGMZKgqb",
+      "view_url": "https://www.canva.com/d/T3gwYZ-1enkIPo9"
+    },
+    "page_count": 13
+  },
+  "source_pptx": "output/DSAI4207_Group_Presentation.pptx",
+  "source_sha256": "a93704ef229f7475b9851036090ef2cd3c9669dc8c10da5a128b5110207179dd",
+  "main_slides": 12,
+  "reference_slides": 1,
+  "duration_seconds": 600,
+  "language": "English",
+  "canva_import_file": "canva_import/DSAI4207_Canva_Import.pptx",
+  "canva_import_sha256": "7b8d4398c51d48fb1a1e4f2b82e585e05abd8a1b4698f932ec1aae467842f324",
+  "canva_chart_mode": "Editable vector elements, preserving exact plotted values and labels; native chart data workbooks remain in the downloadable PowerPoint."
+}

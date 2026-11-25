@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "slides": 13,
+  "timed_main_slides": 12,
+  "main_duration_seconds": 600,
+  "embedded_speaker_note_pages": 13,
+  "native_pptx_chart_count": 5,
+  "canva_final_design_id": "DAHaKn4-WfM",
+  "canva_final_edit_url": "https://www.canva.com/d/LOOPQ54pGMZKgqb",
+  "canva_editable_text_objects": 200,
+  "numeric_text_verification": true,
+  "native_render_review": "All 13 slides inspected; overflow fixed",
+  "canva_chart_preview_review": "Slides 6, 8, 9 and 12 inspected after compatibility conversion; exact labels and axes preserved",
+  "experiment_data_modified": false,
+  "source_sha256": "a93704ef229f7475b9851036090ef2cd3c9669dc8c10da5a128b5110207179dd",
+  "canva_import_sha256": "7b8d4398c51d48fb1a1e4f2b82e585e05abd8a1b4698f932ec1aae467842f324"
+}

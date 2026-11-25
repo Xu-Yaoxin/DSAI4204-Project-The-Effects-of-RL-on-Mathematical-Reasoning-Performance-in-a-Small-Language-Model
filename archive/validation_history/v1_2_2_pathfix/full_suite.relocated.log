@@ -1,0 +1,30 @@
+✅ [SYNTAX] 18 linear Python scripts
+[TEST 100%] 24 analysis regression scenarios passed
+✅ [TEST 1/11] test_analysis.py
+[PASS] 37 exact-verifier behavior cases
+[PASS] deterministic official-split isolation, nested subsets, hashes, and immutable conflict
+[PASS] 40 controlled pairs in 4 template families, independent arithmetic, distinct relational answers, pending manual review
+[PASS] structural generation rejects prepared-data tampering
+[PASS] cross-official-split leakage rejected before any output
+[PASS] All data/verifier tests passed without model dependencies.
+✅ [TEST 2/11] test_data_verifier.py
+[PASS] 20 dependency lock/download/setup checks; GPU installation and training remain unrun on this host
+✅ [TEST 3/11] test_dependencies.py
+[PASS] 14 downloader/provenance/Unicode scenarios; all network responses mocked, no external downloads during tests
+✅ [TEST 4/11] test_download_data.py
+✅ [MODEL DOWNLOAD] 28 checks | pinned hashes, persistent Range resume, offline reuse, progress and path safety | no real weights downloaded
+✅ [TEST 5/11] test_download_model.py
+[TEST 100%] 27 evaluation planning and freeze scenarios passed
+✅ [TEST 6/11] test_evaluation.py
+[TEST 100%] 43 cache integrity, GPU-skip and relocation scenarios passed; temporary fixtures only
+✅ [TEST 7/11] test_evaluation_cache.py
+[TEST 100%] 23 loader/data-readiness/batch-plan scenarios passed; no model packages or GPU execution
+✅ [TEST 8/11] test_loader.py
+[PASS] 46 launcher/GPU-selection scenarios; relocated layouts, plans, masks, worker failures, retry preservation and serial evaluation verified
+✅ [TEST 9/11] test_pipeline.py
+[PASS] 24 setup workflow/readiness checks; all GPU, tokenizer and download calls were isolated fixtures
+✅ [TEST 10/11] test_setup_workflow.py
+[TEST 100%] 30 training reward/audit scenarios passed; GPU training was not executed
+✅ [TEST 11/11] test_training.py
+✅ [CPU CHECKS COMPLETE] 11 suites | 32.49s | GPU training not tested
+[SAVED] /Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/v1_2_2_pathfix/test_report.relocated.json

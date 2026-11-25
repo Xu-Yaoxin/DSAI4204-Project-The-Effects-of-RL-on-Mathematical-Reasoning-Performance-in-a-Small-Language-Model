@@ -1,0 +1,312 @@
+{
+  "complete": true,
+  "created_utc": "2026-11-06T02:12:38.775698+00:00",
+  "selected_step": 384,
+  "checkpoint_files": [
+    {
+      "path": "models/rl_checkpoint384/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/README.md",
+      "bytes": 5233,
+      "sha256": "e6cf4cb4ec92b83ea8628e910881eb21c8bcd454f3ec626f530d399a5bc4dd83"
+    },
+    {
+      "path": "models/rl_checkpoint384/adapter_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_config.json",
+      "bytes": 1063,
+      "sha256": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60"
+    },
+    {
+      "path": "models/rl_checkpoint384/adapter_model.safetensors",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_model.safetensors",
+      "bytes": 43672224,
+      "sha256": "b04865188d7a2d37cb43e3b32ebb09e2aa71d3818fc0888eeb301e62ccc1a063"
+    },
+    {
+      "path": "models/rl_checkpoint384/chat_template.jinja",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/chat_template.jinja",
+      "bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "path": "models/rl_checkpoint384/optimizer.pt",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/optimizer.pt",
+      "bytes": 87455947,
+      "sha256": "48befa035861102423080c8806d062b8ae81dfea3aa465edf4e34eca22841fa2"
+    },
+    {
+      "path": "models/rl_checkpoint384/resume_audit.rank-0.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/resume_audit.rank-0.jsonl",
+      "bytes": 31354760,
+      "sha256": "46d28e00a4de049f441cfc7d11f3054b136b2c32abf5758c7347780e15169d49"
+    },
+    {
+      "path": "models/rl_checkpoint384/resume_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/resume_state.json",
+      "bytes": 19979,
+      "sha256": "f63b79e0fc99068510e2506b6e6a8bb44d5c864e0404f7e9a2e467f2e6712909"
+    },
+    {
+      "path": "models/rl_checkpoint384/rng_state.pth",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/rng_state.pth",
+      "bytes": 14645,
+      "sha256": "c1faa2be8041b9418346ad77986a6d0842e1a3841e1a31d7ea0aee4144a731e7"
+    },
+    {
+      "path": "models/rl_checkpoint384/scheduler.pt",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/scheduler.pt",
+      "bytes": 1465,
+      "sha256": "4cb37a06e9fe8b456079b1f6bb56ae4cece0d3a50797b28835f2373f0472e118"
+    },
+    {
+      "path": "models/rl_checkpoint384/tokenizer.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "path": "models/rl_checkpoint384/tokenizer_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/tokenizer_config.json",
+      "bytes": 1101,
+      "sha256": "4e5fdef23437b31196353a689e05ed86e63f668682a1c9fed628d7630cba0982"
+    },
+    {
+      "path": "models/rl_checkpoint384/trainer_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/trainer_state.json",
+      "bytes": 378970,
+      "sha256": "a029c86990092906c25ad83bed27afb84ff29c83691c15aec544aa75503aaf37"
+    },
+    {
+      "path": "models/rl_checkpoint384/training_args.bin",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/checkpoint-384/training_args.bin",
+      "bytes": 7633,
+      "sha256": "81d1b22176d876facc9c8096432e6477b97ec4a0d28b9ebf491603d1b9c716c2"
+    }
+  ],
+  "supplementary_files": [
+    {
+      "path": "archive/math_l4/supplementary/engineering/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/README.md",
+      "bytes": 1860,
+      "sha256": "11c376b4163506b805fe13470e6679a71131d40adaf65158e3c882bd55c74b18"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/README.md",
+      "bytes": 5233,
+      "sha256": "e6cf4cb4ec92b83ea8628e910881eb21c8bcd454f3ec626f530d399a5bc4dd83"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/adapter_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/adapter_config.json",
+      "bytes": 1063,
+      "sha256": "f27256fe58f20dd0c9119baee3a1dcc50a3b1bd759be4cb4ad48283ec8752034"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/adapter_model.safetensors",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/adapter_model.safetensors",
+      "bytes": 43672224,
+      "sha256": "6639140c1b0e27624714a1045305dd3904231292e6ebe7a1d50e4db36b64f475"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/chat_template.jinja",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/chat_template.jinja",
+      "bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/tokenizer.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/tokenizer_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/tokenizer_config.json",
+      "bytes": 1101,
+      "sha256": "4e5fdef23437b31196353a689e05ed86e63f668682a1c9fed628d7630cba0982"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/training_args.bin",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/adapter/training_args.bin",
+      "bytes": 7633,
+      "sha256": "35df7c369dee78be083dfbb4ee913d185d28e1aca0b7b6f7733ea497603e9e77"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/manifest.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/manifest.json",
+      "bytes": 39208,
+      "sha256": "9eb2c873dbe394acffca3cff18d56eb8badaf09999ce5e6a8b8cf6bee81a0ece"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/module_audit.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/module_audit.json",
+      "bytes": 34106,
+      "sha256": "c97fa632319adccf209233b68dc917dc2caa50b57aa8914d11a16616b288ec3a"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/report.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/report.json",
+      "bytes": 12220,
+      "sha256": "fc19c1b8fd3dbfd511fd95947ae67fcce3dc562917cfd4d25233cd75e44d3e0c"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/reward_audit.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/reward_audit.jsonl",
+      "bytes": 166343,
+      "sha256": "557cc9ac1812ec642f060d115da6c16e2fe73d24bfa766e6d8186dd99d6abc2b"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/reward_audit.rank-0.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/reward_audit.rank-0.jsonl",
+      "bytes": 166343,
+      "sha256": "557cc9ac1812ec642f060d115da6c16e2fe73d24bfa766e6d8186dd99d6abc2b"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/trainer_logs.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/trainer_logs.json",
+      "bytes": 2072,
+      "sha256": "27f150226254d4c367781136b534980d66317b428813b4af074e42aadcc00d0c"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/trainer_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering/trainer_state.json",
+      "bytes": 2947,
+      "sha256": "e1291db178e6185737f4d6bbab8a7f7776f951087a717abffaffb2de61f8600b"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/README.md",
+      "bytes": 1848,
+      "sha256": "98a86b1b14201df58f933c3763464038cda424c3953c2ca3e561574d2a9a239a"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/README.md",
+      "bytes": 5233,
+      "sha256": "e6cf4cb4ec92b83ea8628e910881eb21c8bcd454f3ec626f530d399a5bc4dd83"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/adapter_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/adapter_config.json",
+      "bytes": 1063,
+      "sha256": "7075f1819f5bfe43ca2e1ff767cad7f5823980a0c445639a9d2dcd89e0f9712e"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/adapter_model.safetensors",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/adapter_model.safetensors",
+      "bytes": 43672224,
+      "sha256": "d669177f4c61a518a0f82b30ec9cd9d5c08f909fe6941a27a12c8c026bb501b8"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/chat_template.jinja",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/chat_template.jinja",
+      "bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/tokenizer.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/tokenizer_config.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/tokenizer_config.json",
+      "bytes": 1101,
+      "sha256": "4e5fdef23437b31196353a689e05ed86e63f668682a1c9fed628d7630cba0982"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/training_args.bin",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/adapter/training_args.bin",
+      "bytes": 7633,
+      "sha256": "cc716a209866c4fa3d0233178526f68fdd74b3368b6b8de220bbc2c15a5219d4"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/manifest.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/manifest.json",
+      "bytes": 43044,
+      "sha256": "1f1c62fc2290c4c5545e9e9a58b249bbad02cdd215c89daf0612041c0c3d47a1"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/module_audit.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/module_audit.json",
+      "bytes": 34108,
+      "sha256": "1c2d484a609cc84490ca3c0a50ff4b5fdf5b5e06986bce08073a5d8a474d6509"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/report.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/report.json",
+      "bytes": 13884,
+      "sha256": "4c94dc3e2d3604808394537ece75cbbfafce332c8984c11156d0cd630848a5d4"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/reward_audit.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/reward_audit.jsonl",
+      "bytes": 8712101,
+      "sha256": "1ea2fe9173fcc871d6d97914fc8b063b958c0f697f5df08ffe7bfdd4b64bdd63"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/reward_audit.rank-0.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/reward_audit.rank-0.jsonl",
+      "bytes": 8712101,
+      "sha256": "1ea2fe9173fcc871d6d97914fc8b063b958c0f697f5df08ffe7bfdd4b64bdd63"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/trainer_logs.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/trainer_logs.json",
+      "bytes": 89384,
+      "sha256": "1c2eaadd3b7278cdf8739c8b0ca9d73a6575051b813f0bd5a849c09074682934"
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/trainer_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/pilot/trainer_state.json",
+      "bytes": 95339,
+      "sha256": "5af093bff619ca08c5279ba4530ae7445aeac0ae1fa9aecf704f36614632ca69"
+    },
+    {
+      "path": "archive/math_l4/supplementary/environment/20261101T033122821710.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/environment/20261101T033122821710.json",
+      "bytes": 863,
+      "sha256": "bfbef41c3dfc458a477bc551fce23c5bcebd9cc0b1e9f083ff96208966a2ea0c"
+    },
+    {
+      "path": "archive/math_l4/supplementary/environment/20261101T051859764249.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/environment/20261101T051859764249.json",
+      "bytes": 862,
+      "sha256": "81495b21db6a0587801e3320c066d0e4f896b608b3ab89a12aa6a3bdf2f6a530"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering_base/manifest.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering_base/manifest.json",
+      "bytes": 7481,
+      "sha256": "4df573d58bf4ddea64e32526005171886f93001c6e74761a270cc7f84aa7ad2b"
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering_base/samples.jsonl",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/engineering_base/samples.jsonl",
+      "bytes": 429885,
+      "sha256": "a6aaf5c0d41dd6ade6806baf4d5f8faceaba21a3219d3c629c9d013b9b19da62"
+    },
+    {
+      "path": "archive/math_l4/supplementary/formal/README.md",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/README.md",
+      "bytes": 1850,
+      "sha256": "93582173df2b1729ec9c14d33815d128e84b48cf61a9af2985f066f4f44de0b3"
+    },
+    {
+      "path": "archive/math_l4/supplementary/formal/trainer_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/formal/trainer_state.json",
+      "bytes": 379206,
+      "sha256": "c5411ba871d5ecf1e8104af2b8a8b2d09d2b701f95bed2e073428b640decb7df"
+    },
+    {
+      "path": "archive/math_l4/supplementary/run_state.json",
+      "source": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/run_state.json",
+      "bytes": 7189,
+      "sha256": "73b54a84b7a04b16e03f5031258339d392f3a34787e76235bb82695882da20c2"
+    }
+  ],
+  "downloads_runtime_dependency": false,
+  "base_weights_copied": false,
+  "policy": "Full final MATH checkpoint and original supplementary training evidence copied and hashed; other epoch adapter weights, dev/test answers and selection already preserved in frozen project archive. Raw per-answer trace duplicates and public Base weights are not required by retained analyses."
+}

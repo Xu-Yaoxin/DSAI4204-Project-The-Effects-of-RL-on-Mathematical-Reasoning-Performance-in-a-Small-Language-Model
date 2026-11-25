@@ -1,0 +1,51 @@
+{
+  "scorer_version": "4.0.0",
+  "scorer_sha256": "63a8efdd6796d296c6fa1be0a9edd35d453df0a98d69e9166fd82b2f95b6ca46",
+  "literal_cases": 58,
+  "real_fixtures": 6,
+  "new_checks": 192,
+  "legacy_checks": 0,
+  "total_checks": 192,
+  "failed_expectations": [
+    {
+      "label": "prose_incorrect_subject",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "prose_wrong_subject",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "prose_false_subject",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    }
+  ],
+  "passed": false
+}

@@ -1,0 +1,27 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "checks": {
+    "python_3_11_or_later": true,
+    "local_model_config": false,
+    "local_model_weights": false,
+    "local_tokenizer": false,
+    "raw_train": false,
+    "raw_test": false,
+    "torch_version": false,
+    "transformers_version": false,
+    "peft_version": false,
+    "trl_version": false
+  },
+  "versions": {
+    "torch": "2.1.2",
+    "transformers": "4.52.4",
+    "peft": "0.7.1",
+    "trl": null
+  },
+  "gpu": {
+    "checked": false
+  },
+  "ready": false,
+  "note": "Readiness is not proof of a successful model training run."
+}

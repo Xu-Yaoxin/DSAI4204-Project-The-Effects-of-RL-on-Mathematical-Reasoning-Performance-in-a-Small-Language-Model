@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "downloaded_file_count": 825,
+  "downloaded_inputs_unchanged": true,
+  "all_800_records_replayed": true,
+  "all_800_live_token_traces_match": true,
+  "merged_sample_bytes_identical": true,
+  "report_per_question_candidates_byte_identical": true,
+  "all_summary_metrics_identical": true,
+  "metadata_differences_only": "Two input directory paths changed during relocation; manifest-derived hashes consequently differ. All other manifest fields and summary metrics are identical.",
+  "real_gpu_execution_confirmed_by_downloaded_artifacts": true,
+  "real_gpu_hard_exit_restart_tested": false,
+  "model_weight_bytes_rehashed_locally": false
+}

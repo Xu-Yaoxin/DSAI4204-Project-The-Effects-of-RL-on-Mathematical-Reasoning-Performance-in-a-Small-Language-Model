@@ -1,0 +1,18 @@
+{
+  "check": "local_rsync_transfer_with_documented_exclusions_and_relocated_plan",
+  "passed": true,
+  "files": 27,
+  "package_bytes": 289722,
+  "bundle_manifest_sha256": "966b7342cd78660ad4d16feda4354844ce8769d42d624535edfb1fe8961880c0",
+  "excludes": [
+    "outputs/",
+    "*.log",
+    "__pycache__/",
+    "*.pyc"
+  ],
+  "all_manifest_files_transferred": true,
+  "bundle_integrity_passed": true,
+  "parallel_plan_passed": true,
+  "gpu_inference_tested": false,
+  "remote_upload_performed": false
+}

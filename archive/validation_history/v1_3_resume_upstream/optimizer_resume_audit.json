@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "host_torch": "2.6.0",
+  "transformers_executed_version": "5.3.0",
+  "transformers_wheel_sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
+  "sources": [
+    {
+      "member": "transformers/utils/import_utils.py",
+      "member_sha256": "341bad501481fedd349cd9b063c10131ec8df08f9564e3f9594e04b90ccc7a31",
+      "executed_function": "check_torch_load_is_safe"
+    },
+    {
+      "member": "transformers/trainer_pt_utils.py",
+      "member_sha256": "ecbcc03daa0c08289e6a367a70897fe759ee7a51e12b40214ac0c67fccb07741",
+      "executed_function": "reissue_pt_warnings"
+    },
+    {
+      "member": "transformers/trainer.py",
+      "member_sha256": "060eda6fcd587e79caeca7c3f246ea7bab1af410479c9776584470b8f4ac48a8",
+      "executed_function": "_load_optimizer_and_scheduler"
+    }
+  ],
+  "case_count": 12,
+  "cases": [
+    {
+      "checkpoint_step": 1,
+      "world_size_argument": 1,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 1,
+      "world_size_argument": 2,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 1,
+      "world_size_argument": 4,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 4,
+      "world_size_argument": 1,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 4,
+      "world_size_argument": 2,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 4,
+      "world_size_argument": 4,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 8,
+      "world_size_argument": 1,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 8,
+      "world_size_argument": 2,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 8,
+      "world_size_argument": 4,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 12,
+      "world_size_argument": 1,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 12,
+      "world_size_argument": 2,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    },
+    {
+      "checkpoint_step": 12,
+      "world_size_argument": 4,
+      "actual_distributed_execution": false,
+      "cpu_map_location_branch": true,
+      "exact_parameter_parity": true,
+      "exact_adamw_state_parity": true,
+      "exact_scheduler_state_parity": true,
+      "exact_rng_and_next_draw_parity": true
+    }
+  ],
+  "scope": "Actual hash-locked Trainer optimizer/scheduler loading and CPU AdamW continuation on trusted synthetic tensors",
+  "limitations": "No full Trainer, PEFT adapter loading, language model, BF16, GPU, or DDP execution; model tensor and RNG restored directly for the fixture.",
+  "gpu_executed": false,
+  "full_trainer_executed": false,
+  "peft_load_executed": false,
+  "script_sha256": "79739ab23edf7d22aac1b38ff057b7801de854cf445240e1803847102dd3e5b7"
+}

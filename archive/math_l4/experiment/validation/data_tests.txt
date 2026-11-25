@@ -1,0 +1,1 @@
+✅ [MATH DATA] 27 actual-data/provenance/official-split/leakage/stratification/tamper checks; no model/GPU/network

@@ -1,0 +1,9 @@
+{
+  "original_sha256": "cb53b4e1ea33e1c04e705ef6a41d943c8559a667c37a088b531e532f577b12ac",
+  "test_exit_code": 1,
+  "test_stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/9b/b44fy3yd1wjd4qk3x9qkgj100000gn/T/rlvr-pathfix-before-y87v51ze/code/tests/test_pipeline.py\", line 33, in <module>\n    assert result.returncode == 0 and \"scripts/download_data.py\" in result.stdout\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "failing_subprocess_exit_code": 127,
+  "failing_subprocess_stderr": "bash: project/code/run.sh: No such file or directory\n",
+  "server_requested_path": "/project/code/run.sh",
+  "gpu_training_tested": false
+}

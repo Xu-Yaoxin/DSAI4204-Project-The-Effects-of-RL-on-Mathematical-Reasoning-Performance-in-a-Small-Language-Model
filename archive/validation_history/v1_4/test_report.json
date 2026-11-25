@@ -1,0 +1,173 @@
+{
+  "checked_utc": "2026-10-31T13:26:54.420463+00:00",
+  "suite_count": 18,
+  "passed": true,
+  "gpu_training_tested": false,
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "results": [
+    {
+      "suite": "test_analysis.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 31 analysis regression scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_data_verifier.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 37 exact-verifier behavior cases\n[PASS] deterministic official-split isolation, nested subsets, hashes, and immutable conflict\n[PASS] 40 controlled pairs in 4 template families, independent arithmetic, distinct relational answers, pending manual review\n[PASS] structural generation rejects prepared-data tampering\n[PASS] cross-official-split leakage rejected before any output\n[PASS] All data/verifier tests passed without model dependencies.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_dependencies.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 20 dependency lock/download/setup checks; GPU installation and training remain unrun on this host\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_download_data.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 14 downloader/provenance/Unicode scenarios; all network responses mocked, no external downloads during tests\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_download_model.py",
+      "exit_code": 0,
+      "stdout": "\u2705 [MODEL DOWNLOAD] 28 checks | pinned hashes, persistent Range resume, offline reuse, progress and path safety | no real weights downloaded\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 27 evaluation planning and freeze scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation_cache.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 43 cache integrity, GPU-skip and relocation scenarios passed; temporary fixtures only\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_loader.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 23 loader/data-readiness/batch-plan scenarios passed; no model packages or GPU execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_pipeline.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 54 launcher/GPU-selection scenarios; resumed stage dispatch, relocated layouts, masks, worker failures, retry preservation and serial evaluation verified\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_rescore_saved.py",
+      "exit_code": 0,
+      "stdout": "\u2705 [OFFLINE RESCORE TEST 100%] 27 provenance, Unicode, frozen-selection, immutable-output and tamper checks; socket/model imports blocked; isolated fixtures only\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_resume_launchers.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 22 deployment/startup checks; mocked SSH only, isolated sleeper terminated, no remote actions\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_resume_operations.py",
+      "exit_code": 0,
+      "stdout": "[ACTIVE] project=/private/var/folders/9b/b44fy3yd1wjd4qk3x9qkgj100000gn/T/rlvr-stop-filter-c7y8u2r5/code | pids=70,71,72,73\n[STOP] project=/private/var/folders/9b/b44fy3yd1wjd4qk3x9qkgj100000gn/T/rlvr-stop-filter-c7y8u2r5/code | selected_pids=70,71,72,73\n[STOP COMPLETE] Selected experiment processes exited; unrelated processes were not signalled.\n[IDLE] No active experiment processes in /private/var/folders/9b/b44fy3yd1wjd4qk3x9qkgj100000gn/T/rlvr-stop-filter-c7y8u2r5/code\n[PASS] 24 resume deployment scenarios; legacy preservation, baseline tail recovery and isolated process selection; no real jobs signalled\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_setup_workflow.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 24 setup workflow/readiness checks; all GPU, tokenizer and download calls were isolated fixtures\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 30 training reward/audit scenarios passed; GPU training was not executed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training_resume.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 56 checkpoint recovery scenarios; sealed states, rank audits, interruption, integrity and archive safety; no model or GPU execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training_resume_integration.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 57 training-resume integration checks; production callbacks, commit ordering, counter restoration and Trainer arguments; no GPU execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training_resume_run_guard.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 17 production run-guard scenarios | fresh, lock, completed reuse, archive and rejected changes | no GPU/model execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_verifier_regressions.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 118 verifier regression scenarios | archived fixture, exact arithmetic, gold independence, malformed answers and stdlib-only CLI\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "scripts/analyze.py": "81f79323d7ea580c9b219d9603cb3bd556194c2ab584ca5ab2e642c23330ce83",
+    "scripts/build_variants.py": "d93ebe253e81aaa2641a9c6003f9b0addfdf18bb3faba5e154d08b2053f95298",
+    "scripts/check_gpu.py": "abb94fddac78c1201119cabd8ecec7707ae383be9faa585029ba861ad27b37d7",
+    "scripts/doctor.py": "695d5f8e1ac895dcb2cff1bd6ef38fc91197652f8c8e768e8e293b3a42ed9f9f",
+    "scripts/download_data.py": "a1dc1f1a6d528a608132a72a233105ed9792b1971a99b5bd0888ea6dc32ef04f",
+    "scripts/download_model.py": "c56fa88097366b0e4279c49002a17a531c13a90149ba2d61fa5fdde00cbcffa7",
+    "scripts/evaluate.py": "178e140653986abc4ff69cf9eebe142889ced417fbf571e39adaef7ba8c2a819",
+    "scripts/fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+    "scripts/load_model.py": "3fbff753e3257c2dd50f581471bf45caed1c0dea3d711c1eefb7ab3d651942f6",
+    "scripts/plot_results.py": "a21ee199cebb23912ca8bf75923248f6307132c98890ed796c270d0c478d05ea",
+    "scripts/prepare_data.py": "b01f28b154861b99957ecfc1dd786e76a2e545406d059e320b433aee81319753",
+    "scripts/prepare_packages.py": "fe9700e0dd592d2db27e8f820b943758758f3245f88ddba40c7182f56d38a7ed",
+    "scripts/prepare_resume_upgrade.py": "6fc960ac5da317651dca65a2f157454a040a7ee4817ff570ad35148658132239",
+    "scripts/rescore_saved.py": "eb9efd6de13ede322c245ae0e9a1e1b5313cb27ddbd7d4258292a5c7c7afbc21",
+    "scripts/resolve_gpus.py": "e90c3ef1b7679f9ccf4da44439263bcbf85a16989504de6987ce57a5186d8c54",
+    "scripts/run_pipeline.py": "7bd15f0b677fe8a3d537341048063adec155739926c1669b3dcf632676f8b761",
+    "scripts/select_checkpoint.py": "badaa7836a5c30f3ff4dbf1a8a6d06839c8ad6232ef06b516cd284f72c2ea6e2",
+    "scripts/smoke_demo.py": "a2dacd44fb377d4e4b886a70763ad04664dce7b46337fd1d3e8b9969c28a55c8",
+    "scripts/stop_run.py": "8aefba1b74343776e03e7661aa5478d6a13187b887fcd98f4012d9cc81dfc055",
+    "scripts/train_grpo.py": "240baf7143808259359e44caa426b69704d5202c763e15fab86a50cab02a7c21",
+    "scripts/training_checkpoint_event.py": "68c42b7bc86473bca9f3115d173b661d47c60df45f7db53b2de24d708c34986f",
+    "scripts/training_resume.py": "ff2b9e6369126e5342304a692b5327dccbf7ecacd2d8e4fd350988bd828d392d",
+    "scripts/verify_answers.py": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+    "tests/test_analysis.py": "305833c7c1baa070d100809d086f11d52b0e1be6e85e40423eb82eec8993ae20",
+    "tests/test_data_verifier.py": "de5ebd3ce7fe0f675890e63d6b0944e77d620b41cdd2ab8ebe67ec9f66fa0abd",
+    "tests/test_dependencies.py": "0ca58511d6cb3cfb2ff4a6e22d8c913121711fa4d512364d464bae856858aeca",
+    "tests/test_download_data.py": "acf2299c37262f7aa5e386556b91c6eca416ba2f9209d3ffc7a0d3ad0d87e0cd",
+    "tests/test_download_model.py": "1e3b3f13597d44d30d666f17020824665cf85f2258509c32827c6843ebd9887d",
+    "tests/test_evaluation.py": "22b3f8b21baac22ddd9efafb209e92554f32651a187dd8ef8c572aa2057e7937",
+    "tests/test_evaluation_cache.py": "8a2e828b9ededea051a4ca06b4e33992069ae08dd62477281bd12bf81e117a0b",
+    "tests/test_loader.py": "911afce15458cedb06d66efe3adb10303f2b8addd710efe15e70f523c6cc9f9c",
+    "tests/test_pipeline.py": "664b830ee0a74d4667d0634f368c57f6b6ac624356ed933bffcc5f4d20ed8bd3",
+    "tests/test_rescore_saved.py": "f4146052e2143ee5b2b5240397392d70d7f6a3fdcb43bfd2e4bc5b088f14efd5",
+    "tests/test_resume_launchers.py": "dcf9a833fe3a119e90d2c1238aa23283bc3aec46a246ddb09d101a4c36d11e41",
+    "tests/test_resume_operations.py": "6d33336d764594480eecd068d93205ecb974479ae10374fd92c4211f0738963f",
+    "tests/test_setup_workflow.py": "8310a5eec4c9ea466e5af88dd908fcf017bc3ec5e21499d173576cb2ef89dab0",
+    "tests/test_training.py": "87415433ed66906a4c73b7682f6828d9c518b4b0038b618cd5c4d1fbf7d1eeda",
+    "tests/test_training_resume.py": "075157d3cf4d17c2303647f2f84a771c7377e929da9d1a7ce8bff4e8c3696ce5",
+    "tests/test_training_resume_integration.py": "ba3b9333cba9170ad39e1b79d9fbd3b6950c202126486f77911454afb0f0f926",
+    "tests/test_training_resume_run_guard.py": "b60f2f4b53ad81d125f85c76430735036f1202072fc790f76b8722250ecf7f45",
+    "tests/test_verifier_regressions.py": "d067e987e0ec55ea772714d9058134ad7d077405ea7481d26f33b02ba5c7cdac",
+    "tests/run_all.py": "e8515b9597b48e9e3db8f15a75e3014b4076077b4fc39e7240c39274ab2b9694",
+    "configs/v1.json": "e217d07d2cb445f31a01b56128b01e326774e1cb535abf2a7753ff6ed8bd2d65",
+    "deploy_resume.sh": "0844661708c2b531eb68100cc0e73658ea2c0a1de16b4a632c8b0e33e8ae94cf",
+    "download_packages.sh": "108060276ef104c24bbc3b1023011ff44e0e83968c42690345e35e04ba289af8",
+    "rescore_local.sh": "73fd8cb116a68e5085a969c0798863bd10b1217d993a2a46b8b8692493e90936",
+    "resume_run.sh": "cbb1159c27e01748b1b6bbc135ba44e9e530669a6a7bf461a2a274f99bcd63da",
+    "run.sh": "f37d2a68c981bcb6dacf916864f72d78ab15cf675e7cfc1629d84aa08c01fe70",
+    "run_v1.sh": "e6cc4010fe83aacfbc0320bafca0653e18f82c421ec891082f95d2cbd876f066",
+    "setup_gpu.sh": "f6eda188c1bea5a69a0909203f0a48256c236dd0fe0356f1715b2a12fd14f0be",
+    "requirements-gpu.txt": "2c6b5fcd8eb14e5cc2815a5944bf54ea251ef698e6db33fe11934875f881c9aa",
+    "packages/linux-cp311-cu128/manifest.json": "50039c60a256a9eacfd181e1d11ebac2c30a7f7a08dcaff07dfd2b8a683f44af",
+    "packages/linux-cp311-cu128/requirements-lock.txt": "a95889909c4f9882335563280813efb2088f8cbdc2b7832b5188b74ed27a8bd0",
+    "models/qwen3.5-2b-base-manifest.json": "adb02b7362ba3aefa4360ba229fa4477c5c18b7162bc43e89a612072c97fd917"
+  }
+}

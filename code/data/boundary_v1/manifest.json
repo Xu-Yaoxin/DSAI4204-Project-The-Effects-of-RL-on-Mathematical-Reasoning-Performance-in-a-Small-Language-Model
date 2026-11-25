@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "purpose": "exploratory_baseline_calibration",
+  "seed": 20261031,
+  "model_scores_used_for_selection": false,
+  "files": {
+    "questions.jsonl": {
+      "sha256": "c4dc85fa10b9123a07749a45a1b9031ec1c6765166497d1795954b8af6b0e40c",
+      "rows": 100
+    }
+  },
+  "groups": [
+    {
+      "id": "gsm_symbolic",
+      "label": "GSM-Symbolic main",
+      "count": 20
+    },
+    {
+      "id": "gsm_p1",
+      "label": "GSM-Symbolic P1",
+      "count": 20
+    },
+    {
+      "id": "gsm_p2",
+      "label": "GSM-Symbolic P2",
+      "count": 20
+    },
+    {
+      "id": "math_l1_3",
+      "label": "MATH-500 scalar Level1-3",
+      "count": 20
+    },
+    {
+      "id": "math_l4_5",
+      "label": "MATH-500 scalar Level4-5",
+      "count": 20
+    }
+  ],
+  "sources": [
+    {
+      "dataset": "apple/GSM-Symbolic",
+      "revision": "93b5b3758d9d9841ffe81d6cd2ae2b030685b078",
+      "remote": "main/test.jsonl",
+      "local": "gsm_symbolic/main.jsonl",
+      "git_blob_sha1": "8644707d8edb3179cc53876357b4d0f847f5335f",
+      "license": "CC-BY-NC-ND-4.0",
+      "url": "https://huggingface.co/datasets/apple/GSM-Symbolic/resolve/93b5b3758d9d9841ffe81d6cd2ae2b030685b078/main/test.jsonl",
+      "path": "raw/gsm_symbolic/main.jsonl",
+      "bytes": 6233677,
+      "sha256": "945055837b232bd9b56827b1e3a5aa019075f29e8ba4669d9a9df8b4439a291f"
+    },
+    {
+      "dataset": "apple/GSM-Symbolic",
+      "revision": "93b5b3758d9d9841ffe81d6cd2ae2b030685b078",
+      "remote": "p1/test.jsonl",
+      "local": "gsm_symbolic/p1.jsonl",
+      "git_blob_sha1": "97d3ee573a68f5ca1e761f32994b5e1315910678",
+      "license": "CC-BY-NC-ND-4.0",
+      "url": "https://huggingface.co/datasets/apple/GSM-Symbolic/resolve/93b5b3758d9d9841ffe81d6cd2ae2b030685b078/p1/test.jsonl",
+      "path": "raw/gsm_symbolic/p1.jsonl",
+      "bytes": 7012956,
+      "sha256": "5478fe81b9cdc5d9447514ca68b0dfbb6cb01b7227fefadf143469b103b592ac"
+    },
+    {
+      "dataset": "apple/GSM-Symbolic",
+      "revision": "93b5b3758d9d9841ffe81d6cd2ae2b030685b078",
+      "remote": "p2/test.jsonl",
+      "local": "gsm_symbolic/p2.jsonl",
+      "git_blob_sha1": "b5cdd79707018991723e255e9232015623b26521",
+      "license": "CC-BY-NC-ND-4.0",
+      "url": "https://huggingface.co/datasets/apple/GSM-Symbolic/resolve/93b5b3758d9d9841ffe81d6cd2ae2b030685b078/p2/test.jsonl",
+      "path": "raw/gsm_symbolic/p2.jsonl",
+      "bytes": 3995469,
+      "sha256": "00496e6c36bd746d56b28cffcd9385f78f0568a5fe1543650ddf9b55d398251c"
+    },
+    {
+      "dataset": "apple/GSM-Symbolic",
+      "revision": "93b5b3758d9d9841ffe81d6cd2ae2b030685b078",
+      "remote": "README.md",
+      "local": "gsm_symbolic/README.md",
+      "git_blob_sha1": "f5a7fa6b1fe8c4f4da817c60edbc5e9364e8e628",
+      "license": "CC-BY-NC-ND-4.0",
+      "url": "https://huggingface.co/datasets/apple/GSM-Symbolic/resolve/93b5b3758d9d9841ffe81d6cd2ae2b030685b078/README.md",
+      "path": "raw/gsm_symbolic/README.md",
+      "bytes": 4906,
+      "sha256": "6b457a1e3aca588973c0ba97e617be343e438e02af8ace1abdcf9047bce8470a"
+    },
+    {
+      "dataset": "apple/GSM-Symbolic",
+      "revision": "93b5b3758d9d9841ffe81d6cd2ae2b030685b078",
+      "remote": "LICENSE-CC-BY-NC-ND-4.0.md",
+      "local": "gsm_symbolic/LICENSE.md",
+      "git_blob_sha1": "eece3f3d351c27555403d89a3700b68c56bfffd6",
+      "license": "CC-BY-NC-ND-4.0",
+      "url": "https://huggingface.co/datasets/apple/GSM-Symbolic/resolve/93b5b3758d9d9841ffe81d6cd2ae2b030685b078/LICENSE-CC-BY-NC-ND-4.0.md",
+      "path": "raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831,
+      "sha256": "e43bf419611d42cbebfa3d658f24168e5d6d0c75e1c80b2dc593e5f601599902"
+    },
+    {
+      "dataset": "HuggingFaceH4/MATH-500",
+      "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+      "remote": "test.jsonl",
+      "local": "math500/test.jsonl",
+      "git_blob_sha1": "2376b9a194b46c0790e197c91b7249e5f88ac09b",
+      "license": "Original MATH repository: MIT; H4 card does not declare a separate license",
+      "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500/resolve/6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be/test.jsonl",
+      "path": "raw/math500/test.jsonl",
+      "bytes": 446564,
+      "sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132"
+    },
+    {
+      "dataset": "HuggingFaceH4/MATH-500",
+      "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+      "remote": "README.md",
+      "local": "math500/README.md",
+      "git_blob_sha1": "7bcd88fdd6d84875d4599f8893aa5ed5938dbca8",
+      "license": "Original MATH repository: MIT; H4 card does not declare a separate license",
+      "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500/resolve/6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be/README.md",
+      "path": "raw/math500/README.md",
+      "bytes": 412,
+      "sha256": "5d32f78943f75423da61419c5bb98cee964d5a29183b11a5294f661fb96f69f7"
+    },
+    {
+      "dataset": "hendrycks/math",
+      "revision": "985bdc1696e88e8643f081a0ff4719da39f2ae2a",
+      "remote": "LICENSE",
+      "local": "math500/ORIGINAL_MATH_LICENSE",
+      "git_blob_sha1": null,
+      "license": "MIT",
+      "url": "https://raw.githubusercontent.com/hendrycks/math/985bdc1696e88e8643f081a0ff4719da39f2ae2a/LICENSE",
+      "path": "raw/math500/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070,
+      "sha256": "8f6401fb0b1fbfcac17aac8d61e4e1b0d2de9aa190d8aa655fedc5fd783b2ace"
+    }
+  ],
+  "verifier_sha256": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+  "history_files_sha256": {
+    "data/processed/train.jsonl": "ac3c7cf95dcd41c5df266b6791cc9f098f7a4a362bac51969ef670aa09d8d64c",
+    "data/processed/pilot.jsonl": "d9ef812110e5945d6a642d8a0d77485694c414c3891ce8cfd6acce3c85e6ab7a",
+    "data/processed/engineering.jsonl": "6cddd1919275c413acc492b147d00c569cc92e488edaff26c3844e2b4b38a63e",
+    "data/processed/dev.jsonl": "b6d1108c1d85e5ae8ac7c6ba331cf8e9180cc1494c4e3398d412ee1c362b1372",
+    "data/processed/test.jsonl": "f3d0a7809a80239762973618d9ff8b54d7a3fa0e7fede14c3638bb39626087fc"
+  },
+  "source_rows": {
+    "main": 5000,
+    "p1": 5000,
+    "p2": 2500,
+    "math500": 500
+  },
+  "exclusions": {
+    "main": {
+      "previously_evaluated_gsm8k_family": 800
+    },
+    "p1": {
+      "previously_evaluated_gsm8k_family": 800
+    },
+    "p2": {
+      "previously_evaluated_gsm8k_family": 300
+    },
+    "math500": {
+      "requires_diagram": 42,
+      "unsupported_non_scalar_gold": 109
+    }
+  },
+  "eligible_scalar_rows": {
+    "main": 4200,
+    "p1": 4200,
+    "p2": 2200,
+    "math500": 349
+  },
+  "eligible_shared_gsm_families": 44,
+  "selected_gsm_original_ids": [
+    99,
+    107,
+    116,
+    125,
+    158,
+    184,
+    265,
+    365,
+    410,
+    458,
+    491,
+    496,
+    740,
+    976,
+    982,
+    984,
+    989,
+    1031,
+    1165,
+    1268
+  ],
+  "selected_gsm_instances": {
+    "99": 49,
+    "107": 24,
+    "116": 42,
+    "125": 23,
+    "158": 39,
+    "184": 15,
+    "265": 6,
+    "365": 2,
+    "410": 27,
+    "458": 10,
+    "491": 40,
+    "496": 26,
+    "740": 31,
+    "976": 34,
+    "982": 21,
+    "984": 29,
+    "989": 23,
+    "1031": 24,
+    "1165": 23,
+    "1268": 41
+  },
+  "math_level_quotas": {
+    "1": 6,
+    "2": 7,
+    "3": 7,
+    "4": 10,
+    "5": 10
+  },
+  "limitations": [
+    "100-question exploratory screen, not an independent confirmation set.",
+    "GSM variants share20 templates; do not treat60 rows as60 independent families.",
+    "MATH subset accepts scalar rational gold and excludes diagrams; scores do not represent full MATH-500.",
+    "Fixed random selection does not guarantee40-50% baseline accuracy; generation is required.",
+    "Historical exact-question and known-family exclusion cannot rule out pretraining contamination.",
+    "Raw solutions and canaries are provenance only and must never enter model prompts."
+  ]
+}

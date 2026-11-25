@@ -1,0 +1,156 @@
+[BUNDLE VERIFIED] Frozen data, scorer and evaluation code match their hashes
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=100 | groups=5 | samples/question=4
+[SHARD] index=0/2 | assigned_questions=50/100 | assignment=question_index_modulo
+[BUDGET] responses=200 | max_output_tokens=204800 | exploratory pass@1 target=40%-50%
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=100 | groups=5 | samples/question=4
+[SHARD] index=1/2 | assigned_questions=50/100 | assignment=question_index_modulo
+[BUDGET] responses=200 | max_output_tokens=204800 | exploratory pass@1 target=40%-50%
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+[PARALLEL PLAN] shards=2 | concurrent_workers=2 | same visible GPU | batch/worker=1
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=100 | groups=5 | samples/question=4
+[SHARD] index=0/2 | assigned_questions=50/100 | assignment=question_index_modulo
+[BUDGET] responses=200 | max_output_tokens=204800 | exploratory pass@1 target=40%-50%
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+[CACHE INCOMPLETE] verified=0/200 | no GPU model loaded | /root/code/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0
+========================================================================
+[BOUNDARY 1/4] DATA | base only | questions=100 | groups=5 | samples/question=4
+[SHARD] index=1/2 | assigned_questions=50/100 | assignment=question_index_modulo
+[BUDGET] responses=200 | max_output_tokens=204800 | exploratory pass@1 target=40%-50%
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+[CACHE INCOMPLETE] verified=0/200 | no GPU model loaded | /root/code/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1
+[PARALLEL RESOURCES] {"checked_utc": "2026-10-31T14:18:52.749867+00:00", "gpu": "NVIDIA GeForce RTX 4090", "gpu_free_gib": 23.13067626953125, "gpu_total_gib": 23.5164794921875, "ram_available_gib": 55.59382629394531, "cpu_capacity": 13.0, "cpu_threads_per_worker": 4, "concurrent_workers": 2, "required_free_gpu_gib": 14, "required_available_ram_gib": 28}
+[PARALLEL START] worker=0 | pid=1337 | log=/root/code/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0.log
+[PARALLEL START] worker=1 | pid=1338 | log=/root/code/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1.log
+[PARALLEL PROGRESS] 0.0% | 0/400 | worker_counts=[0, 0] | elapsed=0s | ETA=warming-up
+[PARALLEL PROGRESS] 0.2% | 1/400 | worker_counts=[1, 0] | elapsed=16s | ETA=106.4min
+[PARALLEL PROGRESS] 1.8% | 7/400 | worker_counts=[5, 2] | elapsed=32s | ETA=29.9min
+[PARALLEL PROGRESS] 3.2% | 13/400 | worker_counts=[8, 5] | elapsed=48s | ETA=23.8min
+[PARALLEL PROGRESS] 4.8% | 19/400 | worker_counts=[11, 8] | elapsed=64s | ETA=21.4min
+[PARALLEL PROGRESS] 6.0% | 24/400 | worker_counts=[13, 11] | elapsed=80s | ETA=20.9min
+[PARALLEL PROGRESS] 7.2% | 29/400 | worker_counts=[16, 13] | elapsed=96s | ETA=20.5min
+[PARALLEL PROGRESS] 9.0% | 36/400 | worker_counts=[18, 18] | elapsed=112s | ETA=18.9min
+[PARALLEL PROGRESS] 10.0% | 40/400 | worker_counts=[21, 19] | elapsed=128s | ETA=19.2min
+[PARALLEL PROGRESS] 11.2% | 45/400 | worker_counts=[25, 20] | elapsed=144s | ETA=18.9min
+[PARALLEL PROGRESS] 12.2% | 49/400 | worker_counts=[25, 24] | elapsed=160s | ETA=19.1min
+[PARALLEL PROGRESS] 13.5% | 54/400 | worker_counts=[27, 27] | elapsed=176s | ETA=18.8min
+[PARALLEL PROGRESS] 14.8% | 59/400 | worker_counts=[30, 29] | elapsed=192s | ETA=18.5min
+[PARALLEL PROGRESS] 15.2% | 61/400 | worker_counts=[32, 29] | elapsed=208s | ETA=19.3min
+[PARALLEL PROGRESS] 16.8% | 67/400 | worker_counts=[36, 31] | elapsed=224s | ETA=18.6min
+[PARALLEL PROGRESS] 18.2% | 73/400 | worker_counts=[39, 34] | elapsed=240s | ETA=17.9min
+[PARALLEL PROGRESS] 19.8% | 79/400 | worker_counts=[41, 38] | elapsed=256s | ETA=17.3min
+[PARALLEL PROGRESS] 20.5% | 82/400 | worker_counts=[44, 38] | elapsed=272s | ETA=17.6min
+[PARALLEL PROGRESS] 21.2% | 85/400 | worker_counts=[46, 39] | elapsed=288s | ETA=17.8min
+[PARALLEL PROGRESS] 21.2% | 85/400 | worker_counts=[46, 39] | elapsed=304s | ETA=18.8min
+[PARALLEL PROGRESS] 22.2% | 89/400 | worker_counts=[48, 41] | elapsed=320s | ETA=18.6min
+[PARALLEL PROGRESS] 23.5% | 94/400 | worker_counts=[51, 43] | elapsed=336s | ETA=18.2min
+[PARALLEL PROGRESS] 24.2% | 97/400 | worker_counts=[53, 44] | elapsed=352s | ETA=18.3min
+[PARALLEL PROGRESS] 25.2% | 101/400 | worker_counts=[55, 46] | elapsed=368s | ETA=18.2min
+[PARALLEL PROGRESS] 26.2% | 105/400 | worker_counts=[57, 48] | elapsed=384s | ETA=18.0min
+[PARALLEL PROGRESS] 27.2% | 109/400 | worker_counts=[59, 50] | elapsed=400s | ETA=17.8min
+[PARALLEL PROGRESS] 29.2% | 117/400 | worker_counts=[61, 56] | elapsed=416s | ETA=16.8min
+[PARALLEL PROGRESS] 30.5% | 122/400 | worker_counts=[63, 59] | elapsed=432s | ETA=16.4min
+[PARALLEL PROGRESS] 31.8% | 127/400 | worker_counts=[65, 62] | elapsed=448s | ETA=16.1min
+[PARALLEL PROGRESS] 33.2% | 133/400 | worker_counts=[69, 64] | elapsed=464s | ETA=15.5min
+[PARALLEL PROGRESS] 34.5% | 138/400 | worker_counts=[72, 66] | elapsed=480s | ETA=15.2min
+[PARALLEL PROGRESS] 35.5% | 142/400 | worker_counts=[75, 67] | elapsed=496s | ETA=15.0min
+[PARALLEL PROGRESS] 36.8% | 147/400 | worker_counts=[78, 69] | elapsed=512s | ETA=14.7min
+[PARALLEL PROGRESS] 37.2% | 149/400 | worker_counts=[80, 69] | elapsed=528s | ETA=14.8min
+[PARALLEL PROGRESS] 38.2% | 153/400 | worker_counts=[82, 71] | elapsed=544s | ETA=14.6min
+[PARALLEL PROGRESS] 38.5% | 154/400 | worker_counts=[83, 71] | elapsed=560s | ETA=14.9min
+[PARALLEL PROGRESS] 39.8% | 159/400 | worker_counts=[85, 74] | elapsed=576s | ETA=14.6min
+[PARALLEL PROGRESS] 41.0% | 164/400 | worker_counts=[86, 78] | elapsed=592s | ETA=14.2min
+[PARALLEL PROGRESS] 42.2% | 169/400 | worker_counts=[88, 81] | elapsed=608s | ETA=13.9min
+[PARALLEL PROGRESS] 43.0% | 172/400 | worker_counts=[90, 82] | elapsed=624s | ETA=13.8min
+[PARALLEL PROGRESS] 43.5% | 174/400 | worker_counts=[91, 83] | elapsed=640s | ETA=13.9min
+[PARALLEL PROGRESS] 44.0% | 176/400 | worker_counts=[92, 84] | elapsed=656s | ETA=13.9min
+[PARALLEL PROGRESS] 45.0% | 180/400 | worker_counts=[95, 85] | elapsed=672s | ETA=13.7min
+[PARALLEL PROGRESS] 45.5% | 182/400 | worker_counts=[97, 85] | elapsed=688s | ETA=13.7min
+[PARALLEL PROGRESS] 46.5% | 186/400 | worker_counts=[99, 87] | elapsed=704s | ETA=13.5min
+[PARALLEL PROGRESS] 47.8% | 191/400 | worker_counts=[102, 89] | elapsed=720s | ETA=13.1min
+[PARALLEL PROGRESS] 49.2% | 197/400 | worker_counts=[103, 94] | elapsed=736s | ETA=12.6min
+[PARALLEL PROGRESS] 50.2% | 201/400 | worker_counts=[106, 95] | elapsed=752s | ETA=12.4min
+[PARALLEL PROGRESS] 51.5% | 206/400 | worker_counts=[109, 97] | elapsed=768s | ETA=12.1min
+[PARALLEL PROGRESS] 52.5% | 210/400 | worker_counts=[111, 99] | elapsed=784s | ETA=11.8min
+[PARALLEL PROGRESS] 53.8% | 215/400 | worker_counts=[113, 102] | elapsed=800s | ETA=11.5min
+[PARALLEL PROGRESS] 55.0% | 220/400 | worker_counts=[116, 104] | elapsed=816s | ETA=11.1min
+[PARALLEL PROGRESS] 55.8% | 223/400 | worker_counts=[117, 106] | elapsed=832s | ETA=11.0min
+[PARALLEL PROGRESS] 56.5% | 226/400 | worker_counts=[119, 107] | elapsed=848s | ETA=10.9min
+[PARALLEL PROGRESS] 57.8% | 231/400 | worker_counts=[121, 110] | elapsed=864s | ETA=10.5min
+[PARALLEL PROGRESS] 58.5% | 234/400 | worker_counts=[123, 111] | elapsed=880s | ETA=10.4min
+[PARALLEL PROGRESS] 58.5% | 234/400 | worker_counts=[123, 111] | elapsed=896s | ETA=10.6min
+[PARALLEL PROGRESS] 60.0% | 240/400 | worker_counts=[125, 115] | elapsed=912s | ETA=10.1min
+[PARALLEL PROGRESS] 60.2% | 241/400 | worker_counts=[125, 116] | elapsed=928s | ETA=10.2min
+[PARALLEL PROGRESS] 61.5% | 246/400 | worker_counts=[127, 119] | elapsed=944s | ETA=9.9min
+[PARALLEL PROGRESS] 63.8% | 255/400 | worker_counts=[133, 122] | elapsed=960s | ETA=9.1min
+[PARALLEL PROGRESS] 64.8% | 259/400 | worker_counts=[135, 124] | elapsed=976s | ETA=8.9min
+[PARALLEL PROGRESS] 66.0% | 264/400 | worker_counts=[138, 126] | elapsed=992s | ETA=8.5min
+[PARALLEL PROGRESS] 67.2% | 269/400 | worker_counts=[140, 129] | elapsed=1008s | ETA=8.2min
+[PARALLEL PROGRESS] 68.2% | 273/400 | worker_counts=[141, 132] | elapsed=1024s | ETA=7.9min
+[PARALLEL PROGRESS] 69.8% | 279/400 | worker_counts=[142, 137] | elapsed=1040s | ETA=7.5min
+[PARALLEL PROGRESS] 71.5% | 286/400 | worker_counts=[143, 143] | elapsed=1056s | ETA=7.0min
+[PARALLEL PROGRESS] 72.2% | 289/400 | worker_counts=[143, 146] | elapsed=1072s | ETA=6.9min
+[PARALLEL PROGRESS] 74.5% | 298/400 | worker_counts=[148, 150] | elapsed=1088s | ETA=6.2min
+[PARALLEL PROGRESS] 75.2% | 301/400 | worker_counts=[149, 152] | elapsed=1104s | ETA=6.1min
+[PARALLEL PROGRESS] 75.8% | 303/400 | worker_counts=[150, 153] | elapsed=1120s | ETA=6.0min
+[PARALLEL PROGRESS] 76.0% | 304/400 | worker_counts=[150, 154] | elapsed=1136s | ETA=6.0min
+[PARALLEL PROGRESS] 76.5% | 306/400 | worker_counts=[151, 155] | elapsed=1152s | ETA=5.9min
+[PARALLEL PROGRESS] 76.8% | 307/400 | worker_counts=[152, 155] | elapsed=1168s | ETA=5.9min
+[PARALLEL PROGRESS] 77.5% | 310/400 | worker_counts=[152, 158] | elapsed=1184s | ETA=5.7min
+[PARALLEL PROGRESS] 78.8% | 315/400 | worker_counts=[154, 161] | elapsed=1200s | ETA=5.4min
+[PARALLEL PROGRESS] 79.2% | 317/400 | worker_counts=[154, 163] | elapsed=1216s | ETA=5.3min
+[PARALLEL PROGRESS] 80.2% | 321/400 | worker_counts=[156, 165] | elapsed=1232s | ETA=5.1min
+[PARALLEL PROGRESS] 81.0% | 324/400 | worker_counts=[157, 167] | elapsed=1248s | ETA=4.9min
+[PARALLEL PROGRESS] 81.8% | 327/400 | worker_counts=[158, 169] | elapsed=1264s | ETA=4.7min
+[PARALLEL PROGRESS] 82.8% | 331/400 | worker_counts=[160, 171] | elapsed=1280s | ETA=4.4min
+[PARALLEL PROGRESS] 84.0% | 336/400 | worker_counts=[163, 173] | elapsed=1296s | ETA=4.1min
+[PARALLEL PROGRESS] 84.8% | 339/400 | worker_counts=[165, 174] | elapsed=1312s | ETA=3.9min
+[PARALLEL PROGRESS] 85.5% | 342/400 | worker_counts=[165, 177] | elapsed=1328s | ETA=3.8min
+[PARALLEL PROGRESS] 85.8% | 343/400 | worker_counts=[166, 177] | elapsed=1344s | ETA=3.7min
+[PARALLEL PROGRESS] 86.2% | 345/400 | worker_counts=[166, 179] | elapsed=1360s | ETA=3.6min
+[PARALLEL PROGRESS] 86.8% | 347/400 | worker_counts=[167, 180] | elapsed=1376s | ETA=3.5min
+[PARALLEL PROGRESS] 87.2% | 349/400 | worker_counts=[168, 181] | elapsed=1392s | ETA=3.4min
+[PARALLEL PROGRESS] 87.2% | 349/400 | worker_counts=[168, 181] | elapsed=1408s | ETA=3.4min
+[PARALLEL PROGRESS] 88.0% | 352/400 | worker_counts=[169, 183] | elapsed=1424s | ETA=3.2min
+[PARALLEL PROGRESS] 88.2% | 353/400 | worker_counts=[170, 183] | elapsed=1440s | ETA=3.2min
+[PARALLEL PROGRESS] 89.0% | 356/400 | worker_counts=[171, 185] | elapsed=1456s | ETA=3.0min
+[PARALLEL PROGRESS] 89.5% | 358/400 | worker_counts=[172, 186] | elapsed=1472s | ETA=2.9min
+[PARALLEL PROGRESS] 89.8% | 359/400 | worker_counts=[173, 186] | elapsed=1488s | ETA=2.8min
+[PARALLEL PROGRESS] 90.2% | 361/400 | worker_counts=[174, 187] | elapsed=1504s | ETA=2.7min
+[PARALLEL PROGRESS] 91.0% | 364/400 | worker_counts=[176, 188] | elapsed=1520s | ETA=2.5min
+[PARALLEL PROGRESS] 91.5% | 366/400 | worker_counts=[178, 188] | elapsed=1536s | ETA=2.4min
+[PARALLEL PROGRESS] 92.0% | 368/400 | worker_counts=[179, 189] | elapsed=1552s | ETA=2.2min
+[PARALLEL PROGRESS] 92.2% | 369/400 | worker_counts=[180, 189] | elapsed=1568s | ETA=2.2min
+[PARALLEL PROGRESS] 92.8% | 371/400 | worker_counts=[181, 190] | elapsed=1584s | ETA=2.1min
+[PARALLEL PROGRESS] 93.0% | 372/400 | worker_counts=[181, 191] | elapsed=1600s | ETA=2.0min
+[PARALLEL PROGRESS] 93.2% | 373/400 | worker_counts=[182, 191] | elapsed=1616s | ETA=1.9min
+[PARALLEL PROGRESS] 93.8% | 375/400 | worker_counts=[183, 192] | elapsed=1632s | ETA=1.8min
+[PARALLEL PROGRESS] 93.8% | 375/400 | worker_counts=[183, 192] | elapsed=1648s | ETA=1.8min
+[PARALLEL PROGRESS] 94.2% | 377/400 | worker_counts=[184, 193] | elapsed=1664s | ETA=1.7min
+[PARALLEL PROGRESS] 94.8% | 379/400 | worker_counts=[185, 194] | elapsed=1680s | ETA=1.6min
+[PARALLEL PROGRESS] 95.5% | 382/400 | worker_counts=[186, 196] | elapsed=1696s | ETA=1.3min
+[PARALLEL PROGRESS] 96.0% | 384/400 | worker_counts=[187, 197] | elapsed=1712s | ETA=1.2min
+[PARALLEL PROGRESS] 96.5% | 386/400 | worker_counts=[188, 198] | elapsed=1728s | ETA=1.0min
+[PARALLEL PROGRESS] 97.0% | 388/400 | worker_counts=[189, 199] | elapsed=1744s | ETA=0.9min
+[PARALLEL PROGRESS] 97.2% | 389/400 | worker_counts=[189, 200] | elapsed=1760s | ETA=0.8min
+[PARALLEL PROGRESS] 97.8% | 391/400 | worker_counts=[191, 200] | elapsed=1776s | ETA=0.7min
+[PARALLEL PROGRESS] 98.0% | 392/400 | worker_counts=[192, 200] | elapsed=1792s | ETA=0.6min
+[PARALLEL PROGRESS] 98.2% | 393/400 | worker_counts=[193, 200] | elapsed=1808s | ETA=0.5min
+[PARALLEL PROGRESS] 98.2% | 393/400 | worker_counts=[193, 200] | elapsed=1824s | ETA=0.5min
+[PARALLEL PROGRESS] 98.8% | 395/400 | worker_counts=[195, 200] | elapsed=1840s | ETA=0.4min
+[PARALLEL PROGRESS] 99.2% | 397/400 | worker_counts=[197, 200] | elapsed=1856s | ETA=0.2min
+[PARALLEL PROGRESS] 99.8% | 399/400 | worker_counts=[199, 200] | elapsed=1872s | ETA=0.1min
+[PARALLEL MERGE] 95% | checking complete, disjoint, identical-protocol shards
+========================================================================
+[BOUNDARY MERGE 1/3] 0% | validate complete baseline shards
+[BOUNDARY MERGE 2/3] 67% | verified 100 questions / 400 answers | deterministic ordering
+✅ [BOUNDARY MERGE 3/3] 100% | COMPLETE | [SAVED] /root/code/boundary_probe_v1/outputs/boundary_v1_parallel/base/manifest.json
+[BOUNDARY ANALYSIS 1/3] 33% | validated 100 questions / 400 answers | baseline only
+[BOUNDARY ANALYSIS 2/3] 67% | computed group metrics and uncertainty | no automatic selection
+✅ [BOUNDARY ANALYSIS 3/3] 100% | [SAVED] /root/code/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/report.md
+✅ [PARALLEL COMPLETE] 100% | answers=400 | aggregate_new_tokens/s=72.22 | [SAVED] /root/code/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/report.md

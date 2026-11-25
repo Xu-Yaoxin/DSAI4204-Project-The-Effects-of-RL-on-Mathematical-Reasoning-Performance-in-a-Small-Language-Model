@@ -1,0 +1,76 @@
+[CPU CHECKS] 11 suites | no model/GPU/network
+[CPU CHECKS ENV] RLVR_CPU_THREADS=4 | launcher thread-setting branch enabled
+✅ [MATH COMPARISON] 33 dev-only freeze, paired statistics, unknown-stop and integrity checks; temporary CPU fixtures only
+[01/11] 9% | test_analysis.py | PASS
+✅ [MATH DATA] 27 actual-data/provenance/official-split/leakage/stratification/tamper checks; no model/GPU/network
+[02/11] 18% | test_data.py | PASS
+✅ [MATH EVALUATION] 62 streaming, timeout, serial routing and resume checks; no GPU/model/network execution
+[03/11] 27% | test_evaluation.py | PASS
+✅ [MATH PIPELINE] 25 CPU checks | real subprocess ordering, single-active-job lock, staged execution, durable75/cache recovery, restart limits, fail-fast, SIGTERM cleanup, path/protocol guards and EOS-only training rewards | no GPU/model
+[04/11] 36% | test_pipeline.py | PASS
+✅ [MATH PREFLIGHT] 23 isolated CPU checks | immutable bundle/data, unsafe paths, no CPU-only model imports, pinned packages, topology, BF16/resource gates, model/EOS identity and prompt budget | no real GPU/model
+[05/11] 45% | test_preflight.py | PASS
+✅ [REPETITION GUARD] 37 token-period, negative-control, deadline-zero-score and unknown-stop contract checks; no model/GPU/network
+[06/11] 55% | test_repetition_guard.py | PASS
+✅ [SCORER V3] 294 checks | 114 retained legacy scenarios, 45 independent presentation/negative cases, 45 real failures with counterfactual gold/contradiction checks | no model/GPU/network
+[07/11] 64% | test_scorer.py | PASS
+[TEST 100%] 30 training reward/audit scenarios passed; GPU training was not executed
+[08/11] 73% | test_training.py | PASS
+[PASS] 56 checkpoint recovery scenarios; sealed states, rank audits, interruption, integrity and archive safety; no model or GPU execution
+[09/11] 82% | test_training_resume.py | PASS
+[PASS] 57 training-resume integration checks; production callbacks, commit ordering, counter restoration and Trainer arguments; no GPU execution
+[10/11] 91% | test_training_resume_integration.py | PASS
+[PASS] 17 production run-guard scenarios | fresh, lock, completed reuse, archive and rejected changes | no GPU/model execution
+[11/11] 100% | test_training_resume_run_guard.py | PASS
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_analysis.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_data.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_evaluation.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_pipeline.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_preflight.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_repetition_guard.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_scorer.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume_integration.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_training_resume_run_guard.py",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 73.10775083299814,
+  "gpu_training_tested": false,
+  "network_used": false
+}

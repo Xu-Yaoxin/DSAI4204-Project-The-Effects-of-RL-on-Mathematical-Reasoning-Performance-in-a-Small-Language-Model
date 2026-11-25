@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "identity": {
+    "input_manifest_sha256": "c3cdeeb66905933c6c67640aa5ccdc61fac0e82d95662494b00863fadea75fe5",
+    "samples_sha256": "912e7c96611eac53f3bbe47947fa83f053a28bd9adcda496d18904527c25b9e8",
+    "dataset_sha256": "5eb5775c988682af461100a64bf8de0e6189b592c98b64ed5a52e73bce598964",
+    "dataset_manifest_sha256": "0e6d34e8e1723d5ad28826ebfa84ab6255695b0dc0a0960734f80b0b9031e262",
+    "analyzer_sha256": "8ae54f8acbd7e85a302bb1972150f358c5ed9fcab240f49696278ce7f81c5cb5",
+    "verifier_sha256": "ba7ce102acac0087dabfdae20db0b088a294e0692bbe69c497a5d4642c57ecc7",
+    "guard_helpers_sha256": {
+      "validate_guarded_sample.py": "3eaf004fe6cbd531da1464858313782fe5967a4ccff1e72f308e4cae35681ff6",
+      "repetition_guard.py": "56597e251b32476ce497511903ed806513b1768f790a591d89eaccb426e8f33c"
+    },
+    "bootstrap": 2000,
+    "seed": 42
+  },
+  "artifacts_sha256": {
+    "calibration_candidates.json": "4c5ccb1949027cbf72e6f4a1b16834c219d1be71fd0430f3cbd40474847c6df3",
+    "per_question.jsonl": "caca88cadaf89764e9787cdfe24bffcb9ac74de424978b78a81ac96ef58dbd23",
+    "report.md": "4a0d1daa8c40231cba631abe33897794efd05ff53018775496707c97b0367701",
+    "summary.json": "19d6deb3e755d7a3cf9640747c0e4e4e427ebb5c677654d4a74306749b8e7079"
+  },
+  "models_loaded": 0,
+  "network_required": false
+}

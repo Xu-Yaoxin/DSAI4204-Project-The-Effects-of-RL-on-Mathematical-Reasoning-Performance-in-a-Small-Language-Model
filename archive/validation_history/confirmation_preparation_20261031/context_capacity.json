@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-31T16:17:13.651887+00:00",
+  "status": "static_capacity_and_read_only_runtime_audit",
+  "native_context_gpu_executed": false,
+  "model": {
+    "repo_id": "Qwen/Qwen3.5-2B-Base",
+    "revision": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+    "config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "config_git_blob_sha1": "d30a15be1bbfd610f58ad80f1fbeb6778f58a80f",
+    "pinned_manifest_match": true
+  },
+  "architecture": {
+    "text_layers": 24,
+    "full_attention_layers": 6,
+    "linear_attention_layers": 18,
+    "kv_heads": 2,
+    "head_dim": 256,
+    "cache_dtype": "bfloat16",
+    "bytes_per_element": 2,
+    "batch_size_per_worker": 1
+  },
+  "native_context_tokens": 262144,
+  "generation_policy": "262144 minus actual tokenized prompt length, including special tokens; EOS can terminate sooner",
+  "example": {
+    "prompt_tokens": 200,
+    "generation_limit": 261944
+  },
+  "kv_bytes_per_token_per_worker": 12288,
+  "cache_component_table": {
+    "32768": {
+      "full_attention_kv_bytes_per_worker": 402653184,
+      "full_attention_kv_gib_per_worker": 0.375,
+      "two_worker_kv_gib": 0.75
+    },
+    "65536": {
+      "full_attention_kv_bytes_per_worker": 805306368,
+      "full_attention_kv_gib_per_worker": 0.75,
+      "two_worker_kv_gib": 1.5
+    },
+    "131072": {
+      "full_attention_kv_bytes_per_worker": 1610612736,
+      "full_attention_kv_gib_per_worker": 1.5,
+      "two_worker_kv_gib": 3.0
+    },
+    "262144": {
+      "full_attention_kv_bytes_per_worker": 3221225472,
+      "full_attention_kv_gib_per_worker": 3.0,
+      "two_worker_kv_gib": 6.0
+    }
+  },
+  "startup_policy": {
+    "one_worker": {
+      "free_gpu_gib": 11,
+      "available_ram_gib": 16
+    },
+    "two_workers": {
+      "free_gpu_gib": 20,
+      "available_ram_gib": 32
+    },
+    "interpretation": "Conservative launch policy, not a measured guarantee. Sequential fallback preserves the native length protocol."
+  },
+  "prior_short_run": {
+    "worker_peak_allocated_gib": [
+      3.559068202972412,
+      3.581087589263916
+    ],
+    "max_new_tokens": 1024,
+    "source": "project/server_results/boundary_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_{0,1}/manifest.json",
+    "interpretation": "PyTorch per-process allocated peaks; not whole-device peak and not a native-length memory measurement."
+  },
+  "runtime_review": {
+    "blocking_issue_found": false,
+    "checks": [
+      "Loaded model config must report native context 262144.",
+      "Each prompt is tokenized without silent truncation.",
+      "generate receives 262144 minus actual prompt token count.",
+      "Every completed row records generation_limit.",
+      "Resume, merge and analyzer validate per-row budget and unchanged protocol identities.",
+      "Reaching the limit without EOS is retained as truncated; errors are not scored as incorrect answers."
+    ],
+    "reviewed_sha256": {
+      "evaluate_boundary.py": "7673223ddf14b74b68938f734d45779ab83c4612731edc0bfe94cee70132a7ff",
+      "merge_boundary.py": "dec85676473cb895d134fa35d4f703c5bdac74e569edf5a8cf26783be3a9efa5",
+      "analyze_boundary.py": "7d9b029e4f39269f9859e25adfdb939590b5dc177e4d5b4c8d23160bd43b7c68",
+      "run_boundary_parallel.py": "60ba43efcbd8f21bcfb7be3a041f9212a011e52b9de89e9b92cf0c8db8607e4a"
+    }
+  },
+  "limitations": [
+    "KV arithmetic excludes weights, recurrent/conv states, activations, attention temporaries, CUDA context and allocator reserve.",
+    "Two-worker arithmetic supports plausibility only; full native-length generation has not run on GPU.",
+    "Prompts remain short; generation grows the cache token by token. Long-context attention temporary allocation and latency still depend on actual backend behavior.",
+    "An increased cap permits longer answers but does not force generation to the cap and cannot guarantee zero truncation.",
+    "Completed answers are resumable; an interrupted in-flight answer must restart from its recorded seed.",
+    "Native context changes the evaluation budget from the prior 1024-token screen, so scores must be reported as a new protocol."
+  ],
+  "source_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/blob/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/config.json",
+  "source_access": "Pinned local config matched recorded official git blob; no new remote document was used."
+}

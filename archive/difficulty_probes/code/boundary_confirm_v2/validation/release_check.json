@@ -1,0 +1,52 @@
+{
+  "release": "boundary-confirm-2.0",
+  "checked_utc": "2026-10-31T16:26:17.757863+00:00",
+  "passed": true,
+  "cpu_suites": {
+    "scorer_v2": 114,
+    "evaluation_resume_native_context": 66,
+    "merge_analysis": 44,
+    "process_supervision": 10,
+    "data_selection_main_checkout": 19
+  },
+  "gpu_inference_tested": false,
+  "native_context_gpu_memory_tested": false,
+  "models_loaded_in_cpu_tests": 0,
+  "plans": [
+    "parallel",
+    "sequential"
+  ],
+  "dataset_check": {
+    "question_count": 200,
+    "answers": 800,
+    "sample_count_per_question": 4,
+    "counts": {
+      "gsm_main_confirm": 100,
+      "math_l4_confirm": 100
+    },
+    "gsm_distinct_families": 64,
+    "exact_previous_question_overlap": 0,
+    "previous_gsm_family_overlap": 0,
+    "scalar_gold_v2_roundtrip": 200,
+    "shard_group_question_counts": [
+      {
+        "gsm_main_confirm": 50,
+        "math_l4_confirm": 50
+      },
+      {
+        "gsm_main_confirm": 50,
+        "math_l4_confirm": 50
+      }
+    ],
+    "max_question_characters": 585,
+    "dataset_sha256": "5eb5775c988682af461100a64bf8de0e6189b592c98b64ed5a52e73bce598964",
+    "semantic_gold_review": "Not a full independent mathematical proof of source gold."
+  },
+  "preserved_original_files": 81,
+  "python_syntax_and_linear_runtime": true,
+  "shell_syntax": true,
+  "existing_env_relative_path": "../.venv/bin/python",
+  "existing_model_relative_path": "../models/Qwen3.5-2B-Base",
+  "rsync_excludes_and_relocated_package_plan_passed": true,
+  "scorer_sha256": "ba7ce102acac0087dabfdae20db0b088a294e0692bbe69c497a5d4642c57ecc7"
+}

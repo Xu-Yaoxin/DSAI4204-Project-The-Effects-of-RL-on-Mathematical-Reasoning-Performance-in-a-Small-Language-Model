@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "question_count": 200,
+  "base_answers": 3200,
+  "rl_answers": 3200,
+  "original_downloads_unchanged": true,
+  "staged_source_files_verified": 117,
+  "local_base_model_files_verified": 7,
+  "dataset_checks_passed": 73,
+  "scoring_and_guard_replay": "Production merge and analysis validators completed successfully for both test grids and development selection.",
+  "merged_records_equal_original_records": true,
+  "independent_statistics_match": true,
+  "workers": {
+    "0": {
+      "completed_answers": 1600,
+      "restarts": 0,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "tokens_per_answer_second": 20.019714444975047,
+      "summed_answer_hours": 23.686623790154442,
+      "mean_answer_seconds": 53.29490352784749,
+      "mean_output_tokens": 1066.94875,
+      "timeout_median_output_tokens": 6040
+    },
+    "1": {
+      "completed_answers": 1600,
+      "restarts": 0,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "tokens_per_answer_second": 28.471605992510444,
+      "summed_answer_hours": 27.157982907331963,
+      "mean_answer_seconds": 61.105461541496915,
+      "mean_output_tokens": 1739.770625,
+      "timeout_median_output_tokens": 8558
+    }
+  },
+  "base_tokens_per_answer_second": 40.603162034983725,
+  "question_success_count_comparison": {
+    "equal": 29,
+    "rl_higher": 146,
+    "base_higher": 25
+  },
+  "training_evidence": {
+    "optimizer_steps": 384,
+    "effective_update_steps": 376,
+    "changed_adapter_parameters": 192,
+    "adapter_max_abs_delta": 0.0012674657627940178,
+    "mixed_reward_groups": 991,
+    "reward_groups": 1536
+  },
+  "source_inventory_sha256": "d78873406d4b39235644b096979580484a1f64647083bf3a548a1cdfbef31034",
+  "analysis_ready_sha256": "a4b16b7995f2cf61bf0ad3e105e1238c58f04ac05d19fcdb6df202670ba38ff5",
+  "merge_provenance_sha256": "4b1b3dc315038645fee506de85120b5c773e25d0bd206d7e1f802bd10af2f98a"
+}

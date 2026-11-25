@@ -1,0 +1,76 @@
+{
+  "started_utc": "2026-11-05T03:17:03.407369+00:00",
+  "experiment_root": "/root/code/math_l4_v1",
+  "run_dir": "/root/code/math_l4_v1/outputs/math_l4_v1_fix1",
+  "shard_index": 0,
+  "base_samples_sha256": "801e935948145e550b4c1a4e47266af26c6469fe9893148b37c83a135a902fb1",
+  "base_total_samples": 3200,
+  "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+  "mode": "stop_after_base",
+  "signals": [
+    {
+      "pid": 5735,
+      "signal": "SIGSTOP",
+      "via": "pidfd"
+    },
+    {
+      "pid": 179907,
+      "signal": "SIGTERM",
+      "via": "pidfd"
+    },
+    {
+      "pid": 5735,
+      "signal": "SIGTERM",
+      "via": "pidfd"
+    },
+    {
+      "pid": 5735,
+      "signal": "SIGCONT",
+      "via": "pidfd"
+    }
+  ],
+  "processes": [
+    {
+      "pid": 5735,
+      "start_ticks": "199382213",
+      "cwd": "/root/code/math_l4_v1",
+      "command": [
+        "../.venv/bin/python",
+        "scripts/run_experiment.py",
+        "all",
+        "--run-dir",
+        "outputs/math_l4_v1_fix1"
+      ],
+      "pidfd": 3
+    },
+    {
+      "pid": 179907,
+      "pidfd": 4,
+      "start_ticks": "233192015",
+      "cwd": "/root/code/math_l4_v1",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "rl",
+        "--split",
+        "test",
+        "--samples",
+        "16",
+        "--selection",
+        "outputs/math_l4_v1_fix1/selection.json",
+        "--output",
+        "outputs/math_l4_v1_fix1/test_rl",
+        "--resume"
+      ],
+      "output": "/root/code/math_l4_v1/outputs/math_l4_v1_fix1/test_rl",
+      "is_base": false
+    }
+  ],
+  "status": "stopped_after_base",
+  "finished_utc": "2026-11-05T03:17:03.814678+00:00",
+  "complete": true,
+  "rl_started": false
+}

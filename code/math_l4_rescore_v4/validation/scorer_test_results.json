@@ -1,0 +1,11 @@
+{
+  "scorer_version": "4.0.0",
+  "scorer_sha256": "414d13ede7303e34962be08107d3f7eae74e22279af018489735d6b306b05bcc",
+  "literal_cases": 58,
+  "real_fixtures": 6,
+  "new_checks": 192,
+  "legacy_checks": 294,
+  "total_checks": 486,
+  "failed_expectations": [],
+  "passed": true
+}

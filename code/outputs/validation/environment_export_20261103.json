@@ -1,0 +1,22 @@
+{
+  "version": "environment-export-1",
+  "date": "2026-11-03",
+  "checks": [
+    "bash syntax",
+    "top-level Python syntax",
+    "real snapshot metadata export",
+    "exact launcher ZIP inventory and SHA validation",
+    "safe extraction",
+    "current-phase ETA arithmetic",
+    "source snapshot nonmutation"
+  ],
+  "remote_execution_tested": false,
+  "gpu_execution_tested": false,
+  "source_snapshot_files_unchanged": 810,
+  "smoke_archive_bytes": 6433030,
+  "files": {
+    "export_gpu_snapshot.py": "ec4afbd114cbd19293b7ae1bb5ae801e02680c592072b0e864538dcb608603f9",
+    "download_gpu_environment.sh": "88f4743f8bdd366a35a947eb9cb07102e55159783590409dd9e334f98859fd8b",
+    "README.md": "dcb6ac46a777388c027c8f0c10715730585895b02242b0142388e6844023236a"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": 2,
+  "experiment_type": "exploratory_baseline_calibration",
+  "synthetic": false,
+  "model_label": "base",
+  "adapter_identity": null,
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "protocol_id": "05c5ca13aab2c4ca022bf6be2f7b42405f811e88661420a513cec1db271c1445",
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 262144,
+    "max_prompt_length": 2048,
+    "seed": 271828,
+    "context_limit": 262144,
+    "length_policy": "native_context_minus_actual_prompt",
+    "generation_guard": {
+      "version": "exact-periodic-suffix-v1",
+      "check_every_tokens": 32,
+      "min_generated_tokens": 1024,
+      "min_repeat_span_tokens": 1024,
+      "max_period_tokens": 256,
+      "min_repeats": 4,
+      "heartbeat_seconds": 5,
+      "no_token_timeout_seconds": 120,
+      "stop_grace_seconds": 15,
+      "max_worker_restarts": 2,
+      "answer_timeout_seconds": 300
+    },
+    "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+    "dtype": "bfloat16",
+    "backend": "transformers-sdpa",
+    "batch_size": 1,
+    "world_size": 1,
+    "add_special_tokens": true,
+    "stopping_rule": "tokenizer-eos-or-native-context-or-guard",
+    "repetition_penalty": 1.0,
+    "eos_token_id": 248044,
+    "package_versions": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.3.0",
+      "peft": "0.18.1",
+      "accelerate": "1.10.1",
+      "datasets": "4.8.5",
+      "trl": "1.16.0",
+      "safetensors": "0.8.0",
+      "flash-linear-attention": null,
+      "fla-core": null,
+      "causal-conv1d": null
+    }
+  },
+  "provenance": {
+    "input_manifest_sha256": "c3cdeeb66905933c6c67640aa5ccdc61fac0e82d95662494b00863fadea75fe5",
+    "samples_sha256": "912e7c96611eac53f3bbe47947fa83f053a28bd9adcda496d18904527c25b9e8",
+    "dataset_sha256": "5eb5775c988682af461100a64bf8de0e6189b592c98b64ed5a52e73bce598964",
+    "dataset_manifest_sha256": "0e6d34e8e1723d5ad28826ebfa84ab6255695b0dc0a0960734f80b0b9031e262",
+    "analyzer_sha256": "8ae54f8acbd7e85a302bb1972150f358c5ed9fcab240f49696278ce7f81c5cb5",
+    "verifier_sha256": "ba7ce102acac0087dabfdae20db0b088a294e0692bbe69c497a5d4642c57ecc7",
+    "guard_helpers_sha256": {
+      "validate_guarded_sample.py": "3eaf004fe6cbd531da1464858313782fe5967a4ccff1e72f308e4cae35681ff6",
+      "repetition_guard.py": "56597e251b32476ce497511903ed806513b1768f790a591d89eaccb426e8f33c"
+    },
+    "bootstrap": 2000,
+    "seed": 42
+  },
+  "question_count": 200,
+  "total_samples": 800,
+  "n_samples": 4,
+  "evaluable_count": 736,
+  "completed_count": 736,
+  "unknown_count": 31,
+  "policy_failure_count": 33,
+  "timeout_count": 33,
+  "timeout_rate": 0.04125,
+  "completion_rate": 0.92,
+  "correct_count": 431,
+  "completed_only_accuracy": 0.5855978260869565,
+  "observed_success_per_request": 0.53875,
+  "incomplete_answer_bounds": {
+    "lower": 0.53875,
+    "upper": 0.5775,
+    "is_confidence_interval": false
+  },
+  "target": {
+    "metric": "pass_at_1",
+    "lower": 0.4,
+    "upper": 0.5,
+    "center": 0.45,
+    "unknown_answers_prevent_exact_target_assessment": true
+  },
+  "groups": [
+    {
+      "group_id": "gsm_main_confirm",
+      "group_label": "GSM-Symbolic main confirmation",
+      "question_count": 100,
+      "family_count": 64,
+      "sample_count": 400,
+      "n_samples": 4,
+      "correct_count": 256,
+      "evaluable_count": 398,
+      "completed_count": 398,
+      "unknown_count": 2,
+      "policy_failure_count": 0,
+      "timeout_count": 0,
+      "timeout_rate": 0.0,
+      "completion_rate": 0.995,
+      "completed_only_accuracy": 0.6432160804020101,
+      "observed_success_per_request": {
+        "estimate": 0.64,
+        "ci_low": 0.552358193277311,
+        "ci_high": 0.7266456465763875,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, observed successful request, linear quantiles",
+        "metric": "completed_correct_answers_per_requested_attempt",
+        "aborted_answers_are_mathematical_errors": false
+      },
+      "incomplete_answer_bounds": {
+        "lower": 0.64,
+        "upper": 0.645,
+        "is_confidence_interval": false
+      },
+      "pass_at_1": null,
+      "pass_at_4": null,
+      "pass_at_4_bounds": {
+        "lower": 0.85,
+        "upper": 0.86,
+        "is_confidence_interval": false
+      },
+      "degenerate_interval": false,
+      "observed_success_point_in_target": false,
+      "point_in_target": null,
+      "ci_entirely_in_target": null,
+      "ci_overlaps_target": null,
+      "target_assessment": "unresolved_incomplete_answers",
+      "distance_to_target_center": 0.19,
+      "low_precision": true,
+      "status_counts": {
+        "incorrect": 130,
+        "correct": 256,
+        "unscored": 2,
+        "extraction_failed": 12
+      },
+      "termination_counts": {
+        "eos": 398,
+        "repetition_guard": 2
+      },
+      "format_compliance_rate_among_evaluable": 0.4371859296482412,
+      "extraction_failure_rate_among_evaluable": 0.03015075376884422,
+      "ambiguous_rate_among_evaluable": 0.0,
+      "truncation_rate": 0.0,
+      "length_budget_concern": false,
+      "mean_output_tokens": 204.53
+    },
+    {
+      "group_id": "math_l4_confirm",
+      "group_label": "MATH Level4 scalar confirmation",
+      "question_count": 100,
+      "family_count": 100,
+      "sample_count": 400,
+      "n_samples": 4,
+      "correct_count": 175,
+      "evaluable_count": 338,
+      "completed_count": 338,
+      "unknown_count": 29,
+      "policy_failure_count": 33,
+      "timeout_count": 33,
+      "timeout_rate": 0.0825,
+      "completion_rate": 0.845,
+      "completed_only_accuracy": 0.5177514792899408,
+      "observed_success_per_request": {
+        "estimate": 0.4375,
+        "ci_low": 0.3699375,
+        "ci_high": 0.5075,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, observed successful request, linear quantiles",
+        "metric": "completed_correct_answers_per_requested_attempt",
+        "aborted_answers_are_mathematical_errors": false
+      },
+      "incomplete_answer_bounds": {
+        "lower": 0.4375,
+        "upper": 0.51,
+        "is_confidence_interval": false
+      },
+      "pass_at_1": null,
+      "pass_at_4": null,
+      "pass_at_4_bounds": {
+        "lower": 0.68,
+        "upper": 0.82,
+        "is_confidence_interval": false
+      },
+      "degenerate_interval": false,
+      "observed_success_point_in_target": true,
+      "point_in_target": null,
+      "ci_entirely_in_target": null,
+      "ci_overlaps_target": null,
+      "target_assessment": "unresolved_incomplete_answers",
+      "distance_to_target_center": 0.012500000000000011,
+      "low_precision": false,
+      "status_counts": {
+        "incorrect": 130,
+        "extraction_failed": 26,
+        "correct": 175,
+        "unscored": 29,
+        "timeout": 33,
+        "ambiguous": 7
+      },
+      "termination_counts": {
+        "eos": 338,
+        "repetition_guard": 29,
+        "answer_timeout": 33
+      },
+      "format_compliance_rate_among_evaluable": 0.45857988165680474,
+      "extraction_failure_rate_among_evaluable": 0.07692307692307693,
+      "ambiguous_rate_among_evaluable": 0.020710059171597635,
+      "truncation_rate": 0.0,
+      "length_budget_concern": false,
+      "mean_output_tokens": 1629.7725
+    }
+  ],
+  "limitations": [
+    "Exploratory baseline screening under a new guarded stopping protocol; no formal Base/RL comparison.",
+    "Only natural-EOS answers are scoring-evaluable. User-defined answer_timeout at the recorded deadline is a policy failure scored zero, not evidence of a mathematical error. Repetition, no-token timeout and context-limit stops remain unscored unknowns.",
+    "Observed success per request is completed-and-correct/n. Its 95% interval concerns operational success under this guard, not the unknown mathematical correctness of aborted answers.",
+    "Incomplete-answer bounds [c/n,(c+u)/n] are worst/best-case assignments for unknown answers, not confidence intervals or guarantees about generation without the guard.",
+    "Completed-only accuracy excludes answer timeouts and every other non-EOS stop; it conditions on finishing and can be selection-biased. It is not the target metric or ranking criterion.",
+    "Pass@4 bounds assign unknown answers as failures/successes; they are diagnostic bounds, not confidence intervals. Success within four attempts is not pass@1.",
+    "Repeated answers and template instances are dependent. Intervals resample entire families, are marginal rather than simultaneous, and do not remove missing-answer uncertainty.",
+    "A degenerate bootstrap interval reflects zero empirical variation, not certainty about future performance. Small family counts give coarse precision.",
+    "Source/level labels do not establish a global model difficulty order. MATH rows are scalar/text-only subsets; answer correctness does not prove reasoning validity.",
+    "No question is selected using its observed correctness. Fresh confirmation/comparison must exclude all calibration template families."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "scope": "Post-hoc diagnostic only, not a replacement of the original primary analysis",
+  "rule": "Skip only a redundant explicit-answer candidate beginning with literal ####; the existing #### extractor still parses and validates it, including malformed or contradictory candidates",
+  "gold_used_to_define_rule": false,
+  "source_verifier_sha256": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+  "diagnostic_verifier_sha256": "39087665d52df4dbd6ec34cb5d683b214209ba2605891293b256e292db39af55",
+  "training_reward_unchanged": true,
+  "original_files_unchanged": true,
+  "trained_policy_was_optimized_with_original_verifier": true,
+  "fixture_checks": 6,
+  "models": {
+    "base": {
+      "source_samples_sha256": "539cc217f3c7efead7fd8c54609eff822ed74f1e811a8105f0f8f81c5e05e17b",
+      "sample_count": 3200,
+      "question_count": 200,
+      "primary_correct": 1451,
+      "diagnostic_correct": 1885,
+      "changed_status_count": 601,
+      "status_transitions": {
+        "extraction_failed->correct": 434,
+        "correct->correct": 1451,
+        "extraction_failed->extraction_failed": 567,
+        "incorrect->incorrect": 573,
+        "extraction_failed->incorrect": 167,
+        "ambiguous->ambiguous": 8
+      },
+      "pass_at_k": {
+        "1": 0.5890625,
+        "2": 0.7622916666666658,
+        "4": 0.860392857142858,
+        "8": 0.9137680652680656,
+        "16": 0.945
+      }
+    },
+    "rl": {
+      "source_samples_sha256": "09f74f00a4e2f0d1456126d43ec237ec7105999ec5d0ff814ba9e893a1623c0c",
+      "sample_count": 3200,
+      "question_count": 200,
+      "primary_correct": 2530,
+      "diagnostic_correct": 2530,
+      "changed_status_count": 0,
+      "status_transitions": {
+        "correct->correct": 2530,
+        "incorrect->incorrect": 578,
+        "extraction_failed->extraction_failed": 92
+      },
+      "pass_at_k": {
+        "1": 0.790625,
+        "2": 0.8532916666666663,
+        "4": 0.897541208791209,
+        "8": 0.9320617715617716,
+        "16": 0.955
+      }
+    }
+  },
+  "delta_pass_at_k": {
+    "1": 0.20156249999999998,
+    "2": 0.09100000000000052,
+    "4": 0.03714835164835106,
+    "8": 0.01829370629370597,
+    "16": 0.010000000000000009
+  },
+  "delta1_minus_delta16": 0.19156249999999997
+}

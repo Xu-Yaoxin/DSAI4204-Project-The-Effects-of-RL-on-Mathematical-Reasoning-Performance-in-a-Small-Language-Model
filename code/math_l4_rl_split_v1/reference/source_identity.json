@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "release": "math-l4-rl-split-1.0",
+  "bundle_manifest_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32",
+  "selection_sha256": "6a47b48ca2a9884c0d45b524168a869f80332592fdecd34a29333789e1f14880",
+  "selection_id": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "base_protocol_id": "cfff6ee294f5ed4ae7df15c5fa87e865cae23649ce602bc78a555c68340df2a6",
+  "selected_step": 384,
+  "installer_files": {
+    "scripts/prepare_packages.py": "fe9700e0dd592d2db27e8f820b943758758f3245f88ddba40c7182f56d38a7ed",
+    "requirements-gpu.txt": "2c6b5fcd8eb14e5cc2815a5944bf54ea251ef698e6db33fe11934875f881c9aa",
+    "packages/linux-cp311-cu128/manifest.json": "50039c60a256a9eacfd181e1d11ebac2c30a7f7a08dcaff07dfd2b8a683f44af",
+    "packages/linux-cp311-cu128/requirements-lock.txt": "a95889909c4f9882335563280813efb2088f8cbdc2b7832b5188b74ed27a8bd0"
+  }
+}

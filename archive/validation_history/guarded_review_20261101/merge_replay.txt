@@ -1,0 +1,4 @@
+========================================================================
+[BOUNDARY MERGE 1/3] 0% | validate complete baseline shards
+[BOUNDARY MERGE 2/3] 67% | verified 200 questions / 800 answers | deterministic ordering
+✅ [BOUNDARY MERGE 3/3] 100% | COMPLETE | [SAVED] /Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/guarded_review_20261101/replayed_base/manifest.json

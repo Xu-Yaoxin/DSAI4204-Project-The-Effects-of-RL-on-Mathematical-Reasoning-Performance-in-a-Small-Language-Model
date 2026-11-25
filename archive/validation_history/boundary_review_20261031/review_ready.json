@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "archive_unchanged": true,
+  "gpu_or_model_called_for_review": false,
+  "new_training_started": false,
+  "official_scores_unchanged": true,
+  "artifact_sha256": {
+    "archive_inventory.json": "b2a2302d277887f58b1b786141642aaafb67c08cf41f326ea0e17290b3721acd",
+    "boundary_overview.pdf": "6aeaec9d1a8f3891182ebfb1f76c469aa382de6888c035409b459816720f364e",
+    "boundary_overview.png": "54657e2a239ae5096a1c5f155f31ab578924dd6080a79455606159a65be17abf",
+    "final_segment_sensitivity.json": "5259e64e8606bd15033e666dbdbb91c457d49e4e1fde7e11c29106e0a7039b5a",
+    "integrity.json": "66b94294a83febddae4918518bacfcbe1faf7362509c562f1c2f4e2e7d29899c",
+    "math_by_level.json": "840b217059fc5b89633a67c6c83fe75e02dfdff60fe00d639937addc9b694d7f",
+    "nontruncated_answer_review.json": "74839f0b6dae8be046c805d15ac69ed8f49a58d0b3c54d9a4fa1b2ee4aad6a76",
+    "plot_review.py": "9d384aafdd07b89ae592aef751318d7e2d4344f5455ef6731f3ddecdbcf1ee19",
+    "recomputed_analysis/calibration_candidates.json": "e61d7306ade3a8ae447cf7447d9bb1440ff136f055260743aa71a20d101333c8",
+    "recomputed_analysis/per_question.jsonl": "b0e83c08e63f67660d3627081237a4334dcd6bd2906ff1cd40a8589c3df732c2",
+    "recomputed_analysis/ready.json": "d37818bf87c7ae00baacd8950f92198599e877a54ebb7af48e597ae237f1c27a",
+    "recomputed_analysis/report.md": "266da23a88a24a976ae22e6dadb2127db74e1cdcad26271506d9213dd09390d4",
+    "recomputed_analysis/summary.json": "16a6aa447fd9af4379c341e41ee004c488e2315d2dfa59d07f9d088d3d19a443",
+    "recomputed_base/manifest.json": "132fc7114e897fe2ac01c81e4db74c82a5e1fbfa810a1375aa4001375fe231e2",
+    "recomputed_base/merge_ready.json": "02def849b6cd1804020ec8eec64f4532e268051496b3327cff447172eb71d969",
+    "recomputed_base/samples.jsonl": "e417701a8ff320f445dd146dd800bf62aa18919b5206d6f4d651e120cbb79786",
+    "review_report.md": "8c9b36aa82353e09d58f3e51c490b04dd78d5e9f8429b88bf29196558988d492",
+    "truncation_examples.json": "ef19aa31cb0da0d4077f33f7e7abdb17872fe374000b3e3c3c37de4058e5a462"
+  }
+}

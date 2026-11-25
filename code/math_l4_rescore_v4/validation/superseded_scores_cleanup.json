@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "authorized_scope": "User requested deletion of superseded scoring results after verification",
+  "verified_current_ready_sha256": "c434b9ce94a8592064a33b9fd6e941f389ac10ea5334649071b66e3ffe3f9ce1",
+  "files": [
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/RESULTS_ZH.md",
+      "bytes": 7414,
+      "sha256": "2499af3607162737a38a1511959c54d8ef9d482b5debaac356fd4a6164438eed"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/independent_stats.json",
+      "bytes": 329305,
+      "sha256": "a8371e21605ff6f6e526acbfbae4a5062f22f1fec3ba98e6e54dc462a3cf43e2"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/figures/math_l4_base_vs_rl_summary.png",
+      "bytes": 424198,
+      "sha256": "3e5d3533598c7b31b28307c951400d9cd84488da9bb0aa3e3e1a1985f71075fd"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/figures/math_l4_base_vs_rl_summary.pdf",
+      "bytes": 31615,
+      "sha256": "63d529ff730a2b4a8e11607bc6db71085a5160c2002a555f62a94ef6ebcd9fbc"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/figures/figure_receipt.json",
+      "bytes": 1001,
+      "sha256": "9686a5a13ef72bd98caacb0d79b9dd71f580132325cc0a20cb8eb3f56ff53b73"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/shard0_review_20261105/summary.json",
+      "bytes": 10454,
+      "sha256": "38f01157c04dad5ad3920131b00f9200d0c6f9508999fcd93cc1c57a513745de"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/shard0_review_20261105/per_question.json",
+      "bytes": 173055,
+      "sha256": "5b461e64be3ef8067ac4a89c3919507d2372e06d5ed2bfb06d601dba9fb4d6f5"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/base_complete_review_20261105/summary.json",
+      "bytes": 3767,
+      "sha256": "64c42eb1177366f92a4dcc3903f9c3c571c1dd6b1e6a691afa0a2c45f9ac3b15"
+    },
+    {
+      "path": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/base_complete_review_20261105/per_question.json",
+      "bytes": 64089,
+      "sha256": "afd33adebc4e81e74a261f13d8a1b95a40027aeb4bb454409fd8419d437f0acb"
+    }
+  ],
+  "file_count": 9,
+  "total_bytes": 1044898,
+  "retained": [
+    "All original downloaded samples and model backups",
+    "Entire frozen source experiment, including original main_analysis, because current ready.json binds its hashes",
+    "Source inventory, integrity checks and scorer-failure evidence",
+    "Current v4 outputs and old_score/change audit fields"
+  ],
+  "reason_for_retained_old_scores": "Provenance for immutable generation records, original checkpoint selection and posthoc scoring; not current headline results.",
+  "completed_utc": "2026-11-06T01:44:00.394748+00:00",
+  "post_delete_current_artifacts_unchanged": true,
+  "post_delete_frozen_source_hashes_unchanged": true,
+  "deleted_paths_confirmed_absent": true
+}

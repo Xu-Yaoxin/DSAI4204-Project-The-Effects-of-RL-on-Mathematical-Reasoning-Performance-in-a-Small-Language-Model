@@ -1,0 +1,37 @@
+{
+  "version": "boundary-confirm-2.0",
+  "purpose": "exploratory_baseline_calibration",
+  "model": {
+    "path": "../models/Qwen3.5-2B-Base",
+    "dtype": "bfloat16",
+    "repo_id": "Qwen/Qwen3.5-2B-Base",
+    "expected_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181"
+  },
+  "prompt": {
+    "template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n"
+  },
+  "data": {
+    "path": "data/boundary_confirm_v2/questions.jsonl",
+    "manifest": "data/boundary_confirm_v2/manifest.json"
+  },
+  "evaluation": {
+    "seed": 271828,
+    "n_samples": 4,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 262144,
+    "max_prompt_length": 2048,
+    "bootstrap_replicates": 2000,
+    "context_limit": 262144,
+    "length_policy": "native_context_minus_actual_prompt"
+  },
+  "target": {
+    "metric": "pass@1",
+    "low": 0.4,
+    "high": 0.5,
+    "model": "base",
+    "selection_unit": "source_group",
+    "new_questions_required_for_formal_comparison": true
+  }
+}

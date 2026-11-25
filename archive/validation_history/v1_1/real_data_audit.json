@@ -1,0 +1,30 @@
+{
+  "verified_utc": "2026-10-26T15:06:08.223685+00:00",
+  "scope": "Real GSM8K data audit; no model inference or training",
+  "raw": {
+    "train": {
+      "rows": 7473,
+      "valid_numeric_answers": 7473,
+      "invalid_numeric_answers": 0,
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465"
+    },
+    "test": {
+      "rows": 1319,
+      "valid_numeric_answers": 1319,
+      "invalid_numeric_answers": 0,
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
+    }
+  },
+  "normalized_duplicate_groups": 0,
+  "prepared_counts": {
+    "engineering": 32,
+    "pilot": 128,
+    "train": 512,
+    "dev": 200,
+    "test": 200,
+    "structural": 160
+  },
+  "source_manifest_sha256": "7ff774815d3ccf300f5b092dff62bd5ae865a14d849f04fe897c8cab639897a0",
+  "verifier_sha256": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+  "structural_manual_review_complete": false
+}

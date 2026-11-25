@@ -1,0 +1,11 @@
+# Direct requirements for Linux x86_64 / CPython 3.11 / RTX 4090.
+# setup_gpu.sh installs the complete hashed package lock, not these ranges.
+# Metadata compatibility is checked; target-GPU runtime validation is separate.
+torch==2.10.0+cu128
+transformers==5.3.0
+peft==0.18.1
+trl==1.16.0
+accelerate==1.10.1
+datasets>=4.7.0,<5
+safetensors>=0.6.2,<1
+matplotlib>=3.8,<4

@@ -1,0 +1,159 @@
+{
+  "checked_utc": "2026-10-31T13:03:18.540568+00:00",
+  "status": "passed",
+  "archive": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/server_results/run_20261031/code",
+  "archive_config_version": "1.2.2",
+  "training_resume_v13_present": false,
+  "checks": [
+    "raw_source_hashes_and_row_counts",
+    "all_prepared_hashes_ids_official_questions_gold_and_split_isolation",
+    "training_gates_protocol_source_hashes_rank_reward_hashes_and_checkpoint_inventory",
+    "all_candidate_adapter_hashes_dev_grids_scores_and_frozen_selection",
+    "6400_sample_hashes_complete_grids_metadata_same_protocol_seeds_and_exact_verifier_replay",
+    "independent_math_comb_pass_at_k_and_coverage_recomputation",
+    "archived_analysis_replay_2000_bootstraps_exact_summary_report_per_question_inspection_match"
+  ],
+  "checkpoint_inventory_count": 8,
+  "stage_reports": {
+    "engineering_train": {
+      "status": "completed",
+      "optimizer_steps": 2,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "training_seconds": 273.69630138762295,
+      "peak_cuda_allocated_bytes": 4262926336,
+      "peak_cuda_reserved_bytes": 4345298944,
+      "effective_update_steps": 2,
+      "changed_adapter_parameters": 192
+    },
+    "pilot": {
+      "status": "completed",
+      "optimizer_steps": 96,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "training_seconds": 13121.818159399554,
+      "peak_cuda_allocated_bytes": 4307286528,
+      "peak_cuda_reserved_bytes": 4435476480,
+      "effective_update_steps": 96,
+      "changed_adapter_parameters": 192
+    },
+    "formal": {
+      "status": "completed",
+      "optimizer_steps": 384,
+      "gates": {
+        "training_completed": true,
+        "finite_metrics": true,
+        "adapter_updated": true,
+        "base_unchanged": true,
+        "mixed_reward_groups": true,
+        "effective_update_steps": true,
+        "all_adapters_finite": true,
+        "checkpoints_saved": true,
+        "complete_prompt_groups": true,
+        "rank_consistency": true,
+        "loss_normalization": true,
+        "prompt_coverage": true,
+        "all_passed": true
+      },
+      "training_seconds": 48698.882860254496,
+      "peak_cuda_allocated_bytes": 4310088704,
+      "peak_cuda_reserved_bytes": 4460642304,
+      "effective_update_steps": 371,
+      "changed_adapter_parameters": 192
+    }
+  },
+  "selection": {
+    "step": 384,
+    "pass_at_1": 0.815,
+    "candidates": [
+      {
+        "step": 128,
+        "pass_at_1": 0.76
+      },
+      {
+        "step": 256,
+        "pass_at_1": 0.795
+      },
+      {
+        "step": 384,
+        "pass_at_1": 0.815
+      }
+    ]
+  },
+  "independent_metrics": {
+    "base": {
+      "pass_at_k": {
+        "1": 0.4534375,
+        "2": 0.6564999999999999,
+        "4": 0.8141153846153846,
+        "8": 0.897464257964258,
+        "16": 0.94
+      },
+      "correct_samples": 1451,
+      "status_counts": {
+        "extraction_failed": 1168,
+        "correct": 1451,
+        "incorrect": 573,
+        "ambiguous": 8
+      }
+    },
+    "rl": {
+      "pass_at_k": {
+        "1": 0.790625,
+        "2": 0.8532916666666667,
+        "4": 0.8975412087912088,
+        "8": 0.9320617715617716,
+        "16": 0.955
+      },
+      "correct_samples": 2530,
+      "status_counts": {
+        "correct": 2530,
+        "incorrect": 578,
+        "extraction_failed": 92
+      }
+    }
+  },
+  "coverage": {
+    "both": 186,
+    "base_only": 2,
+    "rl_only": 5,
+    "neither": 7,
+    "total": 200
+  },
+  "published_summary_sha256": "2843e60817950793dfb97ac57ae12850baae4c0ef93ec289ebf194d124699059",
+  "gpu_execution": false,
+  "archived_files_modified": false,
+  "limitations": [
+    "Base weights were intentionally excluded from backup; their bytes were not rehashed locally.",
+    "Optimizer and RNG pickle files were checked for presence only, never deserialized.",
+    "Engineering training gate claims were checked for internal consistency; no training was rerun.",
+    "Verifier replay reproduces the original scoring rules and does not validate semantic answer extraction or reasoning.",
+    "No test answers were rescored under changed rules; format sensitivity requires a separate audit."
+  ]
+}

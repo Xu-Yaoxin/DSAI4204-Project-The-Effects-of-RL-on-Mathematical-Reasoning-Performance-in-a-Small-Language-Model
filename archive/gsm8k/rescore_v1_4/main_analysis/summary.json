@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "synthetic": false,
+  "provenance": {
+    "path_base": "code_root",
+    "base_directory": "outputs/rescore_v1_4/test_base",
+    "rl_directory": "outputs/rescore_v1_4/test_rl",
+    "split": "test",
+    "dataset_sha256": "f3d0a7809a80239762973618d9ff8b54d7a3fa0e7fede14c3638bb39626087fc",
+    "protocol_id": "d715a89274cda32409f724c73884b2b087597d5dcf0a89da046b5970668c9bc1",
+    "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+    "adapter_identity": "df30c8123119c16958c2811da3b352de74c79617655ab0bc474719f21c77eea2",
+    "settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "max_prompt_length": 768,
+      "seed": 314159,
+      "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+      "dtype": "bfloat16",
+      "backend": "transformers-sdpa",
+      "batch_size": 1,
+      "world_size": 1,
+      "add_special_tokens": true,
+      "stopping_rule": "tokenizer-eos-or-max_new_tokens",
+      "repetition_penalty": 1.0,
+      "package_versions": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.3.0",
+        "peft": "0.18.1",
+        "accelerate": "1.10.1",
+        "datasets": "4.8.5",
+        "trl": "1.16.0",
+        "safetensors": "0.8.0",
+        "flash-linear-attention": null,
+        "fla-core": null,
+        "causal-conv1d": null
+      }
+    },
+    "scoring_revision": {
+      "base": {
+        "kind": "posthoc_offline_rescore",
+        "verifier_sha256": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+        "source_manifest_sha256": "4ddbb1297ca94a3f5da38677833765632ca6d85428cba6bda80b6d28eac4d515",
+        "source_samples_sha256": "539cc217f3c7efead7fd8c54609eff822ed74f1e811a8105f0f8f81c5e05e17b",
+        "original_training_reward_retained": true,
+        "original_checkpoint_selection_retained": true
+      },
+      "rl": {
+        "kind": "posthoc_offline_rescore",
+        "verifier_sha256": "0e0121cb6994f1a5206e4d1d85fa560dbf350e4fbb9b5904f218ef2d13475ae1",
+        "source_manifest_sha256": "e51be0146cada42f5fa3a32d1de82a39e4fd1c113d23f956396ecd9a701eb1fa",
+        "source_samples_sha256": "09f74f00a4e2f0d1456126d43ec237ec7105999ec5d0ff814ba9e893a1623c0c",
+        "original_training_reward_retained": true,
+        "original_checkpoint_selection_retained": true
+      }
+    }
+  },
+  "sampling": {
+    "n_samples": 16,
+    "question_count": 200,
+    "k_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "bootstrap_replicates": 2000,
+    "seed": 42,
+    "bootstrap_unit": "question",
+    "resampling_unit_count": 200,
+    "interval_method": "paired percentile bootstrap, 95%, linear quantiles"
+  },
+  "metrics": {
+    "base": {
+      "pass_at_k": {
+        "1": 0.648125,
+        "2": 0.7907083333333332,
+        "4": 0.8706181318681319,
+        "8": 0.9196181041181042,
+        "16": 0.95
+      },
+      "pass_at_k_ci": {
+        "1": {
+          "estimate": 0.648125,
+          "ci_low": 0.6046875,
+          "ci_high": 0.691875
+        },
+        "2": {
+          "estimate": 0.7907083333333332,
+          "ci_low": 0.7461604166666667,
+          "ci_high": 0.8310041666666667
+        },
+        "4": {
+          "estimate": 0.8706181318681319,
+          "ci_low": 0.8304447115384616,
+          "ci_high": 0.9055936126373627
+        },
+        "8": {
+          "estimate": 0.9196181041181042,
+          "ci_low": 0.8846285839160839,
+          "ci_high": 0.9488608877233877
+        },
+        "16": {
+          "estimate": 0.95,
+          "ci_low": 0.92,
+          "ci_high": 0.98
+        }
+      }
+    },
+    "rl": {
+      "pass_at_k": {
+        "1": 0.790625,
+        "2": 0.8532916666666667,
+        "4": 0.8975412087912088,
+        "8": 0.9320617715617716,
+        "16": 0.955
+      },
+      "pass_at_k_ci": {
+        "1": {
+          "estimate": 0.790625,
+          "ci_low": 0.7446875,
+          "ci_high": 0.8340625
+        },
+        "2": {
+          "estimate": 0.8532916666666667,
+          "ci_low": 0.8114468749999999,
+          "ci_high": 0.8901260416666668
+        },
+        "4": {
+          "estimate": 0.8975412087912088,
+          "ci_low": 0.8604716346153846,
+          "ci_high": 0.9296644917582416
+        },
+        "8": {
+          "estimate": 0.9320617715617716,
+          "ci_low": 0.899142871017871,
+          "ci_high": 0.9608125777000778
+        },
+        "16": {
+          "estimate": 0.955,
+          "ci_low": 0.925,
+          "ci_high": 0.98
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "delta_pass_at_k": {
+      "1": {
+        "estimate": 0.14250000000000007,
+        "ci_low": 0.11968750000000006,
+        "ci_high": 0.16437499999999994
+      },
+      "2": {
+        "estimate": 0.06258333333333344,
+        "ci_low": 0.043333333333333446,
+        "ci_high": 0.08291770833333319
+      },
+      "4": {
+        "estimate": 0.02692307692307694,
+        "ci_low": 0.009401030219780181,
+        "ci_high": 0.045929739010989006
+      },
+      "8": {
+        "estimate": 0.012443667443667428,
+        "ci_low": -0.005660926573426683,
+        "ci_high": 0.031730439005438954
+      },
+      "16": {
+        "estimate": 0.0050000000000000044,
+        "ci_low": -0.015000000000000013,
+        "ci_high": 0.029999999999999916
+      }
+    },
+    "delta1_minus_delta16": {
+      "estimate": 0.13750000000000007,
+      "ci_low": 0.1050000000000001,
+      "ci_high": 0.1671953124999999
+    }
+  },
+  "coverage": {
+    "both": 188,
+    "base_only": 2,
+    "rl_only": 3,
+    "neither": 7,
+    "total": 200
+  },
+  "diagnostics": {
+    "base": {
+      "sample_count": 3200,
+      "format_compliance_rate": 0.47125,
+      "truncation_rate": 0.0428125,
+      "extraction_failure_rate": 0.0903125,
+      "ambiguous_answer_rate": 0.0025,
+      "mean_output_tokens": 173.8953125,
+      "status_counts": {
+        "correct": 2074,
+        "extraction_failed": 289,
+        "incorrect": 829,
+        "ambiguous": 8
+      },
+      "infrastructure_error_count": 0,
+      "invalid_gold_count": 0
+    },
+    "rl": {
+      "sample_count": 3200,
+      "format_compliance_rate": 0.9709375,
+      "truncation_rate": 0.0284375,
+      "extraction_failure_rate": 0.02875,
+      "ambiguous_answer_rate": 0.0,
+      "mean_output_tokens": 187.483125,
+      "status_counts": {
+        "correct": 2530,
+        "incorrect": 578,
+        "extraction_failed": 92
+      },
+      "infrastructure_error_count": 0,
+      "invalid_gold_count": 0
+    }
+  },
+  "structural": {
+    "enabled": false,
+    "variants": {},
+    "relational_minus_numerical": null,
+    "paired_family_count": 0,
+    "contrast_definition": "Within each family, mean relational delta pass@1 minus mean numerical delta pass@1; then equal-weight mean across families containing both types.",
+    "claim_scope": "Controlled structural variation only; unseen-combination claims require a separate training-structure audit."
+  },
+  "hypothesis_assessment": "Both directional contrasts have positive marginal 95% intervals in this run; this supports the finite-sample hypothesis conditional on this protocol.",
+  "interpretation": [
+    "POSTHOC OFFLINE RESCORING: the original saved responses and frozen checkpoint are retained. Generation protocol_id describes the original generation; scoring_revision identifies the new scorer separately. This does not rerun generation, correct past training rewards, or reselect a checkpoint.",
+    "pass@k estimates success within k independent draws; it does not measure whether a model can select a correct answer without a verifier.",
+    "Coverage categories use all n collected samples; with n greater than 16 they describe observed pass@n, not estimated pass@16.",
+    "Intervals are marginal 95% paired percentile bootstrap intervals; they quantify evaluation-question uncertainty conditional on this training run, not variation across training seeds.",
+    "An interval crossing zero is inconclusive evidence about a difference, not proof of no change.",
+    "Correct final values do not establish valid reasoning; inspect retained outputs manually.",
+    "The scorer was revised after inspecting this run. Results are a scoring-sensitivity analysis, not an independently confirmed experiment under a prospectively fixed scorer. Exact final-value scoring does not assess reasoning validity."
+  ],
+  "analysis_kind": "posthoc_offline_rescore"
+}

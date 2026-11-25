@@ -1,0 +1,44 @@
+Create an entirely English, highly polished 16:9 landscape academic group presentation for a 10-minute DSAI4207 project presentation. The project is a small-scale adaptation of a paper about reinforcement learning with verifiable rewards (RLVR), not an exact reproduction. Title: "Does RL Make a 2B Model More Reliable?" Subtitle: "A controlled study on MATH Level 4". Use "DSAI4207 Group Project" with no invented names or affiliations.
+
+VISUAL DIRECTION
+Editorial research design. Warm off-white, near-black navy typography, muted slate for Base, strong teal for RL, restrained orange for caveats. Large typography, generous whitespace, direct chart labels, consistent colors, 16:9 landscape. Evidence and editable charts/diagrams should dominate. No stock photos of robots, no decorative AI images, no dashboard/card grids, no excessive text. Clear slide headlines express findings. Use native editable charts wherever possible. Bar axes must start at zero and use percentage units. Keep text readable, do not fabricate data or references. Target 12 main slides totaling 600 seconds, plus 1 reference appendix. Provide English presenter notes including timing and citations. Everything in the design and notes must be English.
+
+STORY TO COVER (you may arrange these into 12 main slides, without adding unsupported claims)
+Opening: Compare single-answer reliability with observed coverage across repeated attempts. Give the result accurately: Base pass@1 43.53%, RL 61.50%, +17.97 percentage points (pp). This is one trained model on a selected 200-question test subset.
+Research motivation: Inspired by Yue et al. (2025), "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?", arXiv:2504.13837v5, https://arxiv.org/abs/2504.13837v5. Ask whether RL increases the probability of correct answers and whether more questions become solvable within 16 attempts. Our model, budget and dataset differ from the paper. Do not claim exact replication or that new reasoning capacity is proven.
+Data/protocol: Qwen3.5-2B-Base. Selected MATH Level 4 problems with scalar numerical answers. Independent sets: 512 training, 128 development, 200 test questions. Test set fixed and excluded from training and checkpoint selection. Each model answers every test question 16 independently seeded times, so 3,200 Base + 3,200 RL = 6,400 total answers. A clean dataset/process diagram is appropriate.
+Training: Low-rank adaptation (LoRA) with group relative policy optimization (GRPO). No supervised fine-tuning stage, no teacher reasoning, no learned reward model. The exact numerical-answer checker provides reward 1 for confirmed correct, 0 otherwise. For each question, sample 8 responses and compare their rewards within the group; use these relative rewards to update LoRA. 10.9 million trainable parameters. LoRA rank 16, learning rate 0.000005, 3 epochs, 384 optimizer updates, one training seed (42), KL coefficient beta=0. Training output cap 2,048 tokens. Show a simple editable loop from question to eight answers to verifier to relative reward to LoRA update. Keep algorithm readable and do not imply full-model fine-tuning.
+Checkpoint selection: Development set only, 128 questions x 4 samples = 512 responses per checkpoint. Chart:
+Step 128: 255/512 = 49.80%
+Step 256: 299/512 = 58.40%
+Step 384: 309/512 = 60.35% (selected)
+These are development response success rates, not test results. The original v3 scorer selected checkpoint 384. Later v4 rescoring did not retrain or reselect the model.
+Metrics: pass@1 estimates success on one sampled response; pass@4 estimates at least one correct response in four; pass@16 is the fraction of questions with at least one correct response among all 16. Average the estimator 1 - C(16-c,k)/C(16,k) over 200 questions. A real illustrative Base question had 8 correct out of 16: pass@1=50%, estimated pass@4=96.15%, pass@16=100%. Make the distinction intuitive using a 16-dot response strip and keep the formula optional/small rather than dense mathematics.
+MAIN RESULTS: grouped bar chart, y axis 0-100%, three categories:
+pass@1: Base 43.53%, RL 61.50%
+pass@4: Base 69.63%, RL 81.93%
+pass@16: Base 85.50%, RL 94.00%.
+Caption: 200 paired test questions, 16 responses/model/question; final v4 scoring. 1,393 Base correct responses vs 1,968 RL correct responses out of 3,200 each, +575.
+UNCERTAINTY: preferably horizontal dot-and-whisker chart, RL minus Base in pp:
+pass@1 +17.97, paired 95% CI [15.09,20.91]
+pass@4 +12.29, paired 95% CI [8.94,15.70]
+pass@16 +8.50, paired 95% CI [4.00,13.00].
+2,000 paired bootstrap resamples at question/family level; 200 unique families. Responses are not independent questions. These intervals do not measure variation across training seeds.
+The pass@1 gain exceeds the pass@16 gain by 9.47 pp (95% CI [4.37,14.75]). State that reliability improved more than observed 16-attempt coverage.
+COVERAGE: 200-question 2x2 matrix or proportion diagram:
+167 solved by both models in 16 attempts;
+21 solved only by RL;
+4 solved only by Base;
+8 solved by neither.
+Base covers 171/200, RL 188/200, net +17 questions. Label "observed within 16 attempts". A Base failure in 16 attempts does not mean its true success probability is zero. Do not call the 21 RL-only questions proof of entirely new abilities.
+SCORING AND RUN CONDITIONS: All original answers preserved, no model generation during rescoring. A common v4 scorer rescored the fixed answers. RL gained 18 confirmed-correct answers through extraction fixes; Base correct count unchanged. Stopped outputs retained their original failure/unknown status. Main comparison includes every requested attempt in the denominator.
+Evaluation policy: same prompts, temperature 0.6, top-p 0.95, native context allowance of 262,144 minus prompt tokens; natural EOS termination, repetition guard, and 300-second answer deadline. Non-EOS outputs receive no credit.
+Diagnostic count chart (out of 3,200 per model):
+300-second timeouts Base 219, RL 320
+Repetition stops/unknown Base 211, RL 138.
+RL repeats less often but times out more often. Remaining EOS extraction/ambiguity cases: Base 217, RL 67. A symbolic/numerical checker is not a universal semantic proof checker.
+LIMITATIONS: One training seed; selected scalar-answer MATH subset; only 16 samples per question. All devices RTX 4090, but recorded throughput differs: Base about 40.53 tokens/sec, RL workers about 20.00 and 28.44 tokens/sec. Equal wall-time deadlines do not imply equal token budgets. We cannot isolate a pure equal-compute reasoning effect.
+A conservative observed pass@16 gain is +8.5 pp; if unknown outcomes are assigned extreme alternative labels, its sensitivity range is -2.5 to +14 pp. This is an unknown-outcome sensitivity range, NOT a confidence interval, and it excludes potential timeout/extraction errors. Keep this distinction explicit if shown. Therefore evidence supports better success under this protocol; stronger claims about the complete reasoning frontier require more evidence.
+CONCLUSION: Under the tested protocol, RL improves single-answer reliability and observed coverage, with a larger reliability gain. Next study: multiple training seeds, a matched token budget, and independently audited scoring. Use restrained, factual language.
+REFERENCES appendix: Yue et al. (2025), arXiv:2504.13837v5 (paper above); Qwen Team, Qwen3.5-2B-Base, https://huggingface.co/Qwen/Qwen3.5-2B-Base ; internal frozen experiment: DSAI4207 project, results/final/summary.json, results/final/per_question.jsonl, configs/math_l4.json, selection.json, formal/report.json, final scorer v4. No fabricated publication citations.
+Do not state GSM8K single-answer accuracy was 98%. Prefer omitting GSM8K from the timed presentation to focus on the completed MATH experiment.

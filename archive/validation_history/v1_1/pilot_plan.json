@@ -1,0 +1,20 @@
+{
+  "mode": "pilot",
+  "config_version": "1.1.0",
+  "training_questions": 128,
+  "effective_batch_size": 32,
+  "unique_prompts_per_update": 4,
+  "generation_batch_size": 8,
+  "steps_per_generation": 8,
+  "unique_prompts_per_generation": 1,
+  "generation_batches_per_update": 4,
+  "expected_optimizer_steps": 96,
+  "expected_reward_groups": 384,
+  "output_dir": "outputs/v1_1/pilot",
+  "config_path": "configs/v1.json",
+  "training_file": "data/processed/pilot.jsonl",
+  "adapter_path": "outputs/v1_1/pilot/adapter",
+  "path_base": "code_root",
+  "gpu_checked": false,
+  "formal_requires_matching_pilot": false
+}

@@ -1,0 +1,131 @@
+{
+  "kind": "posthoc_selection_sensitivity_only",
+  "original_frozen_selection": {
+    "schema_version": 1,
+    "path_base": "code_root",
+    "criterion": "development numerical pass@1; ties choose earliest saved step",
+    "step": 384,
+    "adapter_path": "outputs/v1_2/formal/checkpoint-384",
+    "adapter_identity": "df30c8123119c16958c2811da3b352de74c79617655ab0bc474719f21c77eea2",
+    "pass_at_1": 0.815,
+    "protocol_id": "e011d680bb1b2a48f1f3e82d80b3aedcdb9c50b196c65d33ab813eaf430dfb72",
+    "evaluation_path": "outputs/v1_2/selection/dev/checkpoint-384",
+    "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+    "evaluation_config": {
+      "seed": 314159,
+      "n_samples": 16,
+      "dev_samples": 4,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "max_prompt_length": 768,
+      "bootstrap_replicates": 2000
+    },
+    "prompt": {
+      "template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n"
+    },
+    "candidates": [
+      {
+        "step": 128,
+        "adapter_path": "outputs/v1_2/formal/checkpoint-128",
+        "adapter_identity": "99851dccd2dd0c3dd6cfda2a4524abcc896d8cf669679bf39bc9abc701b1c00e",
+        "pass_at_1": 0.76,
+        "protocol_id": "e011d680bb1b2a48f1f3e82d80b3aedcdb9c50b196c65d33ab813eaf430dfb72",
+        "evaluation_path": "outputs/v1_2/selection/dev/checkpoint-128"
+      },
+      {
+        "step": 256,
+        "adapter_path": "outputs/v1_2/formal/checkpoint-256",
+        "adapter_identity": "7d8bd89573a94208e8d9f4d28e15e474bc7a97cc6260ff6b38e7a5f56f7ffc5c",
+        "pass_at_1": 0.795,
+        "protocol_id": "e011d680bb1b2a48f1f3e82d80b3aedcdb9c50b196c65d33ab813eaf430dfb72",
+        "evaluation_path": "outputs/v1_2/selection/dev/checkpoint-256"
+      },
+      {
+        "step": 384,
+        "adapter_path": "outputs/v1_2/formal/checkpoint-384",
+        "adapter_identity": "df30c8123119c16958c2811da3b352de74c79617655ab0bc474719f21c77eea2",
+        "pass_at_1": 0.815,
+        "protocol_id": "e011d680bb1b2a48f1f3e82d80b3aedcdb9c50b196c65d33ab813eaf430dfb72",
+        "evaluation_path": "outputs/v1_2/selection/dev/checkpoint-384"
+      }
+    ],
+    "training_run": "outputs/v1_2/formal",
+    "training_report_sha256": "8acbde4eea72daa78775d720c3f08038c0b966c9249dfd5dd82b7a684e7792fe",
+    "training_manifest_sha256": "5e73ecb49cc5dac386df13bd47e9312c55a630e7035554d59a82ecdb9da28946",
+    "training_topology": {
+      "world_size": 1,
+      "single_node": true,
+      "local_micro_batch": 1,
+      "gradient_accumulation_steps_per_rank": 32,
+      "global_effective_batch_size": 32,
+      "global_unique_prompts_per_update": 4,
+      "per_rank_generation_batch_size": 8,
+      "global_generation_batch_size": 8,
+      "per_rank_unique_prompts_per_update": 4,
+      "steps_per_generation": 8
+    },
+    "training_world_size": 1,
+    "settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "max_prompt_length": 768,
+      "seed": 314159,
+      "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+      "dtype": "bfloat16",
+      "backend": "transformers-sdpa",
+      "batch_size": 1,
+      "world_size": 1,
+      "add_special_tokens": true,
+      "stopping_rule": "tokenizer-eos-or-max_new_tokens",
+      "repetition_penalty": 1.0,
+      "package_versions": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.3.0",
+        "peft": "0.18.1",
+        "accelerate": "1.10.1",
+        "datasets": "4.8.5",
+        "trl": "1.16.0",
+        "safetensors": "0.8.0",
+        "flash-linear-attention": null,
+        "fla-core": null,
+        "causal-conv1d": null
+      }
+    },
+    "code_hashes": {
+      "verify_answers.py": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+      "load_model.py": "3fbff753e3257c2dd50f581471bf45caed1c0dea3d711c1eefb7ab3d651942f6",
+      "fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+      "evaluate.py": "178e140653986abc4ff69cf9eebe142889ced417fbf571e39adaef7ba8c2a819",
+      "select_checkpoint.py": "badaa7836a5c30f3ff4dbf1a8a6d06839c8ad6232ef06b516cd284f72c2ea6e2"
+    },
+    "dev_sha256": "b6d1108c1d85e5ae8ac7c6ba331cf8e9180cc1494c4e3398d412ee1c362b1372",
+    "test_sha256": "f3d0a7809a80239762973618d9ff8b54d7a3fa0e7fede14c3638bb39626087fc",
+    "structural_sha256": "1cda664d99b0864f901c0ddf8101e45966c876cb3a5d7654c17d3b059ec4799a"
+  },
+  "candidate_scores": [
+    {
+      "step": 128,
+      "original_pass_at_1": 0.76,
+      "revised_pass_at_1": 0.76
+    },
+    {
+      "step": 256,
+      "original_pass_at_1": 0.795,
+      "revised_pass_at_1": 0.795
+    },
+    {
+      "step": 384,
+      "original_pass_at_1": 0.815,
+      "revised_pass_at_1": 0.815
+    }
+  ],
+  "would_select_step_under_revised_dev_scores": 384,
+  "selection_would_change": false,
+  "test_adapter_step_retained": 384,
+  "automatic_reselection_performed": false,
+  "limitation": "These saved test answers remain from the original frozen adapter. Revised dev scores do not authorize reselection or validate another adapter on test."
+}

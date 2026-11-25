@@ -1,0 +1,4319 @@
+{
+  "root": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project",
+  "files": [
+    {
+      "path": "ANALYSIS.md",
+      "bytes": 6791
+    },
+    {
+      "path": "README.md",
+      "bytes": 5393
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1737
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/COMMANDS.md",
+      "bytes": 1205
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/READM.md",
+      "bytes": 6141
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/README.md",
+      "bytes": 6141
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/bundle_manifest.json",
+      "bytes": 4919
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/configs/confirmation_v2.json",
+      "bytes": 1136
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/README.md",
+      "bytes": 1988
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/manifest.json",
+      "bytes": 15416
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/questions.jsonl",
+      "bytes": 190147
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/questions.md",
+      "bytes": 47160
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/data/boundary_confirm_v2/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/memory.md",
+      "bytes": 2502
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/provenance/README.md",
+      "bytes": 424
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/provenance/gold_filter_verifier_v1_4.py",
+      "bytes": 9027
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/provenance/math_source_tree.json",
+      "bytes": 5405
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/provenance/pinned_model_config.json",
+      "bytes": 2908
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/provenance/prepare_confirmation_data.py",
+      "bytes": 19225
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/run_boundary.sh",
+      "bytes": 4002
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/run_boundary_parallel.sh",
+      "bytes": 122
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/run_confirmation_parallel.sh",
+      "bytes": 122
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/analyze_boundary.py",
+      "bytes": 21623
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/evaluate_boundary.py",
+      "bytes": 24842
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/merge_boundary.py",
+      "bytes": 16629
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/run_boundary_parallel.py",
+      "bytes": 12393
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/scripts/verify_answers.py",
+      "bytes": 11773
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/tests/run_all.py",
+      "bytes": 1356
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/tests/test_boundary_evaluation.py",
+      "bytes": 28168
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/tests/test_boundary_merge.py",
+      "bytes": 20767
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/tests/test_boundary_parallel.py",
+      "bytes": 7608
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/tests/test_verifier_v2.py",
+      "bytes": 28157
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/context_capacity.json",
+      "bytes": 4400
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/context_capacity.md",
+      "bytes": 2580
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/data_test_results.txt",
+      "bytes": 122
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/dataset_check.json",
+      "bytes": 687
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/parallel_plan.txt",
+      "bytes": 1401
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/release_check.json",
+      "bytes": 1584
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/scorer_v2_replay.json",
+      "bytes": 17653
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/sequential_plan.txt",
+      "bytes": 1401
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/test_results.txt",
+      "bytes": 1522
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_confirm_v2/validation/upload_plan.txt",
+      "bytes": 1478
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/COMMANDS.md",
+      "bytes": 2639
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/READM.md",
+      "bytes": 6248
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/README.md",
+      "bytes": 6248
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/bundle_manifest.json",
+      "bytes": 4971
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/configs/guarded_v3.json",
+      "bytes": 1582
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/README.md",
+      "bytes": 1988
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/manifest.json",
+      "bytes": 15416
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/questions.jsonl",
+      "bytes": 190147
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/questions.md",
+      "bytes": 47160
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/data/boundary_confirm_v2/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/memory.md",
+      "bytes": 1771
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/provenance/README.md",
+      "bytes": 424
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/provenance/gold_filter_verifier_v1_4.py",
+      "bytes": 9027
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/provenance/math_source_tree.json",
+      "bytes": 5405
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/provenance/pinned_model_config.json",
+      "bytes": 2908
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/provenance/prepare_confirmation_data.py",
+      "bytes": 19225
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/run_guarded.sh",
+      "bytes": 2150
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/analyze_boundary.py",
+      "bytes": 27347
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/evaluate_boundary.py",
+      "bytes": 38196
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/merge_boundary.py",
+      "bytes": 16695
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/monitor_guarded.py",
+      "bytes": 3475
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/repetition_guard.py",
+      "bytes": 2575
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/run_boundary_parallel.py",
+      "bytes": 25010
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/validate_guarded_sample.py",
+      "bytes": 6980
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/scripts/verify_answers.py",
+      "bytes": 11773
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/run_all.py",
+      "bytes": 1487
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_boundary_evaluation.py",
+      "bytes": 23641
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_boundary_merge.py",
+      "bytes": 14685
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_boundary_parallel.py",
+      "bytes": 12061
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_guarded_analysis.py",
+      "bytes": 16317
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_live_monitor.py",
+      "bytes": 2960
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_repetition_guard.py",
+      "bytes": 5991
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/tests/test_verifier_v2.py",
+      "bytes": 28157
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/protected_check.json",
+      "bytes": 198
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/release_check.json",
+      "bytes": 422
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/serial_plan.txt",
+      "bytes": 1683
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/test_report.json",
+      "bytes": 702
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/test_results.txt",
+      "bytes": 2032
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_guarded_v3/validation/upload_plan.txt",
+      "bytes": 1683
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/READM.md",
+      "bytes": 119
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/README.md",
+      "bytes": 9952
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/bundle_manifest.json",
+      "bytes": 3456
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/configs/boundary_v1.json",
+      "bytes": 1022
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/README.md",
+      "bytes": 1507
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/manifest.json",
+      "bytes": 7834
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/questions.jsonl",
+      "bytes": 95322
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/questions.md",
+      "bytes": 28103
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/raw/math500/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/data/boundary_v1/raw/math500/README.md",
+      "bytes": 412
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/memory.md",
+      "bytes": 1601
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/run_boundary.sh",
+      "bytes": 3978
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/run_boundary_parallel.sh",
+      "bytes": 122
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/analyze_boundary.py",
+      "bytes": 21009
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/evaluate_boundary.py",
+      "bytes": 23502
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/merge_boundary.py",
+      "bytes": 15989
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/run_boundary_parallel.py",
+      "bytes": 12384
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/scripts/verify_answers.py",
+      "bytes": 9027
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/validation/parallel_plan.txt",
+      "bytes": 1215
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/validation/quick_plan.txt",
+      "bytes": 1211
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/validation/release_check.json",
+      "bytes": 430
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/validation/sequential_plan.txt",
+      "bytes": 1215
+    },
+    {
+      "path": "archive/difficulty_probes/code/boundary_probe_v1/validation/test_report.json",
+      "bytes": 13923
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/READM.md",
+      "bytes": 119
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/README.md",
+      "bytes": 9952
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/boundary-parallel.log",
+      "bytes": 14548
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/bundle_manifest.json",
+      "bytes": 3456
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/configs/boundary_v1.json",
+      "bytes": 1022
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/README.md",
+      "bytes": 1507
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/manifest.json",
+      "bytes": 7834
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/questions.jsonl",
+      "bytes": 95322
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/questions.md",
+      "bytes": 28103
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/raw/math500/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/data/boundary_v1/raw/math500/README.md",
+      "bytes": 412
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/memory.md",
+      "bytes": 1601
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/.boundary-run.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/.base.merge.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/.supervisor.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/calibration_candidates.json",
+      "bytes": 2602
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/per_question.jsonl",
+      "bytes": 23492
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/ready.json",
+      "bytes": 1089
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/report.md",
+      "bytes": 3399
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/analysis/summary.json",
+      "bytes": 8033
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/base/manifest.json",
+      "bytes": 6666
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/base/merge_ready.json",
+      "bytes": 1260
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/base/samples.jsonl",
+      "bytes": 852560
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/invocation-20261031T141852750071-1324.json",
+      "bytes": 647
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0/.evaluation.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0/manifest.json",
+      "bytes": 5140
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0/samples.jsonl",
+      "bytes": 430377
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_0.log",
+      "bytes": 42775
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1/.evaluation.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1/manifest.json",
+      "bytes": 5140
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1/samples.jsonl",
+      "bytes": 422183
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/outputs/boundary_v1_parallel/worker_1.log",
+      "bytes": 42683
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/run_boundary.sh",
+      "bytes": 3978
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/run_boundary_parallel.sh",
+      "bytes": 122
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/analyze_boundary.py",
+      "bytes": 21009
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/evaluate_boundary.py",
+      "bytes": 23502
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/merge_boundary.py",
+      "bytes": 15989
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/run_boundary_parallel.py",
+      "bytes": 12384
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/scripts/verify_answers.py",
+      "bytes": 9027
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/validation/parallel_plan.txt",
+      "bytes": 1215
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/validation/quick_plan.txt",
+      "bytes": 1211
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/validation/release_check.json",
+      "bytes": 430
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/validation/sequential_plan.txt",
+      "bytes": 1215
+    },
+    {
+      "path": "archive/difficulty_probes/run_20261031/boundary_probe_v1/validation/test_report.json",
+      "bytes": 13923
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/README.md",
+      "bytes": 1151
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/analysis.log",
+      "bytes": 350
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/changed_scores.jsonl",
+      "bytes": 770883
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-128/manifest.json",
+      "bytes": 11848
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-128/samples.jsonl",
+      "bytes": 1065554
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-256/manifest.json",
+      "bytes": 11848
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-256/samples.jsonl",
+      "bytes": 1109182
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-384/manifest.json",
+      "bytes": 11848
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/dev/checkpoint-384/samples.jsonl",
+      "bytes": 1125472
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/diagnostics.json",
+      "bytes": 2159
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/main_analysis/manual_inspection.csv",
+      "bytes": 182628
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/main_analysis/per_question.jsonl",
+      "bytes": 146865
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/main_analysis/report.md",
+      "bytes": 3306
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/main_analysis/summary.json",
+      "bytes": 8495
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/provenance.json",
+      "bytes": 11323
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/ready.json",
+      "bytes": 6752
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/selection_sensitivity.json",
+      "bytes": 5381
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/test_base/manifest.json",
+      "bytes": 20392
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/test_base/samples.jsonl",
+      "bytes": 4429601
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/test_rl/manifest.json",
+      "bytes": 21320
+    },
+    {
+      "path": "archive/gsm8k/rescore_v1_4/test_rl/samples.jsonl",
+      "bytes": 4479503
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/.gitignore",
+      "bytes": 220
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/READM.md",
+      "bytes": 22269
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/README.md",
+      "bytes": 1814
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/configs/archive/v1.0.json",
+      "bytes": 1481
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/configs/archive/v1.1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/configs/archive/v1.2.1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/configs/archive/v1.2.json",
+      "bytes": 1533
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/configs/v1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/dev.jsonl",
+      "bytes": 91934
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/engineering.jsonl",
+      "bytes": 14402
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/manifest.json",
+      "bytes": 34097
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/pilot.jsonl",
+      "bytes": 58176
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/structural.jsonl",
+      "bytes": 121760
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/structural_manifest.json",
+      "bytes": 826
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/structural_review.template.json",
+      "bytes": 36367
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/test.jsonl",
+      "bytes": 93728
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/processed/train.jsonl",
+      "bytes": 231537
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/raw/gsm8k/LICENSE",
+      "bytes": 1062
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/raw/gsm8k/source_manifest.json",
+      "bytes": 1221
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/raw/gsm8k/test.jsonl",
+      "bytes": 749738
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/data/raw/gsm8k/train.jsonl",
+      "bytes": 4166206
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/download_packages.sh",
+      "bytes": 607
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/memory.md",
+      "bytes": 28910
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/models/qwen3.5-2b-base-manifest.json",
+      "bytes": 2126
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/environment/setup-ntWg1Fxl/gpu_setup.json",
+      "bytes": 476
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/environment/setup-ntWg1Fxl/hardware_check.json",
+      "bytes": 832
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/environment/setup-ntWg1Fxl/readiness.json",
+      "bytes": 4373
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/environment/setup-ntWg1Fxl/ready.json",
+      "bytes": 613
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/environment/setup-ntWg1Fxl/requirements-installed.txt",
+      "bytes": 1564
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/matplotlib-cache/fontlist-v3.11.0.json",
+      "bytes": 26961
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_base/manifest.json",
+      "bytes": 4978
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_base/samples.jsonl",
+      "bytes": 303307
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_hardware.json",
+      "bytes": 832
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/README.md",
+      "bytes": 1872
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/adapter/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/trainer_state.json",
+      "bytes": 1733
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-1/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/trainer_state.json",
+      "bytes": 2713
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/checkpoint-2/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/manifest.json",
+      "bytes": 13880
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/module_audit.json",
+      "bytes": 34105
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/report.json",
+      "bytes": 5571
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/reward_audit.jsonl",
+      "bytes": 41592
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/reward_audit.rank-0.jsonl",
+      "bytes": 41592
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/trainer_logs.json",
+      "bytes": 2069
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/engineering_train/trainer_state.json",
+      "bytes": 2944
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/environment.json",
+      "bytes": 4373
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/README.md",
+      "bytes": 1850
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/adapter/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/trainer_state.json",
+      "bytes": 126398
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-128/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/trainer_state.json",
+      "bytes": 252025
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-256/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/trainer_state.json",
+      "bytes": 376797
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/checkpoint-384/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/manifest.json",
+      "bytes": 26364
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/module_audit.json",
+      "bytes": 34110
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/report.json",
+      "bytes": 10931
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/reward_audit.jsonl",
+      "bytes": 9694675
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/reward_audit.rank-0.jsonl",
+      "bytes": 9694675
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/trainer_logs.json",
+      "bytes": 355522
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal/trainer_state.json",
+      "bytes": 377032
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/formal_hardware.json",
+      "bytes": 832
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/main_analysis/manual_inspection.csv",
+      "bytes": 178767
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/main_analysis/overview.png",
+      "bytes": 346701
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/main_analysis/per_question.jsonl",
+      "bytes": 151548
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/main_analysis/report.md",
+      "bytes": 2501
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/main_analysis/summary.json",
+      "bytes": 6879
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/README.md",
+      "bytes": 1848
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/adapter/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/trainer_state.json",
+      "bytes": 32131
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-32/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/trainer_state.json",
+      "bytes": 63474
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-64/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/trainer_state.json",
+      "bytes": 94804
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/checkpoint-96/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/manifest.json",
+      "bytes": 16347
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/module_audit.json",
+      "bytes": 34109
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/report.json",
+      "bytes": 6857
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/reward_audit.jsonl",
+      "bytes": 2516664
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/reward_audit.rank-0.jsonl",
+      "bytes": 2516664
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/trainer_logs.json",
+      "bytes": 89084
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot/trainer_state.json",
+      "bytes": 95039
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/pilot_hardware.json",
+      "bytes": 832
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-128/manifest.json",
+      "bytes": 5426
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-128/samples.jsonl",
+      "bytes": 954147
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-256/manifest.json",
+      "bytes": 5426
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-256/samples.jsonl",
+      "bytes": 997885
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-384/manifest.json",
+      "bytes": 5426
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/dev/checkpoint-384/samples.jsonl",
+      "bytes": 1014198
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/selection/selection.json",
+      "bytes": 4423
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/test_base/manifest.json",
+      "bytes": 9604
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/test_base/samples.jsonl",
+      "bytes": 3979491
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/test_rl/manifest.json",
+      "bytes": 10057
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/v1_2/test_rl/samples.jsonl",
+      "bytes": 4033933
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/outputs/validation/v1_2_2/test_report.json",
+      "bytes": 6850
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/packages/linux-cp311-cu128/manifest.json",
+      "bytes": 130863
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/packages/linux-cp311-cu128/requirements-lock.txt",
+      "bytes": 8302
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/packages/linux-cp311-cu128/resolution-report.json",
+      "bytes": 1136860
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/run.sh",
+      "bytes": 743
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/run_v1.sh",
+      "bytes": 143
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/analyze.py",
+      "bytes": 25131
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/build_variants.py",
+      "bytes": 13047
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/check_gpu.py",
+      "bytes": 3681
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/doctor.py",
+      "bytes": 11157
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/download_data.py",
+      "bytes": 8528
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/download_model.py",
+      "bytes": 15403
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/evaluate.py",
+      "bytes": 21988
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/plot_results.py",
+      "bytes": 6300
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/prepare_data.py",
+      "bytes": 10249
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/prepare_packages.py",
+      "bytes": 28674
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/resolve_gpus.py",
+      "bytes": 3419
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/run_pipeline.py",
+      "bytes": 11041
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/select_checkpoint.py",
+      "bytes": 14231
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/smoke_demo.py",
+      "bytes": 2999
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/train_grpo.py",
+      "bytes": 46733
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/scripts/verify_answers.py",
+      "bytes": 7147
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/setup.log",
+      "bytes": 250975
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/setup_gpu.sh",
+      "bytes": 11873
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/run_all.py",
+      "bytes": 2578
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_analysis.py",
+      "bytes": 10239
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_data_verifier.py",
+      "bytes": 13058
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_dependencies.py",
+      "bytes": 13320
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_download_data.py",
+      "bytes": 9469
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_download_model.py",
+      "bytes": 16279
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_evaluation.py",
+      "bytes": 8619
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_evaluation_cache.py",
+      "bytes": 26461
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_loader.py",
+      "bytes": 10475
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_pipeline.py",
+      "bytes": 11342
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_setup_workflow.py",
+      "bytes": 12340
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/tests/test_training.py",
+      "bytes": 11520
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/train-pathfix.log",
+      "bytes": 568541
+    },
+    {
+      "path": "archive/gsm8k/run_20261031/code/train.log",
+      "bytes": 2416
+    },
+    {
+      "path": "archive/math_l4/CURRENT_RESULTS.md",
+      "bytes": 240
+    },
+    {
+      "path": "archive/math_l4/build_report.py",
+      "bytes": 14628
+    },
+    {
+      "path": "archive/math_l4/data_checks.json",
+      "bytes": 11525
+    },
+    {
+      "path": "archive/math_l4/experiment/COMMANDS.md",
+      "bytes": 4079
+    },
+    {
+      "path": "archive/math_l4/experiment/READM.md",
+      "bytes": 9678
+    },
+    {
+      "path": "archive/math_l4/experiment/README.md",
+      "bytes": 9678
+    },
+    {
+      "path": "archive/math_l4/experiment/bundle_manifest.json",
+      "bytes": 9071
+    },
+    {
+      "path": "archive/math_l4/experiment/configs/math_l4.json",
+      "bytes": 2622
+    },
+    {
+      "path": "archive/math_l4/experiment/data/README.md",
+      "bytes": 2918
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/dev.jsonl",
+      "bytes": 123229
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/engineering.jsonl",
+      "bytes": 31428
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/manifest.json",
+      "bytes": 55086
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/pilot.jsonl",
+      "bytes": 124829
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/test.jsonl",
+      "bytes": 192225
+    },
+    {
+      "path": "archive/math_l4/experiment/data/processed/train.jsonl",
+      "bytes": 496444
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/algebra/test-00000-of-00001.parquet",
+      "bytes": 353114
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/algebra/train-00000-of-00001.parquet",
+      "bytes": 505186
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/counting_and_probability/test-00000-of-00001.parquet",
+      "bytes": 175032
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/counting_and_probability/train-00000-of-00001.parquet",
+      "bytes": 329354
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/geometry/test-00000-of-00001.parquet",
+      "bytes": 263835
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/geometry/train-00000-of-00001.parquet",
+      "bytes": 549388
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet",
+      "bytes": 394797
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/intermediate_algebra/train-00000-of-00001.parquet",
+      "bytes": 575154
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/number_theory/test-00000-of-00001.parquet",
+      "bytes": 182003
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/number_theory/train-00000-of-00001.parquet",
+      "bytes": 308653
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/prealgebra/test-00000-of-00001.parquet",
+      "bytes": 267729
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/prealgebra/train-00000-of-00001.parquet",
+      "bytes": 383626
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/precalculus/test-00000-of-00001.parquet",
+      "bytes": 242241
+    },
+    {
+      "path": "archive/math_l4/experiment/data/raw/math_full/precalculus/train-00000-of-00001.parquet",
+      "bytes": 353745
+    },
+    {
+      "path": "archive/math_l4/experiment/memory.md",
+      "bytes": 3693
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/base_stop_receipt.json",
+      "bytes": 1850
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-128/manifest.json",
+      "bytes": 7769
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-128/samples.jsonl",
+      "bytes": 9617377
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-256/manifest.json",
+      "bytes": 7770
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-256/samples.jsonl",
+      "bytes": 7581391
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-384/manifest.json",
+      "bytes": 7770
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/dev/checkpoint-384/samples.jsonl",
+      "bytes": 8642053
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-128/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-128/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-128/resume_state.json",
+      "bytes": 19977
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-256/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-256/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-256/resume_state.json",
+      "bytes": 19978
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-384/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/checkpoint-384/resume_state.json",
+      "bytes": 19979
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/manifest.json",
+      "bytes": 58524
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/module_audit.json",
+      "bytes": 34112
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/report.json",
+      "bytes": 19686
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/reward_audit.jsonl",
+      "bytes": 31354760
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/reward_audit.rank-0.jsonl",
+      "bytes": 31354760
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/formal/trainer_logs.json",
+      "bytes": 357696
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/main_analysis/per_question.jsonl",
+      "bytes": 230429
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/main_analysis/ready.json",
+      "bytes": 970
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/main_analysis/report.md",
+      "bytes": 3165
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/main_analysis/summary.json",
+      "bytes": 7268
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/shard_0/manifest.json",
+      "bytes": 9079
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+      "bytes": 18953169
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/shard_1/manifest.json",
+      "bytes": 9076
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/shard_1/samples.jsonl",
+      "bytes": 28941485
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/worker_0_hardware.json",
+      "bytes": 276178
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/worker_0_state.json",
+      "bytes": 305
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/worker_1_hardware.json",
+      "bytes": 271557
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/rl_shards/worker_1_state.json",
+      "bytes": 307
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/selection.json",
+      "bytes": 4559
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_base/manifest.json",
+      "bytes": 7473
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "bytes": 48967205
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/manifest.json",
+      "bytes": 11554
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/merge_provenance.json",
+      "bytes": 3693
+    },
+    {
+      "path": "archive/math_l4/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/samples.jsonl",
+      "bytes": 47894654
+    },
+    {
+      "path": "archive/math_l4/experiment/prepare.sh",
+      "bytes": 110
+    },
+    {
+      "path": "archive/math_l4/experiment/provenance/README.md",
+      "bytes": 1864
+    },
+    {
+      "path": "archive/math_l4/experiment/provenance/eligible_pool.jsonl",
+      "bytes": 1737991
+    },
+    {
+      "path": "archive/math_l4/experiment/provenance/gold_parser.py",
+      "bytes": 9027
+    },
+    {
+      "path": "archive/math_l4/experiment/provenance/history_exclusions.json",
+      "bytes": 709103
+    },
+    {
+      "path": "archive/math_l4/experiment/provenance/math_source_tree.json",
+      "bytes": 5405
+    },
+    {
+      "path": "archive/math_l4/experiment/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "archive/math_l4/experiment/run.sh",
+      "bytes": 911
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/analyze.py",
+      "bytes": 12662
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/doctor.py",
+      "bytes": 15555
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/evaluate.py",
+      "bytes": 40369
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/monitor.py",
+      "bytes": 2486
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/preflight.py",
+      "bytes": 6406
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/prepare_data.py",
+      "bytes": 14689
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/repetition_guard.py",
+      "bytes": 2575
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/run_experiment.py",
+      "bytes": 12542
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/select_checkpoint.py",
+      "bytes": 1922
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/train_grpo.py",
+      "bytes": 60481
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/training_checkpoint_event.py",
+      "bytes": 1700
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/training_resume.py",
+      "bytes": 14325
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/validate_evaluation.py",
+      "bytes": 8234
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/validate_guarded_sample.py",
+      "bytes": 6980
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/validate_selection.py",
+      "bytes": 9091
+    },
+    {
+      "path": "archive/math_l4/experiment/scripts/verify_answers.py",
+      "bytes": 14528
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/run_all.py",
+      "bytes": 1506
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_analysis.py",
+      "bytes": 15520
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_data.py",
+      "bytes": 8578
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_evaluation.py",
+      "bytes": 27157
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_pipeline.py",
+      "bytes": 13034
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_preflight.py",
+      "bytes": 7887
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_repetition_guard.py",
+      "bytes": 5988
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_scorer.py",
+      "bytes": 207606
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_training.py",
+      "bytes": 11593
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_training_resume.py",
+      "bytes": 13806
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_training_resume_integration.py",
+      "bytes": 13522
+    },
+    {
+      "path": "archive/math_l4/experiment/tests/test_training_resume_run_guard.py",
+      "bytes": 9934
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/data_check.json",
+      "bytes": 11680
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/data_prepare.txt",
+      "bytes": 2891
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/data_tests.txt",
+      "bytes": 116
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/full_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/protected_check.json",
+      "bytes": 137
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/release_check.json",
+      "bytes": 1226
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/scorer_policy.md",
+      "bytes": 3422
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/scorer_test_results.json",
+      "bytes": 232
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/scorer_validation.json",
+      "bytes": 4832
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/test_report.json",
+      "bytes": 1038
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/test_results.txt",
+      "bytes": 3167
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/thread_mock_fix/report.json",
+      "bytes": 6220
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/thread_mock_fix/reproduction.txt",
+      "bytes": 1705
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/thread_mock_fix/targeted.txt",
+      "bytes": 110
+    },
+    {
+      "path": "archive/math_l4/experiment/validation/upload_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "archive/math_l4/integrity_audit.json",
+      "bytes": 1883
+    },
+    {
+      "path": "archive/math_l4/model_checks.json",
+      "bytes": 1243
+    },
+    {
+      "path": "archive/math_l4/plot_summary.py",
+      "bytes": 12329
+    },
+    {
+      "path": "archive/math_l4/quality_review.json",
+      "bytes": 103170
+    },
+    {
+      "path": "archive/math_l4/run_analysis.sh",
+      "bytes": 600
+    },
+    {
+      "path": "archive/math_l4/source_inventory.json",
+      "bytes": 19067
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/README.md",
+      "bytes": 1860
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/adapter/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/manifest.json",
+      "bytes": 39208
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/module_audit.json",
+      "bytes": 34106
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/report.json",
+      "bytes": 12220
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/reward_audit.jsonl",
+      "bytes": 166343
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/reward_audit.rank-0.jsonl",
+      "bytes": 166343
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/trainer_logs.json",
+      "bytes": 2072
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering/trainer_state.json",
+      "bytes": 2947
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering_base/manifest.json",
+      "bytes": 7481
+    },
+    {
+      "path": "archive/math_l4/supplementary/engineering_base/samples.jsonl",
+      "bytes": 429885
+    },
+    {
+      "path": "archive/math_l4/supplementary/environment/20261101T033122821710.json",
+      "bytes": 863
+    },
+    {
+      "path": "archive/math_l4/supplementary/environment/20261101T051859764249.json",
+      "bytes": 862
+    },
+    {
+      "path": "archive/math_l4/supplementary/formal/README.md",
+      "bytes": 1850
+    },
+    {
+      "path": "archive/math_l4/supplementary/formal/trainer_state.json",
+      "bytes": 379206
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/README.md",
+      "bytes": 1848
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/adapter/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/manifest.json",
+      "bytes": 43044
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/module_audit.json",
+      "bytes": 34108
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/report.json",
+      "bytes": 13884
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/reward_audit.jsonl",
+      "bytes": 8712101
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/reward_audit.rank-0.jsonl",
+      "bytes": 8712101
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/trainer_logs.json",
+      "bytes": 89384
+    },
+    {
+      "path": "archive/math_l4/supplementary/pilot/trainer_state.json",
+      "bytes": 95339
+    },
+    {
+      "path": "archive/math_l4/supplementary/run_state.json",
+      "bytes": 7189
+    },
+    {
+      "path": "archive/notes/AI_HANDOFF_RL_20261104.md",
+      "bytes": 6349
+    },
+    {
+      "path": "archive/notes/legacy_code_READM.md",
+      "bytes": 31885
+    },
+    {
+      "path": "archive/notes/legacy_code_README.md",
+      "bytes": 4841
+    },
+    {
+      "path": "archive/notes/legacy_code_README_BOUNDARY.md",
+      "bytes": 9952
+    },
+    {
+      "path": "archive/notes/rescore_v4_review_results_legacy.py",
+      "bytes": 9022
+    },
+    {
+      "path": "archive/validation_history/base_complete_review_20261105/CURRENT_RESULTS.md",
+      "bytes": 777
+    },
+    {
+      "path": "archive/validation_history/base_complete_review_20261105/analyze_base.py",
+      "bytes": 7157
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/.matplotlib/fontlist-v330.json",
+      "bytes": 230308
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/.recomputed_base.merge.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/archive_inventory.json",
+      "bytes": 5563
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/boundary_overview.pdf",
+      "bytes": 30499
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/boundary_overview.png",
+      "bytes": 328019
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/final_segment_sensitivity.json",
+      "bytes": 8531
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/integrity.json",
+      "bytes": 966
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/math_by_level.json",
+      "bytes": 2238
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/nontruncated_answer_review.json",
+      "bytes": 43985
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/plot_review.py",
+      "bytes": 4772
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_analysis/calibration_candidates.json",
+      "bytes": 2602
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_analysis/per_question.jsonl",
+      "bytes": 23492
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_analysis/ready.json",
+      "bytes": 1089
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_analysis/report.md",
+      "bytes": 3399
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_analysis/summary.json",
+      "bytes": 8033
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_base/manifest.json",
+      "bytes": 6666
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_base/merge_ready.json",
+      "bytes": 1260
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/recomputed_base/samples.jsonl",
+      "bytes": 852560
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/review_ready.json",
+      "bytes": 2037
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/review_report.md",
+      "bytes": 10238
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/truncation_examples.json",
+      "bytes": 23158
+    },
+    {
+      "path": "archive/validation_history/boundary_review_20261031/verifier_v2_replay.json",
+      "bytes": 17653
+    },
+    {
+      "path": "archive/validation_history/boundary_v1/test_report.json",
+      "bytes": 13923
+    },
+    {
+      "path": "archive/validation_history/boundary_v1/upload_check.json",
+      "bytes": 500
+    },
+    {
+      "path": "archive/validation_history/confirmation_preparation_20261031/context_capacity.json",
+      "bytes": 4400
+    },
+    {
+      "path": "archive/validation_history/confirmation_preparation_20261031/context_capacity.md",
+      "bytes": 2580
+    },
+    {
+      "path": "archive/validation_history/confirmation_preparation_20261101/protected_before.json",
+      "bytes": 12366
+    },
+    {
+      "path": "archive/validation_history/demo/analysis/manual_inspection.csv",
+      "bytes": 11946
+    },
+    {
+      "path": "archive/validation_history/demo/analysis/overview.png",
+      "bytes": 338248
+    },
+    {
+      "path": "archive/validation_history/demo/analysis/per_question.jsonl",
+      "bytes": 3753
+    },
+    {
+      "path": "archive/validation_history/demo/analysis/report.md",
+      "bytes": 2506
+    },
+    {
+      "path": "archive/validation_history/demo/analysis/summary.json",
+      "bytes": 5941
+    },
+    {
+      "path": "archive/validation_history/demo/base/manifest.json",
+      "bytes": 586
+    },
+    {
+      "path": "archive/validation_history/demo/base/samples.jsonl",
+      "bytes": 40831
+    },
+    {
+      "path": "archive/validation_history/demo/rl/manifest.json",
+      "bytes": 592
+    },
+    {
+      "path": "archive/validation_history/demo/rl/samples.jsonl",
+      "bytes": 40801
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/baseline_tests.json",
+      "bytes": 5936
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/analysis/manual_inspection.csv",
+      "bytes": 11946
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/analysis/overview.png",
+      "bytes": 338248
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/analysis/per_question.jsonl",
+      "bytes": 3753
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/analysis/report.md",
+      "bytes": 2506
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/analysis/summary.json",
+      "bytes": 5829
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/base/manifest.json",
+      "bytes": 586
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/base/samples.jsonl",
+      "bytes": 40831
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/rl/manifest.json",
+      "bytes": 592
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/demo/rl/samples.jsonl",
+      "bytes": 40801
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/environment.json",
+      "bytes": 3228
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/gradient_scaling_audit.json",
+      "bytes": 5196
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/gradient_scaling_audit.py",
+      "bytes": 6330
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/sampler_audit.json",
+      "bytes": 4231
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/sampler_audit.py",
+      "bytes": 4608
+    },
+    {
+      "path": "archive/validation_history/final_2026_10_30/test_report.json",
+      "bytes": 5936
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/.replayed_base.merge.lock",
+      "bytes": 0
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/analyze_replay.txt",
+      "bytes": 390
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/audit_runtime.py",
+      "bytes": 5767
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/download_inventory.json",
+      "bytes": 115202
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/integrity_summary.json",
+      "bytes": 663
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/merge_replay.txt",
+      "bytes": 432
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/overview.pdf",
+      "bytes": 35064
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/overview.png",
+      "bytes": 244411
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/plot_review.py",
+      "bytes": 4599
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/quality_audit.json",
+      "bytes": 91700
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/quality_audit.md",
+      "bytes": 7614
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replay_comparison.json",
+      "bytes": 1177
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_analysis/calibration_candidates.json",
+      "bytes": 2018
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_analysis/per_question.jsonl",
+      "bytes": 143495
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_analysis/ready.json",
+      "bytes": 1326
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_analysis/report.md",
+      "bytes": 3417
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_analysis/summary.json",
+      "bytes": 9196
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_base/manifest.json",
+      "bytes": 8072
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_base/merge_ready.json",
+      "bytes": 1497
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/replayed_base/samples.jsonl",
+      "bytes": 8020257
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/report_zh.md",
+      "bytes": 6831
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/review_ready.json",
+      "bytes": 2652
+    },
+    {
+      "path": "archive/validation_history/guarded_review_20261101/runtime_audit.json",
+      "bytes": 5754
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/analyze_training_snapshot.py",
+      "bytes": 11720
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/audit_evaluation_snapshot.py",
+      "bytes": 13109
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/audit_snapshot_integrity.py",
+      "bytes": 8066
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/diagnostic_sensitivity.json",
+      "bytes": 900
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/evaluation_diagnostic.json",
+      "bytes": 12001
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/integrity_audit.json",
+      "bytes": 3507
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/quality_review.json",
+      "bytes": 40564
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/render_review.py",
+      "bytes": 3892
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/report.md",
+      "bytes": 7332
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/review_answer_quality.py",
+      "bytes": 11330
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/source_inventory.json",
+      "bytes": 179073
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/training_diagnostic.json",
+      "bytes": 16476
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/training_overview.pdf",
+      "bytes": 21229
+    },
+    {
+      "path": "archive/validation_history/math_l4_snapshot_review_20261103/training_overview.png",
+      "bytes": 186225
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/2B_README.md",
+      "bytes": 3721
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/2B_config.json",
+      "bytes": 2908
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/2B_model.safetensors-00001-of-00001.safetensors.header.json",
+      "bytes": 76648
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/2B_model.safetensors.index.json",
+      "bytes": 64460
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/2B_official_api.json",
+      "bytes": 11306
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_README.md",
+      "bytes": 3722
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_config.json",
+      "bytes": 3161
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_model.safetensors-00001-of-00002.safetensors.header.json",
+      "bytes": 11184
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_model.safetensors-00002-of-00002.safetensors.header.json",
+      "bytes": 79000
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_model.safetensors.index.json",
+      "bytes": 76196
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/4B_official_api.json",
+      "bytes": 11765
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/architecture_audit.json",
+      "bytes": 43493
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/architecture_audit.py",
+      "bytes": 8279
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/decision.json",
+      "bytes": 2785
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/hypothesis_review.md",
+      "bytes": 4996
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/memory_components.json",
+      "bytes": 877
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/metadata_audit.py",
+      "bytes": 5097
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/metadata_report.json",
+      "bytes": 4984
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/pilot_memory_user_report.json",
+      "bytes": 648
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/review.md",
+      "bytes": 5069
+    },
+    {
+      "path": "archive/validation_history/qwen35_4b_feasibility/summary.md",
+      "bytes": 5931
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/answer_quality_review.json",
+      "bytes": 56011
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/answer_quality_review.md",
+      "bytes": 6394
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/answer_quality_review.py",
+      "bytes": 6037
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/answer_quality_review.sample.jsonl",
+      "bytes": 86604
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/inference_review.md",
+      "bytes": 4480
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/integrity_audit.json",
+      "bytes": 5066
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/integrity_audit.py",
+      "bytes": 12623
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/base.changed.jsonl",
+      "bytes": 381465
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/base.jsonl",
+      "bytes": 4614798
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/rl.changed.jsonl",
+      "bytes": 0
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/rl.jsonl",
+      "bytes": 4661903
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/score_summary.json",
+      "bytes": 2264
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/verify_answers.nested_marker_only.py",
+      "bytes": 7221
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/nested_marker_diagnostic/verify_answers.original.py",
+      "bytes": 7147
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/plot_review.py",
+      "bytes": 5045
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/recomputed/manual_inspection.csv",
+      "bytes": 178767
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/recomputed/per_question.jsonl",
+      "bytes": 151548
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/recomputed/report.md",
+      "bytes": 2501
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/recomputed/summary.json",
+      "bytes": 6879
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/recomputed_analysis.log",
+      "bytes": 402
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/review_manifest.json",
+      "bytes": 3301
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/review_overview.png",
+      "bytes": 305385
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/review_report.md",
+      "bytes": 9167
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/secondary_comparison.json",
+      "bytes": 3586
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/secondary_per_question.jsonl",
+      "bytes": 74477
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/secondary_statistics.py",
+      "bytes": 3989
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/training_diagnostic.json",
+      "bytes": 8600
+    },
+    {
+      "path": "archive/validation_history/server_results_review_20261031/training_diagnostic.py",
+      "bytes": 4201
+    },
+    {
+      "path": "archive/validation_history/shard0_review_20261105/CURRENT_RESULTS.md",
+      "bytes": 777
+    },
+    {
+      "path": "archive/validation_history/shard0_review_20261105/check_and_compare.py",
+      "bytes": 9227
+    },
+    {
+      "path": "archive/validation_history/shard0_review_20261105/quality_notes.json",
+      "bytes": 1273
+    },
+    {
+      "path": "archive/validation_history/v1_0/environment.json",
+      "bytes": 700
+    },
+    {
+      "path": "archive/validation_history/v1_0/test_report.json",
+      "bytes": 3092
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/analysis/manual_inspection.csv",
+      "bytes": 11946
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/analysis/overview.png",
+      "bytes": 338248
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/analysis/per_question.jsonl",
+      "bytes": 3753
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/analysis/report.md",
+      "bytes": 2506
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/analysis/summary.json",
+      "bytes": 5805
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/base/manifest.json",
+      "bytes": 586
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/base/samples.jsonl",
+      "bytes": 40831
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/rl/manifest.json",
+      "bytes": 592
+    },
+    {
+      "path": "archive/validation_history/v1_1/demo/rl/samples.jsonl",
+      "bytes": 40801
+    },
+    {
+      "path": "archive/validation_history/v1_1/engineering_plan.json",
+      "bytes": 632
+    },
+    {
+      "path": "archive/validation_history/v1_1/environment.json",
+      "bytes": 3199
+    },
+    {
+      "path": "archive/validation_history/v1_1/formal_plan.json",
+      "bytes": 616
+    },
+    {
+      "path": "archive/validation_history/v1_1/pilot_plan.json",
+      "bytes": 612
+    },
+    {
+      "path": "archive/validation_history/v1_1/real_data_audit.json",
+      "bytes": 944
+    },
+    {
+      "path": "archive/validation_history/v1_1/test_report.json",
+      "bytes": 4702
+    },
+    {
+      "path": "archive/validation_history/v1_2/distributed_plans.json",
+      "bytes": 10240
+    },
+    {
+      "path": "archive/validation_history/v1_2/environment.json",
+      "bytes": 3228
+    },
+    {
+      "path": "archive/validation_history/v1_2/package_inventory.json",
+      "bytes": 25985
+    },
+    {
+      "path": "archive/validation_history/v1_2/test_report.json",
+      "bytes": 5936
+    },
+    {
+      "path": "archive/validation_history/v1_2_2/data_readiness.json",
+      "bytes": 2736
+    },
+    {
+      "path": "archive/validation_history/v1_2_2/test_report.json",
+      "bytes": 6839
+    },
+    {
+      "path": "archive/validation_history/v1_2_2_pathfix/full_suite.relocated.log",
+      "bytes": 2125
+    },
+    {
+      "path": "archive/validation_history/v1_2_2_pathfix/reproduction.before.json",
+      "bytes": 715
+    },
+    {
+      "path": "archive/validation_history/v1_2_2_pathfix/server_test_report.before.json",
+      "bytes": 6994
+    },
+    {
+      "path": "archive/validation_history/v1_2_2_pathfix/test_pipeline.before.py",
+      "bytes": 10400
+    },
+    {
+      "path": "archive/validation_history/v1_2_2_pathfix/test_report.relocated.json",
+      "bytes": 6858
+    },
+    {
+      "path": "archive/validation_history/v1_3/delivery_report.json",
+      "bytes": 751
+    },
+    {
+      "path": "archive/validation_history/v1_3/test_report.json",
+      "bytes": 9766
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/READM.md",
+      "bytes": 22806
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/README.md",
+      "bytes": 2143
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/configs/v1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/memory.md",
+      "bytes": 31004
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/scripts/train_grpo.py",
+      "bytes": 46733
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/tests/run_all.py",
+      "bytes": 2578
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/before/tests/test_training.py",
+      "bytes": 11520
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume/first_test_report.json",
+      "bytes": 7450
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume_upstream/optimizer_resume_audit.json",
+      "bytes": 5225
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume_upstream/optimizer_resume_audit.py",
+      "bytes": 7141
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume_upstream/resume_upstream_audit.json",
+      "bytes": 39202
+    },
+    {
+      "path": "archive/validation_history/v1_3_resume_upstream/resume_upstream_audit.py",
+      "bytes": 9578
+    },
+    {
+      "path": "archive/validation_history/v1_4/scoring_review.json",
+      "bytes": 11516
+    },
+    {
+      "path": "archive/validation_history/v1_4/scoring_review.md",
+      "bytes": 3964
+    },
+    {
+      "path": "archive/validation_history/v1_4/test_report.json",
+      "bytes": 10710
+    },
+    {
+      "path": "archive/validation_history/v1_4_interpretation/additional_statistics.json",
+      "bytes": 3888
+    },
+    {
+      "path": "archive/validation_history/v1_4_interpretation/analyze_results.py",
+      "bytes": 8590
+    },
+    {
+      "path": "archive/validation_history/v1_4_interpretation/interpretation.md",
+      "bytes": 8162
+    },
+    {
+      "path": "archive/validation_history/v1_4_interpretation/results_overview.pdf",
+      "bytes": 43977
+    },
+    {
+      "path": "archive/validation_history/v1_4_interpretation/results_overview.png",
+      "bytes": 400369
+    },
+    {
+      "path": "code/.gitignore",
+      "bytes": 244
+    },
+    {
+      "path": "code/READM.md",
+      "bytes": 164
+    },
+    {
+      "path": "code/README.md",
+      "bytes": 1563
+    },
+    {
+      "path": "code/README_BOUNDARY.md",
+      "bytes": 194
+    },
+    {
+      "path": "code/configs/archive/v1.0.json",
+      "bytes": 1481
+    },
+    {
+      "path": "code/configs/archive/v1.1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "code/configs/archive/v1.2.1.json",
+      "bytes": 1533
+    },
+    {
+      "path": "code/configs/archive/v1.2.2.json",
+      "bytes": 1533
+    },
+    {
+      "path": "code/configs/archive/v1.2.json",
+      "bytes": 1533
+    },
+    {
+      "path": "code/configs/archive/v1.3.0.json",
+      "bytes": 1564
+    },
+    {
+      "path": "code/configs/boundary_v1.json",
+      "bytes": 1019
+    },
+    {
+      "path": "code/configs/v1.json",
+      "bytes": 1564
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/README.md",
+      "bytes": 1988
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/manifest.json",
+      "bytes": 15416
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/questions.jsonl",
+      "bytes": 190147
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/questions.md",
+      "bytes": 47160
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/gsm_symbolic/main.jsonl",
+      "bytes": 6233677
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/algebra/test-00000-of-00001.parquet",
+      "bytes": 353114
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/counting_and_probability/test-00000-of-00001.parquet",
+      "bytes": 175032
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/geometry/test-00000-of-00001.parquet",
+      "bytes": 263835
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet",
+      "bytes": 394797
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/number_theory/test-00000-of-00001.parquet",
+      "bytes": 182003
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/prealgebra/test-00000-of-00001.parquet",
+      "bytes": 267729
+    },
+    {
+      "path": "code/data/boundary_confirm_v2/raw/math_full/precalculus/test-00000-of-00001.parquet",
+      "bytes": 242241
+    },
+    {
+      "path": "code/data/boundary_v1/README.md",
+      "bytes": 1275
+    },
+    {
+      "path": "code/data/boundary_v1/manifest.json",
+      "bytes": 7834
+    },
+    {
+      "path": "code/data/boundary_v1/questions.jsonl",
+      "bytes": 95322
+    },
+    {
+      "path": "code/data/boundary_v1/questions.md",
+      "bytes": 28103
+    },
+    {
+      "path": "code/data/boundary_v1/raw/gsm_symbolic/LICENSE.md",
+      "bytes": 18831
+    },
+    {
+      "path": "code/data/boundary_v1/raw/gsm_symbolic/README.md",
+      "bytes": 4906
+    },
+    {
+      "path": "code/data/boundary_v1/raw/gsm_symbolic/main.jsonl",
+      "bytes": 6233677
+    },
+    {
+      "path": "code/data/boundary_v1/raw/gsm_symbolic/p1.jsonl",
+      "bytes": 7012956
+    },
+    {
+      "path": "code/data/boundary_v1/raw/gsm_symbolic/p2.jsonl",
+      "bytes": 3995469
+    },
+    {
+      "path": "code/data/boundary_v1/raw/math500/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "code/data/boundary_v1/raw/math500/README.md",
+      "bytes": 412
+    },
+    {
+      "path": "code/data/boundary_v1/raw/math500/test.jsonl",
+      "bytes": 446564
+    },
+    {
+      "path": "code/data/processed/dev.jsonl",
+      "bytes": 91934
+    },
+    {
+      "path": "code/data/processed/engineering.jsonl",
+      "bytes": 14402
+    },
+    {
+      "path": "code/data/processed/manifest.json",
+      "bytes": 34097
+    },
+    {
+      "path": "code/data/processed/pilot.jsonl",
+      "bytes": 58176
+    },
+    {
+      "path": "code/data/processed/structural.jsonl",
+      "bytes": 121760
+    },
+    {
+      "path": "code/data/processed/structural_manifest.json",
+      "bytes": 826
+    },
+    {
+      "path": "code/data/processed/structural_review.template.json",
+      "bytes": 36367
+    },
+    {
+      "path": "code/data/processed/test.jsonl",
+      "bytes": 93728
+    },
+    {
+      "path": "code/data/processed/train.jsonl",
+      "bytes": 231537
+    },
+    {
+      "path": "code/data/raw/gsm8k/LICENSE",
+      "bytes": 1062
+    },
+    {
+      "path": "code/data/raw/gsm8k/source_manifest.json",
+      "bytes": 1221
+    },
+    {
+      "path": "code/data/raw/gsm8k/test.jsonl",
+      "bytes": 749738
+    },
+    {
+      "path": "code/data/raw/gsm8k/train.jsonl",
+      "bytes": 4166206
+    },
+    {
+      "path": "code/deploy_resume.sh",
+      "bytes": 1691
+    },
+    {
+      "path": "code/download_packages.sh",
+      "bytes": 607
+    },
+    {
+      "path": "code/math_l4_rescore_v4/READM.md",
+      "bytes": 93
+    },
+    {
+      "path": "code/math_l4_rescore_v4/README.md",
+      "bytes": 1243
+    },
+    {
+      "path": "code/math_l4_rescore_v4/RESULTS.md",
+      "bytes": 5601
+    },
+    {
+      "path": "code/math_l4_rescore_v4/memory.md",
+      "bytes": 4158
+    },
+    {
+      "path": "code/math_l4_rescore_v4/rescore.py",
+      "bytes": 22742
+    },
+    {
+      "path": "code/math_l4_rescore_v4/review_results.py",
+      "bytes": 242
+    },
+    {
+      "path": "code/math_l4_rescore_v4/run.sh",
+      "bytes": 231
+    },
+    {
+      "path": "code/math_l4_rescore_v4/scorer.py",
+      "bytes": 18347
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/fixtures/green_v4_receipt.json",
+      "bytes": 279
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/fixtures/real_scorer_regressions.json",
+      "bytes": 25997
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/fixtures/red_v3_receipt.json",
+      "bytes": 7139
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/fixtures/red_v4_qualified_subject_receipt.json",
+      "bytes": 911
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/fixtures/red_v4_unknown_heading_receipt.json",
+      "bytes": 1668
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/test_rescore_pipeline.py",
+      "bytes": 26630
+    },
+    {
+      "path": "code/math_l4_rescore_v4/tests/test_scorer_v4.py",
+      "bytes": 12130
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/completed_rescore_review.json",
+      "bytes": 2205
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/final_integrity_review.json",
+      "bytes": 1158
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/independent_changed_answers_review.json",
+      "bytes": 1422519
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/initial_reproduction_root.json",
+      "bytes": 1603
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/pipeline_test_results.json",
+      "bytes": 1046
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/result_locations.json",
+      "bytes": 4233
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/scorer_test_results.json",
+      "bytes": 279
+    },
+    {
+      "path": "code/math_l4_rescore_v4/validation/superseded_scores_cleanup.json",
+      "bytes": 3617
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/COMMANDS.md",
+      "bytes": 6878
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/DIRECT_TRANSFER.md",
+      "bytes": 4068
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/README.md",
+      "bytes": 6479
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/download_current.sh",
+      "bytes": 2033
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/memory.md",
+      "bytes": 6542
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/plans/batch_0.json",
+      "bytes": 4619
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/plans/batch_1.json",
+      "bytes": 4536
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/pull_from_source.sh",
+      "bytes": 4502
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/reference/base_manifest.json",
+      "bytes": 7184
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/reference/direct_source_files.txt",
+      "bytes": 5347
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/reference/selection.json",
+      "bytes": 4559
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/reference/source_identity.json",
+      "bytes": 1003
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/release_manifest.json",
+      "bytes": 4473
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/build_payload.py",
+      "bytes": 8584
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/check_worker.py",
+      "bytes": 11960
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/evaluate_shard.py",
+      "bytes": 7135
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/merge_shards.py",
+      "bytes": 10506
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/pidfd_compat.py",
+      "bytes": 4454
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/run_shard.py",
+      "bytes": 7808
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/switch_after_base.py",
+      "bytes": 17766
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/scripts/watch_base_only.py",
+      "bytes": 10503
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/setup_worker.sh",
+      "bytes": 3619
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/tests/test_direct_transfer.py",
+      "bytes": 12377
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/tests/test_pidfd_compat.py",
+      "bytes": 8363
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/tests/test_shards.py",
+      "bytes": 21503
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/tests/test_transfer.py",
+      "bytes": 18927
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/tests/test_worker_tools.py",
+      "bytes": 22596
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/upload_base_stop.sh",
+      "bytes": 1553
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/upload_batch.sh",
+      "bytes": 2263
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/upload_direct_tools.sh",
+      "bytes": 3391
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/validation/batch_1_plan.txt",
+      "bytes": 1819
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/validation/report.json",
+      "bytes": 2297
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/validation/switch_plan.txt",
+      "bytes": 159
+    },
+    {
+      "path": "code/math_l4_rl_split_v1/validation/worker_plan.txt",
+      "bytes": 967
+    },
+    {
+      "path": "code/math_l4_v1/COMMANDS.md",
+      "bytes": 4079
+    },
+    {
+      "path": "code/math_l4_v1/READM.md",
+      "bytes": 9678
+    },
+    {
+      "path": "code/math_l4_v1/README.md",
+      "bytes": 9678
+    },
+    {
+      "path": "code/math_l4_v1/bundle_manifest.json",
+      "bytes": 9071
+    },
+    {
+      "path": "code/math_l4_v1/configs/math_l4.json",
+      "bytes": 2622
+    },
+    {
+      "path": "code/math_l4_v1/data/README.md",
+      "bytes": 2918
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/dev.jsonl",
+      "bytes": 123229
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/engineering.jsonl",
+      "bytes": 31428
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/manifest.json",
+      "bytes": 55086
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/pilot.jsonl",
+      "bytes": 124829
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/test.jsonl",
+      "bytes": 192225
+    },
+    {
+      "path": "code/math_l4_v1/data/processed/train.jsonl",
+      "bytes": 496444
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/ORIGINAL_MATH_LICENSE",
+      "bytes": 1070
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/README.md",
+      "bytes": 3926
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/algebra/test-00000-of-00001.parquet",
+      "bytes": 353114
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/algebra/train-00000-of-00001.parquet",
+      "bytes": 505186
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/counting_and_probability/test-00000-of-00001.parquet",
+      "bytes": 175032
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/counting_and_probability/train-00000-of-00001.parquet",
+      "bytes": 329354
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/geometry/test-00000-of-00001.parquet",
+      "bytes": 263835
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/geometry/train-00000-of-00001.parquet",
+      "bytes": 549388
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet",
+      "bytes": 394797
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/intermediate_algebra/train-00000-of-00001.parquet",
+      "bytes": 575154
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/number_theory/test-00000-of-00001.parquet",
+      "bytes": 182003
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/number_theory/train-00000-of-00001.parquet",
+      "bytes": 308653
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/prealgebra/test-00000-of-00001.parquet",
+      "bytes": 267729
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/prealgebra/train-00000-of-00001.parquet",
+      "bytes": 383626
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/precalculus/test-00000-of-00001.parquet",
+      "bytes": 242241
+    },
+    {
+      "path": "code/math_l4_v1/data/raw/math_full/precalculus/train-00000-of-00001.parquet",
+      "bytes": 353745
+    },
+    {
+      "path": "code/math_l4_v1/memory.md",
+      "bytes": 3693
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/before.txt",
+      "bytes": 1705
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/final_preflight.txt",
+      "bytes": 396
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/full.txt",
+      "bytes": 3167
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/original_bundle_manifest.json",
+      "bytes": 8721
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/targeted.txt",
+      "bytes": 110
+    },
+    {
+      "path": "code/math_l4_v1/outputs/validation/thread_mock_fix/upload_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/math_l4_v1/prepare.sh",
+      "bytes": 110
+    },
+    {
+      "path": "code/math_l4_v1/provenance/README.md",
+      "bytes": 1864
+    },
+    {
+      "path": "code/math_l4_v1/provenance/eligible_pool.jsonl",
+      "bytes": 1737991
+    },
+    {
+      "path": "code/math_l4_v1/provenance/gold_parser.py",
+      "bytes": 9027
+    },
+    {
+      "path": "code/math_l4_v1/provenance/history_exclusions.json",
+      "bytes": 709103
+    },
+    {
+      "path": "code/math_l4_v1/provenance/math_source_tree.json",
+      "bytes": 5405
+    },
+    {
+      "path": "code/math_l4_v1/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "code/math_l4_v1/run.sh",
+      "bytes": 911
+    },
+    {
+      "path": "code/math_l4_v1/scripts/analyze.py",
+      "bytes": 12662
+    },
+    {
+      "path": "code/math_l4_v1/scripts/doctor.py",
+      "bytes": 15555
+    },
+    {
+      "path": "code/math_l4_v1/scripts/evaluate.py",
+      "bytes": 40369
+    },
+    {
+      "path": "code/math_l4_v1/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "code/math_l4_v1/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "code/math_l4_v1/scripts/monitor.py",
+      "bytes": 2486
+    },
+    {
+      "path": "code/math_l4_v1/scripts/preflight.py",
+      "bytes": 6406
+    },
+    {
+      "path": "code/math_l4_v1/scripts/prepare_data.py",
+      "bytes": 14689
+    },
+    {
+      "path": "code/math_l4_v1/scripts/repetition_guard.py",
+      "bytes": 2575
+    },
+    {
+      "path": "code/math_l4_v1/scripts/run_experiment.py",
+      "bytes": 12542
+    },
+    {
+      "path": "code/math_l4_v1/scripts/select_checkpoint.py",
+      "bytes": 1922
+    },
+    {
+      "path": "code/math_l4_v1/scripts/train_grpo.py",
+      "bytes": 60481
+    },
+    {
+      "path": "code/math_l4_v1/scripts/training_checkpoint_event.py",
+      "bytes": 1700
+    },
+    {
+      "path": "code/math_l4_v1/scripts/training_resume.py",
+      "bytes": 14325
+    },
+    {
+      "path": "code/math_l4_v1/scripts/validate_evaluation.py",
+      "bytes": 8234
+    },
+    {
+      "path": "code/math_l4_v1/scripts/validate_guarded_sample.py",
+      "bytes": 6980
+    },
+    {
+      "path": "code/math_l4_v1/scripts/validate_selection.py",
+      "bytes": 9091
+    },
+    {
+      "path": "code/math_l4_v1/scripts/verify_answers.py",
+      "bytes": 14528
+    },
+    {
+      "path": "code/math_l4_v1/tests/run_all.py",
+      "bytes": 1506
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_analysis.py",
+      "bytes": 15520
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_data.py",
+      "bytes": 8578
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_evaluation.py",
+      "bytes": 27157
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_pipeline.py",
+      "bytes": 13034
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_preflight.py",
+      "bytes": 7887
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_repetition_guard.py",
+      "bytes": 5988
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_scorer.py",
+      "bytes": 207606
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_training.py",
+      "bytes": 11593
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_training_resume.py",
+      "bytes": 13806
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_training_resume_integration.py",
+      "bytes": 13522
+    },
+    {
+      "path": "code/math_l4_v1/tests/test_training_resume_run_guard.py",
+      "bytes": 9934
+    },
+    {
+      "path": "code/math_l4_v1/validation/data_check.json",
+      "bytes": 11680
+    },
+    {
+      "path": "code/math_l4_v1/validation/data_prepare.txt",
+      "bytes": 2891
+    },
+    {
+      "path": "code/math_l4_v1/validation/data_tests.txt",
+      "bytes": 116
+    },
+    {
+      "path": "code/math_l4_v1/validation/full_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/math_l4_v1/validation/protected_check.json",
+      "bytes": 137
+    },
+    {
+      "path": "code/math_l4_v1/validation/release_check.json",
+      "bytes": 1226
+    },
+    {
+      "path": "code/math_l4_v1/validation/scorer_policy.md",
+      "bytes": 3422
+    },
+    {
+      "path": "code/math_l4_v1/validation/scorer_test_results.json",
+      "bytes": 232
+    },
+    {
+      "path": "code/math_l4_v1/validation/scorer_validation.json",
+      "bytes": 4832
+    },
+    {
+      "path": "code/math_l4_v1/validation/test_report.json",
+      "bytes": 1038
+    },
+    {
+      "path": "code/math_l4_v1/validation/test_results.txt",
+      "bytes": 3167
+    },
+    {
+      "path": "code/math_l4_v1/validation/thread_mock_fix/report.json",
+      "bytes": 6220
+    },
+    {
+      "path": "code/math_l4_v1/validation/thread_mock_fix/reproduction.txt",
+      "bytes": 1705
+    },
+    {
+      "path": "code/math_l4_v1/validation/thread_mock_fix/targeted.txt",
+      "bytes": 110
+    },
+    {
+      "path": "code/math_l4_v1/validation/upload_plan.txt",
+      "bytes": 6121
+    },
+    {
+      "path": "code/memory.md",
+      "bytes": 70596
+    },
+    {
+      "path": "code/models/Qwen3.5-2B-Base/PLACE_MODEL_HERE.md",
+      "bytes": 885
+    },
+    {
+      "path": "code/models/qwen3.5-2b-base-manifest.json",
+      "bytes": 2126
+    },
+    {
+      "path": "code/outputs/validation/environment.json",
+      "bytes": 700
+    },
+    {
+      "path": "code/outputs/validation/environment_export_20261103.json",
+      "bytes": 766
+    },
+    {
+      "path": "code/outputs/validation/test_report.json",
+      "bytes": 3092
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/manifest.json",
+      "bytes": 130863
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/requirements-lock.txt",
+      "bytes": 8302
+    },
+    {
+      "path": "code/packages/linux-cp311-cu128/resolution-report.json",
+      "bytes": 1136860
+    },
+    {
+      "path": "code/requirements-gpu.txt",
+      "bytes": 366
+    },
+    {
+      "path": "code/rescore_local.sh",
+      "bytes": 592
+    },
+    {
+      "path": "code/resume_run.sh",
+      "bytes": 954
+    },
+    {
+      "path": "code/run.sh",
+      "bytes": 743
+    },
+    {
+      "path": "code/run_boundary.sh",
+      "bytes": 3978
+    },
+    {
+      "path": "code/run_boundary_parallel.sh",
+      "bytes": 122
+    },
+    {
+      "path": "code/run_v1.sh",
+      "bytes": 143
+    },
+    {
+      "path": "code/scripts/analyze.py",
+      "bytes": 27429
+    },
+    {
+      "path": "code/scripts/analyze_boundary.py",
+      "bytes": 21009
+    },
+    {
+      "path": "code/scripts/build_variants.py",
+      "bytes": 13047
+    },
+    {
+      "path": "code/scripts/check_gpu.py",
+      "bytes": 3681
+    },
+    {
+      "path": "code/scripts/doctor.py",
+      "bytes": 11157
+    },
+    {
+      "path": "code/scripts/download_data.py",
+      "bytes": 8528
+    },
+    {
+      "path": "code/scripts/download_model.py",
+      "bytes": 15403
+    },
+    {
+      "path": "code/scripts/evaluate.py",
+      "bytes": 21988
+    },
+    {
+      "path": "code/scripts/evaluate_boundary.py",
+      "bytes": 23502
+    },
+    {
+      "path": "code/scripts/fingerprint_model.py",
+      "bytes": 5605
+    },
+    {
+      "path": "code/scripts/load_model.py",
+      "bytes": 6246
+    },
+    {
+      "path": "code/scripts/merge_boundary.py",
+      "bytes": 15989
+    },
+    {
+      "path": "code/scripts/plot_results.py",
+      "bytes": 6300
+    },
+    {
+      "path": "code/scripts/prepare_boundary_data.py",
+      "bytes": 14969
+    },
+    {
+      "path": "code/scripts/prepare_confirmation_data.py",
+      "bytes": 19225
+    },
+    {
+      "path": "code/scripts/prepare_data.py",
+      "bytes": 10249
+    },
+    {
+      "path": "code/scripts/prepare_packages.py",
+      "bytes": 28674
+    },
+    {
+      "path": "code/scripts/prepare_resume_upgrade.py",
+      "bytes": 5961
+    },
+    {
+      "path": "code/scripts/rescore_saved.py",
+      "bytes": 25167
+    },
+    {
+      "path": "code/scripts/resolve_gpus.py",
+      "bytes": 3419
+    },
+    {
+      "path": "code/scripts/run_boundary_parallel.py",
+      "bytes": 12384
+    },
+    {
+      "path": "code/scripts/run_pipeline.py",
+      "bytes": 11137
+    },
+    {
+      "path": "code/scripts/select_checkpoint.py",
+      "bytes": 14231
+    },
+    {
+      "path": "code/scripts/smoke_demo.py",
+      "bytes": 2999
+    },
+    {
+      "path": "code/scripts/stop_run.py",
+      "bytes": 6226
+    },
+    {
+      "path": "code/scripts/train_grpo.py",
+      "bytes": 59981
+    },
+    {
+      "path": "code/scripts/training_checkpoint_event.py",
+      "bytes": 1700
+    },
+    {
+      "path": "code/scripts/training_resume.py",
+      "bytes": 14325
+    },
+    {
+      "path": "code/scripts/verify_answers.py",
+      "bytes": 9027
+    },
+    {
+      "path": "code/scripts/verify_answers_v2.py",
+      "bytes": 11773
+    },
+    {
+      "path": "code/setup_gpu.sh",
+      "bytes": 11873
+    },
+    {
+      "path": "code/tests/run_all.py",
+      "bytes": 2576
+    },
+    {
+      "path": "code/tests/test_analysis.py",
+      "bytes": 12205
+    },
+    {
+      "path": "code/tests/test_boundary_analysis.py",
+      "bytes": 13725
+    },
+    {
+      "path": "code/tests/test_boundary_data.py",
+      "bytes": 7085
+    },
+    {
+      "path": "code/tests/test_boundary_evaluation.py",
+      "bytes": 25718
+    },
+    {
+      "path": "code/tests/test_boundary_launcher.py",
+      "bytes": 3735
+    },
+    {
+      "path": "code/tests/test_boundary_merge.py",
+      "bytes": 20482
+    },
+    {
+      "path": "code/tests/test_boundary_parallel.py",
+      "bytes": 7604
+    },
+    {
+      "path": "code/tests/test_confirmation_data.py",
+      "bytes": 6674
+    },
+    {
+      "path": "code/tests/test_data_verifier.py",
+      "bytes": 13058
+    },
+    {
+      "path": "code/tests/test_dependencies.py",
+      "bytes": 13320
+    },
+    {
+      "path": "code/tests/test_download_data.py",
+      "bytes": 9469
+    },
+    {
+      "path": "code/tests/test_download_model.py",
+      "bytes": 16279
+    },
+    {
+      "path": "code/tests/test_evaluation.py",
+      "bytes": 8619
+    },
+    {
+      "path": "code/tests/test_evaluation_cache.py",
+      "bytes": 26461
+    },
+    {
+      "path": "code/tests/test_loader.py",
+      "bytes": 10475
+    },
+    {
+      "path": "code/tests/test_pipeline.py",
+      "bytes": 17547
+    },
+    {
+      "path": "code/tests/test_rescore_saved.py",
+      "bytes": 17316
+    },
+    {
+      "path": "code/tests/test_resume_launchers.py",
+      "bytes": 5698
+    },
+    {
+      "path": "code/tests/test_resume_operations.py",
+      "bytes": 10839
+    },
+    {
+      "path": "code/tests/test_setup_workflow.py",
+      "bytes": 12340
+    },
+    {
+      "path": "code/tests/test_training.py",
+      "bytes": 11520
+    },
+    {
+      "path": "code/tests/test_training_resume.py",
+      "bytes": 13806
+    },
+    {
+      "path": "code/tests/test_training_resume_integration.py",
+      "bytes": 13522
+    },
+    {
+      "path": "code/tests/test_training_resume_run_guard.py",
+      "bytes": 9934
+    },
+    {
+      "path": "code/tests/test_verifier_regressions.py",
+      "bytes": 15152
+    },
+    {
+      "path": "code/tests/test_verifier_v2.py",
+      "bytes": 28160
+    },
+    {
+      "path": "docs/DSAI4207_LLM_Proposal_Overleaf(4).pdf",
+      "bytes": 171768
+    },
+    {
+      "path": "docs/ENVIRONMENT.md",
+      "bytes": 3290
+    },
+    {
+      "path": "docs/papers/2504.13837v5_RLVR_reasoning_capacity.pdf",
+      "bytes": 2191668
+    },
+    {
+      "path": "docs/papers/README.md",
+      "bytes": 1522
+    },
+    {
+      "path": "docs/papers/source.json",
+      "bytes": 1345
+    },
+    {
+      "path": "maintenance/cleanup.json",
+      "bytes": 33479
+    },
+    {
+      "path": "maintenance/downloads_import.json",
+      "bytes": 16748
+    },
+    {
+      "path": "maintenance/environment_lock.json",
+      "bytes": 1424
+    },
+    {
+      "path": "maintenance/inventory_before.json",
+      "bytes": 149864
+    },
+    {
+      "path": "maintenance/organization_plan.md",
+      "bytes": 2070
+    },
+    {
+      "path": "maintenance/relocation.json",
+      "bytes": 8960
+    },
+    {
+      "path": "maintenance/verification.json",
+      "bytes": 1723
+    },
+    {
+      "path": "maintenance/verification.log",
+      "bytes": 2459
+    },
+    {
+      "path": "maintenance/verify_project.py",
+      "bytes": 39856
+    },
+    {
+      "path": "memory.md",
+      "bytes": 2224
+    },
+    {
+      "path": "models/README.md",
+      "bytes": 1320
+    },
+    {
+      "path": "models/rl_checkpoint384/README.md",
+      "bytes": 5233
+    },
+    {
+      "path": "models/rl_checkpoint384/adapter_config.json",
+      "bytes": 1063
+    },
+    {
+      "path": "models/rl_checkpoint384/adapter_model.safetensors",
+      "bytes": 43672224
+    },
+    {
+      "path": "models/rl_checkpoint384/chat_template.jinja",
+      "bytes": 7755
+    },
+    {
+      "path": "models/rl_checkpoint384/optimizer.pt",
+      "bytes": 87455947
+    },
+    {
+      "path": "models/rl_checkpoint384/resume_audit.rank-0.jsonl",
+      "bytes": 31354760
+    },
+    {
+      "path": "models/rl_checkpoint384/resume_state.json",
+      "bytes": 19979
+    },
+    {
+      "path": "models/rl_checkpoint384/rng_state.pth",
+      "bytes": 14645
+    },
+    {
+      "path": "models/rl_checkpoint384/scheduler.pt",
+      "bytes": 1465
+    },
+    {
+      "path": "models/rl_checkpoint384/tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "models/rl_checkpoint384/tokenizer_config.json",
+      "bytes": 1101
+    },
+    {
+      "path": "models/rl_checkpoint384/trainer_state.json",
+      "bytes": 378970
+    },
+    {
+      "path": "models/rl_checkpoint384/training_args.bin",
+      "bytes": 7633
+    },
+    {
+      "path": "requirement.txt",
+      "bytes": 8302
+    },
+    {
+      "path": "rescore_gsm8k.sh",
+      "bytes": 325
+    },
+    {
+      "path": "rescore_math.sh",
+      "bytes": 278
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 1160
+    },
+    {
+      "path": "results/final/base/manifest.json",
+      "bytes": 9734
+    },
+    {
+      "path": "results/final/base/samples.jsonl",
+      "bytes": 50925230
+    },
+    {
+      "path": "results/final/changes.jsonl",
+      "bytes": 18717
+    },
+    {
+      "path": "results/final/per_question.jsonl",
+      "bytes": 378593
+    },
+    {
+      "path": "results/final/ready.json",
+      "bytes": 23747
+    },
+    {
+      "path": "results/final/rl/manifest.json",
+      "bytes": 14349
+    },
+    {
+      "path": "results/final/rl/samples.jsonl",
+      "bytes": 49842097
+    },
+    {
+      "path": "results/final/summary.json",
+      "bytes": 11013
+    },
+    {
+      "path": "results/raw/baseline.jsonl",
+      "bytes": 48967205
+    },
+    {
+      "path": "results/raw/rl.jsonl",
+      "bytes": 47894654
+    },
+    {
+      "path": "setup_environment.sh",
+      "bytes": 1692
+    },
+    {
+      "path": "train.sh",
+      "bytes": 199
+    }
+  ],
+  "file_count": 1077,
+  "bytes": 1781953891,
+  "excludes": [
+    "maintenance/inventory_after.json"
+  ],
+  "checked_utc": "2026-11-06T02:22:34.752990+00:00"
+}

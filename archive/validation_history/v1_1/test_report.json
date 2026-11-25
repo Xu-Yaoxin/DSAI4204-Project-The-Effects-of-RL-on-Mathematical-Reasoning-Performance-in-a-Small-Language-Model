@@ -1,0 +1,84 @@
+{
+  "suite_count": 8,
+  "passed": true,
+  "gpu_training_tested": false,
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "results": [
+    {
+      "suite": "test_analysis.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 24 analysis regression scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_data_verifier.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 37 exact-verifier behavior cases\n[PASS] deterministic official-split isolation, nested subsets, hashes, and immutable conflict\n[PASS] 40 controlled pairs in 4 template families, independent arithmetic, distinct relational answers, pending manual review\n[PASS] structural generation rejects prepared-data tampering\n[PASS] cross-official-split leakage rejected before any output\n[PASS] All data/verifier tests passed without model dependencies.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_download_data.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 14 downloader/provenance/Unicode scenarios; all network responses mocked, no external downloads during tests\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 23 evaluation planning and freeze scenarios passed\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_evaluation_cache.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 16 cache integrity, GPU-skip and relocation scenarios passed; temporary fixtures only\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_loader.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 17 loader/data-readiness/batch-plan scenarios passed; no model packages or GPU execution\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_pipeline.py",
+      "exit_code": 0,
+      "stdout": "[PASS] 20 pipeline/launcher scenarios; relative paths, stages and no-op plans verified\n",
+      "stderr": ""
+    },
+    {
+      "suite": "test_training.py",
+      "exit_code": 0,
+      "stdout": "[TEST 100%] 16 training reward/audit scenarios passed; GPU training was not executed\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "scripts/analyze.py": "936bf0962ca58747951a782bd6800ddd48be936477a787dc53be9d46ff5cf7f8",
+    "scripts/build_variants.py": "d93ebe253e81aaa2641a9c6003f9b0addfdf18bb3faba5e154d08b2053f95298",
+    "scripts/doctor.py": "7e8f11649a77c7aed828c988ad7efcf9fdd2c592e1a9cd491656911784df9b81",
+    "scripts/download_data.py": "a1dc1f1a6d528a608132a72a233105ed9792b1971a99b5bd0888ea6dc32ef04f",
+    "scripts/evaluate.py": "101aceb5e1431de704ad852589d5be9e609991f33a25899cddce6c7de515b576",
+    "scripts/fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+    "scripts/load_model.py": "a80ed73f456bae7879f9908805e427b5ed27914e60841f0265bcf351b29bbd1c",
+    "scripts/plot_results.py": "a21ee199cebb23912ca8bf75923248f6307132c98890ed796c270d0c478d05ea",
+    "scripts/prepare_data.py": "b01f28b154861b99957ecfc1dd786e76a2e545406d059e320b433aee81319753",
+    "scripts/run_pipeline.py": "d8f9364fdb223c0997be447f2489480f60db35636c3d9e72842770d88a079259",
+    "scripts/select_checkpoint.py": "70c26289bc2907c343c9fc0ed3b6c1aa01f5f22f5349d01406f0b522e4edaefe",
+    "scripts/smoke_demo.py": "a2dacd44fb377d4e4b886a70763ad04664dce7b46337fd1d3e8b9969c28a55c8",
+    "scripts/train_grpo.py": "9c30e2a42a8d0f447fd375973f52a6bea56505b701abe89f75a316e41e0a1335",
+    "scripts/verify_answers.py": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+    "tests/test_analysis.py": "647dfa5519b0a19a7ae687e47b5b6c8fe43e545356b732d20f29a5f0ef67d7d7",
+    "tests/test_data_verifier.py": "de5ebd3ce7fe0f675890e63d6b0944e77d620b41cdd2ab8ebe67ec9f66fa0abd",
+    "tests/test_download_data.py": "acf2299c37262f7aa5e386556b91c6eca416ba2f9209d3ffc7a0d3ad0d87e0cd",
+    "tests/test_evaluation.py": "e5e9af01e79befe1664c1adeecf57519c338215d0e64119af16786ce36d0977c",
+    "tests/test_evaluation_cache.py": "832aa0689ed44e99477ef11fc07735814fffaf84706a24cbda882607e0d0e94b",
+    "tests/test_loader.py": "28333e27c5b024d4d9ed314a16609eaad337ad08c360857bf8c49c7c9117bc2a",
+    "tests/test_pipeline.py": "aca4b86eee9890882dc18c74900c7486dbaccdadeb82774c402f75b62a668f0f",
+    "tests/test_training.py": "6ee9dba15d41f51143956872270aa2a425b50354dc630df46978793568f8bcf8",
+    "configs/v1.json": "d2517a32308e4903841c5aaf65b399bfedfa45a28b84a5b3cd1e68deaad08051",
+    "run.sh": "219e6852b4e9e6e2bfa71f734d030f1caefd6b2f7162bd03545d6a2db0665628",
+    "setup_gpu.sh": "a0dd077d18142170d5950d5563f807d2cd87c9907d80d89dabae1ca615263b55",
+    "run_v1.sh": "e6cc4010fe83aacfbc0320bafca0653e18f82c421ec891082f95d2cbd876f066"
+  }
+}

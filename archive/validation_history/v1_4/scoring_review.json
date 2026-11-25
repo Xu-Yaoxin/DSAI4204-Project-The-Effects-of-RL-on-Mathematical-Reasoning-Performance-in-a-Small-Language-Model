@@ -1,0 +1,312 @@
+{
+  "version": "1.4.0",
+  "test_suites_passed": 18,
+  "legacy_scalar_cases": 37,
+  "new_verifier_scenarios": 118,
+  "analysis_scenarios": 31,
+  "offline_rescore_scenarios": 27,
+  "training_reward_interface_scenarios": 30,
+  "model_inference_executed": false,
+  "stdlib_only_invocation": "python3 -S",
+  "actual_saved_answers_rescored": 8800,
+  "test_scores": {
+    "base": {
+      "pass_at_k": {
+        "1": 0.648125,
+        "2": 0.7907083333333332,
+        "4": 0.8706181318681319,
+        "8": 0.9196181041181042,
+        "16": 0.95
+      },
+      "pass_at_k_ci": {
+        "1": {
+          "estimate": 0.648125,
+          "ci_low": 0.6046875,
+          "ci_high": 0.691875
+        },
+        "2": {
+          "estimate": 0.7907083333333332,
+          "ci_low": 0.7461604166666667,
+          "ci_high": 0.8310041666666667
+        },
+        "4": {
+          "estimate": 0.8706181318681319,
+          "ci_low": 0.8304447115384616,
+          "ci_high": 0.9055936126373627
+        },
+        "8": {
+          "estimate": 0.9196181041181042,
+          "ci_low": 0.8846285839160839,
+          "ci_high": 0.9488608877233877
+        },
+        "16": {
+          "estimate": 0.95,
+          "ci_low": 0.92,
+          "ci_high": 0.98
+        }
+      }
+    },
+    "rl": {
+      "pass_at_k": {
+        "1": 0.790625,
+        "2": 0.8532916666666667,
+        "4": 0.8975412087912088,
+        "8": 0.9320617715617716,
+        "16": 0.955
+      },
+      "pass_at_k_ci": {
+        "1": {
+          "estimate": 0.790625,
+          "ci_low": 0.7446875,
+          "ci_high": 0.8340625
+        },
+        "2": {
+          "estimate": 0.8532916666666667,
+          "ci_low": 0.8114468749999999,
+          "ci_high": 0.8901260416666668
+        },
+        "4": {
+          "estimate": 0.8975412087912088,
+          "ci_low": 0.8604716346153846,
+          "ci_high": 0.9296644917582416
+        },
+        "8": {
+          "estimate": 0.9320617715617716,
+          "ci_low": 0.899142871017871,
+          "ci_high": 0.9608125777000778
+        },
+        "16": {
+          "estimate": 0.955,
+          "ci_low": 0.925,
+          "ci_high": 0.98
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "delta_pass_at_k": {
+      "1": {
+        "estimate": 0.14250000000000007,
+        "ci_low": 0.11968750000000006,
+        "ci_high": 0.16437499999999994
+      },
+      "2": {
+        "estimate": 0.06258333333333344,
+        "ci_low": 0.043333333333333446,
+        "ci_high": 0.08291770833333319
+      },
+      "4": {
+        "estimate": 0.02692307692307694,
+        "ci_low": 0.009401030219780181,
+        "ci_high": 0.045929739010989006
+      },
+      "8": {
+        "estimate": 0.012443667443667428,
+        "ci_low": -0.005660926573426683,
+        "ci_high": 0.031730439005438954
+      },
+      "16": {
+        "estimate": 0.0050000000000000044,
+        "ci_low": -0.015000000000000013,
+        "ci_high": 0.029999999999999916
+      }
+    },
+    "delta1_minus_delta16": {
+      "estimate": 0.13750000000000007,
+      "ci_low": 0.1050000000000001,
+      "ci_high": 0.1671953124999999
+    }
+  },
+  "diagnostics": {
+    "test_base": {
+      "samples": 3200,
+      "original_correct": 1451,
+      "revised_correct": 2074,
+      "original_status_counts": {
+        "extraction_failed": 1168,
+        "correct": 1451,
+        "incorrect": 573,
+        "ambiguous": 8
+      },
+      "revised_status_counts": {
+        "correct": 2074,
+        "extraction_failed": 289,
+        "incorrect": 829,
+        "ambiguous": 8
+      },
+      "changed_scores": 889,
+      "incorrect_to_correct": 627,
+      "correct_to_incorrect": 4
+    },
+    "test_rl": {
+      "samples": 3200,
+      "original_correct": 2530,
+      "revised_correct": 2530,
+      "original_status_counts": {
+        "correct": 2530,
+        "incorrect": 578,
+        "extraction_failed": 92
+      },
+      "revised_status_counts": {
+        "correct": 2530,
+        "incorrect": 578,
+        "extraction_failed": 92
+      },
+      "changed_scores": 0,
+      "incorrect_to_correct": 0,
+      "correct_to_incorrect": 0
+    },
+    "dev/checkpoint-128": {
+      "samples": 800,
+      "original_correct": 608,
+      "revised_correct": 608,
+      "original_status_counts": {
+        "correct": 608,
+        "incorrect": 177,
+        "extraction_failed": 15
+      },
+      "revised_status_counts": {
+        "correct": 608,
+        "incorrect": 177,
+        "extraction_failed": 15
+      },
+      "changed_scores": 0,
+      "incorrect_to_correct": 0,
+      "correct_to_incorrect": 0
+    },
+    "dev/checkpoint-256": {
+      "samples": 800,
+      "original_correct": 636,
+      "revised_correct": 636,
+      "original_status_counts": {
+        "correct": 636,
+        "incorrect": 148,
+        "extraction_failed": 16
+      },
+      "revised_status_counts": {
+        "correct": 636,
+        "incorrect": 148,
+        "extraction_failed": 16
+      },
+      "changed_scores": 0,
+      "incorrect_to_correct": 0,
+      "correct_to_incorrect": 0
+    },
+    "dev/checkpoint-384": {
+      "samples": 800,
+      "original_correct": 652,
+      "revised_correct": 652,
+      "original_status_counts": {
+        "correct": 652,
+        "incorrect": 130,
+        "extraction_failed": 18
+      },
+      "revised_status_counts": {
+        "correct": 652,
+        "incorrect": 130,
+        "extraction_failed": 18
+      },
+      "changed_scores": 0,
+      "incorrect_to_correct": 0,
+      "correct_to_incorrect": 0
+    }
+  },
+  "selection_would_change": false,
+  "source_and_artifact_hashes_verified": true,
+  "cached_rerun_passed": true,
+  "conservative_false_negative_examples": [
+    {
+      "evaluation": "test_base",
+      "id": "gsm8k-test-000129",
+      "sample_index": 6,
+      "text": "To solve this problem, we need to calculate the total revenue and total cost for the hospital based on the given data.\n\n**Step 1: Calculate the total number of patient visits per day.**\nThe hospital sees 500 people a day.\n**Total visits = 500**\n\n**Step 2: Calculate the total time spent by patients per day.**\nEach patient is seen for an average of 24 minutes.\nTotal time = 500 patients * 24 minutes/patient = 12,000 minutes\n**Total time = 12,000 minutes**\n\n**Step 3: Calculate the total revenue from patient visits per day.**\nThe hospital charges the patients $200 an hour.\nFirst, convert the total time from minutes to hours: 12,000 minutes / 60 minutes/hour = 200 hours.\nTotal revenue = 200 hours * $200/hour = $40,000\n**Total revenue = $40,000**\n\n**Step 4: Calculate the total cost of providing care per day.**\nEach patient is seen for 24 minutes, which is 0.4 hours (24 minutes / 60 minutes/hour).\nThe doctors charge $150 an hour to the hospital.\nTotal cost = 500 patients * 0.4 hours/patient * $150/hour = $30,000\n**Total cost = $30,000**\n\n**Step 5: Calculate the profit per day.**\nProfit = Total revenue - Total cost\nProfit = $40,000 - $30,000 = $10,000\n**Profit = $10,000**\n\n**Final Answer:**\nThe hospital makes a profit of $10,000 from these visits.\n#### 10000",
+      "answer": "10000",
+      "original_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "10000",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      },
+      "revised_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "evaluation": "test_base",
+      "id": "gsm8k-test-001126",
+      "sample_index": 7,
+      "text": "To solve this problem, we need to determine how many days it will take Alfie to fly a distance equal to half of the way around the Earth. \n\n1. Calculate half of the circumference of the Earth:\n   \\[\n   \\frac{40,000 \\text{ km}}{2} = 20,000 \\text{ km}\n   \\]\n\n2. Determine the number of days Alfie needs to fly 20,000 kilometers:\n   \\[\n   \\frac{20,000 \\text{ km}}{400 \\text{ km/day}} = 50 \\text{ days}\n   \\]\n\nTherefore, it will take Alfie 50 days to fly a distance equal to half of the way around the Earth.\n\n#### 50\n\nAnswer:",
+      "answer": "50",
+      "original_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "50",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      },
+      "revised_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "evaluation": "test_base",
+      "id": "gsm8k-test-000432",
+      "sample_index": 13,
+      "text": "Let's break down the problem step by step to find the number of dragons Prince Bruce has slain.\n\nStep 1: Find out how many dragons Prince Arthur slew.\nPrince Arthur slew three quarters as many dragons as Prince Thaddeus.\nPrince Thaddeus slew 100 dragons.\nSo, Prince Arthur slew:\n100 x 3/4 = 75 dragons.\n\nStep 2: Find out how many dragons Prince Walter slew.\nPrince Walter slew twice as many dragons as Prince Arthur.\nSo, Prince Walter slew:\n75 x 2 = 150 dragons.\n\nStep 3: Find out how many dragons Prince Bruce slew.\nPrince Bruce slew one-fifth as many dragons as Prince Walter.\nSo, Prince Bruce slew:\n150 x 1/5 = 30 dragons.\n\nFinal Answer:\nPrince Bruce slew 30 dragons.\n30\n\n#### 30",
+      "answer": "30",
+      "original_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "30",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      },
+      "revised_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "evaluation": "test_base",
+      "id": "gsm8k-test-001221",
+      "sample_index": 10,
+      "text": "Let's break down the problem step by step.\n\n1. **Understand the problem:**\n   - Aiden adds two tablespoons of seasoning for every pound of ground beef.\n   - He gets 16 meatballs from each pound of meat.\n   - He wants to make 80 meatballs for the cookout.\n   - We need to find out how much of his secret seasoning he will need.\n\n2. **Calculate the amount of meat needed:**\n   - Since he gets 16 meatballs per pound, to get 80 meatballs, he needs:\n     \\[\n     \\text{Pounds of meat} = \\frac{80 \\text{ meatballs}}{16 \\text{ meatballs per pound}} = 5 \\text{ pounds}\n     \\]\n\n3. **Calculate the amount of seasoning needed:**\n   - Aiden adds two tablespoons of seasoning for every pound of meat.\n   - Therefore, for 5 pounds of meat, he needs:\n     \\[\n     \\text{Seasoning needed} = 5 \\text{ pounds} \\times 2 \\text{ tablespoons per pound} = 10 \\text{ tablespoons}\n     \\]\n\n4. **Final answer:**\n   - Aiden will need 10 tablespoons of his secret seasoning.\n\n#### 10",
+      "answer": "10",
+      "original_score": {
+        "correct": true,
+        "reward": 1.0,
+        "extracted": "10",
+        "status": "correct",
+        "format_compliant": true,
+        "truncated": false
+      },
+      "revised_score": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    }
+  ],
+  "scope": "Posthoc scoring sensitivity. No fresh model generation or training. Numeric final-value matching cannot establish reasoning validity."
+}

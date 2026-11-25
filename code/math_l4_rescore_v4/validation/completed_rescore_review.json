@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "scorer_version": "4.0.0",
+  "original_downloads_unchanged": true,
+  "all_generation_fields_preserved": true,
+  "all_non_eos_scores_preserved": true,
+  "changed_rows_audit_matches": true,
+  "counts": {
+    "base": {
+      "false_to_true": 0,
+      "true_to_false": 0,
+      "correct": 1393,
+      "changed_rows": 0,
+      "stopped_preserved": 430
+    },
+    "rl": {
+      "false_to_true": 18,
+      "true_to_false": 0,
+      "correct": 1968,
+      "changed_rows": 25,
+      "stopped_preserved": 458
+    }
+  },
+  "exact_metric_verification": {
+    "base_pass_at_1": {
+      "exact_fraction": "1393/3200",
+      "estimate": 0.4353125
+    },
+    "base_pass_at_4": {
+      "exact_fraction": "31683/45500",
+      "estimate": 0.6963296703296703
+    },
+    "base_pass_at_16": {
+      "exact_fraction": "171/200",
+      "estimate": 0.855
+    },
+    "rl_pass_at_1": {
+      "exact_fraction": "123/200",
+      "estimate": 0.615
+    },
+    "rl_pass_at_4": {
+      "exact_fraction": "298217/364000",
+      "estimate": 0.8192774725274725
+    },
+    "rl_pass_at_16": {
+      "exact_fraction": "47/50",
+      "estimate": 0.94
+    }
+  },
+  "raw_answer_paths": {
+    "baseline": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+    "rl_shard_0": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+    "rl_shard_1": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_1/samples.jsonl",
+    "rl_merged": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/full_math_l4_review_20261106/experiment/outputs/math_l4_v1_fix1/test_rl_split_merged/samples.jsonl"
+  },
+  "rescored_answer_paths": {
+    "base": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/base/samples.jsonl",
+    "rl": "/Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/rescore_20261106/rl/samples.jsonl"
+  },
+  "ready_sha256": "c434b9ce94a8592064a33b9fd6e941f389ac10ea5334649071b66e3ffe3f9ce1"
+}

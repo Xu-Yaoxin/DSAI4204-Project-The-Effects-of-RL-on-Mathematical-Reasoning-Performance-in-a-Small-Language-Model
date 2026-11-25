@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "experiment_type": "math_l4_base_rl",
+  "synthetic": false,
+  "model_label": "rl",
+  "split": "test",
+  "adapter_path": "outputs/math_l4_v1_fix1/formal/checkpoint-384",
+  "adapter_identity": "405f6e2032962df3666ebff1b4792f676636d8eab048b043ff642ef209ac0a95",
+  "adapter_files": {
+    "adapter_config.json": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+    "adapter_model.safetensors": "b04865188d7a2d37cb43e3b32ebb09e2aa71d3818fc0888eeb301e62ccc1a063"
+  },
+  "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+  "selection_path": "outputs/math_l4_v1_fix1/selection.json",
+  "dataset_path": "data/processed/test.jsonl",
+  "dataset_sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d",
+  "dataset_manifest_path": "data/processed/manifest.json",
+  "dataset_manifest_sha256": "0d6dc496cc6766a910452a10de90c7ee26af68f9613ef8a9d388266b225546d7",
+  "n_samples": 16,
+  "question_count": 200,
+  "config": {
+    "version": "math-l4-1.0",
+    "experiment_type": "math_l4_base_rl",
+    "model": {
+      "path": "../models/Qwen3.5-2B-Base",
+      "dtype": "bfloat16",
+      "repo_id": "Qwen/Qwen3.5-2B-Base",
+      "expected_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+      "expected_eos_token_id": 248044
+    },
+    "prompt": {
+      "template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n"
+    },
+    "data": {
+      "output_dir": "data/processed",
+      "seed": 20261102,
+      "engineering_size": 32,
+      "pilot_size": 128,
+      "train_size": 512,
+      "dev_size": 128,
+      "test_size": 200,
+      "manifest_sha256": "0d6dc496cc6766a910452a10de90c7ee26af68f9613ef8a9d388266b225546d7"
+    },
+    "training": {
+      "seed": 42,
+      "num_generations": 8,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.0,
+      "learning_rate": 5e-06,
+      "epochs": 3,
+      "gradient_accumulation_steps": 32,
+      "per_device_train_batch_size": 1,
+      "max_completion_length": 2048,
+      "max_prompt_length": 2048,
+      "loss_type": "grpo",
+      "beta": 0.0,
+      "scale_rewards": "group",
+      "epsilon": 0.2,
+      "num_iterations": 1,
+      "save_strategy": "epoch",
+      "save_steps": 128,
+      "recovery_save_steps": 16,
+      "logging_steps": 1,
+      "max_grad_norm": 1.0,
+      "steps_per_generation": 8,
+      "unfinished_reward_policy": "zero_unless_eos"
+    },
+    "evaluation": {
+      "seed": 314159,
+      "n_samples": 16,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 262144,
+      "max_prompt_length": 2048,
+      "bootstrap_replicates": 2000,
+      "context_limit": 262144,
+      "length_policy": "native_context_minus_actual_prompt",
+      "generation_guard": {
+        "version": "exact-periodic-suffix-v1",
+        "check_every_tokens": 32,
+        "min_generated_tokens": 1024,
+        "min_repeat_span_tokens": 1024,
+        "max_period_tokens": 256,
+        "min_repeats": 4,
+        "heartbeat_seconds": 5,
+        "no_token_timeout_seconds": 120,
+        "stop_grace_seconds": 15,
+        "max_worker_restarts": 2,
+        "answer_timeout_seconds": 300
+      },
+      "dev_samples": 4,
+      "engineering_samples": 1
+    },
+    "selection": {
+      "metric": "correct_per_requested_attempt",
+      "tie_break": "lowest_optimizer_step",
+      "split": "dev",
+      "epoch_checkpoints_only": true
+    },
+    "execution": {
+      "visible_gpu": "0",
+      "concurrent_model_workers": 1,
+      "max_eval_worker_restarts": 2,
+      "required_free_gpu_gib": 12,
+      "required_available_ram_gib": 16
+    }
+  },
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 262144,
+    "max_prompt_length": 2048,
+    "seed": 314159,
+    "context_limit": 262144,
+    "length_policy": "native_context_minus_actual_prompt",
+    "generation_guard": {
+      "version": "exact-periodic-suffix-v1",
+      "check_every_tokens": 32,
+      "min_generated_tokens": 1024,
+      "min_repeat_span_tokens": 1024,
+      "max_period_tokens": 256,
+      "min_repeats": 4,
+      "heartbeat_seconds": 5,
+      "no_token_timeout_seconds": 120,
+      "stop_grace_seconds": 15,
+      "max_worker_restarts": 2,
+      "answer_timeout_seconds": 300
+    },
+    "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+    "dtype": "bfloat16",
+    "backend": "transformers-sdpa",
+    "batch_size": 1,
+    "world_size": 1,
+    "add_special_tokens": true,
+    "stopping_rule": "tokenizer-eos-or-native-context-or-guard",
+    "repetition_penalty": 1.0,
+    "eos_token_id": 248044,
+    "package_versions": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.3.0",
+      "peft": "0.18.1",
+      "accelerate": "1.10.1",
+      "datasets": "4.8.5",
+      "trl": "1.16.0",
+      "safetensors": "0.8.0",
+      "flash-linear-attention": null,
+      "fla-core": null,
+      "causal-conv1d": null
+    }
+  },
+  "code_hashes": {
+    "evaluate.py": "21321104395abad6bac1e37ab2ee5dc608de4928e6f43575c8c3550532bac244",
+    "verify_answers.py": "f133f1b99257d0c4677b11c44145577a87edefcc55a3d2cb42bcebbe9aa7944f",
+    "load_model.py": "3fbff753e3257c2dd50f581471bf45caed1c0dea3d711c1eefb7ab3d651942f6",
+    "fingerprint_model.py": "5c050e7dafb2514287fab2deddf42de05fe802cd604626419c463046d528ec6c",
+    "repetition_guard.py": "56597e251b32476ce497511903ed806513b1768f790a591d89eaccb426e8f33c",
+    "validate_guarded_sample.py": "3eaf004fe6cbd531da1464858313782fe5967a4ccff1e72f308e4cae35681ff6",
+    "doctor.py": "384cbb70c3aad600b87f2fa97d52b9b1811ebd2317bc980f5cf1e32d8e2ce8cd",
+    "validate_evaluation.py": "7b33b9962b57cc1a2d83a8508a8332ce459f12d017110e6950de483085757c8c",
+    "validate_selection.py": "b8c8fc384c315d34d1d64032f7bc3fa6b6e8774eee372079d8775a172c1a3d97"
+  },
+  "protocol_id": "cfff6ee294f5ed4ae7df15c5fa87e865cae23649ce602bc78a555c68340df2a6",
+  "sharding": {
+    "count": 2,
+    "index": 0,
+    "assignment": "question_index_modulo"
+  },
+  "execution_extension": {
+    "schema_version": 1,
+    "kind": "math-l4-two-machine-question-shards-v1",
+    "original_evaluator_sha256": "21321104395abad6bac1e37ab2ee5dc608de4928e6f43575c8c3550532bac244",
+    "transformed_evaluator_sha256": "660035864a3ebfb59dc87e234b8c9fed19a6ac2aa1c4623ac92dd7051aafbdc0",
+    "wrapper_sha256": "2c181d6aacc06a7d34ebde71473d7e663b86983075757764e0912e9ef0a73564",
+    "patches": [
+      "allow_two_shards",
+      "question_index_modulo",
+      "bind_execution_extension"
+    ],
+    "assignment": "question_index_modulo",
+    "shard_count": 2,
+    "shard_index": 0,
+    "assigned_question_ids_sha256": "28628a3889394f7874038b3434a2ff68d889d9d28503f6440d3fed945fcf0bbd",
+    "assigned_questions": 100,
+    "samples_per_question": 16,
+    "dataset_sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d",
+    "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+    "original_bundle_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32",
+    "generation_scoring_and_seed_code_unchanged": true
+  },
+  "path_base": "code_root",
+  "complete": true,
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "model_files": {
+    "config.json": {
+      "bytes": 2908,
+      "sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4"
+    },
+    "merges.txt": {
+      "bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+    },
+    "model.safetensors-00001-of-00001.safetensors": {
+      "bytes": 4548221488,
+      "sha256": "928acbf11878c32185bbd863514d191769285065ab9ea14fbfe431303f5fdf2d"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 64460,
+      "sha256": "74d2ddfe79f10f35b27b498632f02b97b60dd9ec39b35d7c5a890c399284e319"
+    },
+    "tokenizer.json": {
+      "bytes": 12807196,
+      "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
+    },
+    "tokenizer_config.json": {
+      "bytes": 16712,
+      "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de"
+    },
+    "vocab.json": {
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "groups": [
+    {
+      "id": "math_l4",
+      "label": "MATH Level 4 scalar text-only",
+      "count": 200
+    }
+  ],
+  "execution_cpu_threads": {
+    "intraop": 4,
+    "interop": 1
+  },
+  "total_samples": 1600,
+  "invocation_seconds": 85344.66201658547,
+  "invocation_output_tokens": 1707118,
+  "invocation_tokens_per_second": 20.002633552737567,
+  "peak_allocated_gib": 3.6562747955322266,
+  "samples_sha256": "f4d9bcc65bb894a6bac3ae906ff615e571339dcac8b23c9142636b04086cf12e"
+}

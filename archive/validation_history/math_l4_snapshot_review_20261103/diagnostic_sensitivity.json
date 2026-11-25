@@ -1,0 +1,20 @@
+{
+  "official_score_changed": false,
+  "purpose": "Sensitivity only; not a new selection rule or corrected experiment result.",
+  "exclusion_basis": "Two source-confirmed multi-value questions incompatible with the frozen scalar-answer design, including one with no observed answer.",
+  "excluded_question_ids": [
+    "math-l4-train-precalculus-0471",
+    "math-l4-train-precalculus-0660"
+  ],
+  "removed_available_answers": 4,
+  "remaining_answers": 206,
+  "original_correct_on_remaining": 106,
+  "remaining_unknown": 10,
+  "exclude_only_rate": 0.5145631067961165,
+  "exclude_plus_one_manually_confirmed_markup_false_negative_rate": 0.5194174757281553,
+  "limits": [
+    "No change to source labels, recorded scores, selection or scorer.",
+    "Other ambiguities retain the frozen conservative policy.",
+    "The partial ordered dev prefix is not representative proof of full-split accuracy."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "verified": true,
+  "checked_utc": "2026-11-06T01:43:11.747532+00:00",
+  "mode": "read-only integrity and record comparison; no scorer executed",
+  "ready_sha256": "c434b9ce94a8592064a33b9fd6e941f389ac10ea5334649071b66e3ffe3f9ce1",
+  "artifacts_verified": 7,
+  "frozen_source_files_verified": 124,
+  "source_audits_verified": 2,
+  "paired_answers": 3200,
+  "paired_fields": [
+    "sample_seed",
+    "question",
+    "answer",
+    "family_id",
+    "normalized_question_sha256",
+    "prompt_tokens",
+    "generation_limit"
+  ],
+  "generation_fields_unchanged": true,
+  "non_eos_scores_unchanged": true,
+  "raw_download_hashes_verified": true,
+  "independent_diagnostic_changes_match": true,
+  "counts": {
+    "base": {
+      "stopped_preserved": 430,
+      "changed_rows": 0,
+      "correct": 1393,
+      "false_to_true": 0,
+      "true_to_false": 0
+    },
+    "rl": {
+      "stopped_preserved": 458,
+      "changed_rows": 25,
+      "correct": 1968,
+      "false_to_true": 18,
+      "true_to_false": 0
+    }
+  },
+  "semantic_scope": "Saved outputs and scoring changes verified; universal scorer completeness and all reasoning traces are not established."
+}

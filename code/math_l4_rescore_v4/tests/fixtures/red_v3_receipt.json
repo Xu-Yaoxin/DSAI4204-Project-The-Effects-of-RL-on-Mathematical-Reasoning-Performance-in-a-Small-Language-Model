@@ -1,0 +1,412 @@
+{
+  "scorer_version": "3.0.0",
+  "scorer_sha256": "f133f1b99257d0c4677b11c44145577a87edefcc55a3d2cb42bcebbe9aa7944f",
+  "literal_cases": 58,
+  "real_fixtures": 6,
+  "new_checks": 192,
+  "legacy_checks": 294,
+  "total_checks": 486,
+  "failed_expectations": [
+    {
+      "label": "term_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "term_wrong_final",
+      "expected": [
+        "incorrect",
+        "18",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "part_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "equation_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "ordinal_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "bold_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "step_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "case_heading",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_heading",
+      "expected": [
+        "correct",
+        "17",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_inline",
+      "expected": [
+        "correct",
+        "17",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_wrong",
+      "expected": [
+        "incorrect",
+        "18",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_conflict",
+      "expected": [
+        "ambiguous",
+        null,
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_display",
+      "expected": [
+        "correct",
+        "17",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "hash_answer_display_wrong",
+      "expected": [
+        "incorrect",
+        "18",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_area",
+      "expected": [
+        "correct",
+        "2500",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_next_line",
+      "expected": [
+        "correct",
+        "2500",
+        true
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_minimum",
+      "expected": [
+        "correct",
+        "17",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_fraction",
+      "expected": [
+        "correct",
+        "3/4",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_decimal",
+      "expected": [
+        "correct",
+        "69/4",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_wrong",
+      "expected": [
+        "incorrect",
+        "2501",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "prose_wrong_with_marker",
+      "expected": [
+        "ambiguous",
+        null,
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "square_units_scalar",
+      "expected": [
+        "correct",
+        "2500",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "square_units_no_conversion",
+      "expected": [
+        "incorrect",
+        "1",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "large_exact_prose",
+      "expected": [
+        "correct",
+        "9007199254740993",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "large_inexact_prose",
+      "expected": [
+        "incorrect",
+        "9007199254740992",
+        false
+      ],
+      "actual": [
+        "extraction_failed",
+        null,
+        false
+      ]
+    },
+    {
+      "label": "math-l4-test-algebra-0739:8",
+      "expected": [
+        "correct",
+        "2"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "label": "math-l4-test-algebra-0739:11",
+      "expected": [
+        "correct",
+        "2"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "label": "math-l4-test-intermediate_algebra-0646:5",
+      "expected": [
+        "correct",
+        "4"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "label": "math-l4-test-number_theory-0052:7",
+      "expected": [
+        "correct",
+        "7"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    },
+    {
+      "label": "math-l4-test-geometry-0022:3",
+      "expected": [
+        "correct",
+        "2500"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    }
+  ],
+  "passed": false
+}

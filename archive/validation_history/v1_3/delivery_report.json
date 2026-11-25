@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-30T05:53:18.200023+00:00",
+  "suite_count": 16,
+  "passed": true,
+  "matched_source_hashes": 50,
+  "baseline_protocol_sources_unchanged": [
+    "evaluate.py",
+    "load_model.py",
+    "fingerprint_model.py",
+    "verify_answers.py",
+    "select_checkpoint.py"
+  ],
+  "configuration_changes": [
+    "version=1.3.0",
+    "training.recovery_save_steps=16"
+  ],
+  "upstream_cpu_cases": 186,
+  "gpu_resume_tested": false,
+  "remote_deployed": false,
+  "docs_sha256": {
+    "README.md": "082396a8d9518ee72c25891e90b39eefe6adbdbde016cf84b589aee9b149d03d",
+    "READM.md": "15212d26c6efc87ba5010427ff76a031eee2a531d48b0021dc4fea9da9bcefb6",
+    "memory.md": "1925e06c796497ee0b7f2609b1d5dbbacbe8a6ae4b849568ed1217f10e31b819"
+  }
+}

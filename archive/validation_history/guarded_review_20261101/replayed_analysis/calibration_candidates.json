@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "kind": "exploratory_group_ranking_only",
+  "synthetic": false,
+  "metric": "observed_success_per_request",
+  "target_range": [
+    0.4,
+    0.5
+  ],
+  "automatic_selection_performed": false,
+  "ranking_is_not_mathematical_accuracy_when_unknown": true,
+  "fresh_confirmation_questions_required": true,
+  "exclude_calibration_families_from_confirmation": true,
+  "ranked_groups": [
+    {
+      "group_id": "math_l4_confirm",
+      "group_label": "MATH Level4 scalar confirmation",
+      "observed_success_per_request": {
+        "estimate": 0.4375,
+        "ci_low": 0.3699375,
+        "ci_high": 0.5075,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, observed successful request, linear quantiles",
+        "metric": "completed_correct_answers_per_requested_attempt",
+        "aborted_answers_are_mathematical_errors": false
+      },
+      "unknown_count": 29,
+      "completion_rate": 0.845,
+      "incomplete_answer_bounds": {
+        "lower": 0.4375,
+        "upper": 0.51,
+        "is_confidence_interval": false
+      },
+      "target_assessment": "unresolved_incomplete_answers",
+      "point_in_target": null,
+      "low_precision": false
+    },
+    {
+      "group_id": "gsm_main_confirm",
+      "group_label": "GSM-Symbolic main confirmation",
+      "observed_success_per_request": {
+        "estimate": 0.64,
+        "ci_low": 0.552358193277311,
+        "ci_high": 0.7266456465763875,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, observed successful request, linear quantiles",
+        "metric": "completed_correct_answers_per_requested_attempt",
+        "aborted_answers_are_mathematical_errors": false
+      },
+      "unknown_count": 2,
+      "completion_rate": 0.995,
+      "incomplete_answer_bounds": {
+        "lower": 0.64,
+        "upper": 0.645,
+        "is_confidence_interval": false
+      },
+      "target_assessment": "unresolved_incomplete_answers",
+      "point_in_target": null,
+      "low_precision": true
+    }
+  ]
+}

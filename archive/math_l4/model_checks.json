@@ -1,0 +1,36 @@
+{
+  "verified": true,
+  "model_path": "/Users/xu./Downloads/math_l4_selected_20261104/models/Qwen3.5-2B-Base",
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "files": {
+    "config.json": {
+      "bytes": 2908,
+      "sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4"
+    },
+    "merges.txt": {
+      "bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+    },
+    "model.safetensors-00001-of-00001.safetensors": {
+      "bytes": 4548221488,
+      "sha256": "928acbf11878c32185bbd863514d191769285065ab9ea14fbfe431303f5fdf2d"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 64460,
+      "sha256": "74d2ddfe79f10f35b27b498632f02b97b60dd9ec39b35d7c5a890c399284e319"
+    },
+    "tokenizer.json": {
+      "bytes": 12807196,
+      "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927"
+    },
+    "tokenizer_config.json": {
+      "bytes": 16712,
+      "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de"
+    },
+    "vocab.json": {
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    }
+  },
+  "gpu_loaded": false
+}

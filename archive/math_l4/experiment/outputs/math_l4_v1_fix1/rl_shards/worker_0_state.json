@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "shard_index": 0,
+  "pid": 4541,
+  "child_pid": null,
+  "restarts": 0,
+  "completed_answers": 1600,
+  "target_answers": 1600,
+  "started_at_unix": 1793804354.994331,
+  "phase": "EVALUATE",
+  "updated_at_unix": 1793889806.430351,
+  "phase_elapsed_seconds": 85429.20436981134
+}

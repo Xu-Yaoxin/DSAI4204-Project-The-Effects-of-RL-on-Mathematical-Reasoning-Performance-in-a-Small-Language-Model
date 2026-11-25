@@ -1,0 +1,26 @@
+{
+  "question_count": 200,
+  "answers": 800,
+  "sample_count_per_question": 4,
+  "counts": {
+    "gsm_main_confirm": 100,
+    "math_l4_confirm": 100
+  },
+  "gsm_distinct_families": 64,
+  "exact_previous_question_overlap": 0,
+  "previous_gsm_family_overlap": 0,
+  "scalar_gold_v2_roundtrip": 200,
+  "shard_group_question_counts": [
+    {
+      "gsm_main_confirm": 50,
+      "math_l4_confirm": 50
+    },
+    {
+      "gsm_main_confirm": 50,
+      "math_l4_confirm": 50
+    }
+  ],
+  "max_question_characters": 585,
+  "dataset_sha256": "5eb5775c988682af461100a64bf8de0e6189b592c98b64ed5a52e73bce598964",
+  "semantic_gold_review": "Not a full independent mathematical proof of source gold."
+}

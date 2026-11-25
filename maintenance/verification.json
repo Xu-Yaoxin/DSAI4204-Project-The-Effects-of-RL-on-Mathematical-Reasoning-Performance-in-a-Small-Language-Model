@@ -1,0 +1,62 @@
+{
+  "read_only": true,
+  "scoring_executed": false,
+  "models_loaded": 0,
+  "tests_executed": false,
+  "bootstrap_recomputed": false,
+  "math_l4": {
+    "source_files": 124,
+    "training_bundle_files": 81,
+    "answers_per_model": 3200,
+    "correct_answers": {
+      "base": 1393,
+      "rl": 1968
+    },
+    "changed_records": 25,
+    "exact_metrics": {
+      "base_pass_at_1": "1393/3200",
+      "base_pass_at_4": "31683/45500",
+      "base_pass_at_16": "171/200",
+      "rl_pass_at_1": "123/200",
+      "rl_pass_at_4": "298217/364000",
+      "rl_pass_at_16": "47/50",
+      "delta_pass_at_1": "23/128",
+      "delta_pass_at_4": "44753/364000",
+      "delta_pass_at_16": "17/200",
+      "delta_pass_at_1_minus_delta_pass_at_16": "303/3200"
+    }
+  },
+  "gsm8k": {
+    "source_files": 33,
+    "result_artifacts": 20,
+    "scoring_source_files": 3
+  },
+  "cleanup": {
+    "deleted_files_absent": 235,
+    "strict_deleted_paths_absent": 36,
+    "removed_continuation_state_files": 24,
+    "regenerated_cache_count": 0,
+    "regenerated_cache_paths": []
+  },
+  "environment_and_imports": {
+    "locked_packages": 84,
+    "checkpoint_files": 13,
+    "sealed_state_files": 12,
+    "supplementary_files": 37,
+    "downloads_paths_read": 0,
+    "checkpoint_state_loaded": false,
+    "base_weights_loaded": false
+  },
+  "paper": {
+    "bytes_verified": true,
+    "version": "2504.13837v5",
+    "online_metadata_rechecked": false,
+    "page_count_recomputed": false
+  },
+  "passed": true,
+  "file_hash_checks": 343,
+  "bytes_hashed": 1485163374,
+  "elapsed_seconds": 4.763,
+  "verified_utc": "2026-11-06T02:22:34.691786+00:00",
+  "verification_script_sha256": "b85376b28293ea349f94c61fe24f263079da0ec32d565e8fe160beb3cd9470ec"
+}

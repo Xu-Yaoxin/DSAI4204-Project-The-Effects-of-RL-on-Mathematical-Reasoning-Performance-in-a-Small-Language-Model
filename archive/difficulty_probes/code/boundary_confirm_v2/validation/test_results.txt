@@ -1,0 +1,49 @@
+[CHECK 0/4] Python syntax and linear production structure passed
+✅ [VERIFIER V2] 114 independent/real-fixture/CLI checks; six long-output checks in 1.40s; no model or network calls
+[CHECK 1/4] 25% | test_verifier_v2.py | PASS
+✅ [BOUNDARY EVALUATION TEST 100%] 66 plan, baseline-only, prompt, cache and interruption checks; model/GPU generation mocked
+[CHECK 2/4] 50% | test_boundary_evaluation.py | PASS
+[PASS] 44 boundary merge scenarios | shard assignment, exact scores, atomic publication, cached reuse and actual producer-to-merge-to-analyzer integration | model/GPU mocked; no network
+[CHECK 3/4] 75% | test_boundary_merge.py | PASS
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+[FIXTURE PLAN]
+✅ [BOUNDARY PARALLEL] 10 supervision checks | two real CPU fixture subprocesses, resource gates and sibling cleanup | no GPU/model executed
+[CHECK 4/4] 100% | test_boundary_parallel.py | PASS
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_verifier_v2.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_evaluation.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_merge.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_parallel.py",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 19.80371224999999,
+  "gpu_inference_tested": false,
+  "network_used": false
+}

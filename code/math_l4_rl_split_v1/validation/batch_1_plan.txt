@@ -1,0 +1,10 @@
+[EXECUTION EXTENSION] {"assigned_question_ids_sha256": "35932b079387c13b883dc7157ec815f3e38308043f002a5999e86456ff3b7efa", "assigned_questions": 100, "assignment": "question_index_modulo", "dataset_sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d", "generation_scoring_and_seed_code_unchanged": true, "kind": "math-l4-two-machine-question-shards-v1", "original_bundle_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32", "original_evaluator_sha256": "21321104395abad6bac1e37ab2ee5dc608de4928e6f43575c8c3550532bac244", "patches": ["allow_two_shards", "question_index_modulo", "bind_execution_extension"], "samples_per_question": 16, "schema_version": 1, "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396", "shard_count": 2, "shard_index": 1, "transformed_evaluator_sha256": "660035864a3ebfb59dc87e234b8c9fed19a6ac2aa1c4623ac92dd7051aafbdc0", "wrapper_sha256": "2c181d6aacc06a7d34ebde71473d7e663b86983075757764e0912e9ef0a73564"}
+[SHARD PLAN] index=1/2 | questions=100/200 | responses=1600 | selected=checkpoint-384
+========================================================================
+[EVAL 1/4] DATA | model=rl | split=test | questions=200 | samples/question=16
+[SHARD] index=1/2 | assigned_questions=100/200 | assignment=question_index_modulo
+[BUDGET] responses=1600 | max_output_tokens=419430400 | fixed independent comparison
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[GUARD POLICY] checks_every=32 tokens | answer_deadline=300s | no_token_timeout=120s | heartbeat=5s
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.

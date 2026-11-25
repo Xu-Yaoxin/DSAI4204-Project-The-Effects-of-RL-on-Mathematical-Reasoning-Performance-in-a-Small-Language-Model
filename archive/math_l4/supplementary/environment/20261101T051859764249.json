@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-01T05:20:14.548651+00:00",
+  "config_sha256": "90e0697b789cd8f6e01fd8bf5457f59138a975e728434fdfbb0a11a67c59927d",
+  "data_ready": true,
+  "gpu_checked": true,
+  "model_loaded": false,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "free_gpu_gib": 23.03497314453125,
+  "total_gpu_gib": 23.5164794921875,
+  "available_ram_gib": 54.9533805847168,
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.3.0",
+    "trl": "1.16.0",
+    "peft": "0.18.1",
+    "accelerate": "1.10.1"
+  },
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "prompt_preflight": {
+    "train": {
+      "count": 512,
+      "max_prompt_tokens": 264
+    },
+    "dev": {
+      "count": 128,
+      "max_prompt_tokens": 188
+    },
+    "test": {
+      "count": 200,
+      "max_prompt_tokens": 195
+    }
+  },
+  "ready": true
+}

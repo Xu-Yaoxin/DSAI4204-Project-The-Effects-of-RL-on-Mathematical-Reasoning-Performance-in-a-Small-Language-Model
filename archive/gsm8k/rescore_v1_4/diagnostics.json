@@ -1,0 +1,94 @@
+{
+  "test_base": {
+    "samples": 3200,
+    "original_correct": 1451,
+    "revised_correct": 2074,
+    "original_status_counts": {
+      "extraction_failed": 1168,
+      "correct": 1451,
+      "incorrect": 573,
+      "ambiguous": 8
+    },
+    "revised_status_counts": {
+      "correct": 2074,
+      "extraction_failed": 289,
+      "incorrect": 829,
+      "ambiguous": 8
+    },
+    "changed_scores": 889,
+    "incorrect_to_correct": 627,
+    "correct_to_incorrect": 4
+  },
+  "test_rl": {
+    "samples": 3200,
+    "original_correct": 2530,
+    "revised_correct": 2530,
+    "original_status_counts": {
+      "correct": 2530,
+      "incorrect": 578,
+      "extraction_failed": 92
+    },
+    "revised_status_counts": {
+      "correct": 2530,
+      "incorrect": 578,
+      "extraction_failed": 92
+    },
+    "changed_scores": 0,
+    "incorrect_to_correct": 0,
+    "correct_to_incorrect": 0
+  },
+  "dev/checkpoint-128": {
+    "samples": 800,
+    "original_correct": 608,
+    "revised_correct": 608,
+    "original_status_counts": {
+      "correct": 608,
+      "incorrect": 177,
+      "extraction_failed": 15
+    },
+    "revised_status_counts": {
+      "correct": 608,
+      "incorrect": 177,
+      "extraction_failed": 15
+    },
+    "changed_scores": 0,
+    "incorrect_to_correct": 0,
+    "correct_to_incorrect": 0
+  },
+  "dev/checkpoint-256": {
+    "samples": 800,
+    "original_correct": 636,
+    "revised_correct": 636,
+    "original_status_counts": {
+      "correct": 636,
+      "incorrect": 148,
+      "extraction_failed": 16
+    },
+    "revised_status_counts": {
+      "correct": 636,
+      "incorrect": 148,
+      "extraction_failed": 16
+    },
+    "changed_scores": 0,
+    "incorrect_to_correct": 0,
+    "correct_to_incorrect": 0
+  },
+  "dev/checkpoint-384": {
+    "samples": 800,
+    "original_correct": 652,
+    "revised_correct": 652,
+    "original_status_counts": {
+      "correct": 652,
+      "incorrect": 130,
+      "extraction_failed": 18
+    },
+    "revised_status_counts": {
+      "correct": 652,
+      "incorrect": 130,
+      "extraction_failed": 18
+    },
+    "changed_scores": 0,
+    "incorrect_to_correct": 0,
+    "correct_to_incorrect": 0
+  }
+}

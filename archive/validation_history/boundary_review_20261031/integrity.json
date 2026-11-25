@@ -1,0 +1,29 @@
+{
+  "bundle_files_verified": 26,
+  "archive_files": 48,
+  "answers": 400,
+  "questions": 100,
+  "groups": 5,
+  "workers_complete": [
+    200,
+    200
+  ],
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "adapter_identity": null,
+  "dataset_and_runtime_match_local": true,
+  "ready_artifact_hashes_valid": true,
+  "no_infrastructure_error_files": true,
+  "model_weights_locally_available": false,
+  "model_evidence": "Recorded server fingerprints verified against manifest and prior fixed base; full weights were not downloaded or rehashed locally.",
+  "replayed_outputs_byte_identical": {
+    "base/manifest.json": true,
+    "base/samples.jsonl": true,
+    "base/merge_ready.json": true,
+    "analysis/summary.json": true,
+    "analysis/report.md": true,
+    "analysis/calibration_candidates.json": true,
+    "analysis/per_question.jsonl": true,
+    "analysis/ready.json": true
+  },
+  "downloaded_archive_unchanged": true
+}

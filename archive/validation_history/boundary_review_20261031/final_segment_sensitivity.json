@@ -1,0 +1,203 @@
+{
+  "method": "POSTHOC DIAGNOSTIC ONLY: for every record with exactly one closing </think> tag and a nonempty suffix, score only that suffix using the unchanged archived verifier; otherwise score full text. Rule never consults gold to choose a span. Original score/artifacts unchanged. Closing tag need not have a matching opening tag, so this is not a frozen production extraction policy.",
+  "transformed_count": 10,
+  "review_scope": "Algorithmic sensitivity, not independent human labels or corrected official results",
+  "groups": [
+    {
+      "group_id": "gsm_symbolic",
+      "original_correct": 41,
+      "diagnostic_correct": 43,
+      "n": 80,
+      "original_pass1": 0.5125,
+      "diagnostic_pass1": 0.5375,
+      "newly_correct": 2,
+      "newly_wrong": 0
+    },
+    {
+      "group_id": "gsm_p1",
+      "original_correct": 24,
+      "diagnostic_correct": 24,
+      "n": 80,
+      "original_pass1": 0.3,
+      "diagnostic_pass1": 0.3,
+      "newly_correct": 0,
+      "newly_wrong": 0
+    },
+    {
+      "group_id": "gsm_p2",
+      "original_correct": 19,
+      "diagnostic_correct": 21,
+      "n": 80,
+      "original_pass1": 0.2375,
+      "diagnostic_pass1": 0.2625,
+      "newly_correct": 2,
+      "newly_wrong": 0
+    },
+    {
+      "group_id": "math_l1_3",
+      "original_correct": 55,
+      "diagnostic_correct": 57,
+      "n": 80,
+      "original_pass1": 0.6875,
+      "diagnostic_pass1": 0.7125,
+      "newly_correct": 2,
+      "newly_wrong": 0
+    },
+    {
+      "group_id": "math_l4_5",
+      "original_correct": 20,
+      "diagnostic_correct": 20,
+      "n": 80,
+      "original_pass1": 0.25,
+      "diagnostic_pass1": 0.25,
+      "newly_correct": 0,
+      "newly_wrong": 0
+    }
+  ],
+  "changes": [
+    {
+      "id": "gsm_symbolic-0158-39",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "answer": "221",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "221"
+      },
+      "truncated": false,
+      "final_segment": "\n\nThe cost of the colored pencils is \\(14 \\times 6.5 = 91\\).  \nThe cost of the folders is \\(10 \\times 11.5 = 115\\).  \nThe cost of the rim of bond paper is \\(15\\).  \nThe total cost is \\(91 + 115 + 15 = 221\\).\n\n#### 221"
+    },
+    {
+      "id": "gsm_symbolic-0365-02",
+      "sample_index": 1,
+      "group_id": "gsm_symbolic",
+      "answer": "21",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "21"
+      },
+      "truncated": false,
+      "final_segment": "\n\nStep 1: Calculate the number of boys.  \nTwo-fifths of 15 is \\(\\frac{2}{5} \\times 15 = 6\\) boys.\n\nStep 2: Calculate the total number of kids.  \nThere are 15 girls and 6 boys, so the total is \\(15 + 6 = 21\\) kids.\n\nFinal numerical answer: #### 21"
+    },
+    {
+      "id": "gsm_p2-0099-49",
+      "sample_index": 3,
+      "group_id": "gsm_p2",
+      "answer": "664",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": false,
+        "status": "incorrect",
+        "extracted": "589"
+      },
+      "truncated": false,
+      "final_segment": "\n\n**Solution:**\n\n1. **Plants on the ledges:**  \n   \\(10 \\text{ plants/ledge} \\times 69 \\text{ ledges} = 690\\) plants.\n\n2. **Plants received last week:**  \n   \\(31\\) plants.\n\n3. **Plants purchased yesterday (after discount):**  \n   Original price: \\(150\\) plants.  \n   Discount: \\(50\\% \\times 150 = 75\\) plants.  \n   Discounted price: \\(150 - 75 = 75\\) plants.\n\n4. **Total plants after purchase:**  \n   \\(690 + 31 + 75 = 796\\) plants.\n\n5. **Plants given away:**  \n   \\(3\\) plants per ledge \\(\\times 69\\) ledges = \\(207\\) plants.\n\n6. **Remaining plants:**  \n   \\(796 - 207 = 589\\) plants.\n\n**Final numerical answer:** #### 589"
+    },
+    {
+      "id": "gsm_p2-0365-02",
+      "sample_index": 2,
+      "group_id": "gsm_p2",
+      "answer": "25",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "25"
+      },
+      "truncated": false,
+      "final_segment": "\n\nSolution:\n- Number of girls = 22.\n- Number of boys = 3 × 22 = 66.\n- Total number of kids = 22 + 66 = 88.\n- Percentage of girls = (22 / 88) × 100% = 25%.\n\n#### 25"
+    },
+    {
+      "id": "gsm_p2-1268-41",
+      "sample_index": 0,
+      "group_id": "gsm_p2",
+      "answer": "30",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "30"
+      },
+      "truncated": false,
+      "final_segment": "\n\nWe are given: A pyramid is made out of 7 green cubes, twice as many pink cubes, and an unknown number of purple cubes. If there are 30 cubes in the pyramid in total, what percentage of cubes are purple?\n\n**Solution:**\n\nLet \\( p \\) be the number of purple cubes.\n\n- Green cubes = 7\n- Pink cubes = \\( 2 \\times 7 = 14 \\)\n- Total cubes = 30\n\nSet up the equation:\n\n\\[ 7 + 14 + p = 30 \\]\n\nSolve for \\( p \\):\n\n\\[ 21 + p = 30 \\]\n\\[ p = 30 - 21 \\]\n\\[ p = 9 \\]\n\nNow compute the percentage of purple cubes:\n\n\\[ \\text{Percentage} = \\frac{p}{\\text{total}} \\times 100\\% = \\frac{9}{30} \\times 100\\% = 0.3 \\times 100\\% = 30\\% \\]\n\nThus, 30% of the cubes are purple.\n\n#### 30"
+    },
+    {
+      "id": "math500-0065",
+      "sample_index": 1,
+      "group_id": "math_l1_3",
+      "answer": "1",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "1"
+      },
+      "truncated": false,
+      "final_segment": "\n\nThe expression \\(1^{(2^{235423523})}\\) simplifies as follows:\n\n\\[\n1^{(2^{235423523})} = (1^2)^{235423523} = 1^{2 \\times 235423523} = 1^{470847046} = 1.\n\\]\n\nMore directly, any power of 1 is always 1, regardless of the exponent.\n\nThus, the final numerical answer is 1.\n\n#### 1"
+    },
+    {
+      "id": "math500-0259",
+      "sample_index": 1,
+      "group_id": "math_l1_3",
+      "answer": "22",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": true,
+        "status": "correct",
+        "extracted": "22"
+      },
+      "truncated": false,
+      "final_segment": "\n\n**Solution:**  \nLet the number be \\(a = 5 + \\sqrt{3}\\). Its radical conjugate is \\(b = 5 - \\sqrt{3}\\). The product is  \n\n\\[\nab = (5 + \\sqrt{3})(5 - \\sqrt{3}).\n\\]\n\nExpanding using the FOIL method:  \n\n\\[\nab = 5\\cdot5 + 5\\cdot(-\\sqrt{3}) + \\sqrt{3}\\cdot5 + \\sqrt{3}\\cdot(-\\sqrt{3}) = 25 - 5\\sqrt{3} + 5\\sqrt{3} - (\\sqrt{3})^2.\n\\]\n\nSimplifying:  \n\n\\[\nab = 25 - 3 = 22.\n\\]\n\n**Final numerical answer:** #### 22"
+    },
+    {
+      "id": "math500-0075",
+      "sample_index": 3,
+      "group_id": "math_l4_5",
+      "answer": "11/36",
+      "original_score": {
+        "correct": false,
+        "status": "extraction_failed",
+        "extracted": null
+      },
+      "diagnostic_score": {
+        "correct": false,
+        "status": "incorrect",
+        "extracted": "5/18"
+      },
+      "truncated": false,
+      "final_segment": "\n\nThe product of the two numbers on the dice is a multiple of 5 if and only if at least one die shows a 5, because 5 is the only number on a standard 6-sided die that is divisible by 5.\n\nThere are 36 equally likely outcomes when two dice are thrown. The favorable outcomes are:\n\n- First die is 5: (5,1), (5,2), (5,3), (5,4), (5,5), (5,6) → 6 outcomes.\n- Second die is 5: (1,5), (2,5), (3,5), (4,5), (6,5) → 5 outcomes.\n\nThe outcome (5,5) is counted twice, but we have correctly listed all distinct favorable pairs. Total favorable outcomes = 6 + 5 = 10.\n\nThus the probability is \\(\\frac{10}{36} = \\frac{5}{18}\\).\n\n\\boxed{\\frac{5}{18}}"
+    }
+  ]
+}

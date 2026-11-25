@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_verifier_v2.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_repetition_guard.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_evaluation.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_merge.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_guarded_analysis.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_parallel.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_live_monitor.py",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 29.014876582999932,
+  "gpu_inference_tested": false,
+  "network_used": false,
+  "scenario_count": 320
+}

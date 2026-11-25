@@ -1,0 +1,4 @@
+{
+  "returncode": 0,
+  "output": "\u2705 [SCORER V3] 294 checks | 114 retained legacy scenarios, 45 independent presentation/negative cases, 45 real failures with counterfactual gold/contradiction checks | no model/GPU/network\n"
+}

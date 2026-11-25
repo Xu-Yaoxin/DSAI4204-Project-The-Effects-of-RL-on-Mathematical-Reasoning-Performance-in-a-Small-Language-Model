@@ -1,0 +1,163 @@
+{
+  "scope": "Post-hoc diagnostic on recorded training completions; actual training and its rewards unchanged",
+  "original_verifier_sha256": "3c160a5f4d4ea54bac81ee87c2f536d755f4657900ab84fbfbc25fdbfe7a4ae3",
+  "diagnostic_verifier_sha256": "39087665d52df4dbd6ec34cb5d683b214209ba2605891293b256e292db39af55",
+  "stages": {
+    "pilot": {
+      "optimizer_steps": 96,
+      "effective_update_steps": 96,
+      "training_hours": 3.6449494887220983,
+      "peak_cuda_allocated_gib": 4.011473178863525,
+      "peak_cuda_reserved_gib": 4.130859375,
+      "recorded_completions": 3072,
+      "primary_correct": 1281,
+      "diagnostic_correct": 1375,
+      "reward_changes": 94,
+      "reward_change_examples": [
+        {
+          "optimizer_step_before_update": 0,
+          "question_id": "gsm8k-train-001376",
+          "generation_index": 3,
+          "text": "Step 1: Calculate total leaves collected over two days.\nTotal leaves = 12 + 13 = 25\n\nStep 2: Calculate the number of brown leaves.\nNumber of brown leaves = 20% of 25\nNumber of brown leaves = 0.20 * 25 = 5\n\nStep 3: Calculate the number of green leaves.\nNumber of green leaves = 20% of 25\nNumber of green leaves = 0.20 * 25 = 5\n\nStep 4: Calculate the number of yellow leaves.\nNumber of yellow leaves = Total leaves - (Brown leaves + Green leaves)\nNumber of yellow leaves = 25 - (5 + 5)\nNumber of yellow leaves = 25 - 10\nNumber of yellow leaves = 15\n\nFinal Answer: #### 15.",
+          "answer": "15",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 0,
+          "question_id": "gsm8k-train-001456",
+          "generation_index": 1,
+          "text": "Jackson would catch 6*5 = 30 fishes, Jonah would catch 4*5 = 20 fishes, and George would catch 8*5 = 40 fishes.\nTo find the total number of fishes they were able to catch, we can add them up: 30 + 20 + 40 = 90 fishes.\n\nThe final answer is #### 90.",
+          "answer": "90",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 3,
+          "question_id": "gsm8k-train-006487",
+          "generation_index": 0,
+          "text": "Let the number of marbles Zack initially have be represented by $x$.\n\nSince Zack's number of marbles can be divided equally among three people, with a remainder of 5, we can express $x$ in the form:\n$$x = 3k + 5,$$\nwhere $k$ is the number of marbles each friend receives.\n\nAfter giving each of his three friends 20 marbles and keeping five for himself, the number of marbles that Zack had remaining is $k - 15$. We can set this equal to the remainder 5, as mentioned earlier:\n$$k - 15 = 5$$\n\nNow, let's solve for $k$:\n$$k = 5 + 15$$\n$$k = 20$$\n\nThis means that each of Zack's friends received 20 marbles. Now, we can find the initial value of $x$:\n$$x = 3k + 5$$\n$$x = 3(20) + 5$$\n$$x = 60 + 5$$\n$$x = 65$$\n\nTherefore, Zack initially had 65 marbles.\n\nAnswer: #### 65",
+          "answer": "65",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 5,
+          "question_id": "gsm8k-train-000592",
+          "generation_index": 7,
+          "text": "John plans to travel three total kilometers:\n30 km + 20 km = 50 km \n\nIf John uses 5 liters of fuel per km, he needs 50 * 5 = 250 liters of fuel to travel these distances.\n\nFinal answer: #### 250",
+          "answer": "250",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        }
+      ],
+      "epochs": [
+        {
+          "epoch": 1,
+          "steps": 32,
+          "reward": 0.244140625,
+          "entropy": 0.7601050405355636,
+          "frac_reward_zero_std": 0.203125,
+          "completions/clipped_ratio": 0.138671875,
+          "step_time": 140.6751307140803
+        },
+        {
+          "epoch": 2,
+          "steps": 32,
+          "reward": 0.4150390625,
+          "entropy": 0.5964521366622648,
+          "frac_reward_zero_std": 0.1171875,
+          "completions/clipped_ratio": 0.111328125,
+          "step_time": 138.16424981708406
+        },
+        {
+          "epoch": 3,
+          "steps": 32,
+          "reward": 0.591796875,
+          "entropy": 0.44200766391440993,
+          "frac_reward_zero_std": 0.2265625,
+          "completions/clipped_ratio": 0.08203125,
+          "step_time": 131.09886003891006
+        }
+      ]
+    },
+    "formal": {
+      "optimizer_steps": 384,
+      "effective_update_steps": 371,
+      "training_hours": 13.527467461181805,
+      "peak_cuda_allocated_gib": 4.014082908630371,
+      "peak_cuda_reserved_gib": 4.154296875,
+      "recorded_completions": 12288,
+      "primary_correct": 7608,
+      "diagnostic_correct": 7726,
+      "reward_changes": 118,
+      "reward_change_examples": [
+        {
+          "optimizer_step_before_update": 0,
+          "question_id": "gsm8k-train-001376",
+          "generation_index": 3,
+          "text": "Step 1: Calculate total leaves collected over two days.\nTotal leaves = 12 + 13 = 25\n\nStep 2: Calculate the number of brown leaves.\nNumber of brown leaves = 20% of 25\nNumber of brown leaves = 0.20 * 25 = 5\n\nStep 3: Calculate the number of green leaves.\nNumber of green leaves = 20% of 25\nNumber of green leaves = 0.20 * 25 = 5\n\nStep 4: Calculate the number of yellow leaves.\nNumber of yellow leaves = Total leaves - (Brown leaves + Green leaves)\nNumber of yellow leaves = 25 - (5 + 5)\nNumber of yellow leaves = 25 - 10\nNumber of yellow leaves = 15\n\nFinal Answer: #### 15.",
+          "answer": "15",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 0,
+          "question_id": "gsm8k-train-006312",
+          "generation_index": 1,
+          "text": "Ben has 8 apples more than Phillip, so Ben has $40 + 8 = 48$ apples.\nTom has $\\frac{3}{8}$ of Ben's apples. Therefore, Tom has $\\frac{3}{8} \\times 48 = 18$ apples.\nFinal answer: #### 18\n\n###### Explanation:\n\n1. **Determine Ben's total number of apples:**\n   - The problem states Ben has 8 apples more than Phillip.\n   - Phillip has 40 apples.\n   - So, Ben has $40 + 8 = 48$ apples.\n2. **Determine Tom's total number of apples:**\n   - Tom has $\\frac{3}{8}$ of Ben's apples.\n   - Therefore, Tom has $\\frac{3}{8} \\times 48 = 18$ apples.\n3. **Final answer:**\n   - Tom has 18 apples.\n\n$\\boxed{18}$",
+          "answer": "18",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 1,
+          "question_id": "gsm8k-train-006870",
+          "generation_index": 5,
+          "text": "1. Cost for Jamie and Oliver for a plane ticket is:\n   $24 * 2 = $48\n\n2. Cost for Jamie and Oliver for the hotel stay is:\n   $12 * 2 = $24 per day\n   $24 * 3 = $72\n\n3. The total money spent during the vacation is:\n   $48 + $72 = $120\n\nAnswer: #### 120\n\n(Note: The answer line is marked para2 to ensure formatting, as the original answer was a number <answer> which takes up extra tokens.)",
+          "answer": "120",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        },
+        {
+          "optimizer_step_before_update": 2,
+          "question_id": "gsm8k-train-002715",
+          "generation_index": 1,
+          "text": "1. Find the total number of birds seen:\n$$\n7 + 11 + 9 = 27\n$$\n\n2. Find the total number of people:\n$$\n3\n$$\n\n3. Calculate the average:\n$$\n\\frac{27}{3} = 9\n$$\n\nFinal answer: #### 9",
+          "answer": "9",
+          "original_reward": 0.0,
+          "diagnostic_reward": 1.0
+        }
+      ],
+      "epochs": [
+        {
+          "epoch": 1,
+          "steps": 128,
+          "reward": 0.43212890625,
+          "entropy": 0.6120722749401466,
+          "frac_reward_zero_std": 0.212890625,
+          "completions/clipped_ratio": 0.12060546875,
+          "step_time": 139.24864184907346
+        },
+        {
+          "epoch": 2,
+          "steps": 128,
+          "reward": 0.669189453125,
+          "entropy": 0.32948952626429673,
+          "frac_reward_zero_std": 0.369140625,
+          "completions/clipped_ratio": 0.0537109375,
+          "step_time": 121.86253496160498
+        },
+        {
+          "epoch": 3,
+          "steps": 128,
+          "reward": 0.756103515625,
+          "entropy": 0.2244893767647227,
+          "frac_reward_zero_std": 0.51171875,
+          "completions/clipped_ratio": 0.0419921875,
+          "step_time": 119.25495469695306
+        }
+      ]
+    }
+  }
+}

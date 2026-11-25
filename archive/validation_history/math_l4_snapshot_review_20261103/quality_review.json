@@ -1,0 +1,514 @@
+{
+  "scope": "Independent diagnostic review; no source/downloaded outputs were modified and no model, GPU, pickle, or network was used.",
+  "samples_path": "/Users/xu./Downloads/math_l4_snapshot_20261103/outputs/math_l4_v1_fix1/dev/checkpoint-128/samples.jsonl",
+  "samples_sha256": "193db30e8d661ce81df768fefd07210f77b711ec9f35b58303b9022f5252759d",
+  "rows": 210,
+  "statuses": {
+    "correct": 106,
+    "incorrect": 62,
+    "unscored": 11,
+    "extraction_failed": 7,
+    "timeout": 18,
+    "ambiguous": 6
+  },
+  "termination_counts": {
+    "eos": 181,
+    "repetition_guard": 11,
+    "answer_timeout": 18
+  },
+  "source_screen": {
+    "counts": {
+      "train": 512,
+      "dev": 128,
+      "test": 200
+    },
+    "multi_box_record_count": 14,
+    "distinct_box_defects": [
+      {
+        "split": "dev",
+        "id": "math-l4-train-precalculus-0660",
+        "stored_answer": "-3",
+        "boxed_values": [
+          "\\frac{3}{2}",
+          "-3"
+        ],
+        "distinct_literal_boxes": 2,
+        "question": "For real numbers $a,$ $b,$ and $c,$ the matrix\n\\[\\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]is not invertible.  List all possible values of\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b}.\\]",
+        "source": {
+          "dataset": "EleutherAI/hendrycks_math",
+          "level": 4,
+          "original_id": "precalculus/train-00000-of-00001.parquet#row=660",
+          "original_id_kind": "pinned_mirror_file_and_row_not_original_math_filename",
+          "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+          "row_index": 660,
+          "source_file": "precalculus/train-00000-of-00001.parquet",
+          "split": "train",
+          "subject": "precalculus"
+        },
+        "source_file_sha256": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e",
+        "source_solution": "Since the matrix is not invertible, its determinant is 0, i.e.\n\\[\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} = 0.\\]The determinant expands as\n\\begin{align*}\n\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} &= a \\begin{vmatrix} c & a \\\\ a & b \\end{vmatrix} - b \\begin{vmatrix} b & a \\\\ c & b \\end{vmatrix} + c \\begin{vmatrix} b & c \\\\ c & a \\end{vmatrix} \\\\\n&= a(bc - a^2) - b(b^2 - ac) + c(ab - c^2) \\\\\n&= 3abc - a^3 - b^3 - c^3.\n\\end{align*}This factors as\n\\[3abc - a^3 - b^3 - c^3 = -(a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc),\\]so either $a + b + c = 0$ or $a^2 + b^2 + c^2 - ab - ac - bc = 0.$\n\nIf $a + b + c = 0,$ then\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b} = \\frac{a}{-a} + \\frac{b}{-b} + \\frac{c}{-c} = -3.\\]Now, suppose $a^2 + b^2 + c^2 - ab - ac - bc = 0.$  Then\n\\begin{align*}\n(a - b)^2 + (a - c)^2 + (b - c)^2 &= (a^2 - 2ab + b^2) + (a^2 - 2ac + c^2) + (b^2 - 2bc + c^2) \\\\\n&= 2(a^2 + b^2 + c^2 - ab - ac - bc) \\\\\n&= 0.\n\\end{align*}This forces $a = b = c,$ so\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b} = \\frac{3}{2}.\\]Thus, the possible values of\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b}\\]are $\\boxed{\\frac{3}{2}}$ and $\\boxed{-3}.$",
+        "classification": "confirmed_multi_value_answer_admitted_as_scalar",
+        "root_cause": "prepare_data.py lines 112-127 retains only the last boxed expression",
+        "observed_responses": [
+          {
+            "sample_index": 0,
+            "correct": false,
+            "status": "incorrect",
+            "termination_reason": "eos",
+            "extracted": "3/2",
+            "output_tokens": 518
+          },
+          {
+            "sample_index": 1,
+            "correct": false,
+            "status": "incorrect",
+            "termination_reason": "eos",
+            "extracted": "1",
+            "output_tokens": 840
+          },
+          {
+            "sample_index": 2,
+            "correct": null,
+            "status": "unscored",
+            "termination_reason": "repetition_guard",
+            "extracted": null,
+            "output_tokens": 1344
+          },
+          {
+            "sample_index": 3,
+            "correct": false,
+            "status": "extraction_failed",
+            "termination_reason": "eos",
+            "extracted": null,
+            "output_tokens": 8457
+          }
+        ],
+        "correct_answer_set": [
+          "-3",
+          "3/2"
+        ],
+        "independent_witnesses": [
+          {
+            "a": 1,
+            "b": 1,
+            "c": 1,
+            "determinant": 0,
+            "expression": "3/2"
+          },
+          {
+            "a": 1,
+            "b": 1,
+            "c": -2,
+            "determinant": 0,
+            "expression": "-3"
+          }
+        ],
+        "diagnosis": "Sample 3 gives the complete correct answer set but the scalar scorer rejects it; samples 0 and 1 are incomplete or wrong, sample 2 is unscored repetition. No sample in this snapshot is credited for answering only -3."
+      },
+      {
+        "split": "dev",
+        "id": "math-l4-train-precalculus-0471",
+        "stored_answer": "-4",
+        "boxed_values": [
+          "4",
+          "-4"
+        ],
+        "distinct_literal_boxes": 2,
+        "question": "Given that $\\cos x - 4 \\sin x = 1,$ find all possible values of $\\sin x + 4 \\cos x.$",
+        "source": {
+          "dataset": "EleutherAI/hendrycks_math",
+          "level": 4,
+          "original_id": "precalculus/train-00000-of-00001.parquet#row=471",
+          "original_id_kind": "pinned_mirror_file_and_row_not_original_math_filename",
+          "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+          "row_index": 471,
+          "source_file": "precalculus/train-00000-of-00001.parquet",
+          "split": "train",
+          "subject": "precalculus"
+        },
+        "source_file_sha256": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e",
+        "source_solution": "From the equation $\\cos x - 4 \\sin x = 1,$\n\\[\\cos x - 1 = 4 \\sin x.\\]Squaring both sides, we get\n\\[\\cos^2 x - 2 \\cos x + 1 = 16 \\sin^2 x = 16 - 16 \\cos^2 x.\\]This simplifies to $17 \\cos^2 x - 2 \\cos x - 15 = 0,$ which factors as\n\\[(\\cos x - 1)(17 \\cos x + 15) = 0.\\]Hence, $\\cos x = 1$ or $\\cos x = -\\frac{15}{17}.$\n\nIf $\\cos x = 1,$ then $\\sin x = \\frac{\\cos x - 1}{4} = 0,$ so\n\\[\\sin x + 4 \\cos x = 0 + 4(1) = \\boxed{4}.\\]If $\\cos x = -\\frac{15}{17},$ then $\\sin x = \\frac{\\cos x - 1}{4} = -\\frac{8}{17},$ so\n\\[\\sin x + 4 \\cos x = -\\frac{8}{17} + 4 \\left( -\\frac{15}{17} \\right) = \\boxed{-4}.\\]",
+        "classification": "confirmed_multi_value_answer_admitted_as_scalar",
+        "root_cause": "prepare_data.py lines 112-127 retains only the last boxed expression",
+        "observed_responses": [],
+        "correct_answer_set": [
+          "-4",
+          "4"
+        ],
+        "independent_witnesses": [
+          {
+            "cosine": "1",
+            "sine": "0",
+            "expression": "4"
+          },
+          {
+            "cosine": "-15/17",
+            "sine": "-8/17",
+            "expression": "-4"
+          }
+        ],
+        "diagnosis": "No response for this question has been downloaded yet. Its source-only defect is independent of observed outcomes."
+      }
+    ],
+    "all_value_query_count": 11,
+    "all_value_queries": [
+      {
+        "split": "train",
+        "id": "math-l4-train-intermediate_algebra-1144",
+        "question": "Find all real numbers $a$ such that the roots of the polynomial\n$$x^3 - 6x^2 + 21x + a$$form an arithmetic progression and are not all real.",
+        "stored_answer": "-26",
+        "source_solution": "Let the three roots be $r-d$, $r$, and $r+d$, for some complex numbers $r$ and $d$. Then Vieta's formulas give\n$$(r-d)+r+(r+d)=6 \\qquad\\text{and}\\qquad (r-d)r+(r-d)(r+d)+r(r+d)=21.$$Simplifying these equations, we have\n$$3r=6 \\qquad\\text{and}\\qquad 3r^2-d^2=21.$$From $3r=6$, we deduce $r=2$. Substituting this into our second equation gives $12-d^2=21$, so $d^2=-9$ and $d=\\pm 3i$. Therefore, the roots of the cubic are $2-3i$, $2$, and $2+3i$, so\n$$a = -2(2-3i)(2+3i) = -2\\left(2^2-(3i)^2\\right) = -2(4+9) = \\boxed{-26}.$$"
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-intermediate_algebra-0996",
+        "question": "Let $a,$ $b,$ $c$ be distinct real numbers such that\n\\[\\frac{a}{b - c} + \\frac{b}{c - a} + \\frac{c}{a - b} = 0.\\]Find all possible values of\n\\[\\frac{a}{(b - c)^2} + \\frac{b}{(c - a)^2} + \\frac{c}{(a - b)^2}.\\]Enter all the possible values, separated by commas.",
+        "stored_answer": "0",
+        "source_solution": "Let $x = b - c,$ $y = c - a,$ and $z = a - b,$ so\n\\[\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 0.\\]Then\n\\[\\left( \\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} \\right) \\left( \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\right) = 0.\\]Expanding, we get\n\\[\\frac{a}{x^2} + \\frac{b}{y^2} + \\frac{c}{z^2} + \\frac{a + b}{xy} + \\frac{a + c}{xz} + \\frac{b + c}{yz} = 0.\\]Note that\n\\begin{align*}\n\\frac{a + b}{xy} + \\frac{a + c}{xz} + \\frac{b + c}{yz} &= \\frac{(a + b)z + (a + c)y + (b + c)x}{xyz} \\\\\n&= \\frac{(a + b)(a - b) + (a + c)(c - a) + (b + c)(b - c)}{xyz} \\\\\n&= \\frac{a^2 - b^2 + c^2 - a^2 + b^2 - c^2}{xyz} \\\\\n&= 0,\n\\end{align*}so\n\\[\\frac{a}{(b - c)^2} + \\frac{b}{(c - a)^2} + \\frac{c}{(a - b)^2} = \\frac{a}{x^2} + \\frac{b}{y^2} + \\frac{c}{z^2} = \\boxed{0}.\\]"
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-algebra-1625",
+        "question": "Find all values of $b$ such that $b+\\lceil b\\rceil=17.8$.",
+        "stored_answer": "44/5",
+        "source_solution": "First, $b$ must be positive since $b+\\lceil b\\rceil$ has a positive solution. Because $\\lceil b\\rceil$ must be an integer, $0.8$ must be the decimal component of $b$. Therefore, $b$ can be rewritten as $a+0.8$. $\\lceil b\\rceil$ must then equal $a+1$. The original equation is then as follows: \\begin{align*}\nb+\\lceil b\\rceil&=17.8\\\\\na+0.8+a+1&=17.8\\\\\n2a+1.8&=17.8\\\\\n2a&=16\\\\\na&=8\n\\end{align*}Therefore, $b=a+0.8=\\boxed{8.8}$."
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-intermediate_algebra-0485",
+        "question": "Find all positive real numbers $x$ that satisfy\n\\[x \\sqrt{12 - x} + \\sqrt{12x - x^3} \\ge 12.\\]Enter all solutions, separated by commas.",
+        "stored_answer": "3",
+        "source_solution": "We write\n\\[x \\sqrt{12 - x} + \\sqrt{12x - x^3} = \\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2}\\]By Cauchy-Schwarz,\n\\[(\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2})^2 \\le (12 - x + x)(x^2 + 12 - x^2) = 144,\\]so\n\\[\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2} \\le 12.\\]But $\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2} \\ge 12,$ so the expression must be equal to 12.  From the equality condition for Cauchy-Schwarz,\n\\[\\frac{12 - x}{x} = \\frac{x^2}{12 - x^2}.\\]Then $(12 - x)(12 - x^2) = x^3,$ which simplifies to $x^2 + x - 12 = 0.$  This factors as $(x - 3)(x + 4) = 0,$ so the only solution is $x = \\boxed{3}.$"
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-algebra-0169",
+        "question": "Find all solutions to the equation $\\displaystyle\\sqrt[3]{3 - x} = -\\frac{3}{2}$.",
+        "stored_answer": "51/8",
+        "source_solution": "We get rid of the cube root sign by cubing both sides.  This gives us $3-x = -\\frac{27}{8}$.  Solving this equation gives $x = 3 + \\frac{27}{8} = \\boxed{\\frac{51}{8}}$."
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-intermediate_algebra-0265",
+        "question": "The polynomial\n$$g(x) = x^3 - x^2 - (m^2 + m) x + 2m^2 + 4m + 2$$is divisible by $x-4$ and all of its zeroes are integers. Find all possible values of $m$.",
+        "stored_answer": "5",
+        "source_solution": "Since $g(x)$ is divisible by $x-4$, we have $g(4)=0$. We also have\n\\begin{align*}\ng(4) &= 4^3 - 4^2 - (m^2+m)(4) + 2m^2+4m+2 \\\\\n&= 50 - 2m^2,\n\\end{align*}so $0=50-2m^2$. Thus $m$ can only be $5$ or $-5$. We check both possibilities.\n\nIf $m=5$, then $g(x)=x^3-x^2-30x+72=(x-4)(x^2+3x-18)=(x-4)(x+6)(x-3)$, so all zeroes are integers.\n\nIf $m=-5$, then $g(x)=x^3-x^2-20x+32=(x-4)(x^2+3x-8)$, but $x^2+3x-8$ does not have integer zeroes.\n\nTherefore, the only solution is $m=\\boxed{5}$."
+      },
+      {
+        "split": "train",
+        "id": "math-l4-train-intermediate_algebra-1061",
+        "question": "The function $f(x)$ takes positive real numbers to real numbers, such that\n\\[xf(y) - yf(x) = f \\left( \\frac{x}{y} \\right)\\]for all positive real numbers $x$ and $y.$  Find all possible values of $f(100).$  Enter all possible values, separated by commas.",
+        "stored_answer": "0",
+        "source_solution": "Setting $x = y,$ we get\n\\[0 = f(1).\\]Setting $y = 1,$ we get\n\\[xf(1) - f(x) = f(x),\\]so $2f(x) = 0,$ which means $f(x) = \\boxed{0}$ for all $x.$  (Note that this function satisfies the given functional equation.)"
+      },
+      {
+        "split": "dev",
+        "id": "math-l4-train-precalculus-0660",
+        "question": "For real numbers $a,$ $b,$ and $c,$ the matrix\n\\[\\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]is not invertible.  List all possible values of\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b}.\\]",
+        "stored_answer": "-3",
+        "source_solution": "Since the matrix is not invertible, its determinant is 0, i.e.\n\\[\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} = 0.\\]The determinant expands as\n\\begin{align*}\n\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} &= a \\begin{vmatrix} c & a \\\\ a & b \\end{vmatrix} - b \\begin{vmatrix} b & a \\\\ c & b \\end{vmatrix} + c \\begin{vmatrix} b & c \\\\ c & a \\end{vmatrix} \\\\\n&= a(bc - a^2) - b(b^2 - ac) + c(ab - c^2) \\\\\n&= 3abc - a^3 - b^3 - c^3.\n\\end{align*}This factors as\n\\[3abc - a^3 - b^3 - c^3 = -(a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc),\\]so either $a + b + c = 0$ or $a^2 + b^2 + c^2 - ab - ac - bc = 0.$\n\nIf $a + b + c = 0,$ then\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b} = \\frac{a}{-a} + \\frac{b}{-b} + \\frac{c}{-c} = -3.\\]Now, suppose $a^2 + b^2 + c^2 - ab - ac - bc = 0.$  Then\n\\begin{align*}\n(a - b)^2 + (a - c)^2 + (b - c)^2 &= (a^2 - 2ab + b^2) + (a^2 - 2ac + c^2) + (b^2 - 2bc + c^2) \\\\\n&= 2(a^2 + b^2 + c^2 - ab - ac - bc) \\\\\n&= 0.\n\\end{align*}This forces $a = b = c,$ so\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b} = \\frac{3}{2}.\\]Thus, the possible values of\n\\[\\frac{a}{b + c} + \\frac{b}{a + c} + \\frac{c}{a + b}\\]are $\\boxed{\\frac{3}{2}}$ and $\\boxed{-3}.$"
+      },
+      {
+        "split": "dev",
+        "id": "math-l4-train-precalculus-0471",
+        "question": "Given that $\\cos x - 4 \\sin x = 1,$ find all possible values of $\\sin x + 4 \\cos x.$",
+        "stored_answer": "-4",
+        "source_solution": "From the equation $\\cos x - 4 \\sin x = 1,$\n\\[\\cos x - 1 = 4 \\sin x.\\]Squaring both sides, we get\n\\[\\cos^2 x - 2 \\cos x + 1 = 16 \\sin^2 x = 16 - 16 \\cos^2 x.\\]This simplifies to $17 \\cos^2 x - 2 \\cos x - 15 = 0,$ which factors as\n\\[(\\cos x - 1)(17 \\cos x + 15) = 0.\\]Hence, $\\cos x = 1$ or $\\cos x = -\\frac{15}{17}.$\n\nIf $\\cos x = 1,$ then $\\sin x = \\frac{\\cos x - 1}{4} = 0,$ so\n\\[\\sin x + 4 \\cos x = 0 + 4(1) = \\boxed{4}.\\]If $\\cos x = -\\frac{15}{17},$ then $\\sin x = \\frac{\\cos x - 1}{4} = -\\frac{8}{17},$ so\n\\[\\sin x + 4 \\cos x = -\\frac{8}{17} + 4 \\left( -\\frac{15}{17} \\right) = \\boxed{-4}.\\]"
+      },
+      {
+        "split": "dev",
+        "id": "math-l4-train-intermediate_algebra-0290",
+        "question": "Let $a,$ $b,$ $c$ be complex numbers such that\n\\begin{align*}\nab + 4b &= -16, \\\\\nbc + 4c &= -16, \\\\\nca + 4a &= -16.\n\\end{align*}Enter all possible values of $abc,$ separated by commas.",
+        "stored_answer": "64",
+        "source_solution": "Adding the equations, we get\n\\[ab + ac + bc + 4(a + b + c) = -48.\\]Multiplying the equations by $c,$ $a,$ $b,$ respectively, we get\n\\begin{align*}\nabc + 4bc &= -16c, \\\\\nabc + 4ac &= -16a, \\\\\nabc + 4ab &= -16b.\n\\end{align*}Adding all these equations, we get\n\\[3abc + 4(ab + ac + bc) = -16(a + b + c).\\]Then\n\\begin{align*}\n3abc &= -4(ab + ac + bc) - 16(a + b +c) \\\\\n&= -4(ab + ac + bc + 4(a + b + c)) \\\\\n&= (-4)(-48) = 192,\n\\end{align*}so $abc = \\boxed{64}.$"
+      },
+      {
+        "split": "test",
+        "id": "math-l4-test-precalculus-0000",
+        "question": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that\n\\[\\mathbf{v} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{v}\\]for all vectors $\\mathbf{v}.$  Enter all possible values of $\\mathbf{a} \\cdot \\mathbf{b},$ separated by commas.",
+        "stored_answer": "0",
+        "source_solution": "Taking $\\mathbf{v} = \\mathbf{b},$ we get\n\\[\\mathbf{b} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{b} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{b}.\\]From the projection formula,\n\\[\\operatorname{proj}_{\\mathbf{a}} \\mathbf{b} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a},\\]and $\\operatorname{proj}_{\\mathbf{b}} \\mathbf{b} = \\mathbf{b},$ so\n\\[\\mathbf{b} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a} + \\mathbf{b}.\\]Hence,\n\\[\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a} = \\mathbf{0}.\\]The vector $\\mathbf{a}$ must be nonzero, in order for the projection of $\\mathbf{v}$ onto $\\mathbf{a}$ to be defined, so we must have $\\mathbf{a} \\cdot \\mathbf{b} = \\boxed{0}.$\n\nNote that we can take $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}.$"
+      }
+    ],
+    "limits": "All840 prepared records were scanned for multiple boxed source expressions; explicit find/list/enter-all-value questions were reviewed against their source solutions. This is not a full mathematical proof of every label."
+  },
+  "confirmed_scalar_math_false_negative": {
+    "id": "math-l4-train-number_theory-0194",
+    "sample_index": 1,
+    "gold": "378",
+    "final_line": "#### 378",
+    "root_cause": "One unmatched closing think tag makes scorer lines48-60 flag malformed_think and clear the complete text.",
+    "original_replay": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": null,
+      "status": "extraction_failed",
+      "format_compliant": false,
+      "truncated": false
+    },
+    "diagnostic_remove_only_unmatched_closing_tag": {
+      "correct": true,
+      "reward": 1.0,
+      "extracted": "378",
+      "status": "correct",
+      "format_compliant": true,
+      "truncated": false
+    },
+    "counterfactual_gold379": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": "378",
+      "status": "incorrect",
+      "format_compliant": true,
+      "truncated": false
+    },
+    "production_or_saved_scores_changed": false
+  },
+  "ambiguous_correct_terminal_answers": [
+    {
+      "id": "math-l4-train-intermediate_algebra-0585",
+      "sample_index": 0,
+      "answer": "10499/100",
+      "markers": [
+        "\\boxed{\\frac{6}{101}}",
+        "But the instruction: \"Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to output the answer inside #### <answer>. Probably we just output the fraction.",
+        "Now produce final answer with #### <answer>. Probably just \"10499/100\". But we can also write as 104.99? The problem says \"final numerical answer\". Usually they want exact fraction. So 10499/100.",
+        "Thus final output: #### 10499/100.",
+        "#### <answer>10499/100</answer>"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    },
+    {
+      "id": "math-l4-train-algebra-0761",
+      "sample_index": 2,
+      "answer": "2013",
+      "markers": [
+        "#### 2",
+        "Now we must output final answer in the format: #### <answer>.",
+        "Thus final answer: #### 2013.",
+        "\\boxed{2013}"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    },
+    {
+      "id": "math-l4-train-prealgebra-0520",
+      "sample_index": 2,
+      "answer": "4",
+      "markers": [
+        "#### 12",
+        "The user says: \"Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to produce a solution with calculation and then final answer in the format: #### <answer>. The answer is 12.",
+        "Then final answer: #### 4.",
+        "But the problem statement says \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to produce a final answer in that format. So we should output the solution with calculation and then the final answer.",
+        "We must ensure we answer exactly as requested. So we will produce a response that includes the solution steps, and then a line with \"#### 4\".",
+        "Now, format: The answer should be on a separate line as #### <answer>. So we need to output something like:",
+        "#### 4",
+        "But we also need to include the solution. The instruction: \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we can write the solution in text, and then at the end, a line with \"#### 4\". Possibly we need to put the answer in the format exactly. We'll do that.",
+        "#### 4",
+        "Final answer: #### 4",
+        "Therefore, there are \\(\\boxed{4}\\) two-digit prime numbers that can be formed under the given conditions.",
+        "#### 4"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    },
+    {
+      "id": "math-l4-train-prealgebra-0056",
+      "sample_index": 2,
+      "answer": "5",
+      "markers": [
+        "The final numerical answer is: #### 10",
+        "We need to show calculation, then give final answer as #### 10.",
+        "Now we need to output: \"Solution: ... The final numerical answer is: #### 5\". But careful: The problem says \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to produce the answer in that format.",
+        "The final numerical answer is: #### 5"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    },
+    {
+      "id": "math-l4-train-number_theory-0806",
+      "sample_index": 1,
+      "answer": "2",
+      "markers": [
+        "#### 5",
+        "We have to show our calculation and then give the final numerical answer on a separate line as #### <answer>. So we need to output something like:",
+        "The answer is: #### 5",
+        "But careful: The instruction says: \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we should produce the solution, then a line with \"#### 5\" or \"#### 5\" exactly. Possibly we need to output just that? The typical format in these problems is to output the answer in that format. So we need to produce a final answer line: #### 5. But also include the solution? The instruction says \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we should include the solution in our response, and then at the end, on a separate line, we output \"#### 5\". So we need to produce a response that includes the solution and then the answer line.",
+        "Now we need to output with the solution and then \"#### 2\"? But the problem says \"the final numerical answer on a separate line as #### <answer>\". So we need to output \"#### 2\". But we must be careful: The answer is 2, not 5. So we will output 2.",
+        "But the instruction says \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to produce a response that includes the solution and then the answer line. The answer line should be \"#### 2\". But we need to ensure we don't accidentally output \"#### 5\" as in the example? The example in the instruction: \"The answer is: #### 5\" is from the problem statement? Actually, the instruction says: \"The answer is: #### 5.\" That is part of the problem statement. But we need to output our answer. So we will output \"#### 2\".",
+        "The answer is: #### 2",
+        "But the problem says \"on a separate line as #### <answer>\". So we should output exactly that line.",
+        "#### 2",
+        "But we need to ensure that we don't have extra spaces or formatting. The instruction: \"on a separate line as #### <answer>.\" So we should have a line that says \"#### 2\". Possibly with the #### and then the number. So we output \"#### 2\".",
+        "#### 2"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    },
+    {
+      "id": "math-l4-train-number_theory-0042",
+      "sample_index": 2,
+      "answer": "4",
+      "markers": [
+        "#### 0",
+        "We need to show our calculation, then give final answer as #### <answer>. So we need to output something like: #### 0.",
+        "But we need to show calculation and then final answer. The final answer should be in #### <answer>. So we output: #### 4.",
+        "Now we need to produce solution. The user says: \"Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we should present the solution step-by-step, then output the final answer.",
+        "Now output as #### 4.",
+        "But the instruction: \"give the final numerical answer on a separate line as #### <answer>.\" So we need to put the answer inside that format. Probably they want just the number. But we can output \"#### 4\".",
+        "#### 4"
+      ],
+      "review": "Terminal revised answer is correct on manual inspection, but an earlier visible final-answer marker gives a different value. The frozen conservative contradiction policy intentionally rejects the whole response; do not silently convert it to correct."
+    }
+  ],
+  "positive_sample_seed": 20261103,
+  "positive_answer_reviews": [
+    {
+      "id": "math-l4-train-geometry-0103",
+      "sample_index": 1,
+      "answer": "16/25",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-algebra-0245",
+      "sample_index": 3,
+      "answer": "2",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-algebra-0568",
+      "sample_index": 1,
+      "answer": "18",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-number_theory-0412",
+      "sample_index": 1,
+      "answer": "3",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-algebra-0083",
+      "sample_index": 0,
+      "answer": "5",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-number_theory-0806",
+      "sample_index": 2,
+      "answer": "2",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample. Reasoning includes65 as a divisor and confused unordered-pair wording, while the final count2 is correct."
+    },
+    {
+      "id": "math-l4-train-prealgebra-0762",
+      "sample_index": 1,
+      "answer": "90",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-algebra-0245",
+      "sample_index": 2,
+      "answer": "2",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample. Reasoning contains arithmetic mistakes (4*4.9*28 written as548.48 instead of548.8), despite landing on the correct final answer2. Exact-answer correctness is not a proof of sound reasoning."
+    },
+    {
+      "id": "math-l4-train-algebra-1122",
+      "sample_index": 1,
+      "answer": "18",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-number_theory-0194",
+      "sample_index": 3,
+      "answer": "378",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-prealgebra-0386",
+      "sample_index": 2,
+      "answer": "48",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    },
+    {
+      "id": "math-l4-train-number_theory-0042",
+      "sample_index": 3,
+      "answer": "4",
+      "review": "Final numerical answer checked against the question; no answer-level false positive found in this selected sample."
+    }
+  ],
+  "error_examples": [
+    {
+      "id": "math-l4-train-counting_and_probability-0098",
+      "sample_index": 3,
+      "gold": "7/15",
+      "status": "incorrect",
+      "termination_reason": "eos",
+      "correct": false,
+      "diagnosis": "Misreads B and C as six green balls rather than four; predicts3/5 instead of7/15.",
+      "tail_excerpt": "er>. So we'll write: #### \\frac{3}{5}\n\nWe'll also include the answer in the final line.\n\nNow, produce the final output.\n</think>\n\n**Solution:**\n\n1. The probability of selecting any container is \\(\\frac{1}{3}\\).\n2. For container A: green balls = 6, total balls = 10, so \\(P(\\text{green} \\mid A) = \\frac{6}{10} = \\frac{3}{5}\\).  \n   For container B: green balls = 6, total = 10, so \\(P(\\text{green} \\mid B) = \\frac{3}{5}\\).  \n   For container C: green balls = 6, total = 10, so \\(P(\\text{green} \\mid C) = \\frac{3}{5}\\).\n3. Using the law of total probability:\n   \\[\n   P(\\text{green}) = P(A) \\cdot P(\\text{green} \\mid A) + P(B) \\cdot P(\\text{green} \\mid B) + P(C) \\cdot P(\\text{green} \\mid C)\n   \\]\n   \\[\n   = \\frac{1}{3} \\cdot \\frac{3}{5} + \\frac{1}{3} \\cdot \\frac{3}{5} + \\frac{1}{3} \\cdot \\frac{3}{5}\n   = \\frac{1}{3} \\cdot \\frac{3}{5} \\cdot 3 = \\frac{9}{15} = \\frac{3}{5}.\n   \\]\n\nThus, the probability that the ball selected is green is \\(\\frac{3}{5}\\).\n\n**Final numerical answer:** #### \\frac{3}{5}"
+    },
+    {
+      "id": "math-l4-train-algebra-0771",
+      "sample_index": 0,
+      "gold": "29",
+      "status": "incorrect",
+      "termination_reason": "eos",
+      "correct": false,
+      "diagnosis": "Confuses ceiling interval(14,15] with[15,16); predicts31 instead of29.",
+      "tail_excerpt": "The condition $\\lceil{\\sqrt{x}}\\rceil=15$ means that the ceiling of $\\sqrt{x}$ is 15, so $\\sqrt{x}$ lies in the interval $[15, 16)$. Squaring all parts gives $x \\in [225, 256)$. Since $x$ must be an integer, the possible values are $225, 226, \\dots, 255$. Counting these values: $255 - 225 + 1 = 31$.\n\nAnswer: 31"
+    },
+    {
+      "id": "math-l4-train-algebra-1122",
+      "sample_index": 2,
+      "gold": "18",
+      "status": "incorrect",
+      "termination_reason": "eos",
+      "correct": false,
+      "diagnosis": "Completes the square correctly but reads center x-coordinate as-9 instead of9; predicts0 instead of18.",
+      "tail_excerpt": "To find the center $(a,b)$ and radius $r$ of the circle, we need to rewrite the given equation in the standard form $(x-h)^2 + (y-k)^2 = r^2$.\n\nStarting with the given equation:\n$x^2 + 2y - 9 = -y^2 + 18x + 9$\n\nFirst, let's rearrange the terms:\n$x^2 + y^2 - 18x + 2y - 18 = 0$\n\nNow, we complete the square for the $x$ and $y$ terms:\n\nFor the $x$ terms: $x^2 - 18x$\nWe add and subtract $(\\frac{18}{2})^2 = 81$:\n$(x^2 - 18x + 81) - 81 = (x - 9)^2 - 81$\n\nFor the $y$ terms: $y^2 + 2y$\nWe add and subtract $(\\frac{2}{2})^2 = 1$:\n$(y^2 + 2y + 1) - 1 = (y + 1)^2 - 1$\n\nSubstituting these back into the equation:\n$(x - 9)^2 - 81 + (y + 1)^2 - 1 - 18 = 0$\n\nSimplify:\n$(x - 9)^2 + (y + 1)^2 - 100 = 0$\n\n$(x - 9)^2 + (y + 1)^2 = 100$\n\nComparing this to the standard form $(x-h)^2 + (y-k)^2 = r^2$, we can see that:\n$a = -9$\n$b = -1$\n$r = \\sqrt{100} = 10$\n\nTherefore, the value of $a + b + r$ is:\n$a + b + r = -9 + (-1) + 10 = 0$\n\n#### 0\n\n"
+    },
+    {
+      "id": "math-l4-train-geometry-0779",
+      "sample_index": 2,
+      "gold": "6",
+      "status": "incorrect",
+      "termination_reason": "eos",
+      "correct": false,
+      "diagnosis": "Rejects the equality boundary2+9=11 as if11>11; predicts7 instead of6.",
+      "tail_excerpt": "e third piece. However, since we want the smallest $k$ such that this condition is met, we will check the conditions for the three possible combinations:\n\n1. $a' + b' \\leq c'$\n2. $a' + c' \\leq b'$\n3. $b' + c' \\leq a'$\n\nWe start with the smallest $k$ and check each condition.\n\nFor $k = 1$:\n- $a' = 7$, $b' = 14$, $c' = 16$\n- $7 + 14 = 21 > 16$ (Not satisfied)\n\nFor $k = 2$:\n- $a' = 6$, $b' = 13$, $c' = 15$\n- $6 + 13 = 19 > 15$ (Not satisfied)\n\nFor $k = 3$:\n- $a' = 5$, $b' = 12$, $c' = 14$\n- $5 + 12 = 17 > 14$ (Not satisfied)\n\nFor $k = 4$:\n- $a' = 4$, $b' = 11$, $c' = 13$\n- $4 + 11 = 15 > 13$ (Not satisfied)\n\nFor $k = 5$:\n- $a' = 3$, $b' = 10$, $c' = 12$\n- $3 + 10 = 13 > 12$ (Not satisfied)\n\nFor $k = 6$:\n- $a' = 2$, $b' = 9$, $c' = 11$\n- $2 + 9 = 11 > 11$ (Not satisfied)\n\nFor $k = 7$:\n- $a' = 1$, $b' = 8$, $c' = 10$\n- $1 + 8 = 9 < 10$ (Satisfied)\n\nThus, the smallest $k$ that satisfies the condition is 7.\n\nThe length of the smallest piece that can be cut from each stick is 7 inches.\n\n#### 7"
+    },
+    {
+      "id": "math-l4-train-prealgebra-0762",
+      "sample_index": 2,
+      "gold": "90",
+      "status": "incorrect",
+      "termination_reason": "eos",
+      "correct": false,
+      "diagnosis": "Counts the two middle palindrome digits independently; predicts900 instead of90.",
+      "tail_excerpt": "A 4-digit palindrome has the form $\\overline{abcd}$ where $a$ and $d$ are the first and last digits, respectively, and $b$ and $c$ are the middle digits. The condition for a palindrome is that the first digit must be non-zero (since it is a 4-digit number), and the second and third digits can be any digits from 0 to 9.\n\n- The first digit $a$ can be any of the digits 1 through 9, giving us 9 possible choices.\n- The second digit $b$ can be any digit from 0 to 9, giving us 10 possible choices.\n- The third digit $c$ can also be any digit from 0 to 9, giving us 10 possible choices.\n- The fourth digit $d$ must be the same as the first digit $a$, so there is only 1 possible choice for $d$.\n\nTo find the total number of 4-digit palindromes, we multiply the number of choices for each digit:\n$$9 \\times 10 \\times 10 \\times 1 = 900$$\n\nThus, there are 900 four-digit palindromes.\n\n$$\\boxed{900}$$\n\nWe have solved the problem. The number of 4-digit palindromes is 900."
+    },
+    {
+      "id": "math-l4-train-prealgebra-0725",
+      "sample_index": 1,
+      "gold": "400",
+      "status": "timeout",
+      "termination_reason": "answer_timeout",
+      "correct": false,
+      "diagnosis": "Reaches the correct area400 in the partial text but keeps reconsidering and reaches the300-second deadline. It remains incorrect under the requested termination policy.",
+      "tail_excerpt": "\\times L$?\n$25L = 1000 \\Rightarrow L = 40$.\n$10L = 1000 \\Rightarrow L = 100$.\nNo.\n\nIs it possible that \"walk the length 25 times\" means $25 \\times L$ and \"walk the perimeter 10 times\" means $10 \\times W$?\n$25L = 1000 \\Rightarrow L = 40$.\n$10W = 1000 \\Rightarrow W = 100$.\n$2(40+100) = 280 \\neq 1000$.\nNo.\n\nIs it possible that \"walk the length 25 times\" means $25 \\times L$ and \"walk the perimeter 10 times\" means $10 \\times P$?\n$25L = 1000 \\Rightarrow L = 40$.\n$10P = 1000 \\Rightarrow P = 100$.\n$2(40+W) = 100$.\n$W = 10$.\nArea = 400.\n\nThis is the only consistent solution.\n\nI will proceed with 400.\n\nOne last check.\nIf $L=40, W=10$.\nWalk length 25 times: $25 \\times 40 = 1000$.\nWalk perimeter 10 times: $10 \\times 2(40+10) = 10 \\times 100 = 1000$.\nThis satisfies the condition.\n\nThe area is $40 \\times 10 = 400$.\n\nThe final answer is 400.\n\nLet's write it out.\nLength $L = 1000 / 25 = 40$ m.\nPerimeter $P = 1000 / 10 = 100$ m.\n$2(L + W) = 100$.\n$40 + W = 50$.\n$W = 10$ m.\nArea $A = 40 \\times 10 = 400$"
+    },
+    {
+      "id": "math-l4-train-intermediate_algebra-0936",
+      "sample_index": 3,
+      "gold": "56",
+      "status": "unscored",
+      "termination_reason": "repetition_guard",
+      "correct": null,
+      "diagnosis": "Repeats the same polynomial-elimination sentence; repetition guard terminates generation. No completed final answer is inferred.",
+      "tail_excerpt": " the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can rewrite the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can rewrite the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can rewrite the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can rewrite the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can rewrite the equation as $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$.\n\nNow, let's try to eliminate $b$ from the equation $-8x^6 + 14x^3 - 49 = -18x^4b^2 + 49x^2b$. We can"
+    }
+  ],
+  "recommendation": "Preserve the completed training and immutable raw outputs. The dataset demonstrably challenges this model, but current dev labels include two multi-value questions incorrectly admitted as scalars. Resolve these source-defined eligibility defects through a documented separately versioned selection/reanalysis rule before trusting the checkpoint choice. Audit malformed-think extraction separately without changing the running protocol. Do not restart training on this evidence, and do not claim RL improvement without matched Base/RL evaluation.",
+  "limits": [
+    "Partial dev is a sequential prefix, not a random sample of the128 dev questions.",
+    "Six terminally correct revisions remain ambiguous under the frozen public-answer conflict rule; they are not included in official correct counts.",
+    "No answer-level false positive was found among12 deterministic sampled positives; this does not validate all positives or all reasoning.",
+    "Train and test had no distinct-multiple-box defects in this screen; other semantic errors remain possible."
+  ]
+}

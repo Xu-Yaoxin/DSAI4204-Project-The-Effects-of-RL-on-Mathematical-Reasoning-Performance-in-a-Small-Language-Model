@@ -1,0 +1,91 @@
+{
+  "version": "math-l4-1.0",
+  "experiment_type": "math_l4_base_rl",
+  "model": {
+    "path": "../models/Qwen3.5-2B-Base",
+    "dtype": "bfloat16",
+    "repo_id": "Qwen/Qwen3.5-2B-Base",
+    "expected_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+    "expected_eos_token_id": 248044
+  },
+  "prompt": {
+    "template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n"
+  },
+  "data": {
+    "output_dir": "data/processed",
+    "seed": 20261102,
+    "engineering_size": 32,
+    "pilot_size": 128,
+    "train_size": 512,
+    "dev_size": 128,
+    "test_size": 200,
+    "manifest_sha256": "0d6dc496cc6766a910452a10de90c7ee26af68f9613ef8a9d388266b225546d7"
+  },
+  "training": {
+    "seed": 42,
+    "num_generations": 8,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "learning_rate": 5e-06,
+    "epochs": 3,
+    "gradient_accumulation_steps": 32,
+    "per_device_train_batch_size": 1,
+    "max_completion_length": 2048,
+    "max_prompt_length": 2048,
+    "loss_type": "grpo",
+    "beta": 0.0,
+    "scale_rewards": "group",
+    "epsilon": 0.2,
+    "num_iterations": 1,
+    "save_strategy": "epoch",
+    "save_steps": 128,
+    "recovery_save_steps": 16,
+    "logging_steps": 1,
+    "max_grad_norm": 1.0,
+    "steps_per_generation": 8,
+    "unfinished_reward_policy": "zero_unless_eos"
+  },
+  "evaluation": {
+    "seed": 314159,
+    "n_samples": 16,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 262144,
+    "max_prompt_length": 2048,
+    "bootstrap_replicates": 2000,
+    "context_limit": 262144,
+    "length_policy": "native_context_minus_actual_prompt",
+    "generation_guard": {
+      "version": "exact-periodic-suffix-v1",
+      "check_every_tokens": 32,
+      "min_generated_tokens": 1024,
+      "min_repeat_span_tokens": 1024,
+      "max_period_tokens": 256,
+      "min_repeats": 4,
+      "heartbeat_seconds": 5,
+      "no_token_timeout_seconds": 120,
+      "stop_grace_seconds": 15,
+      "max_worker_restarts": 2,
+      "answer_timeout_seconds": 300
+    },
+    "dev_samples": 4,
+    "engineering_samples": 1
+  },
+  "selection": {
+    "metric": "correct_per_requested_attempt",
+    "tie_break": "lowest_optimizer_step",
+    "split": "dev",
+    "epoch_checkpoints_only": true
+  },
+  "execution": {
+    "visible_gpu": "0",
+    "concurrent_model_workers": 1,
+    "max_eval_worker_restarts": 2,
+    "required_free_gpu_gib": 12,
+    "required_available_ram_gib": 16
+  }
+}

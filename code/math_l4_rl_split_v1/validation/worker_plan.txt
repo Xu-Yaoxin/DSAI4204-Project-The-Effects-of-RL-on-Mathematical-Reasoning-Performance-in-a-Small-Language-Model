@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-04T06:21:04.765703+00:00",
+  "shard_index": 1,
+  "experiment_root": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1",
+  "reference_base_manifest_sha256": "b783182fb8e89d81806627f98566e24a2bbc7fe18c42ed3a629c532c231b9fbe",
+  "config_sha256": "90e0697b789cd8f6e01fd8bf5457f59138a975e728434fdfbb0a11a67c59927d",
+  "source_gpu": "NVIDIA GeForce RTX 4090",
+  "source_execution_cpu_threads": {
+    "intraop": 4,
+    "interop": 1
+  },
+  "expected_package_versions": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.3.0",
+    "peft": "0.18.1",
+    "accelerate": "1.10.1",
+    "datasets": "4.8.5",
+    "trl": "1.16.0",
+    "safetensors": "0.8.0",
+    "flash-linear-attention": null,
+    "fla-core": null,
+    "causal-conv1d": null
+  },
+  "gpu_checked": false,
+  "model_loaded": false,
+  "dependencies_checked": false,
+  "scope": "Source-only plan"
+}
+[WORKER PLAN COMPLETE] Frozen source verified; no model packages or GPU imported.

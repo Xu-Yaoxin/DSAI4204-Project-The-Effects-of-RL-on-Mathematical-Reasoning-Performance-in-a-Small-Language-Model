@@ -1,0 +1,70 @@
+[
+  {
+    "case": {
+      "name": "structural_heading",
+      "text": "#### First term:\nWork.\n#### 7",
+      "answer": "7",
+      "expected_status": "correct"
+    },
+    "old_score": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": null,
+      "status": "extraction_failed",
+      "format_compliant": false,
+      "truncated": false
+    },
+    "expected_failure_reproduced": true
+  },
+  {
+    "case": {
+      "name": "final_prose",
+      "text": "Final Answer:\nThe maximum area of the triangle is 2500 square units.\n#### 2500",
+      "answer": "2500",
+      "expected_status": "correct"
+    },
+    "old_score": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": null,
+      "status": "extraction_failed",
+      "format_compliant": false,
+      "truncated": false
+    },
+    "expected_failure_reproduced": true
+  },
+  {
+    "case": {
+      "name": "genuine_conflict",
+      "text": "#### 7\nFinal Answer: 8",
+      "answer": "7",
+      "expected_status": "ambiguous"
+    },
+    "old_score": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": null,
+      "status": "ambiguous",
+      "format_compliant": false,
+      "truncated": false
+    },
+    "expected_failure_reproduced": false
+  },
+  {
+    "case": {
+      "name": "wrong_scalar",
+      "text": "#### 8",
+      "answer": "7",
+      "expected_status": "incorrect"
+    },
+    "old_score": {
+      "correct": false,
+      "reward": 0.0,
+      "extracted": "8",
+      "status": "incorrect",
+      "format_compliant": true,
+      "truncated": false
+    },
+    "expected_failure_reproduced": false
+  }
+]

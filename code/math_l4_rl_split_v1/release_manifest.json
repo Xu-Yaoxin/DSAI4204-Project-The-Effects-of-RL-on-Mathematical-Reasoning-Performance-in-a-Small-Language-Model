@@ -1,0 +1,127 @@
+{
+  "release": "math-l4-rl-split-1.2.1",
+  "created_utc": "2026-11-04T14:55:06.651334+00:00",
+  "files": {
+    "COMMANDS.md": {
+      "bytes": 6878,
+      "sha256": "820c1bc359ff250ed348b8c6854e89b61093f85c8b9fa57f888c05ebf25805e2"
+    },
+    "DIRECT_TRANSFER.md": {
+      "bytes": 4068,
+      "sha256": "9c9be18eddc29bf72e39be73cf63127be20f345526baecb9e2ffb4a80cc4406a"
+    },
+    "README.md": {
+      "bytes": 6479,
+      "sha256": "1e351bb916ffce985e4f98c49a25ad9b5a0826cf9889b24cf0df87b6e48728f5"
+    },
+    "download_current.sh": {
+      "bytes": 2033,
+      "sha256": "2fc389e1a58bad9afe76f531eb734814ded761e3b61930c4b4034faf7fc6a346"
+    },
+    "memory.md": {
+      "bytes": 6542,
+      "sha256": "29866d54c718feb3251864a1894f5e3fd4bd3482413030742c6e81d6328c0b5a"
+    },
+    "plans/batch_0.json": {
+      "bytes": 4619,
+      "sha256": "24d6abf6b2e5fa31de601d586c3a4eaca1be177668d013f83767cc692ef33889"
+    },
+    "plans/batch_1.json": {
+      "bytes": 4536,
+      "sha256": "5bea17679071904ad936c7a4c1071e8c5ecac997a2f8c49cdae1cc557699a05f"
+    },
+    "pull_from_source.sh": {
+      "bytes": 4502,
+      "sha256": "133c52e2cd13e416f217cea563b171ae2a7b3347e4382219a804fe8213c5c407"
+    },
+    "reference/base_manifest.json": {
+      "bytes": 7184,
+      "sha256": "b783182fb8e89d81806627f98566e24a2bbc7fe18c42ed3a629c532c231b9fbe"
+    },
+    "reference/direct_source_files.txt": {
+      "bytes": 5347,
+      "sha256": "1d51cdb1a7a9cbd04a3e0da6e3fb3cfbd10bb1428920c02c84040d2796c888b8"
+    },
+    "reference/selection.json": {
+      "bytes": 4559,
+      "sha256": "6a47b48ca2a9884c0d45b524168a869f80332592fdecd34a29333789e1f14880"
+    },
+    "reference/source_identity.json": {
+      "bytes": 1003,
+      "sha256": "c1cc5468388ea52a7eb89e59c421c1d061fab74d300ce85824e7489348319a94"
+    },
+    "scripts/build_payload.py": {
+      "bytes": 8584,
+      "sha256": "ec8b47c1b3f6239c64f85fb4123b76c26933f4ff9abe8ffdb51c3831dd0921e9"
+    },
+    "scripts/check_worker.py": {
+      "bytes": 11960,
+      "sha256": "2bf73c331645cce376c29e48118099e0e1b51292cec63a5541ad523c9e67034e"
+    },
+    "scripts/evaluate_shard.py": {
+      "bytes": 7135,
+      "sha256": "2c181d6aacc06a7d34ebde71473d7e663b86983075757764e0912e9ef0a73564"
+    },
+    "scripts/merge_shards.py": {
+      "bytes": 10506,
+      "sha256": "486d04da74c1a66469034876ca94c0a6133af8cfac69b305cce0da02e2be2802"
+    },
+    "scripts/pidfd_compat.py": {
+      "bytes": 4454,
+      "sha256": "eba13dd4533e3c38cd2977d536ba01dab8c59781a04f8aeda79f1fc512801674"
+    },
+    "scripts/run_shard.py": {
+      "bytes": 7808,
+      "sha256": "8de8deafaa700ebcfa608043d34f4329ab41b25d001379915068a2bcd3940d5e"
+    },
+    "scripts/switch_after_base.py": {
+      "bytes": 17766,
+      "sha256": "bc5850a7f7f030837aff2dea223776dd0b8af4fcd5f1cb1093b71fb302ac99f2"
+    },
+    "scripts/watch_base_only.py": {
+      "bytes": 10503,
+      "sha256": "59cfba7222822a37805f28f294a3c1079b94496beb4025acb5cae77ceb9348f0"
+    },
+    "setup_worker.sh": {
+      "bytes": 3619,
+      "sha256": "8fb0347b9c55bda6bea9b412af195dd5e03f90cd6e7a468c49696f44b28ec707"
+    },
+    "tests/test_direct_transfer.py": {
+      "bytes": 12377,
+      "sha256": "d612b953e84570d25950f5606dbd6497910d0e865538be137d237f2b51e81b6c"
+    },
+    "tests/test_pidfd_compat.py": {
+      "bytes": 8363,
+      "sha256": "5cd95af7426b0de911cba1949df55c7424f98fe44d2c7fd0de79fe22320168d7"
+    },
+    "tests/test_shards.py": {
+      "bytes": 21503,
+      "sha256": "43e4fba81574e3b2d5b339edfb371b486acff9b8303b27ee255c2af42cd21443"
+    },
+    "tests/test_transfer.py": {
+      "bytes": 18927,
+      "sha256": "2ab6d6944fae801c22a20d84ca1a5fbdceeccc9142ad4e7dec4966a6ada4fe9a"
+    },
+    "tests/test_worker_tools.py": {
+      "bytes": 22596,
+      "sha256": "153a7fd6a2c33304732b65da1e0dfb0127bc6eafd7d76f8ee3b6ed6eb63bdd62"
+    },
+    "upload_base_stop.sh": {
+      "bytes": 1553,
+      "sha256": "5b6ca03927f88e89a738af84af05ed5972abdaf22f63013c96a7d5617ea3ed93"
+    },
+    "upload_batch.sh": {
+      "bytes": 2263,
+      "sha256": "118e416b1abaa221f7571d34de0450fde32911653a6645cf4d277ce6f350aaf7"
+    },
+    "upload_direct_tools.sh": {
+      "bytes": 3391,
+      "sha256": "02d9633aa5f576d7ac0748a8204c03e2f0c8b48be425962e72ba13d4ebd30139"
+    }
+  },
+  "original_experiment_modified": false,
+  "topology": "one existing Base server plus two additional RL workers",
+  "target_gpu": "NVIDIA GeForce RTX 4090",
+  "cpu_validation_checks": 234,
+  "gpu_inference_tested": false
+}

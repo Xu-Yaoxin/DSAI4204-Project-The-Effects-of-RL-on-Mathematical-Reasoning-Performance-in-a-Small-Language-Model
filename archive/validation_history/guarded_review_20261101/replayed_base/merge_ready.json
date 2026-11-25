@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "identity": {
+    "schema_version": 1,
+    "merger_sha256": "b9f0082a475a98cf228d1ccce8845fc040c59961c9c72bb263ab5fcdbad4db41",
+    "verifier_sha256": "ba7ce102acac0087dabfdae20db0b088a294e0692bbe69c497a5d4642c57ecc7",
+    "guard_helpers_sha256": {
+      "validate_guarded_sample.py": "3eaf004fe6cbd531da1464858313782fe5967a4ccff1e72f308e4cae35681ff6",
+      "repetition_guard.py": "56597e251b32476ce497511903ed806513b1768f790a591d89eaccb426e8f33c"
+    },
+    "source_shards": [
+      {
+        "index": 0,
+        "manifest_sha256": "b928f33f7e09025d8f643542447dcef0981cc8fc161711e02afd13d1910ef1e5",
+        "samples_sha256": "e27ceaa0150f68c49f20d44f0633385c944ef105cd5ab6a4137dea282c2544be"
+      },
+      {
+        "index": 1,
+        "manifest_sha256": "2a8c406005025f346c25b67d46fd28b7e878eb16283182c5ab6a00461d494e16",
+        "samples_sha256": "fb92b81d408f99ac945a3ccbd32d2adf99c3dc578eb34e5f10b384c669e19671"
+      }
+    ],
+    "dataset_sha256": "5eb5775c988682af461100a64bf8de0e6189b592c98b64ed5a52e73bce598964",
+    "dataset_manifest_sha256": "0e6d34e8e1723d5ad28826ebfa84ab6255695b0dc0a0960734f80b0b9031e262",
+    "protocol_id": "05c5ca13aab2c4ca022bf6be2f7b42405f811e88661420a513cec1db271c1445"
+  },
+  "artifacts_sha256": {
+    "manifest.json": "c3cdeeb66905933c6c67640aa5ccdc61fac0e82d95662494b00863fadea75fe5",
+    "samples.jsonl": "912e7c96611eac53f3bbe47947fa83f053a28bd9adcda496d18904527c25b9e8"
+  },
+  "models_loaded": 0,
+  "network_required": false
+}

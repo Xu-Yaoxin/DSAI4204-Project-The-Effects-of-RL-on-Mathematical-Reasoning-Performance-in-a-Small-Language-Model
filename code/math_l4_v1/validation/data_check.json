@@ -1,0 +1,255 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "scope": "data",
+  "checks": {
+    "python_3_11_or_later": true,
+    "safe_data_paths": true,
+    "prepared_manifest": true,
+    "prepared_split_protocol": true,
+    "verified_data_source": true,
+    "fixed_provenance_manifest": true,
+    "provenance_provenance/math_source_tree.json": true,
+    "provenance_provenance/gold_parser.py": true,
+    "provenance_data/raw/math_full/README.md": true,
+    "provenance_data/raw/math_full/ORIGINAL_MATH_LICENSE": true,
+    "source_inventory": true,
+    "source_data/raw/math_full/algebra/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/algebra/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/counting_and_probability/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/counting_and_probability/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/geometry/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/geometry/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/intermediate_algebra/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/number_theory/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/number_theory/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/prealgebra/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/prealgebra/train-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/precalculus/test-00000-of-00001.parquet": true,
+    "source_data/raw/math_full/precalculus/train-00000-of-00001.parquet": true,
+    "history_exclusions_hash": true,
+    "eligible_pool_hash": true,
+    "history_ledger": true,
+    "eligible_unique_rows": true,
+    "eligible_history_exclusion": true,
+    "eligible_identity": true,
+    "eligible_counts": true,
+    "preparation_code": true,
+    "engineering_content_hash": true,
+    "engineering_rows_and_ids": true,
+    "engineering_source_binding": true,
+    "engineering_official_split": true,
+    "engineering_subject_counts": true,
+    "engineering_valid_gold": true,
+    "pilot_content_hash": true,
+    "pilot_rows_and_ids": true,
+    "pilot_source_binding": true,
+    "pilot_official_split": true,
+    "pilot_subject_counts": true,
+    "pilot_valid_gold": true,
+    "train_content_hash": true,
+    "train_rows_and_ids": true,
+    "train_source_binding": true,
+    "train_official_split": true,
+    "train_subject_counts": true,
+    "train_valid_gold": true,
+    "dev_content_hash": true,
+    "dev_rows_and_ids": true,
+    "dev_source_binding": true,
+    "dev_official_split": true,
+    "dev_subject_counts": true,
+    "dev_valid_gold": true,
+    "test_content_hash": true,
+    "test_rows_and_ids": true,
+    "test_source_binding": true,
+    "test_official_split": true,
+    "test_subject_counts": true,
+    "test_valid_gold": true,
+    "nested_training_subsets": true,
+    "train_dev_disjoint": true,
+    "train_test_disjoint": true,
+    "dev_test_disjoint": true,
+    "train_deterministic_stratification": true,
+    "dev_deterministic_stratification": true,
+    "test_deterministic_stratification": true,
+    "pilot_deterministic_stratification": true,
+    "engineering_deterministic_stratification": true
+  },
+  "errors": {},
+  "data": {
+    "prepared_manifest_sha256": "0d6dc496cc6766a910452a10de90c7ee26af68f9613ef8a9d388266b225546d7",
+    "source_provenance": {
+      "status": "verified",
+      "repository": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+      "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+      "license": "Original MATH repository MIT",
+      "license_url": "https://raw.githubusercontent.com/hendrycks/math/985bdc1696e88e8643f081a0ff4719da39f2ae2a/LICENSE",
+      "official_train_rows": 7500,
+      "official_test_rows": 5000,
+      "source_files": [
+        {
+          "path": "data/raw/math_full/algebra/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/test-00000-of-00001.parquet",
+          "sha256": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5",
+          "bytes": 353114
+        },
+        {
+          "path": "data/raw/math_full/algebra/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train-00000-of-00001.parquet",
+          "sha256": "73347f5b55869f21ff094361025dbd12d291e971aa4d72142eacee10438e449f",
+          "bytes": 505186
+        },
+        {
+          "path": "data/raw/math_full/counting_and_probability/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/test-00000-of-00001.parquet",
+          "sha256": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966",
+          "bytes": 175032
+        },
+        {
+          "path": "data/raw/math_full/counting_and_probability/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train-00000-of-00001.parquet",
+          "sha256": "d37ae017930df41678edee50dcde18c17fb06afaff9eb505c1b95f1002bfcb31",
+          "bytes": 329354
+        },
+        {
+          "path": "data/raw/math_full/geometry/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/test-00000-of-00001.parquet",
+          "sha256": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a",
+          "bytes": 263835
+        },
+        {
+          "path": "data/raw/math_full/geometry/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/train-00000-of-00001.parquet",
+          "sha256": "9dbf5e5b55499e696e0ba72da9d85d4f0be3acbf7eaa6cb014b0fc78bb63784f",
+          "bytes": 549388
+        },
+        {
+          "path": "data/raw/math_full/intermediate_algebra/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/test-00000-of-00001.parquet",
+          "sha256": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb",
+          "bytes": 394797
+        },
+        {
+          "path": "data/raw/math_full/intermediate_algebra/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train-00000-of-00001.parquet",
+          "sha256": "0c87f3798ebdfb915b1f9b6fc13c1a8d064c3cb91631ccbe85b83ed5d71150f6",
+          "bytes": 575154
+        },
+        {
+          "path": "data/raw/math_full/number_theory/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/test-00000-of-00001.parquet",
+          "sha256": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9",
+          "bytes": 182003
+        },
+        {
+          "path": "data/raw/math_full/number_theory/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/train-00000-of-00001.parquet",
+          "sha256": "81c08649149b39811f2d1d7ddf5dfccf6c4c8044a2e169cfb24db09160c941f4",
+          "bytes": 308653
+        },
+        {
+          "path": "data/raw/math_full/prealgebra/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/test-00000-of-00001.parquet",
+          "sha256": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc",
+          "bytes": 267729
+        },
+        {
+          "path": "data/raw/math_full/prealgebra/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train-00000-of-00001.parquet",
+          "sha256": "765b526fb5c0b8385cb7be2c16bf4f6f28cf71f2bc15c826abfbb5fa7f8616cc",
+          "bytes": 383626
+        },
+        {
+          "path": "data/raw/math_full/precalculus/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/test-00000-of-00001.parquet",
+          "sha256": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c",
+          "bytes": 242241
+        },
+        {
+          "path": "data/raw/math_full/precalculus/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train-00000-of-00001.parquet",
+          "sha256": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e",
+          "bytes": 353745
+        }
+      ]
+    },
+    "engineering": {
+      "rows": 32,
+      "sha256": "3202c9a46fe078306a4d192bf54416cc05b1485bb31d908f38ce0393855733c2",
+      "subject_counts": {
+        "algebra": 9,
+        "counting_and_probability": 4,
+        "geometry": 2,
+        "intermediate_algebra": 6,
+        "number_theory": 4,
+        "prealgebra": 5,
+        "precalculus": 2
+      }
+    },
+    "pilot": {
+      "rows": 128,
+      "sha256": "998801f74e60f8aec4d93df5bad63070098feefd3ef9b7b8cf0db28f23dadb37",
+      "subject_counts": {
+        "algebra": 35,
+        "counting_and_probability": 16,
+        "geometry": 7,
+        "intermediate_algebra": 24,
+        "number_theory": 18,
+        "prealgebra": 21,
+        "precalculus": 7
+      }
+    },
+    "train": {
+      "rows": 512,
+      "sha256": "ea06789b7016b0a2ec375384b56a03bf09ab72a5299dc1b877048b129cecf2e8",
+      "subject_counts": {
+        "algebra": 139,
+        "counting_and_probability": 64,
+        "geometry": 28,
+        "intermediate_algebra": 96,
+        "number_theory": 73,
+        "prealgebra": 82,
+        "precalculus": 30
+      }
+    },
+    "dev": {
+      "rows": 128,
+      "sha256": "9c9449b089723d1ab33f66fce6c9138dadd01187dd8eddb98f326f21c8654b9a",
+      "subject_counts": {
+        "algebra": 35,
+        "counting_and_probability": 16,
+        "geometry": 7,
+        "intermediate_algebra": 24,
+        "number_theory": 18,
+        "prealgebra": 20,
+        "precalculus": 8
+      }
+    },
+    "test": {
+      "rows": 200,
+      "sha256": "175b26ea1fe024e1de3e16a07338f99cca273ab4d87b127a62ae4efbbe28004d",
+      "subject_counts": {
+        "algebra": 55,
+        "counting_and_probability": 22,
+        "geometry": 9,
+        "intermediate_algebra": 40,
+        "number_theory": 30,
+        "prealgebra": 33,
+        "precalculus": 11
+      }
+    }
+  },
+  "data_ready": true,
+  "versions": {},
+  "gpu": {
+    "checked": false,
+    "expected_world_size": 1
+  },
+  "ready": true,
+  "note": "Local integrity/readiness checks only; model weights and GPU training were not executed.",
+  "runtime_scorer_sha256": "f133f1b99257d0c4677b11c44145577a87edefcc55a3d2cb42bcebbe9aa7944f",
+  "test_scenarios": 27,
+  "model_execution": false,
+  "network_used_for_validation": false
+}

@@ -1,0 +1,1809 @@
+{
+  "scope": "Exhaustive structural and descriptive review; sampled semantic inspection. Frozen scores unchanged.",
+  "datasets": {
+    "base": {
+      "attempts": 3200,
+      "questions": 200,
+      "status_counts": {
+        "incorrect": 1160,
+        "timeout": 219,
+        "correct": 1393,
+        "unscored": 211,
+        "ambiguous": 41,
+        "extraction_failed": 176
+      },
+      "status_pct": {
+        "incorrect": 36.25,
+        "timeout": 6.84375,
+        "correct": 43.53125,
+        "unscored": 6.59375,
+        "ambiguous": 1.28125,
+        "extraction_failed": 5.5
+      },
+      "termination_counts": {
+        "eos": 2770,
+        "answer_timeout": 219,
+        "repetition_guard": 211
+      },
+      "termination_pct": {
+        "eos": 86.5625,
+        "answer_timeout": 6.84375,
+        "repetition_guard": 6.59375
+      },
+      "extraction_failed_fraction_of_eos": 0.06353790613718412,
+      "format_compliant_count": 1296,
+      "format_compliant_fraction_of_eos": 0.467870036101083,
+      "output_tokens_sum": 4614186,
+      "output_tokens_mean": 1441.933125,
+      "output_tokens_median": 363.0,
+      "output_tokens_max": 12374,
+      "sample_seconds_sum": 113641.05081334338,
+      "sample_tokens_per_second": 40.603162034983725,
+      "median_sample_tokens_per_second": 40.03702157711225,
+      "eos_tokens_per_second": 40.251043475147924,
+      "timeout_tokens_median": 12255,
+      "timeout_tokens_range": [
+        11894,
+        12374
+      ],
+      "timeout_seconds_range": [
+        300.1091963388026,
+        300.2300025522709
+      ],
+      "invocation_seconds": 113832.905443931,
+      "invocation_output_tokens": 4614186,
+      "invocation_tokens_per_second": 40.5347292332158,
+      "sha256_matches": true
+    },
+    "rl0": {
+      "attempts": 1600,
+      "questions": 100,
+      "status_counts": {
+        "incorrect": 406,
+        "timeout": 117,
+        "correct": 965,
+        "extraction_failed": 46,
+        "unscored": 66
+      },
+      "status_pct": {
+        "incorrect": 25.375,
+        "timeout": 7.3125,
+        "correct": 60.3125,
+        "extraction_failed": 2.875,
+        "unscored": 4.125
+      },
+      "termination_counts": {
+        "eos": 1417,
+        "answer_timeout": 117,
+        "repetition_guard": 66
+      },
+      "termination_pct": {
+        "eos": 88.5625,
+        "answer_timeout": 7.3125,
+        "repetition_guard": 4.125
+      },
+      "extraction_failed_fraction_of_eos": 0.032462949894142556,
+      "format_compliant_count": 1326,
+      "format_compliant_fraction_of_eos": 0.9357798165137615,
+      "output_tokens_sum": 1707118,
+      "output_tokens_mean": 1066.94875,
+      "output_tokens_median": 454.0,
+      "output_tokens_max": 6169,
+      "sample_seconds_sum": 85271.84564455599,
+      "sample_tokens_per_second": 20.019714444975047,
+      "median_sample_tokens_per_second": 19.87356352926391,
+      "eos_tokens_per_second": 19.925782860761895,
+      "timeout_tokens_median": 6040,
+      "timeout_tokens_range": [
+        5791,
+        6169
+      ],
+      "timeout_seconds_range": [
+        300.10867421142757,
+        300.1687252558768
+      ],
+      "invocation_seconds": 85344.66201658547,
+      "invocation_output_tokens": 1707118,
+      "invocation_tokens_per_second": 20.002633552737567,
+      "sha256_matches": true
+    },
+    "rl1": {
+      "attempts": 1600,
+      "questions": 100,
+      "status_counts": {
+        "timeout": 203,
+        "unscored": 72,
+        "correct": 985,
+        "incorrect": 294,
+        "extraction_failed": 46
+      },
+      "status_pct": {
+        "timeout": 12.6875,
+        "unscored": 4.5,
+        "correct": 61.5625,
+        "incorrect": 18.375,
+        "extraction_failed": 2.875
+      },
+      "termination_counts": {
+        "answer_timeout": 203,
+        "repetition_guard": 72,
+        "eos": 1325
+      },
+      "termination_pct": {
+        "answer_timeout": 12.6875,
+        "repetition_guard": 4.5,
+        "eos": 82.8125
+      },
+      "extraction_failed_fraction_of_eos": 0.03471698113207547,
+      "format_compliant_count": 1207,
+      "format_compliant_fraction_of_eos": 0.9109433962264151,
+      "output_tokens_sum": 2783633,
+      "output_tokens_mean": 1739.770625,
+      "output_tokens_median": 518.5,
+      "output_tokens_max": 8657,
+      "sample_seconds_sum": 97768.73846639507,
+      "sample_tokens_per_second": 28.471605992510444,
+      "median_sample_tokens_per_second": 28.32051479012341,
+      "eos_tokens_per_second": 28.36270527753218,
+      "timeout_tokens_median": 8558,
+      "timeout_tokens_range": [
+        8478,
+        8657
+      ],
+      "timeout_seconds_range": [
+        300.1084634773433,
+        300.1520025739446
+      ],
+      "invocation_seconds": 97887.21353166923,
+      "invocation_output_tokens": 2783633,
+      "invocation_tokens_per_second": 28.4371461763943,
+      "sha256_matches": true
+    },
+    "base_parity_0": {
+      "attempts": 1600,
+      "status_counts": {
+        "incorrect": 608,
+        "timeout": 88,
+        "correct": 728,
+        "extraction_failed": 70,
+        "unscored": 87,
+        "ambiguous": 19
+      },
+      "termination_counts": {
+        "eos": 1425,
+        "answer_timeout": 88,
+        "repetition_guard": 87
+      },
+      "sample_tokens_per_second": 40.564196791262866
+    },
+    "base_parity_1": {
+      "attempts": 1600,
+      "status_counts": {
+        "timeout": 131,
+        "incorrect": 552,
+        "correct": 665,
+        "unscored": 124,
+        "ambiguous": 22,
+        "extraction_failed": 106
+      },
+      "termination_counts": {
+        "answer_timeout": 131,
+        "eos": 1345,
+        "repetition_guard": 124
+      },
+      "sample_tokens_per_second": 40.632272732613465
+    }
+  },
+  "protocol": {
+    "all_equal": {
+      "settings": true,
+      "code_hashes": true,
+      "protocol_id": true,
+      "model_identity": true,
+      "dataset_sha256": true,
+      "dataset_manifest_sha256": true,
+      "config": true
+    },
+    "local_script_hash_matches": {
+      "evaluate.py": true,
+      "verify_answers.py": true,
+      "load_model.py": true,
+      "fingerprint_model.py": true,
+      "repetition_guard.py": true,
+      "validate_guarded_sample.py": true,
+      "doctor.py": true,
+      "validate_evaluation.py": true,
+      "validate_selection.py": true
+    }
+  },
+  "hardware": {
+    "0": {
+      "checked_utc": "2026-11-04T14:59:15.079386+00:00",
+      "ready": true,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-27ffc909-0428-c19e-edb7-3701a3030bb8",
+      "driver_version": "580.76.05",
+      "cpu_threads": 4,
+      "interop_threads": 1,
+      "free_gpu_gib": 23.03497314453125,
+      "total_gpu_gib": 23.5164794921875,
+      "available_ram_gib": 34.841583251953125,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8352V CPU @ 2.10GHz",
+      "versions_match_expected": true,
+      "state": {
+        "status": "completed",
+        "shard_index": 0,
+        "pid": 4541,
+        "child_pid": null,
+        "restarts": 0,
+        "completed_answers": 1600,
+        "target_answers": 1600,
+        "started_at_unix": 1793804354.994331,
+        "phase": "EVALUATE",
+        "updated_at_unix": 1793889806.430351,
+        "phase_elapsed_seconds": 85429.20436981134
+      }
+    },
+    "1": {
+      "checked_utc": "2026-11-04T15:39:54.686461+00:00",
+      "ready": true,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-88768d06-cfd6-d332-e2c6-c08fc31eec27",
+      "driver_version": "580.105.08",
+      "cpu_threads": 4,
+      "interop_threads": 1,
+      "free_gpu_gib": 23.03497314453125,
+      "total_gpu_gib": 23.5164794921875,
+      "available_ram_gib": 38.8060302734375,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "cpu_model": "INTEL(R) XEON(R) GOLD 6530",
+      "versions_match_expected": true,
+      "state": {
+        "status": "completed",
+        "shard_index": 1,
+        "pid": 1880,
+        "child_pid": null,
+        "restarts": 0,
+        "completed_answers": 1600,
+        "target_answers": 1600,
+        "started_at_unix": 1793806794.5544748,
+        "phase": "EVALUATE",
+        "updated_at_unix": 1793904767.7089586,
+        "phase_elapsed_seconds": 97954.30168888811
+      }
+    }
+  },
+  "candidate_failures": {
+    "base": [
+      {
+        "id": "math-l4-test-prealgebra-0360",
+        "sample_index": 3,
+        "gold": "11",
+        "hash_payloads": [
+          "<answer>11</answer>"
+        ],
+        "text_tail": " and give answer as #### <answer>.\n\nInterpretation: There are 20 cars. Each car is either red or white, and either 2-door or 4-door. So each car is classified by two attributes: color (red/white) and door count (2-door/4-door). So we have a 2x2 contingency table.\n\nLet:\n- R4 = number of 4-door red cars (unknown)\n- R2 = number of 2-door red cars\n- W4 = number of 4-door white cars\n- W2 = number of 2-door white cars\n\nWe are given:\n12 cars are red. So R4 + R2 = 12.\n15 cars are 4-door. So R4 + W4 = 15.\n4 cars are 2-door and white. So W2 = 4.\n\nAlso total cars: R4 + R2 + W4 + W2 = 20.\n\nWe can solve.\n\nFrom W2 = 4, and total 20, so R4 + R2 + W4 = 16.\nFrom R4 + W4 = 15, so substitute: (R4+W4) + R2 = 15 + R2 = 16 => R2 = 1.\nThen from R4 + R2 = 12 => R4 + 1 = 12 => R4 = 11.\nCheck: R4 + W4 = 15 => 11 + W4 = 15 => W4 = 4.\nThen total: 11+1+4+4 = 20, ok.\n\nSo answer is 11.\n\nBut the problem statement says: \"4 of them are 2-door and white.\" That is W2 = 4. So answer is 11.\n\nThus final answer: 11.\n</think>\n\nThe number of 4-door red cars is 11.\n\nLet:\n- \\( R_4 \\) = number of 4-door red cars,\n- \\( R_2 \\) = number of 2-door red cars,\n- \\( W_4 \\) = number of 4-door white cars,\n- \\( W_2 \\) = number of 2-door white cars.\n\nGiven:\n- Total cars: \\( R_4 + R_2 + W_4 + W_2 = 20 \\)\n- Red cars: \\( R_4 + R_2 = 12 \\)\n- 4-door cars: \\( R_4 + W_4 = 15 \\)\n- 2-door white cars: \\( W_2 = 4 \\)\n\nSubstitute \\( W_2 = 4 \\) into the total:\n\\[ R_4 + R_2 + W_4 = 16 \\]\n\nFrom \\( R_4 + W_4 = 15 \\), substitute into the total:\n\\[ 15 + R_2 = 16 \\implies R_2 = 1 \\]\n\nThen from \\( R_4 + R_2 = 12 \\):\n\\[ R_4 + 1 = 12 \\implies R_4 = 11 \\]\n\nCheck consistency: \\( R_4 + W_4 = 11 + W_4 = 15 \\implies W_4 = 4 \\), and \\( W_2 = 4 \\). Total cars: \\( 11 + 1 + 4 + 4 = 20 \\).\n\nThus, the number of 4-door red cars is 11.\n\n#### <answer>11</answer>"
+      },
+      {
+        "id": "math-l4-test-prealgebra-0625",
+        "sample_index": 10,
+        "gold": "34/25",
+        "hash_payloads": [
+          "1.36"
+        ],
+        "text_tail": "We need to find the equivalent weight in kilograms for 3 pounds, given that 1 kilogram is equal to 2.20 pounds. This is a simple unit conversion problem.\n\n1.  **Identify the given values:**\n    *   Weight in pounds ($W_p$) = $3$ pounds\n    *   Conversion factor ($k$) = $2.20$ pounds/kg\n\n2.  **Set up the conversion:**\n    To convert pounds to kilograms, we divide the weight in pounds by the number of pounds per kilogram.\n    $$ \\text{Weight in kg} = \\frac{\\text{Weight in pounds}}{\\text{Pounds per kg}} $$\n\n3.  **Perform the calculation:**\n    $$ \\text{Weight in kg} = \\frac{3}{2.20} $$\n    $$ \\text{Weight in kg} \\approx 1.3636... $$\n\n4.  **Round to the nearest hundredth:**\n    The problem asks to round to the nearest hundredth (two decimal places).\n    $$ 1.3636... \\approx 1.36 $$\n\n5.  **Final Answer:**\n    The number of kilograms Alice should buy is approximately $1.36$.\n\n#### 1.36"
+      },
+      {
+        "id": "math-l4-test-algebra-1040",
+        "sample_index": 10,
+        "gold": "84",
+        "hash_payloads": [
+          "84"
+        ],
+        "text_tail": "First, we solve the equation $x(2x-7)=3$.\nExpanding the left side, we get $2x^2-7x=3$.\nRearranging, we have $2x^2-7x-3=0$.\nUsing the quadratic formula, we find the solutions to be $x=\\frac{7\\pm\\sqrt{49+24}}{4}=\\frac{7\\pm\\sqrt{73}}{4}$.\nTherefore, $m=7$, $n=73$, and $p=4$.\nThe final answer is $m+n+p=7+73+4=84$.\n\n### Answer\n#### 84"
+      },
+      {
+        "id": "math-l4-test-algebra-1107",
+        "sample_index": 11,
+        "gold": "2",
+        "hash_payloads": [
+          "2"
+        ],
+        "text_tail": "We start by noting that $x^2-1=(x-1)(x+1)$, so we can rewrite the right side of the equation as\n\\[\\frac{x+2}{(x-1)(x+1)}.\\]\nNext, we find a common denominator for the left side of the equation, which is $(x-1)(x+1)$, and rewrite the equation as\n\\[\\frac{A(x+1)+B(x-1)}{(x-1)(x+1)}=\\frac{x+2}{(x-1)(x+1)}.\\]\nSince the denominators are the same, we can equate the numerators to get\n\\[A(x+1)+B(x-1)=x+2.\\]\nExpanding the left side, we get\n\\[Ax+A+Bx-B=x+2.\\]\nCombining like terms, we have\n\\[A+Bx+A-B=x+2.\\]\nSince this equation must hold for every $x\\neq\\pm1$, we can equate the coefficients of $x$ and the constant terms to get\n\\[A+B=1\\]\nand\n\\[A-B=2.\\]\nAdding these two equations, we get\n\\[2A=3\\]\nand\n\\[A=\\frac{3}{2}.\\]\nSubstituting this value of $A$ into the equation $A+B=1$, we get\n\\[\\frac{3}{2}+B=1\\]\nand\n\\[B=-\\frac{1}{2}.\\]\nFinally, we can find $A-B$ by subtracting the two values:\n\\[A-B=\\frac{3}{2}-\\left(-\\frac{1}{2}\\right)=\\frac{3}{2}+\\frac{1}{2}=2.\\]\nSo, the final answer is 2, which can be written as #### 2.\n\n#### 2"
+      },
+      {
+        "id": "math-l4-test-number_theory-0492",
+        "sample_index": 6,
+        "gold": "3",
+        "hash_payloads": [
+          "<answer>3</answer>"
+        ],
+        "text_tail": " its only divisors are 1 and itself. So the correct f(1+p)=2+p.\n\nThus the answer should be 3.\n\nBut the user says: \"Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to show the calculation and then give the answer.\n\nLet's do step-by-step:\n\n1. Let n be a prime number. Then its positive divisors are 1 and n. So f(n) = 1 + n.\n2. Now compute f(f(n)) = f(1+n).\n3. Since n is prime, 1+n is also prime (for n>1, but even for n=2, 1+2=3 is prime). So 1+n is prime.\n4. The positive divisors of a prime number are 1 and the prime itself. Therefore, f(1+n) = 1 + (1+n) = 2 + n.\n5. So f(f(n)) = n+2.\n6. We need f(f(n)) to be prime. So we need n+2 to be prime.\n7. That means n and n+2 are both prime. So n must be a prime in a twin prime pair.\n8. The smallest prime n such that n+2 is prime is n=3 (since 3 and 5 are twin primes).\n9. Check: n=3, f(3)=4, f(4)=1+2+4=7, which is prime. So 3 is a bouncy prime.\n10. Therefore, the smallest bouncy prime is 3.\n\nAnswer: 3\n\nBut wait, the problem might be from some contest or something? Possibly they expect the answer as \"3\". So I'll answer with 3.\n\nHowever, the user might have intended the problem as stated, and the solution they provided was incorrect. So I'll correct it.\n\nThus final answer: 3.\n</think>\n\nThe smallest bouncy prime is 3.\n\n**Calculation:**  \nFor a prime \\(n\\), \\(f(n) = 1 + n\\). Then \\(f(f(n)) = f(1 + n)\\). Since \\(1 + n\\) is prime, its divisors are 1 and \\(1 + n\\), so \\(f(1 + n) = 1 + (1 + n) = n + 2\\). Thus \\(f(f(n)) = n + 2\\). We need \\(n + 2\\) to be prime, meaning \\(n\\) and \\(n + 2\\) are both prime. The smallest such \\(n\\) is 3 (since 3 and 5 are twin primes). Checking: \\(f(3) = 4\\), \\(f(4) = 1 + 2 + 4 = 7\\), which is prime. Hence, 3 is a bouncy prime.\n\n#### <answer>3</answer>"
+      },
+      {
+        "id": "math-l4-test-precalculus-0000",
+        "sample_index": 6,
+        "gold": "0",
+        "hash_payloads": [
+          "0"
+        ],
+        "text_tail": " answer is 0.\n\nI'll now produce final response.\n</think>\n\nThe condition \\( \\mathbf{v} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{v} \\) holds for every vector \\(\\mathbf{v}\\). The orthogonal projections are given by\n\n\\[\n\\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{\\mathbf{a} \\cdot \\mathbf{a}}\\,\\mathbf{a}, \\qquad\n\\operatorname{proj}_{\\mathbf{b}} \\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b}.\n\\]\n\nThus for all \\(\\mathbf{v}\\),\n\n\\[\n\\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{\\mathbf{a} \\cdot \\mathbf{a}}\\,\\mathbf{a} + \\frac{\\mathbf{v} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b}.\n\\]\n\nTake \\(\\mathbf{v} = \\mathbf{a}\\):\n\n\\[\n\\mathbf{a} = \\frac{\\mathbf{a} \\cdot \\mathbf{a}}{\\mathbf{a} \\cdot \\mathbf{a}}\\,\\mathbf{a} + \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b}\n= \\mathbf{a} + \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b}.\n\\]\n\nHence \\(\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b} = \\mathbf{0}\\). Since \\(\\mathbf{b} \\neq \\mathbf{0}\\) (otherwise the condition would be impossible), we must have \\(\\mathbf{a} \\cdot \\mathbf{b} = 0\\).\n\nIf \\(\\mathbf{a} \\cdot \\mathbf{b} = 0\\), then the condition becomes\n\n\\[\n\\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{\\mathbf{a} \\cdot \\mathbf{a}}\\,\\mathbf{a} + \\frac{\\mathbf{v} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}}\\,\\mathbf{b},\n\\]\n\nwhich holds for all \\(\\mathbf{v}\\) precisely when \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) span the whole space (e.g., any orthogonal basis). Therefore \\(\\mathbf{a} \\cdot \\mathbf{b} = 0\\) is both necessary and possible.\n\nThus the only possible value of \\(\\mathbf{a} \\cdot \\mathbf{b}\\) is \\(0\\).\n\n#### 0"
+      },
+      {
+        "id": "math-l4-test-prealgebra-0745",
+        "sample_index": 11,
+        "gold": "24",
+        "hash_payloads": [
+          "24"
+        ],
+        "text_tail": "First, convert the dimensions from feet to inches:\n- 3 feet = 36 inches\n- 2 feet = 24 inches\n\nCalculate the area of one tile:\n- Each tile is 6 inches by 6 inches.\n- Area of one tile = 6 × 6 = 36 square inches.\n\nCalculate the area of the floor:\n- Floor area = 36 inches × 24 inches = 864 square inches.\n\nCalculate the number of tiles needed:\n- Number of tiles = Total floor area ÷ Area of one tile\n- Number of tiles = 864 ÷ 36 = 24.\n\nFinal numerical answer: 24 #### <answer>\n\n<think>\nWe are given a problem: \"How many six-inch by six-inch square tiles are needed to cover a three-foot by two-foot rectangular section of floor?\" The solution provided is a step-by-step calculation. We need to solve the problem, show calculation, and give the final numerical answer on a separate line as #### <answer>. The provided solution is already done, but we need to output the answer in the specified format.\n\nThe problem is straightforward: convert feet to inches, compute areas, divide. The solution yields 24 tiles. So the final answer is 24.\n\nWe need to output the answer as #### <answer>. That means we should put the number inside the #### and then the answer. Possibly the format is: #### <answer> where <answer> is the numerical answer. So we should output: #### 24.\n\nBut the instruction says: \"give the final numerical answer on a separate line as #### <answer>.\" That likely means we should output the answer in that format. So we'll output: #### 24.\n\nBut note: the problem might be part of a larger system, but we just need to provide the answer.\n\nLet's double-check: The solution shows steps: convert 3 ft to 36 in, 2 ft to 24 in. Area of tile: 6*6=36 sq in. Floor area: 36*24=864 sq in. Number of tiles: 864/36=24. So answer is 24.\n\nThus, final answer: #### 24.\n</think>\n\n#### 24"
+      },
+      {
+        "id": "math-l4-test-counting_and_probability-0004",
+        "sample_index": 1,
+        "gold": "835",
+        "hash_payloads": [
+          "835"
+        ],
+        "text_tail": "We need to find the count of integers from 1 to 2005 that are divisible by 3 or 4, but not by 12.\n\nLet A be the set of numbers divisible by 3 and B the set divisible by 4.\n|A| = floor(2005/3) = 668\n|B| = floor(2005/4) = 501\n|A ∩ B| = floor(2005/12) = 167\n\nUsing inclusion-exclusion:\n|A ∪ B| = |A| + |B| - |A ∩ B| = 668 + 501 - 167 = 1002\n\nThese are the numbers divisible by 3 or 4.\nWe need those not divisible by 12.\nNumbers divisible by 12 are a subset of those divisible by 3 and 4.\n|A ∩ B| = 167 is exactly the count of numbers divisible by 12.\n\nThus the answer is 1002 - 167 = 835.\n\n#### 835"
+      },
+      {
+        "id": "math-l4-test-algebra-0245",
+        "sample_index": 6,
+        "gold": "3",
+        "hash_payloads": [
+          "3"
+        ],
+        "text_tail": "So B = x^3 + (4 - c)x^2 + (-4c -5)x + 5c.\n\nNow A - B = (x^3 + x^2 - 17x + 15) - (x^3 + (4 - c)x^2 + (-4c -5)x + 5c)\n\n= x^3 - x^3 + x^2 - (4 - c)x^2 + (-17x) - (-4c -5)x + 15 - 5c\n\nSimplify each:\n\nx^2 term: x^2 - (4 - c)x^2 = x^2 - 4x^2 + c x^2 = -3x^2 + c x^2 = (c - 3)x^2.\n\nx term: -17x - (-4c -5)x = -17x + (4c +5)x = (-17 + 4c +5)x = (4c -12)x.\n\nConstant: 15 - 5c.\n\nThus A - B = (c - 3)x^2 + (4c -12)x + (15 - 5c).\n\nSet equal to 0 for all x => coefficients must be zero:\n\nc - 3 = 0 => c = 3\n4c - 12 = 0 => 4c = 12 => c = 3\n15 - 5c = 0 => 5c = 15 => c = 3.\n\nAll consistent, so c = 3 works.\n\nBut earlier I got a contradiction. My earlier expansion had errors. So correct c is 3.\n\nThus answer: c = 3.\n\nNow we need to output final answer in the format: ####. Probably just the number 3.\n\nBut the problem statement: \"Find the constant c such that ... for all x.\" So answer is 3.\n\nThus final answer: 3.\n\nBut we need to show calculation and then final answer on a separate line as ####. So we will produce the solution with steps and then put 3 in ####.\n\nWe'll produce a clear solution.\n\nCheck: (x^2-4x+3)(x+5) - (x^2+4x-5)(x-3) = 0? Let's test quickly: For x=0: A = 3*5=15, B = (-5)*(-3)=15, difference 0. For x=1: A = (1-4+3)=0? Actually 1-4+3=0, times 6 =0. B = (1+4-5)=0 times -2 =0. So 0-0=0. For x=2: A = (4-8+3)= -1, times 7 = -7. B = (4+8-5)=7 times -1? Wait x-3= -1, so B = 7*(-1) = -7. So -7 - (-7)=0. Good.\n\nThus answer is 3.\n\nNow produce solution.\n\nWe'll present the expansion and solving.\n\nThus final answer: 3.\n</think>\n\nThe expression simplifies to \\((c-3)x^2 + (4c-12)x + (15-5c)\\). For this to be zero for all \\(x\\), all coefficients must be zero:\n\n\\[\n\\begin{cases}\nc - 3 = 0 \\\\\n4c - 12 = 0 \\\\\n15 - 5c = 0\n\\end{cases}\n\\]\n\nAll three give \\(c = 3\\). Thus the constant is \\(c = 3\\).\n\n#### 3"
+      },
+      {
+        "id": "math-l4-test-algebra-0720",
+        "sample_index": 4,
+        "gold": "1/6",
+        "hash_payloads": [
+          "\\frac{1}{6}",
+          "\\frac{1}{6}",
+          "\\frac{1}{6}",
+          "\\frac{1}{6}",
+          "\\frac{1}{6}",
+          "\\frac{1}{6}",
+          "\\frac{1}{6}"
+        ],
+        "text_tail": " possibly on its own line.\n\nI'll structure:\n\n**Solution:**\n\n... (steps)\n\nThus, the final numerical answer is \\boxed{\\frac{1}{6}}.\n\nBut the instruction says \"on a separate line as #### <answer>\". So we can put:\n\n#### \\frac{1}{6}\n\nBut to be safe, I'll put the answer in a box.\n\nGiven the context, I'll produce a final answer in the box.\n\nNow, note: The user might be expecting the answer as just the number. So I'll output:\n\n#### \\frac{1}{6}\n\nBut also include the solution? The instruction: \"Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\" So we need to show the calculation. So we should include the calculation in the response, and then put the answer on a separate line.\n\nThus I'll write a full solution, and then on a separate line, put the answer in a box.\n\nI'll format as:\n\n**Solution:**\n\n... steps ...\n\nTherefore, the final numerical answer is \\boxed{\\frac{1}{6}}.\n\nBut the instruction says \"on a separate line as #### <answer>\". So maybe they want exactly:\n\n#### \\frac{1}{6}\n\nI'll do that after the solution.\n\nThus final answer: \\boxed{\\frac{1}{6}}.\n\nNow, I'll produce the response.\n</think>\n\n**Solution:**\n\nLet \\(a = x^2\\) and \\(b = y^2\\). Then the given equations become:\n\n\\[\na + b = 1, \\qquad a^2 + b^2 = \\frac{17}{18}.\n\\]\n\nUsing the identity \\(a^2 + b^2 = (a + b)^2 - 2ab\\), we substitute \\(a + b = 1\\):\n\n\\[\na^2 + b^2 = 1 - 2ab.\n\\]\n\nSetting this equal to \\(\\frac{17}{18}\\) gives\n\n\\[\n1 - 2ab = \\frac{17}{18} \\quad\\Longrightarrow\\quad 2ab = 1 - \\frac{17}{18} = \\frac{1}{18} \\quad\\Longrightarrow\\quad ab = \\frac{1}{36}.\n\\]\n\nSince \\(x\\) and \\(y\\) are positive real numbers, \\(xy = \\sqrt{ab}\\). Hence\n\n\\[\nxy = \\sqrt{\\frac{1}{36}} = \\frac{1}{6}.\n\\]\n\nThus the final numerical answer is\n\n\\[\n\\boxed{\\frac{1}{6}}.\n\\]"
+      },
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 13,
+        "gold": "8",
+        "hash_payloads": [
+          "Equation 1: $A + B = C$",
+          "Equation 2: $AA - B = 2C$",
+          "Equation 3: $C \\times B = AA + A$",
+          "8"
+        ],
+        "text_tail": "We are given three equations involving distinct digits $A$, $B$, and $C$ from 1 to 9:\n\n1. $A + B = C$\n2. $AA - B = 2C$\n3. $C \\times B = AA + A$\n\nWe need to find the value of $A + B + C$.\n\n### Step 1: Express $AA$ in terms of $A$\nThe two-digit number $AA$ can be written as:\n$$AA = 10A + A = 11A$$\n\n### Step 2: Substitute $AA$ into the equations\n#### Equation 1: $A + B = C$\nThis is straightforward.\n\n#### Equation 2: $AA - B = 2C$\nSubstitute $AA = 11A$:\n$$11A - B = 2C$$\nUsing $C = A + B$ from Equation 1:\n$$11A - B = 2(A + B)$$\n$$11A - B = 2A + 2B$$\n$$11A - 2A = 2B + B$$\n$$9A = 3B$$\n$$3A = B$$\n\nSince $B$ is a digit from 1 to 9, $A$ must be a digit from 1 to 3.\n\n#### Equation 3: $C \\times B = AA + A$\nSubstitute $AA = 11A$ and $C = A + B$:\n$$(A + B) \\times B = 11A + A$$\n$$(A + B) \\times B = 12A$$\n\nFrom Step 2, we know $B = 3A$, so substitute $B = 3A$:\n$$(A + 3A) \\times 3A = 12A$$\n$$4A \\times 3A = 12A$$\n$$12A^2 = 12A$$\n\nSince $A \\neq 0$, we can divide both sides by $12A$:\n$$A = 1$$\n\n### Step 3: Find the values of $A$, $B$, and $C$\nFrom $A = 1$:\n- $B = 3A = 3 \\times 1 = 3$\n- $C = A + B = 1 + 3 = 4$\n\n### Step 4: Verify the solution\nCheck if these values satisfy all three equations:\n1. $A + B = 1 + 3 = 4 = C$ ✓\n2. $AA - B = 11 - 3 = 8 = 2C = 2 \\times 4 = 8$ ✓\n3. $C \\times B = 4 \\times 3 = 12 = AA + A = 11 + 1 = 12$ ✓\n\nAll equations are satisfied.\n\n### Step 5: Calculate $A + B + C$\n$$A + B + C = 1 + 3 + 4 = 8$$\n\nThe value of $A + B + C$ is 8.\n\n####\n8"
+      },
+      {
+        "id": "math-l4-test-algebra-0790",
+        "sample_index": 13,
+        "gold": "15",
+        "hash_payloads": [
+          "15"
+        ],
+        "text_tail": "First, we need to find the prime factorization of both sides of the equation.\n\nThe left side of the equation is $12^2 \\cdot 18^3$.\n\n$12 = 2^2 \\cdot 3$\n$18 = 2 \\cdot 3^2$\n\nSo, $12^2 \\cdot 18^3 = (2^2 \\cdot 3)^2 \\cdot (2 \\cdot 3^2)^3$\n$= 2^4 \\cdot 3^2 \\cdot 2^3 \\cdot 3^6$\n$= 2^{4+3} \\cdot 3^{2+6}$\n$= 2^7 \\cdot 3^8$\n\nTherefore, $x = 7$ and $y = 8$.\n\nThe final answer is $x+y = 7+8 = 15$.\n\n#### 15"
+      }
+    ],
+    "rl0": [
+      {
+        "id": "math-l4-test-precalculus-0498",
+        "sample_index": 9,
+        "gold": "3",
+        "hash_payloads": [
+          "\\sqrt{153}",
+          "3"
+        ],
+        "text_tail": "1)*(-10)=10, so 12 - 10 = 2.\n\nThird component = b1*c2 - b2*c1 = (-1)*(-7) - 4*2 = 7 - 8 = -1.\n\nSo b×c = (2, 2, -1). Check sign: Let's recompute: b = (-1,4,6), c = (2,-7,-10). Compute cross product using determinant:\n\n| i   j   k |\n| -1  4   6 |\n| 2  -7  -10 |\n\ni*(4*(-10) - 6*(-7)) - j*((-1)*(-10) - 6*2) + k*((-1)*(-7) - 4*2) = i*(-40 - (-42)) - j*(10 - 12) + k*(7 - 8) = i*(2) - j*(-2) + k*(-1) = (2, 2, -1). Yes.\n\nSo b×c = (2,2,-1). Its magnitude: sqrt(2^2+2^2+(-1)^2) = sqrt(4+4+1) = sqrt(9) = 3.\n\nThus maximum value = 3.\n\nBut earlier I computed ||c|| = sqrt(153) ≈ 12.369, which is larger. However the triple product is a·(b×c), and a is a unit vector, so max is ||b×c|| = 3. Indeed.\n\nThus answer: 3.\n\nWe need to show calculation, then give final answer as #### <answer>. So we output: #### 3.\n\nBut careful: The problem statement: \"Find the maximum value of c·(a×b), where a is a unit vector.\" The scalar triple product can be negative; maximum means largest possible value, which is positive. So indeed 3.\n\nThus final answer: 3.\n</think>\n\nThe maximum value of \\(\\mathbf{c} \\cdot (\\mathbf{a} \\times \\mathbf{b})\\) for a unit vector \\(\\mathbf{a}\\) is the magnitude of \\(\\mathbf{b} \\times \\mathbf{c}\\).\n\nCompute \\(\\mathbf{b} \\times \\mathbf{c}\\):\n\n\\[\n\\mathbf{b} \\times \\mathbf{c} = \\begin{vmatrix}\n\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n-1 & 4 & 6 \\\\\n2 & -7 & -10\n\\end{vmatrix} = \\mathbf{i}(4 \\cdot (-10) - 6 \\cdot (-7)) - \\mathbf{j}((-1) \\cdot (-10) - 6 \\cdot 2) + \\mathbf{k}((-1) \\cdot (-7) - 4 \\cdot 2)\n\\]\n\n\\[\n= \\mathbf{i}(-40 + 42) - \\mathbf{j}(10 - 12) + \\mathbf{k}(7 - 8) = 2\\mathbf{i} + 2\\mathbf{j} - \\mathbf{k} = (2, 2, -1).\n\\]\n\nThe magnitude is\n\n\\[\n\\|\\mathbf{b} \\times \\mathbf{c}\\| = \\sqrt{2^2 + 2^2 + (-1)^2} = \\sqrt{4 + 4 + 1} = \\sqrt{9} = 3.\n\\]\n\nThus the maximum value is \\(3\\).\n\n#### 3"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0604",
+        "sample_index": 6,
+        "gold": "2",
+        "hash_payloads": [
+          "Case 1: $ x \\geq 0 $, so $ y = x $",
+          "Case 2: $ x < 0 $, so $ y = -x $",
+          "<answer>2</answer>"
+        ],
+        "text_tail": "tion:\n\\[\nx = x^2 - 6x + 5.\n\\]\nBring all terms to one side:\n\\[\nx^2 - 7x + 5 = 0.\n\\]\nSolve using the quadratic formula:\n\\[\nx = \\frac{7 \\pm \\sqrt{49 - 20}}{2} = \\frac{7 \\pm \\sqrt{29}}{2}.\n\\]\nSince $ x \\geq 0 $, both roots are positive (as $ \\sqrt{29} \\approx 5.385 $), so both are valid.\n\nSo, the two solutions in this case are:\n\\[\nx_1 = \\frac{7 + \\sqrt{29}}{2}, \\quad x_2 = \\frac{7 - \\sqrt{29}}{2}.\n\\]\n\n#### Case 2: $ x < 0 $, so $ y = -x $\nSubstitute $ y = -x $ into the first equation:\n\\[\nx = (-x)^2 - 6(-x) + 5 = x^2 + 6x + 5.\n\\]\nBring all terms to one side:\n\\[\nx^2 + 6x + 5 - x = 0 \\Rightarrow x^2 + 5x + 5 = 0.\n\\]\nSolve using the quadratic formula:\n\\[\nx = \\frac{-5 \\pm \\sqrt{25 - 20}}{2} = \\frac{-5 \\pm \\sqrt{5}}{2}.\n\\]\nWe need $ x < 0 $, so we check both roots:\n- $ \\frac{-5 + \\sqrt{5}}{2} \\approx \\frac{-5 + 2.236}{2} \\approx -1.382 < 0 $ → valid,\n- $ \\frac{-5 - \\sqrt{5}}{2} \\approx \\frac{-5 - 2.236}{2} \\approx -3.618 < 0 $ → valid.\n\nSo, the two solutions in this case are:\n\\[\nx_3 = \\frac{-5 + \\sqrt{5}}{2}, \\quad x_4 = \\frac{-5 - \\sqrt{5}}{2}.\n\\]\n\n---\n\n### Step 3: Collect all possible values of $ x $\n\nThe four solutions are:\n\\[\nx = \\frac{7 + \\sqrt{29}}{2}, \\quad x = \\frac{7 - \\sqrt{29}}{2}, \\quad x = \\frac{-5 + \\sqrt{5}}{2}, \\quad x = \\frac{-5 - \\sqrt{5}}{2}.\n\\]\n\n---\n\n### Step 4: Compute the sum of all possible values of $ x $\n\nWe compute the sum:\n\\[\n\\frac{7 + \\sqrt{29}}{2} + \\frac{7 - \\sqrt{29}}{2} + \\frac{-5 + \\sqrt{5}}{2} + \\frac{-5 - \\sqrt{5}}{2}.\n\\]\n\nGroup rational and irrational parts:\n- Rational parts: $ \\frac{7 + 7}{2} + \\frac{-5 + (-5)}{2} = \\frac{14}{2} + \\frac{-10}{2} = 7 - 5 = 2 $,\n- Irrational parts: $ \\frac{\\sqrt{29} - \\sqrt{29}}{2} + \\frac{\\sqrt{5} - \\sqrt{5}}{2} = 0 + 0 = 0 $.\n\nSo the total sum is:\n\\[\n2 + 0 = 2.\n\\]\n\n---\n\n### Final Answer:\n#### <answer>2</answer>"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0414",
+        "sample_index": 5,
+        "gold": "-1",
+        "hash_payloads": [
+          "-1"
+        ],
+        "text_tail": " t, d = 1-3t$ for some $t$. Then $K = 3t + (1-3t) = 1$, so $K=1$. Then $S = 3t^2 + (1-3t)^2 = 3t^2 + 1 - 6t + 9t^2 = 12t^2 - 6t + 1$. The minimum of this quadratic in $t$ is at $t = 6/(2*12) = 6/24 = 1/4$. Then $S = 12*(1/16) - 6*(1/4) + 1 = 12/16 - 6/4 + 1 = 3/4 - 3/2 + 1 = (3 - 6 + 4)/4 = 1/4$, which is greater than $-1$.\n\nBut we already have a case with $S=-1$.\n\nSo yes.\n\nTherefore, the minimum value is $-1$.\n\nSo the answer is $\\boxed{-1}$\n\nBut the problem says \"the roots are $a,b,c,d$\", and in the example, they are complex, but the problem doesn't restrict to real roots, so it's valid.\n\nIf the problem intended real roots, it would say \"real roots\" or something, but it doesn't.\n\nSo I think $-1$ is correct.\n\nFinal answer: $\\boxed{-1}$\n</think>\n\nThe sum of the squares of the roots is given by $S = a^2 + b^2 + c^2 + d^2$. Using Vieta's formulas, the sum of the roots is $a + b + c + d = K$. Squaring both sides gives:\n$$\n(a + b + c + d)^2 = K^2 = a^2 + b^2 + c^2 + d^2 + 2(ab + ac + ad + bc + bd + cd)\n$$\nBy Vieta's, the sum of the products of roots two at a time is $ab + ac + ad + bc + bd + cd = K$. Substituting this in:\n$$\nK^2 = S + 2K \\implies S = K^2 - 2K\n$$\nThe expression $S = K^2 - 2K$ is a quadratic in $K$ with a minimum at $K = 1$, where $S = 1^2 - 2(1) = -1$.\n\nThis minimum value $-1$ is achievable. For example, consider the polynomial $x^4 - x^3 + x^2 - x = 0$, which has roots $a = 1$, $b = 0$, $c = i$, $d = -i$. The sum of the roots is $1 + 0 + i - i = 1 = K$. The sum of squares is $1^2 + 0^2 + i^2 + (-i)^2 = 1 + 0 - 1 - 1 = -1$. The coefficients $K = 1$, $L = -1$, $M = 0$ are real, satisfying the problem conditions.\n\nSince $S = K^2 - 2K$ has a minimum of $-1$ for real $K$, and this value is achievable, the minimum value of $a^2 + b^2 + c^2 + d^2$ is $-1$.\n\n#### -1"
+      },
+      {
+        "id": "math-l4-test-precalculus-0375",
+        "sample_index": 14,
+        "gold": "8",
+        "hash_payloads": [
+          "8"
+        ],
+        "text_tail": "mallest possible $k$ is 8.\n\nSo the answer is 8.\n</think>\n\nTo solve the problem, we are given $k$ unit vectors $\\mathbf{v}_1, \\mathbf{v}_2, \\dots, \\mathbf{v}_k$ in $\\mathbb{R}^2$ such that their sum is $\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$. We need to find the smallest possible value of $k$.\n\n### Step 1: Apply the Triangle Inequality\nThe triangle inequality states that for any vectors $\\mathbf{v}_1, \\mathbf{v}_2, \\dots, \\mathbf{v}_k$ in $\\mathbb{R}^2$,\n\\[\n\\left\\| \\sum_{i=1}^k \\mathbf{v}_i \\right\\| \\leq \\sum_{i=1}^k \\|\\mathbf{v}_i\\|.\n\\]\nSince each $\\mathbf{v}_i$ is a unit vector, $\\|\\mathbf{v}_i\\| = 1$, so\n\\[\n\\left\\| \\sum_{i=1}^k \\mathbf{v}_i \\right\\| \\leq k.\n\\]\nThe magnitude of the sum vector $\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$ is\n\\[\n\\left\\| \\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix} \\right\\| = \\sqrt{6^2 + (-5)^2} = \\sqrt{36 + 25} = \\sqrt{61}.\n\\]\nThus,\n\\[\n\\sqrt{61} \\leq k.\n\\]\nSince $k$ must be an integer, $k \\geq \\lceil \\sqrt{61} \\rceil$. Calculating $\\sqrt{61} \\approx 7.81$, we get $k \\geq 8$.\n\n### Step 2: Check Achievability for $k = 8$\nWe need to determine if $k = 8$ is achievable. The Minkowski sum of $k$ unit circles (each of radius 1) is a disk of radius $k$ centered at the origin. This means that any vector $\\mathbf{w}$ with $\\|\\mathbf{w}\\| \\leq k$ can be expressed as the sum of $k$ unit vectors.\n\nHere, $\\|\\mathbf{w}\\| = \\sqrt{61} \\approx 7.81$, and since $7.81 < 8$, $\\mathbf{w} = \\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$ lies within the disk of radius 8. Therefore, it is possible to express $\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$ as the sum of 8 unit vectors.\n\n### Step 3: Verify that $k = 8$ is Minimal\nFrom Step 1, $k \\geq 8$, and since $k = 8$ is achievable (as shown by the Minkowski sum property), it is the smallest possible value of $k$.\n\n### Final Answer\n#### 8"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 8,
+        "gold": "2",
+        "hash_payloads": [
+          "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+          "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$",
+          "<answer>2</answer>"
+        ],
+        "text_tail": "To simplify the expression \n$$\n\\sqrt{\\dfrac{\\dfrac4{\\sqrt{24}}+\\dfrac{\\sqrt{3456}}9+\\sqrt{6}}{\\sqrt6}},\n$$\nwe proceed step by step.\n\n---\n\n### Step 1: Simplify each term inside the square root\n\n#### Term 1: $\\dfrac{4}{\\sqrt{24}}$\n\nWe rationalize the denominator:\n$$\n\\dfrac{4}{\\sqrt{24}} = \\dfrac{4\\sqrt{24}}{24} = \\dfrac{\\sqrt{24}}{6}\n$$\nNow simplify $\\sqrt{24}$:\n$$\n\\sqrt{24} = \\sqrt{4 \\cdot 6} = 2\\sqrt{6}\n$$\nSo,\n$$\n\\dfrac{\\sqrt{24}}{6} = \\dfrac{2\\sqrt{6}}{6} = \\dfrac{\\sqrt{6}}{3}\n$$\n\n#### Term 2: $\\dfrac{\\sqrt{3456}}{9}$\n\nFactor $3456$:\n$$\n3456 = 144 \\cdot 24 = (12^2)(24)\n$$\nSo,\n$$\n\\sqrt{3456} = \\sqrt{144 \\cdot 24} = 12\\sqrt{24} = 12 \\cdot 2\\sqrt{6} = 24\\sqrt{6}\n$$\nThus,\n$$\n\\dfrac{\\sqrt{3456}}{9} = \\dfrac{24\\sqrt{6}}{9} = \\dfrac{8\\sqrt{6}}{3}\n$$\n\n#### Term 3: $\\sqrt{6}$\n\nThis is already in simplest form.\n\n---\n\n### Step 2: Add the three terms\n\n$$\n\\dfrac{\\sqrt{6}}{3} + \\dfrac{8\\sqrt{6}}{3} + \\sqrt{6}\n$$\n\nConvert all to thirds:\n$$\n= \\dfrac{\\sqrt{6} + 8\\sqrt{6} + 3\\sqrt{6}}{3} = \\dfrac{12\\sqrt{6}}{3} = 4\\sqrt{6}\n$$\n\n---\n\n### Step 3: Substitute into the original expression\n\n$$\n\\sqrt{\\dfrac{4\\sqrt{6}}{\\sqrt{6}}} = \\sqrt{4} = 2\n$$\n\n---\n\n### Final Answer:\n\n#### <answer>2</answer>"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 14,
+        "gold": "2",
+        "hash_payloads": [
+          "Term 1: $\\frac{4}{\\sqrt{24}}$",
+          "Term 2: $\\frac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$",
+          "<answer>2</answer>"
+        ],
+        "text_tail": "To simplify the expression \n$$\n\\sqrt{\\frac{\\frac{4}{\\sqrt{24}} + \\frac{\\sqrt{3456}}{9} + \\sqrt{6}}{\\sqrt{6}}},\n$$\nwe proceed step by step.\n\n---\n\n### Step 1: Simplify each term inside the numerator\n\n#### Term 1: $\\frac{4}{\\sqrt{24}}$\n\nWe rationalize the denominator:\n$$\n\\frac{4}{\\sqrt{24}} = \\frac{4\\sqrt{24}}{24} = \\frac{\\sqrt{24}}{6}\n$$\nNow simplify $\\sqrt{24}$:\n$$\n\\sqrt{24} = \\sqrt{4 \\cdot 6} = 2\\sqrt{6}\n$$\nSo,\n$$\n\\frac{\\sqrt{24}}{6} = \\frac{2\\sqrt{6}}{6} = \\frac{\\sqrt{6}}{3}\n$$\n\n#### Term 2: $\\frac{\\sqrt{3456}}{9}$\n\nWe simplify $\\sqrt{3456}$:\n$$\n3456 = 16 \\cdot 216 = 16 \\cdot 36 \\cdot 6 = 16 \\cdot 6^2 \\cdot 6 = (4 \\cdot 6)^2 \\cdot 6 = 24^2 \\cdot 6\n$$\nSo,\n$$\n\\sqrt{3456} = \\sqrt{24^2 \\cdot 6} = 24\\sqrt{6}\n$$\nThen,\n$$\n\\frac{\\sqrt{3456}}{9} = \\frac{24\\sqrt{6}}{9} = \\frac{8\\sqrt{6}}{3}\n$$\n\n#### Term 3: $\\sqrt{6}$\n\nThis is already in simplest form.\n\n---\n\n### Step 2: Add the terms in the numerator\n\n$$\n\\frac{\\sqrt{6}}{3} + \\frac{8\\sqrt{6}}{3} + \\sqrt{6} = \\left(\\frac{1}{3} + \\frac{8}{3} + 1\\right)\\sqrt{6}\n$$\n$$\n= \\left(\\frac{9}{3} + 1\\right)\\sqrt{6} = (3 + 1)\\sqrt{6} = 4\\sqrt{6}\n$$\n\n---\n\n### Step 3: Substitute back into the original expression\n\nNow the expression becomes:\n$$\n\\sqrt{\\frac{4\\sqrt{6}}{\\sqrt{6}}} = \\sqrt{4} = 2\n$$\n\n---\n\n### Final Answer:\n\n#### <answer>2</answer>"
+      },
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 0,
+        "gold": "8",
+        "hash_payloads": [
+          "Answer:",
+          "8"
+        ],
+        "text_tail": "We are given three equations involving distinct digits $A, B, C \\in \\{1,2,\\dots,9\\}$:\n\n1. $A + B = C$\n2. $AA - B = 2C$\n3. $C \\times B = AA + A$\n\nFirst, interpret $AA$ as a two-digit number where both digits are $A$, so $AA = 10A + A = 11A$.\n\n### Step 1: Substitute $C = A + B$ into the second equation\n$$\n11A - B = 2C = 2(A + B)\n$$\nExpand:\n$$\n11A - B = 2A + 2B \\implies 11A - 2A = 2B + B \\implies 9A = 3B \\implies B = 3A.\n$$\n\n### Step 2: Use $C = A + B$ and $B = 3A$\n$$\nC = A + 3A = 4A.\n$$\n\n### Step 3: Substitute $B = 3A$ and $C = 4A$ into the third equation\n$$\nC \\times B = AA + A \\implies (4A)(3A) = 11A + A \\implies 12A^2 = 12A.\n$$\nDivide both sides by $12A$ (note $A \\neq 0$):\n$$\nA = 1.\n$$\n\n### Step 4: Verify distinct digits\n- $A = 1$\n- $B = 3A = 3$\n- $C = 4A = 4$\nAll are distinct and in $\\{1,\\dots,9\\}$.\n\n### Step 5: Compute $A + B + C$\n$$\n1 + 3 + 4 = 8.\n$$\n\n#### Answer:\n#### 8"
+      },
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 8,
+        "gold": "8",
+        "hash_payloads": [
+          "Equation (2): $AA - B = 2C$",
+          "Equation (3): $C \\times B = AA + A$",
+          "<answer>8</answer>"
+        ],
+        "text_tail": "We are given three distinct digits $A, B, C \\in \\{1,2,\\dots,9\\}$ satisfying:\n\n1. $A + B = C$\n2. $AA - B = 2C$\n3. $C \\times B = AA + A$\n\nHere, $AA$ denotes the two-digit number with both digits $A$, i.e., $AA = 10A + A = 11A$.\n\n---\n\n### Step 1: Express $AA$ in terms of $A$\n$$\nAA = 11A\n$$\n\nSubstitute into the equations:\n\n#### Equation (2): $AA - B = 2C$\n$$\n11A - B = 2C\n$$\n\n#### Equation (3): $C \\times B = AA + A$\n$$\nCB = 11A + A = 12A\n$$\n\n---\n\n### Step 2: Use Equation (1): $A + B = C$\n\nFrom this, we can express $B = C - A$. Substitute into Equation (2):\n\n$$\n11A - (C - A) = 2C \\\\\n11A - C + A = 2C \\\\\n12A - C = 2C \\\\\n12A = 3C \\\\\nC = 4A\n$$\n\nSo $C = 4A$. Since $C$ is a digit from 1 to 9, $A$ must be such that $4A \\leq 9$, so $A = 1$ or $2$.\n\n---\n\n### Step 3: Try $A = 1$\n\nThen:\n- $C = 4(1) = 4$\n- $B = C - A = 4 - 1 = 3$\n\nNow check Equation (3): $CB = 12A$\n\nLeft-hand side: $CB = 4 \\times 3 = 12$\n\nRight-hand side: $12A = 12(1) = 12$\n\n✅ Matches.\n\nSo this solution works: $A=1, B=3, C=4$\n\n---\n\n### Step 4: Try $A = 2$\n\nThen:\n- $C = 4(2) = 8$\n- $B = C - A = 8 - 2 = 6$\n\nCheck Equation (3): $CB = 8 \\times 6 = 48$\n\nRight-hand side: $12A = 12(2) = 24$\n\n❌ Does not match.\n\nSo $A = 2$ is invalid.\n\n---\n\n### Final Answer:\n\nOnly valid solution is $A = 1, B = 3, C = 4$\n\nSum: $A + B + C = 1 + 3 + 4 = \\boxed{8}$\n\n#### <answer>8</answer>"
+      }
+    ],
+    "rl1": [
+      {
+        "id": "math-l4-test-intermediate_algebra-0646",
+        "sample_index": 5,
+        "gold": "4",
+        "hash_payloads": [
+          "First equation: $1 \\star 2 = 3$",
+          "Second equation: $2 \\star 3 = 4$",
+          "<answer>4</answer>"
+        ],
+        "text_tail": "ext{for all } x.\n\\]\n\nThis must hold for all $x$, so we can equate coefficients of like terms.\n\nSo:\n\\[\nax + cdx + bd = x.\n\\]\n\nGrouping terms:\n\\[\n(a + cd)x + bd = x.\n\\]\n\nSince this must hold for all $x$, the coefficient of $x$ and the constant term must match:\n\n- Coefficient of $x$: $a + cd = 1$\n- Constant term: $bd = 0$\n\nSo we have the system:\n\\[\n\\begin{cases}\na + cd = 1 \\\\\nbd = 0\n\\end{cases}\n\\]\n\n---\n\n### Step 2: Solve the system\n\nFrom the second equation, $bd = 0$, either $b = 0$ or $d = 0$. But the problem states that $d$ is **non-zero**, so we must have:\n\\[\nb = 0.\n\\]\n\nNow substitute $b = 0$ into the first equation:\n\\[\na + cd = 1.\n\\]\n\nSo now we have:\n\\[\na = 1 - cd.\n\\]\n\n---\n\n### Step 3: Use the given values to find $a$, $b$, and $c$\n\nWe are given:\n\\[\n1 \\star 2 = 3, \\quad 2 \\star 3 = 4.\n\\]\n\nUse the formula $x \\star y = ax + by + cxy$ to write these equations:\n\n#### First equation: $1 \\star 2 = 3$\n\\[\na(1) + b(2) + c(1)(2) = 3 \\Rightarrow a + 2b + 2c = 3.\n\\]\n\n#### Second equation: $2 \\star 3 = 4$\n\\[\na(2) + b(3) + c(2)(3) = 4 \\Rightarrow 2a + 3b + 6c = 4.\n\\]\n\nNow substitute $b = 0$ into both equations:\n\n- First: $a + 2c = 3$\n- Second: $2a + 6c = 4$\n\nSimplify the second equation:\n\\[\n2a + 6c = 4 \\Rightarrow a + 3c = 2.\n\\]\n\nNow we have the system:\n\\[\n\\begin{cases}\na + 2c = 3 \\\\\na + 3c = 2\n\\end{cases}\n\\]\n\nSubtract the first from the second:\n\\[\n(a + 3c) - (a + 2c) = 2 - 3 \\Rightarrow c = -1.\n\\]\n\nSubstitute $c = -1$ into $a + 2c = 3$:\n\\[\na + 2(-1) = 3 \\Rightarrow a - 2 = 3 \\Rightarrow a = 5.\n\\]\n\nSo we now have:\n- $a = 5$\n- $b = 0$\n- $c = -1$\n\n---\n\n### Step 4: Find $d$ using the earlier condition\n\nRecall from earlier that:\n\\[\na + cd = 1.\n\\]\n\nSubstitute $a = 5$, $c = -1$:\n\\[\n5 + (-1)d = 1 \\Rightarrow 5 - d = 1 \\Rightarrow d = 4.\n\\]\n\n---\n\n### ✅ Final Answer:\n\n#### <answer>4</answer>"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0131",
+        "sample_index": 12,
+        "gold": "30",
+        "hash_payloads": [
+          "30"
+        ],
+        "text_tail": "angent to the circle $x^2 + y^2 = 1$ at the point $(0,1)$ on side $CD$. This means the side $CD$ is tangent to the circle at $(0,1)$, and the square lies entirely outside the circle. Since the circle is centered at the origin, the tangent line at $(0,1)$ is horizontal, so $CD$ is the line $y = 1$. The square extends upward from $y = 1$ to $y = 1 + s$, where $s$ is the side length.\n\nGiven that the square is symmetric about the y-axis (due to the point of tangency at $(0,1)$), the vertices $A$ and $B$ are symmetric about the y-axis. Let $A = (-c, 1 + s)$ and $B = (c, 1 + s)$ for some $c > 0$. The side length $s$ is the distance between $A$ and $B$, so $s = 2c$.\n\nVertices $A$ and $B$ are on the circle $x^2 + y^2 = 4$. Substituting $A$ and $B$:\n- For $A$: $(-c)^2 + (1 + s)^2 = 4$\n- Since $s = 2c$, this becomes $c^2 + (1 + 2c)^2 = 4$\n\nExpanding:\n$$\nc^2 + (1 + 4c + 4c^2) = 4 \\implies 5c^2 + 4c + 1 = 4 \\implies 5c^2 + 4c - 3 = 0\n$$\n\nSolving the quadratic equation:\n$$\nc = \\frac{-4 \\pm \\sqrt{16 + 60}}{10} = \\frac{-4 \\pm \\sqrt{76}}{10} = \\frac{-4 \\pm 2\\sqrt{19}}{10} = \\frac{-2 \\pm \\sqrt{19}}{5}\n$$\n\nSince $c > 0$, $c = \\frac{-2 + \\sqrt{19}}{5}$. Thus, the side length $s = 2c = 2 \\cdot \\frac{-2 + \\sqrt{19}}{5} = \\frac{-4 + 2\\sqrt{19}}{5}$.\n\nThis can be written as $\\frac{2\\sqrt{19} - 4}{5}$, which matches the form $\\frac{a\\sqrt{b} - c}{d}$ with $a = 2$, $b = 19$, $c = 4$, and $d = 5$.\n\nVerify that $b = 19$ is square-free (it is prime) and that $a$, $c$, and $d$ share no common factors. The greatest common divisor of $2$, $4$, and $5$ is $1$, so they are coprime.\n\nThe sum is $a + b + c + d = 2 + 19 + 4 + 5 = 30$.\n\nThe square is externally tangent to the circle at $(0,1)$, and all other points are farther from the origin, satisfying the condition.\n\nThus, $a + b + c + d = 30$.\n\n#### 30"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 1,
+        "gold": "7",
+        "hash_payloads": [
+          "First term:",
+          "Second term:",
+          "Third term:",
+          "<answer>7</answer>"
+        ],
+        "text_tail": "To find the units digit of the expression:\n\n$$\n(972 - 268)(973 - 267)(974 - 266) + (968 - 272)(967 - 273)(966 - 274) - (999 - 222)^3\n$$\n\nwe analyze each term modulo 10 (i.e., focus only on the units digit).\n\n---\n\n### Step 1: Simplify each term modulo 10\n\n#### First term:\n$$\n(972 - 268)(973 - 267)(974 - 266)\n$$\n\nCompute each difference modulo 10:\n- $972 \\mod 10 = 2$, $268 \\mod 10 = 8$, so $2 - 8 \\equiv -6 \\equiv 4 \\mod 10$\n- $973 \\mod 10 = 3$, $267 \\mod 10 = 7$, so $3 - 7 \\equiv -4 \\equiv 6 \\mod 10$\n- $974 \\mod 10 = 4$, $266 \\mod 10 = 6$, so $4 - 6 \\equiv -2 \\equiv 8 \\mod 10$\n\nSo the first term is:\n$$\n4 \\cdot 6 \\cdot 8 = 192 \\Rightarrow 192 \\mod 10 = 2\n$$\n\n#### Second term:\n$$\n(968 - 272)(967 - 273)(966 - 274)\n$$\n\nCompute each difference modulo 10:\n- $968 \\mod 10 = 8$, $272 \\mod 10 = 2$, so $8 - 2 \\equiv 6 \\mod 10$\n- $967 \\mod 10 = 7$, $273 \\mod 10 = 3$, so $7 - 3 \\equiv 4 \\mod 10$\n- $966 \\mod 10 = 6$, $274 \\mod 10 = 4$, so $6 - 4 \\equiv 2 \\mod 10$\n\nSo the second term is:\n$$\n6 \\cdot 4 \\cdot 2 = 48 \\Rightarrow 48 \\mod 10 = 8\n$$\n\n#### Third term:\n$$\n(999 - 222)^3\n$$\n\nCompute inside the cube modulo 10:\n- $999 \\mod 10 = 9$, $222 \\mod 10 = 2$, so $9 - 2 \\equiv 7 \\mod 10$\n- So $(999 - 222)^3 \\equiv 7^3 = 343 \\Rightarrow 343 \\mod 10 = 3$\n\n---\n\n### Step 2: Combine all terms\n\nNow compute:\n$$\n2 + 8 - 3 = 7\n$$\n\nThus, the units digit is:\n\n$$\n\\boxed{7}\n$$\n\n#### <answer>7</answer>"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 7,
+        "gold": "7",
+        "hash_payloads": [
+          "Final Answer:",
+          "7"
+        ],
+        "text_tail": "To find the units digit of the expression:\n$$\n(972 - 268)(973 - 267)(974 - 266) + (968 - 272)(967 - 273)(966 - 274) - (999 - 222)^3,\n$$\nwe compute the units digit of each term separately.\n\n---\n\n### Step 1: Compute the units digit of $(972 - 268)$, $(973 - 267)$, and $(974 - 266)$\n\n- $972 - 268 = 704$ → units digit is **4**\n- $973 - 267 = 706$ → units digit is **6**\n- $974 - 266 = 708$ → units digit is **8**\n\nSo the first product is:\n$$\n4 \\times 6 \\times 8 = 192 \\quad \\text{(units digit is 2)}\n$$\n\n---\n\n### Step 2: Compute the units digit of $(968 - 272)$, $(967 - 273)$, and $(966 - 274)$\n\n- $968 - 272 = 696$ → units digit is **6**\n- $967 - 273 = 694$ → units digit is **4**\n- $966 - 274 = 692$ → units digit is **2**\n\nSo the second product is:\n$$\n6 \\times 4 \\times 2 = 48 \\quad \\text{(units digit is 8)}\n$$\n\n---\n\n### Step 3: Compute the units digit of $(999 - 222)$\n\n- $999 - 222 = 777$ → units digit is **7**\n- $777^3$ → units digit is $7^3 = 343$ → units digit is **3**\n\nSo the third term is:\n$$\n-3 \\quad \\text{(units digit is -3)}\n$$\n\n---\n\n### Step 4: Combine all units digits\n\nNow sum the units digits of the three terms:\n$$\n2 + 8 + (-3) = 7\n$$\n\nThus, the units digit of the entire expression is **7**.\n\n#### Final Answer:\n$$\n#### 7\n$$"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 13,
+        "gold": "7",
+        "hash_payloads": [
+          "First term: $(972 - 268)(973 - 267)(974 - 266)$",
+          "Second term: $(968 - 272)(967 - 273)(966 - 274)$",
+          "Third term: $(999 - 222)^3$",
+          "<answer>7</answer>"
+        ],
+        "text_tail": "To find the units digit of the expression \n$$\n(972 - 268)(973 - 267)(974 - 266) + (968 - 272)(967 - 273)(966 - 274) - (999 - 222)^3,\n$$\nwe compute the units digit of each term separately.\n\n---\n\n### Step 1: Compute the units digit of each factor\n\n#### First term: $(972 - 268)(973 - 267)(974 - 266)$\n\n- $972 - 268 = 704 \\Rightarrow$ units digit = 4\n- $973 - 267 = 706 \\Rightarrow$ units digit = 6\n- $974 - 266 = 708 \\Rightarrow$ units digit = 8\n\nNow compute the product of the units digits:\n$$\n4 \\times 6 \\times 8 = 192 \\Rightarrow \\text{units digit} = 2\n$$\n\n---\n\n#### Second term: $(968 - 272)(967 - 273)(966 - 274)$\n\n- $968 - 272 = 696 \\Rightarrow$ units digit = 6\n- $967 - 273 = 694 \\Rightarrow$ units digit = 4\n- $966 - 274 = 692 \\Rightarrow$ units digit = 2\n\nNow compute the product of the units digits:\n$$\n6 \\times 4 \\times 2 = 48 \\Rightarrow \\text{units digit} = 8\n$$\n\n---\n\n#### Third term: $(999 - 222)^3$\n\n- $999 - 222 = 777 \\Rightarrow$ units digit = 7\n- $777^3$ has units digit $7^3 = 343 \\Rightarrow$ units digit = 3\n\n---\n\n### Step 2: Combine the results\n\nNow compute the full expression:\n$$\n2 + 8 - 3 = 7\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{7}\n$$\n\n#### <answer>7</answer>"
+      },
+      {
+        "id": "math-l4-test-geometry-0022",
+        "sample_index": 3,
+        "gold": "2500",
+        "hash_payloads": [
+          "2500"
+        ],
+        "text_tail": "is the diameter of the circle, then the triangle is a right triangle.\n\nGiven:\n- The diameter of the circle is 100 units.\n- Therefore, the hypotenuse of the right triangle is 100 units.\n\n**Formula for the Area of a Right Triangle:**\nThe area \\( A \\) of a right triangle is given by:\n\\[\nA = \\frac{1}{2} \\times \\text{base} \\times \\text{height}\n\\]\nLet the two legs of the right triangle be \\( a \\) and \\( b \\). Then:\n\\[\nA = \\frac{1}{2} a b\n\\]\n\n**Constraint:**\nBy the Pythagorean theorem, the sum of the squares of the legs equals the square of the hypotenuse:\n\\[\na^2 + b^2 = 100^2 = 10000\n\\]\n\n**Maximizing the Area:**\nWe need to maximize \\( A = \\frac{1}{2} a b \\) subject to the constraint \\( a^2 + b^2 = 10000 \\).\n\nUsing the method of Lagrange multipliers or by substitution, we can express one variable in terms of the other. Let \\( b = \\sqrt{10000 - a^2} \\). Then:\n\\[\nA(a) = \\frac{1}{2} a \\sqrt{10000 - a^2}\n\\]\n\nTo maximize \\( A(a) \\), we can take the derivative with respect to \\( a \\) and set it to zero. Alternatively, we can use the AM-GM inequality.\n\n**Using AM-GM Inequality:**\nConsider the terms \\( a^2 \\) and \\( b^2 \\). By the AM-GM inequality:\n\\[\n\\frac{a^2 + b^2}{2} \\geq \\sqrt{a^2 b^2}\n\\]\n\\[\n\\frac{10000}{2} \\geq a b\n\\]\n\\[\n5000 \\geq a b\n\\]\nEquality holds when \\( a^2 = b^2 \\), so \\( a = b \\).\n\nThus, the maximum product \\( a b \\) occurs when \\( a = b \\). Substituting \\( a = b \\) into the constraint:\n\\[\na^2 + a^2 = 10000\n\\]\n\\[\n2a^2 = 10000\n\\]\n\\[\na^2 = 5000\n\\]\n\\[\na = \\sqrt{5000} = 50\\sqrt{2}\n\\]\n\nTherefore, \\( b = 50\\sqrt{2} \\) as well.\n\n**Calculating the Maximum Area:**\n\\[\nA = \\frac{1}{2} \\times 50\\sqrt{2} \\times 50\\sqrt{2} = \\frac{1}{2} \\times 50 \\times 50 \\times 2 = \\frac{1}{2} \\times 5000 = 2500\n\\]\n\n**Final Answer:**\nThe maximum area of the triangle is 2500 square units.\n\n#### 2500"
+      },
+      {
+        "id": "math-l4-test-algebra-0712",
+        "sample_index": 7,
+        "gold": "0",
+        "hash_payloads": [
+          "\\frac{1}{0}",
+          "0"
+        ],
+        "text_tail": " and (6, 2)\" meaning the line that contains both midpoints. So yes.\n\nThus, answer is 0.\n\nBut we should also consider the possibility that they want the slope of the line that passes through the midpoint of the first segment and is the line that contains the midpoint of the second segment? That doesn't make sense.\n\nThus, I'll answer 0.\n\nBut wait, maybe they want the slope of the line that contains the midpoint of the first segment and also the midpoint of the second segment? That is the same.\n\nThus, final answer: 0.\n\nBut I'll show calculation:\n\nMidpoint of first segment: ((0+2)/2, (0+2)/2) = (1,1).\n\nMidpoint of second segment: ((5+6)/2, (0+2)/2) = (11/2, 1).\n\nThe line through these two points: both have y-coordinate 1, so it's horizontal, slope = 0.\n\nThus, answer: 0.\n\nBut the problem says \"Express your answer in simplest form.\" 0 is simplest.\n\nThus, I'll output: #### 0\n\nBut let's be thorough: Could there be any trick? For example, maybe they want the slope of the line that passes through the midpoint of the first segment and is also the line that contains the midpoint of the second segment? That is the same.\n\nAlternatively, maybe they want the slope of the line that goes through the midpoint of the first segment and is also the line that contains the midpoint of the second segment? That's the same.\n\nI think it's correct.\n\nThus, final answer: 0.\n</think>\n\nThe midpoint of the segment with endpoints (0, 0) and (2, 2) is \\(\\left( \\frac{0+2}{2}, \\frac{0+2}{2} \\right) = (1, 1)\\).  \nThe midpoint of the segment with endpoints (5, 0) and (6, 2) is \\(\\left( \\frac{5+6}{2}, \\frac{0+2}{2} \\right) = \\left( \\frac{11}{2}, 1 \\right)\\).  \nThe line containing both midpoints is horizontal because both have the same \\(y\\)-coordinate \\(1\\).  \nTherefore, the slope of the line is \\(0\\).\n\n#### 0"
+      }
+    ]
+  },
+  "manual_samples": {
+    "base": [
+      {
+        "id": "math-l4-test-number_theory-0336",
+        "sample_index": 8,
+        "answer": "123",
+        "extracted": "123",
+        "question": "Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^4$.",
+        "text": "To solve this problem, we need to find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^4$.\n\nFirst, let's factorize 30:\n30 = 2 * 3 * 5\n\nNow, we can express 30^4 as:\n30^4 = (2 * 3 * 5)^4 = 2^4 * 3^4 * 5^4\n\nTo find the number of distinct positive divisors of 30^4, we need to consider the exponents of each prime factor in the factorization. The number of distinct positive divisors is given by multiplying the incremented exponents of each prime factor:\n\nNumber of distinct positive divisors of 30^4 = (4 + 1) * (4 + 1) * (4 + 1) = 5 * 5 * 5 = 125\n\nNow, we need to exclude 1 and 30^4 from this list of divisors.\n\nNumber of distinct positive divisors of 30^4 excluding 1 and 30^4 = 125 - 2 = 123\n\nTherefore, the number of distinct positive divisors of (30)^4 excluding 1 and (30)^4 is 123.\n\n#### 123",
+        "status": "correct"
+      },
+      {
+        "id": "math-l4-test-algebra-1023",
+        "sample_index": 13,
+        "answer": "5",
+        "extracted": "5",
+        "question": "Find the distance between the vertex of the graph of the equation $f(x) = x^2 - 8x + 15$ and the point $(0, 2)$.",
+        "text": "First, find the vertex of the parabola. The vertex is at $x = -\\frac{b}{2a} = -\\frac{-8}{2(1)} = 4$.\nThen, find the y-coordinate of the vertex by plugging in x = 4 into the equation:\n$y = (4)^2 - 8(4) + 15 = 16 - 32 + 15 = -1$.\nSo the vertex is at $(4, -1)$.\nThe distance between the vertex and the point $(0, 2)$ is:\n$\\sqrt{(4 - 0)^2 + (-1 - 2)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$.\n#### 5",
+        "status": "correct"
+      }
+    ],
+    "rl0": [
+      {
+        "id": "math-l4-test-algebra-0231",
+        "sample_index": 8,
+        "answer": "6",
+        "extracted": "6",
+        "question": "Let \\[f(x) =\n\\begin{cases}\nx^2+9 &\\text{if }x<-5, \\\\\n3x-8&\\text{if }x\\ge-5.\n\\end{cases}\n\\]If $f(x)=10$, find the sum of all possible values of $x$.",
+        "text": "To solve the problem, we need to find all possible values of $x$ such that $f(x) = 10$ and then sum them.\n\nThe function $f(x)$ is defined piecewise:\n- For $x < -5$, $f(x) = x^2 + 9$.\n- For $x \\ge -5$, $f(x) = 3x - 8$.\n\n### Case 1: $x < -5$\nWe set $f(x) = 10$:\n\\[\nx^2 + 9 = 10\n\\]\nSubtract 9 from both sides:\n\\[\nx^2 = 1\n\\]\nTaking the square root of both sides:\n\\[\nx = \\pm 1\n\\]\nHowever, we need to check if these values satisfy $x < -5$. Since $1$ and $-1$ are not less than $-5$, we discard them.\n\n### Case 2: $x \\ge -5$\nWe set $f(x) = 10$:\n\\[\n3x - 8 = 10\n\\]\nAdd 8 to both sides:\n\\[\n3x = 18\n\\]\nDivide by 3:\n\\[\nx = 6\n\\]\nSince $6 \\ge -5$, this value is valid.\n\n### Sum of all possible values\nThe valid values of $x$ are $6$. The sum is:\n\\[\n6 = 6\n\\]\n\n#### <answer>6</answer>",
+        "status": "correct"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0426",
+        "sample_index": 3,
+        "answer": "1/144",
+        "extracted": "1/144",
+        "question": "A sequence $(S_n)$ is defined as follows: $S_1 = 1,$ $S_2 = 1,$\n\\[S_n = \\frac{S_{n - 2} \\cdot S_{n - 1}}{S_{n - 2} + S_{n - 1}}\\]for $n > 2.$  Compute $S_{12}.$",
+        "text": "We are given the sequence $(S_n)$ defined by:\n\\[\nS_1 = 1, \\quad S_2 = 1, \\quad S_n = \\frac{S_{n-2} \\cdot S_{n-1}}{S_{n-2} + S_{n-1}} \\quad \\text{for } n > 2.\n\\]\nWe need to compute $S_{12}$.\n\n---\n\n### Step 1: Compute the first few terms manually\n\nWe start by calculating the initial terms of the sequence.\n\n- $S_1 = 1$\n- $S_2 = 1$\n- $S_3 = \\frac{S_1 \\cdot S_2}{S_1 + S_2} = \\frac{1 \\cdot 1}{1 + 1} = \\frac{1}{2}$\n- $S_4 = \\frac{S_2 \\cdot S_3}{S_2 + S_3} = \\frac{1 \\cdot \\frac{1}{2}}{1 + \\frac{1}{2}} = \\frac{\\frac{1}{2}}{\\frac{3}{2}} = \\frac{1}{3}$\n- $S_5 = \\frac{S_3 \\cdot S_4}{S_3 + S_4} = \\frac{\\frac{1}{2} \\cdot \\frac{1}{3}}{\\frac{1}{2} + \\frac{1}{3}} = \\frac{\\frac{1}{6}}{\\frac{5}{6}} = \\frac{1}{5}$\n- $S_6 = \\frac{S_4 \\cdot S_5}{S_4 + S_5} = \\frac{\\frac{1}{3} \\cdot \\frac{1}{5}}{\\frac{1}{3} + \\frac{1}{5}} = \\frac{\\frac{1}{15}}{\\frac{8}{15}} = \\frac{1}{8}$\n\nSo far, we have:\n\\[\nS_1 = 1, \\quad S_2 = 1, \\quad S_3 = \\frac{1}{2}, \\quad S_4 = \\frac{1}{3}, \\quad S_5 = \\frac{1}{5}, \\quad S_6 = \\frac{1}{8}\n\\]\n\n---\n\n### Step 2: Identify a pattern\n\nLet’s look at the values:\n\n| $n$ | $S_n$ |\n|------|--------|\n| 1    | 1      |\n| 2    | 1      |\n| 3    | $\\frac{1}{2}$ |\n| 4    | $\\frac{1}{3}$ |\n| 5    | $\\frac{1}{5}$ |\n| 6    | $\\frac{1}{8}$ |\n| 7    | ?      |\n| 8    | ?      |\n| ...  | ?      |\n\nFrom the pattern:\n- $S_3 = \\frac{1}{2} = \\frac{1}{3+1}$\n- $S_4 = \\frac{1}{3} = \\frac{1}{4+1}$\n- $S_5 = \\frac{1}{5} = \\frac{1}{5+1}$\n- $S_6 = \\frac{1}{8} = \\frac{1}{6+2}$\n\nThis suggests that for $n \\geq 3$, $S_n = \\frac{1}{n+1}$, but let's verify this hypothesis.\n\n---\n\n### Step 3: Prove the pattern\n\nAssume that for all $n \\geq 3$, $S_n = \\frac{1}{n+1}$. Then:\n\n$$\nS_{n-2} = \\frac{1}{(n-2)+1} = \\frac{1}{n-1}, \\quad S_{n-1} = \\frac{1}{(n-1)+1} = \\frac{1}{n}\n$$\n\nNow compute:\n\n$$\nS_n = \\frac{S_{n-2} \\cdot S_{n-1}}{S_{n-2} + S_{n-1}} = \\frac{\\frac{1}{n-1} \\cdot \\frac{1}{n}}{\\frac{1}{n-1} + \\frac{1}{n}} = \\frac{\\frac{1}{n(n-1)}}{\\frac{n + (n-1)}{n(n-1)}} = \\frac{1}{n}\n$$\n\nSo, under the assumption that $S_{n-2} = \\frac{1}{n-1}$ and $S_{n-1} = \\frac{1}{n}$, we get:\n\n$$\nS_n = \\frac{1}{n}\n$$\n\nBut this contradicts our earlier observation that $S_6 = \\frac{1}{8}$, which would imply $S_6 = \\frac{1}{7}$ if the pattern were $S_n = \\frac{1}{n}$.\n\nSo, the pattern is not simply $S_n = \\frac{1}{n}$.\n\nLet’s re-express the recurrence more carefully.\n\n---\n\n### Step 4: Try to find a closed-form expression\n\nLet’s define $a_n = \\frac{1}{S_n}$. Then the recurrence becomes:\n\n$$\nS_n = \\frac{S_{n-2} \\cdot S_{n-1}}{S_{n-2} + S_{n-1}} \\Rightarrow \\frac{1}{a_n} = \\frac{1}{a_{n-2} \\cdot a_{n-1}} \\cdot \\frac{1}{a_{n-2} + a_{n-1}} = \\frac{a_{n-2} \\cdot a_{n-1}}{a_{n-2} \\cdot a_{n-1} + a_{n-2} + a_{n-1}}\n$$\n\nSo,\n\n$$\n\\frac{1}{a_n} = \\frac{a_{n-2} \\cdot a_{n-1}}{a_{n-2} \\cdot a_{n-1} + a_{n-2} + a_{n-1}}\n\\Rightarrow a_n = \\frac{a_{n-2} \\cdot a_{n-1} + a_{n-2} + a_{n-1}}{a_{n-2} \\cdot a_{n-1}} = 1 + \\frac{a_{n-2} + a_{n-1}}{a_{n-2} \\cdot a_{n-1}}\n$$\n\nThis is complicated, so instead, let’s try to compute more terms numerically and look for a pattern.\n\n---\n\n### Step 5: Compute more terms numerically\n\nWe already have:\n\n- $S_1 = 1$\n- $S_2 = 1$\n- $S_3 = \\frac{1}{2}$\n- $S_4 = \\frac{1}{3}$\n- $S_5 = \\frac{1}{5}$\n- $S_6 = \\frac{1}{8}$\n\nLet’s compute $S_7$:\n\n$$\nS_7 = \\frac{S_5 \\cdot S_6}{S_5 + S_6} = \\frac{\\frac{1}{5} \\cdot \\frac{1}{8}}{\\frac{1}{5} + \\frac{1}{8}} = \\frac{\\frac{1}{40}}{\\frac{13}{40}} = \\frac{1}{13}\n$$\n\nSo, $S_7 = \\frac{1}{13}$\n\nNow compute $S_8$:\n\n$$\nS_8 = \\frac{S_6 \\cdot S_7}{S_6 + S_7} = \\frac{\\frac{1}{8} \\cdot \\frac{1}{13}}{\\frac{1}{8} + \\frac{1}{13}} = \\frac{\\frac{1}{104}}{\\frac{21}{104}} = \\frac{1}{21}\n$$\n\nSo, $S_8 = \\frac{1}{21}$\n\nNow compute $S_9$:\n\n$$\nS_9 = \\frac{S_7 \\cdot S_8}{S_7 + S_8} = \\frac{\\frac{1}{13} \\cdot \\frac{1}{21}}{\\frac{1}{13} + \\frac{1}{21}} = \\frac{\\frac{1}{273}}{\\frac{34}{273}} = \\frac{1}{34}\n$$\n\nSo, $S_9 = \\frac{1}{34}$\n\nNow compute $S_{10}$:\n\n$$\nS_{10} = \\frac{S_8 \\cdot S_9}{S_8 + S_9} = \\frac{\\frac{1}{21} \\cdot \\frac{1}{34}}{\\frac{1}{21} + \\frac{1}{34}} = \\frac{\\frac{1}{714}}{\\frac{55}{714}} = \\frac{1}{55}\n$$\n\nSo, $S_{10} = \\frac{1}{55}$\n\nNow compute $S_{11}$:\n\n$$\nS_{11} = \\frac{S_9 \\cdot S_{10}}{S_9 + S_{10}} = \\frac{\\frac{1}{34} \\cdot \\frac{1}{55}}{\\frac{1}{34} + \\frac{1}{55}} = \\frac{\\frac{1}{1870}}{\\frac{89}{1870}} = \\frac{1}{89}\n$$\n\nSo, $S_{11} = \\frac{1}{89}$\n\nNow compute $S_{12}$:\n\n$$\nS_{12} = \\frac{S_{10} \\cdot S_{11}}{S_{10} + S_{11}} = \\frac{\\frac{1}{55} \\cdot \\frac{1}{89}}{\\frac{1}{55} + \\frac{1}{89}} = \\frac{\\frac{1}{4895}}{\\frac{144}{4895}} = \\frac{1}{144}\n$$\n\nSo, $S_{12} = \\frac{1}{144}$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{\\frac{1}{144}}\n$$",
+        "status": "correct"
+      }
+    ],
+    "rl1": [
+      {
+        "id": "math-l4-test-algebra-0525",
+        "sample_index": 12,
+        "answer": "1",
+        "extracted": "1",
+        "question": "Suppose that $h(x)=f^{-1}(x)$. If $h(2)=10$, $h(10)=1$ and $h(1)=2$, what is $f(f(10))$?",
+        "text": "We are given that $h(x) = f^{-1}(x)$, which means $h$ is the inverse function of $f$.\n\nWe are given:\n- $h(2) = 10$\n- $h(10) = 1$\n- $h(1) = 2$\n\nRecall that if $h(x) = f^{-1}(x)$, then:\n- $h(y) = x$ implies $f(x) = y$.\n\nLet's use the given values to find $f$ at certain points.\n\n1. From $h(2) = 10$, we have $f(10) = 2$.\n2. From $h(10) = 1$, we have $f(1) = 10$.\n3. From $h(1) = 2$, we have $f(2) = 1$.\n\nNow, we need to compute $f(f(10))$.\n\nFirst, find $f(10)$. From step 1, $f(10) = 2$.\n\nNext, compute $f(f(10)) = f(2)$. From step 3, $f(2) = 1$.\n\nTherefore, $f(f(10)) = 1$.\n\n#### 1",
+        "status": "correct"
+      },
+      {
+        "id": "math-l4-test-prealgebra-0809",
+        "sample_index": 3,
+        "answer": "6",
+        "extracted": "6",
+        "question": "Mario is constructing a square dart board. It will consist of a smaller square centered in a larger square. The smaller square measures $4$ inches on each side. The ratio of the area of the smaller square to the area of the entire dart board is $\\frac 49$. How long is the side of the larger square?",
+        "text": "Let the side length of the larger square be $s$ inches. The area of the larger square is $s^2$. The smaller square has side length $4$ inches, so its area is $4^2 = 16$ square inches.\n\nWe are given that the ratio of the area of the smaller square to the area of the entire dart board is $\\frac{4}{9}$. This means:\n\n$$\n\\frac{\\text{Area of smaller square}}{\\text{Area of larger square}} = \\frac{4}{9}\n$$\n\nSubstituting the areas:\n\n$$\n\\frac{16}{s^2} = \\frac{4}{9}\n$$\n\nCross-multiplying to solve for $s^2$:\n\n$$\n16 \\cdot 9 = 4 \\cdot s^2 \\\\\n144 = 4s^2 \\\\\ns^2 = \\frac{144}{4} = 36\n$$\n\nTaking the square root of both sides:\n\n$$\ns = \\sqrt{36} = 6\n$$\n\nThus, the side length of the larger square is $6$ inches.\n\n#### 6",
+        "status": "correct"
+      }
+    ]
+  },
+  "extraction_diagnostics": {
+    "base": {
+      "malformed_flag_counts": {
+        "_malformed_xml": 15,
+        "_malformed_think": 2,
+        "_malformed_hash_wrapper": 2
+      },
+      "gold_candidate_with_other_invalid_candidates": [
+        {
+          "id": "math-l4-test-algebra-0533",
+          "sample_index": 12,
+          "gold": "7",
+          "candidates": [
+            "<answer> 7",
+            "7."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0002",
+          "sample_index": 13,
+          "gold": "9/7",
+          "candidates": [
+            "$\\dfrac{9}{7}$",
+            "<answer>",
+            "$\\dfrac{9}{7}$"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0716",
+          "sample_index": 14,
+          "gold": "3",
+          "candidates": [
+            "\\frac{a^2 + b^2 + c^2}{a^2b^2c^2}",
+            "3",
+            "$\\boxed{\\frac{a^2 + b^2 + c^2}{a^2b^2c^2}}.$"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-prealgebra-0360",
+          "sample_index": 3,
+          "gold": "11",
+          "candidates": [
+            "<answer>",
+            "<answer>11</answer>"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-prealgebra-0625",
+          "sample_index": 10,
+          "gold": "34/25",
+          "candidates": [
+            "1.36",
+            "The number of kilograms Alice should buy is approximately $1.36$."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0613",
+          "sample_index": 0,
+          "gold": "1",
+          "candidates": [
+            "1",
+            "$\\boxed{1}$.The answer is: 1"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0613",
+          "sample_index": 8,
+          "gold": "1",
+          "candidates": [
+            "1",
+            "1"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": true
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-1040",
+          "sample_index": 0,
+          "gold": "84",
+          "candidates": [
+            "84",
+            "84",
+            "$\\boxed{84}$.The solutions of $x(2x-7)=3$ may be expressed in the form $\\frac{m+\\sqrt{n}}{p}$ and $\\frac{m-\\sqrt{n}}{p}$, where $m$, $n$, and $p$ are relatively prime numbers.  Find $m+n+p$.",
+            "$\\boxed{84}$."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-1040",
+          "sample_index": 5,
+          "gold": "84",
+          "candidates": [
+            "84",
+            "84",
+            "$\\boxed{84}$.The solutions of $x(2x-7)=3$ may be expressed in the form $\\frac{m+\\sqrt{n}}{p}$ and $\\frac{m-\\sqrt{n}}{p}$, where $m$, $n$, and $p$ are relatively prime numbers.  Find $m+n+p$.",
+            "$\\boxed{84}$."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-1040",
+          "sample_index": 10,
+          "gold": "84",
+          "candidates": [
+            "84",
+            "$m+n+p=7+73+4=84$."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-counting_and_probability-0104",
+          "sample_index": 7,
+          "gold": "193/512",
+          "candidates": [
+            "<answer>.",
+            "<answer>193/512</answer>"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-1107",
+          "sample_index": 11,
+          "gold": "2",
+          "candidates": [
+            "2.",
+            "2",
+            "2, which can be written as"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0492",
+          "sample_index": 6,
+          "gold": "3",
+          "candidates": [
+            "<answer>3</answer>",
+            "3",
+            "The smallest bouncy prime is 3."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0947",
+          "sample_index": 15,
+          "gold": "3",
+          "candidates": [
+            "<answer>",
+            "3"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0820",
+          "sample_index": 9,
+          "gold": "4624",
+          "candidates": [
+            "4624",
+            "$\\boxed{4624}$.The answer is: 4624"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-precalculus-0415",
+          "sample_index": 1,
+          "gold": "2/3",
+          "candidates": [
+            "\\frac{2}{3}",
+            "2/3",
+            "$\\boxed{\\frac{2}{3}}$.<answer>2/3</answer>"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-precalculus-0415",
+          "sample_index": 14,
+          "gold": "2/3",
+          "candidates": [
+            "\\frac{2}{3}",
+            "2/3",
+            "$\\boxed{\\frac{2}{3}}$.<answer>2/3</answer>"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-1023",
+          "sample_index": 3,
+          "gold": "5",
+          "candidates": [
+            "<answer>",
+            "5"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-precalculus-0000",
+          "sample_index": 6,
+          "gold": "0",
+          "candidates": [
+            "0",
+            "0"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": true
+          }
+        },
+        {
+          "id": "math-l4-test-prealgebra-0745",
+          "sample_index": 11,
+          "gold": "24",
+          "candidates": [
+            "<answer>",
+            "24",
+            "24"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0296",
+          "sample_index": 14,
+          "gold": "20",
+          "candidates": [
+            "20",
+            "2\\sqrt{66}"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-counting_and_probability-0004",
+          "sample_index": 1,
+          "gold": "835",
+          "candidates": [
+            "835",
+            "1002 - 167 = 835."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0245",
+          "sample_index": 5,
+          "gold": "3",
+          "candidates": [
+            "No solution.",
+            "3.",
+            "\\(c = 3\\)."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0245",
+          "sample_index": 6,
+          "gold": "3",
+          "candidates": [
+            ".",
+            "3"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0720",
+          "sample_index": 4,
+          "gold": "1/6",
+          "candidates": [
+            "\\frac{i}{6}",
+            "\\frac{1}{6}",
+            "$\\boxed{\\frac{i}{6}}$.",
+            "\\[\n\\boxed{\\frac{1}{6}}.\n\\]"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0229",
+          "sample_index": 0,
+          "gold": "-4",
+          "candidates": [
+            "<answer>",
+            "<answer>-4</answer>"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": true,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-geometry-0299",
+          "sample_index": 7,
+          "gold": "391872",
+          "candidates": [
+            "391872",
+            "$\\boxed{391872}$.The answer is: 391872"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0282",
+          "sample_index": 13,
+          "gold": "8",
+          "candidates": [
+            "Equation 1: $A + B = C$",
+            "Equation 2: $AA - B = 2C$",
+            "Equation 3: $C \\times B = AA + A$",
+            "8"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0790",
+          "sample_index": 13,
+          "gold": "15",
+          "candidates": [
+            "15",
+            "$x+y = 7+8 = 15$."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-prealgebra-0638",
+          "sample_index": 6,
+          "gold": "5",
+          "candidates": [
+            "\\sqrt{7}",
+            "5"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-prealgebra-0741",
+          "sample_index": 8,
+          "gold": "21/31",
+          "candidates": [
+            "\\frac{21}{31}",
+            "in lowest terms, as 21 and 31 share no common factors other than 1."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        }
+      ]
+    },
+    "rl0": {
+      "malformed_flag_counts": {
+        "_malformed_think": 3,
+        "_malformed_xml": 1
+      },
+      "gold_candidate_with_other_invalid_candidates": [
+        {
+          "id": "math-l4-test-counting_and_probability-0336",
+          "sample_index": 2,
+          "gold": "3",
+          "candidates": [
+            "Case 1: All sides equal (equilateral triangles)",
+            "Case 2: Two sides equal, one different (isosceles triangles)",
+            "Case 3: All sides different (scalene triangles)",
+            "3"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-precalculus-0498",
+          "sample_index": 9,
+          "gold": "3",
+          "candidates": [
+            "\\sqrt{153}",
+            "3"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0604",
+          "sample_index": 6,
+          "gold": "2",
+          "candidates": [
+            "Case 1: $ x \\geq 0 $, so $ y = x $",
+            "Case 2: $ x < 0 $, so $ y = -x $",
+            "<answer>2</answer>",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-precalculus-0065",
+          "sample_index": 10,
+          "gold": "4",
+          "candidates": [
+            "Case 1: $x = \\frac{2k\\pi}{5}$",
+            "Case 2: $x = \\frac{\\pi(1 + 2k)}{7}$",
+            "4"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0739",
+          "sample_index": 2,
+          "gold": "2",
+          "candidates": [
+            "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+            "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+            "Term 3: $\\sqrt{6}$",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0739",
+          "sample_index": 4,
+          "gold": "2",
+          "candidates": [
+            "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+            "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+            "Term 3: $\\sqrt{6}$",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0739",
+          "sample_index": 8,
+          "gold": "2",
+          "candidates": [
+            "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+            "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+            "Term 3: $\\sqrt{6}$",
+            "<answer>2</answer>",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0739",
+          "sample_index": 11,
+          "gold": "2",
+          "candidates": [
+            "Part A: $\\frac{4}{\\sqrt{24}}$",
+            "Part B: $\\frac{\\sqrt{3456}}{9}$",
+            "Part C: $\\sqrt{6}$",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0739",
+          "sample_index": 14,
+          "gold": "2",
+          "candidates": [
+            "Term 1: $\\frac{4}{\\sqrt{24}}$",
+            "Term 2: $\\frac{\\sqrt{3456}}{9}$",
+            "Term 3: $\\sqrt{6}$",
+            "<answer>2</answer>",
+            "2"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0282",
+          "sample_index": 0,
+          "gold": "8",
+          "candidates": [
+            "Answer:",
+            "8"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0282",
+          "sample_index": 8,
+          "gold": "8",
+          "candidates": [
+            "Equation (2): $AA - B = 2C$",
+            "Equation (3): $C \\times B = AA + A$",
+            "<answer>8</answer>",
+            "8",
+            "8"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        }
+      ]
+    },
+    "rl1": {
+      "malformed_flag_counts": {
+        "_malformed_think": 3
+      },
+      "gold_candidate_with_other_invalid_candidates": [
+        {
+          "id": "math-l4-test-intermediate_algebra-0646",
+          "sample_index": 5,
+          "gold": "4",
+          "candidates": [
+            "First equation: $1 \\star 2 = 3$",
+            "Second equation: $2 \\star 3 = 4$",
+            "<answer>4</answer>",
+            "4"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0052",
+          "sample_index": 0,
+          "gold": "7",
+          "candidates": [
+            "Final Answer:",
+            "7"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0052",
+          "sample_index": 1,
+          "gold": "7",
+          "candidates": [
+            "First term:",
+            "Second term:",
+            "Third term:",
+            "<answer>7</answer>",
+            "7",
+            "7"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0052",
+          "sample_index": 7,
+          "gold": "7",
+          "candidates": [
+            "Final Answer:",
+            "7"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0052",
+          "sample_index": 8,
+          "gold": "7",
+          "candidates": [
+            "**First Term: $(972 - 268)(973 - 267)(974 - 266)$**",
+            "**Second Term: $(968 - 272)(967 - 273)(966 - 274)$**",
+            "**Third Term: $-(999 - 222)^3$**",
+            "7"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-number_theory-0052",
+          "sample_index": 13,
+          "gold": "7",
+          "candidates": [
+            "First term: $(972 - 268)(973 - 267)(974 - 266)$",
+            "Second term: $(968 - 272)(967 - 273)(966 - 274)$",
+            "Third term: $(999 - 222)^3$",
+            "<answer>7</answer>",
+            "7",
+            "7"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-geometry-0022",
+          "sample_index": 3,
+          "gold": "2500",
+          "candidates": [
+            "2500",
+            "The maximum area of the triangle is 2500 square units."
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-algebra-0712",
+          "sample_index": 7,
+          "gold": "0",
+          "candidates": [
+            "\\frac{1}{0}",
+            "0"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        },
+        {
+          "id": "math-l4-test-intermediate_algebra-0770",
+          "sample_index": 14,
+          "gold": "561",
+          "candidates": [
+            "Sequence $a_n$:",
+            "Sequence $b_n$:",
+            "Check $a_n = n!$:",
+            "Check $b_n = n(n+1)!$:",
+            "Sequence $a_n$:",
+            "Sequence $b_n$:",
+            "561"
+          ],
+          "flags": {
+            "_malformed_think": false,
+            "_malformed_box": false,
+            "_malformed_xml": false,
+            "_malformed_hash_wrapper": false
+          }
+        }
+      ]
+    }
+  },
+  "manual_sample_selection": "For each of base, rl0, rl1, sort correct rows by SHA256(\"20261106:{label}:{id}:{sample_index}\") and inspect the first two.",
+  "manual_sample_review": [
+    {
+      "dataset": "base",
+      "id": "math-l4-test-number_theory-0336",
+      "sample_index": 8,
+      "final_answer_valid": true,
+      "reasoning_review": "Prime exponents 4,4,4 imply 125 divisors; exclude two endpoints to obtain 123."
+    },
+    {
+      "dataset": "base",
+      "id": "math-l4-test-algebra-1023",
+      "sample_index": 13,
+      "final_answer_valid": true,
+      "reasoning_review": "Vertex (4,-1), distance to (0,2) is sqrt(16+9)=5."
+    },
+    {
+      "dataset": "rl0",
+      "id": "math-l4-test-algebra-0231",
+      "sample_index": 8,
+      "final_answer_valid": true,
+      "reasoning_review": "Roots +/-1 fail x<-5; linear branch gives valid x=6."
+    },
+    {
+      "dataset": "rl0",
+      "id": "math-l4-test-intermediate_algebra-0426",
+      "sample_index": 3,
+      "final_answer_valid": true,
+      "reasoning_review": "Correct final 1/144 and later direct recurrence computation. Earlier text contains false equalities (1/2=1/(3+1)) and invalid reciprocal substitution, so correct answer does not imply valid reasoning throughout."
+    },
+    {
+      "dataset": "rl1",
+      "id": "math-l4-test-algebra-0525",
+      "sample_index": 12,
+      "final_answer_valid": true,
+      "reasoning_review": "Inverse relations give f(10)=2 and f(2)=1."
+    },
+    {
+      "dataset": "rl1",
+      "id": "math-l4-test-prealgebra-0809",
+      "sample_index": 3,
+      "final_answer_valid": true,
+      "reasoning_review": "16/s^2=4/9 gives s=6 inches."
+    }
+  ],
+  "heading_related_extraction_candidates": {
+    "base": [
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 13,
+        "line": 2606,
+        "invalid_heading_candidates": [
+          "Equation 1: $A + B = C$",
+          "Equation 2: $AA - B = 2C$",
+          "Equation 3: $C \\times B = AA + A$"
+        ],
+        "gold": "8"
+      }
+    ],
+    "rl0": [
+      {
+        "id": "math-l4-test-counting_and_probability-0336",
+        "sample_index": 2,
+        "line": 35,
+        "invalid_heading_candidates": [
+          "Case 1: All sides equal (equilateral triangles)",
+          "Case 2: Two sides equal, one different (isosceles triangles)",
+          "Case 3: All sides different (scalene triangles)"
+        ],
+        "gold": "3"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0604",
+        "sample_index": 6,
+        "line": 519,
+        "invalid_heading_candidates": [
+          "Case 1: $ x \\geq 0 $, so $ y = x $",
+          "Case 2: $ x < 0 $, so $ y = -x $"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-precalculus-0065",
+        "sample_index": 10,
+        "line": 859,
+        "invalid_heading_candidates": [
+          "Case 1: $x = \\frac{2k\\pi}{5}$",
+          "Case 2: $x = \\frac{\\pi(1 + 2k)}{7}$"
+        ],
+        "gold": "4"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 2,
+        "line": 867,
+        "invalid_heading_candidates": [
+          "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+          "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 4,
+        "line": 869,
+        "invalid_heading_candidates": [
+          "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+          "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 8,
+        "line": 873,
+        "invalid_heading_candidates": [
+          "Term 1: $\\dfrac{4}{\\sqrt{24}}$",
+          "Term 2: $\\dfrac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 11,
+        "line": 876,
+        "invalid_heading_candidates": [
+          "Part A: $\\frac{4}{\\sqrt{24}}$",
+          "Part B: $\\frac{\\sqrt{3456}}{9}$",
+          "Part C: $\\sqrt{6}$"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-algebra-0739",
+        "sample_index": 14,
+        "line": 879,
+        "invalid_heading_candidates": [
+          "Term 1: $\\frac{4}{\\sqrt{24}}$",
+          "Term 2: $\\frac{\\sqrt{3456}}{9}$",
+          "Term 3: $\\sqrt{6}$"
+        ],
+        "gold": "2"
+      },
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 0,
+        "line": 1297,
+        "invalid_heading_candidates": [
+          "Answer:"
+        ],
+        "gold": "8"
+      },
+      {
+        "id": "math-l4-test-number_theory-0282",
+        "sample_index": 8,
+        "line": 1305,
+        "invalid_heading_candidates": [
+          "Equation (2): $AA - B = 2C$",
+          "Equation (3): $C \\times B = AA + A$"
+        ],
+        "gold": "8"
+      }
+    ],
+    "rl1": [
+      {
+        "id": "math-l4-test-intermediate_algebra-0646",
+        "sample_index": 5,
+        "line": 150,
+        "invalid_heading_candidates": [
+          "First equation: $1 \\star 2 = 3$",
+          "Second equation: $2 \\star 3 = 4$"
+        ],
+        "gold": "4"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 0,
+        "line": 625,
+        "invalid_heading_candidates": [
+          "Final Answer:"
+        ],
+        "gold": "7"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 1,
+        "line": 626,
+        "invalid_heading_candidates": [
+          "First term:",
+          "Second term:",
+          "Third term:"
+        ],
+        "gold": "7"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 7,
+        "line": 632,
+        "invalid_heading_candidates": [
+          "Final Answer:"
+        ],
+        "gold": "7"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 8,
+        "line": 633,
+        "invalid_heading_candidates": [
+          "**First Term: $(972 - 268)(973 - 267)(974 - 266)$**",
+          "**Second Term: $(968 - 272)(967 - 273)(966 - 274)$**",
+          "**Third Term: $-(999 - 222)^3$**"
+        ],
+        "gold": "7"
+      },
+      {
+        "id": "math-l4-test-number_theory-0052",
+        "sample_index": 13,
+        "line": 638,
+        "invalid_heading_candidates": [
+          "First term: $(972 - 268)(973 - 267)(974 - 266)$",
+          "Second term: $(968 - 272)(967 - 273)(966 - 274)$",
+          "Third term: $(999 - 222)^3$"
+        ],
+        "gold": "7"
+      },
+      {
+        "id": "math-l4-test-intermediate_algebra-0770",
+        "sample_index": 14,
+        "line": 1039,
+        "invalid_heading_candidates": [
+          "Sequence $a_n$:",
+          "Sequence $b_n$:",
+          "Check $a_n = n!$:",
+          "Check $b_n = n(n+1)!$:",
+          "Sequence $a_n$:",
+          "Sequence $b_n$:"
+        ],
+        "gold": "561"
+      }
+    ]
+  },
+  "evidence_locations": {
+    "base:math-l4-test-intermediate_algebra-0426:3": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "line": 1124
+    },
+    "base:math-l4-test-geometry-0022:3": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "line": 1588
+    },
+    "base:math-l4-test-algebra-0739:8": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "line": 1737
+    },
+    "base:math-l4-test-algebra-0739:11": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "line": 1740
+    },
+    "base:math-l4-test-algebra-0739:14": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/test_base/samples.jsonl",
+      "line": 1743
+    },
+    "rl0:math-l4-test-intermediate_algebra-0426:3": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+      "line": 564
+    },
+    "rl0:math-l4-test-algebra-0739:8": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+      "line": 873
+    },
+    "rl0:math-l4-test-algebra-0739:11": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+      "line": 876
+    },
+    "rl0:math-l4-test-algebra-0739:14": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_0/samples.jsonl",
+      "line": 879
+    },
+    "rl1:math-l4-test-geometry-0022:3": {
+      "path": "/Users/xu./Downloads/math_l4_selected_20261104/math_l4_v1/outputs/math_l4_v1_fix1/rl_shards/shard_1/samples.jsonl",
+      "line": 788
+    }
+  },
+  "validity_caveats": [
+    "Identical frozen settings, base-model identity, dataset hashes, original code hashes and protocol ID; sharding is a declared execution extension. Local original script hashes match recorded hashes.",
+    "All three sample hashes match manifests. RL workers report completed 1600/1600 with zero restarts. Worker state is a downloaded snapshot, not live remote inspection.",
+    "Same nominal RTX 4090, BF16 and package versions do not imply equal throughput. RL workers have different CPU models and driver versions; generation behavior and LoRA runtime also differ from Base. The review does not isolate the cause of the speed difference.",
+    "A common 300-second wall-clock answer timeout implies different effective generation token budgets: timeout median tokens Base 12255, RL0 6040, RL1 8558. Accuracy is therefore a property of this frozen model-plus-execution-and-stopping protocol, not an equal-token unconstrained mathematical capability comparison.",
+    "RL shards contain different question sets. Do not attribute their timeout-rate difference solely to speed or hardware.",
+    "Timeouts are explicitly false/reward 0; repetition-guard stops are correct=null/status unscored. Both are unsuccessful requested attempts in all-attempt accuracy, but neither should be described as a demonstrated mathematical error.",
+    "Frozen exact-scalar scoring has false negatives from Markdown fourth-level headings and some prose answer forms. Do not silently patch or replace frozen primary scores. Candidate diagnostics are separate from the original scores.",
+    "Mechanical extraction candidate counts are not exhaustive semantic error counts. Six deterministic positive-label samples and selected suspicious failures were manually reviewed; reasoning quality was not exhaustively audited.",
+    "One sampled correct response has correct final answer but false intermediate equalities and an invalid reciprocal derivation; exact-answer accuracy alone does not prove reasoning correctness."
+  ],
+  "confirmed_semantic_false_negative_examples": [
+    {
+      "dataset": "base",
+      "id": "math-l4-test-number_theory-0282",
+      "sample_index": 13,
+      "gold": "8",
+      "reason": "Fourth-level Equation headings parsed as answers; derivation gives A=1 B=3 C=4 and final 8."
+    },
+    {
+      "dataset": "rl0",
+      "id": "math-l4-test-algebra-0739",
+      "sample_indices": [
+        8,
+        11,
+        14
+      ],
+      "gold": "2",
+      "reason": "Fourth-level Term/Part headings parsed as answers; correct radical simplification and final 2."
+    },
+    {
+      "dataset": "rl1",
+      "id": "math-l4-test-intermediate_algebra-0646",
+      "sample_index": 5,
+      "gold": "4",
+      "reason": "Fourth-level equation headings parsed as answers; b=0, c=-1, a=5, d=4."
+    },
+    {
+      "dataset": "rl1",
+      "id": "math-l4-test-number_theory-0052",
+      "sample_indices": [
+        1,
+        7,
+        13
+      ],
+      "gold": "7",
+      "reason": "Fourth-level term or Final Answer headings parsed as answers; modulo-10 computation 2+8-3=7 is correct."
+    },
+    {
+      "dataset": "rl1",
+      "id": "math-l4-test-geometry-0022",
+      "sample_index": 3,
+      "gold": "2500",
+      "reason": "Correct calculation and #### 2500, but Final Answer next-line prose is retained as a non-scalar invalid candidate."
+    }
+  ],
+  "diagnostic_method": "Executed the unchanged frozen scorer only to inspect its internal candidate extraction on existing extraction_failed records and isolated already-extracted candidate payloads. This does not alter the evaluator, model output, frozen scores or primary metrics.",
+  "source_files_unchanged": true
+}

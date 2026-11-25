@@ -1,0 +1,132 @@
+[EXPERIMENT PLAN] {"train_questions": 512, "dev_questions": 128, "test_questions": 200, "training_updates": 384, "training_completion_cap": 2048, "dev_samples_per_question": 4, "test_samples_per_question": 16, "dev_responses_all_candidates": 1536, "test_responses_base_and_rl": 6400, "evaluation_deadline_seconds": 300, "concurrent_model_workers": 1, "epoch_checkpoints": [128, 256, 384]}
+[BUNDLE VERIFIED] 81 files
+{
+  "checked_utc": "2026-11-01T03:29:08.020941+00:00",
+  "config_sha256": "90e0697b789cd8f6e01fd8bf5457f59138a975e728434fdfbb0a11a67c59927d",
+  "data_ready": true,
+  "gpu_checked": false,
+  "model_loaded": false,
+  "ready": true
+}
+✅ [PREPARATION COMPLETE] Frozen data/code verified; existing environment ready. GPU training itself remains gated by engineering/pilot.
+{
+  "mode": "engineering",
+  "config_version": "math-l4-1.0",
+  "training_questions": 32,
+  "effective_batch_size": 32,
+  "unique_prompts_per_update": 4,
+  "generation_batch_size": 8,
+  "steps_per_generation": 8,
+  "unique_prompts_per_generation": 1,
+  "generation_batches_per_update": 4,
+  "expected_optimizer_steps": 2,
+  "expected_reward_groups": 8,
+  "topology": {
+    "world_size": 1,
+    "single_node": true,
+    "local_micro_batch": 1,
+    "gradient_accumulation_steps_per_rank": 32,
+    "global_effective_batch_size": 32,
+    "global_unique_prompts_per_update": 4,
+    "per_rank_generation_batch_size": 8,
+    "global_generation_batch_size": 8,
+    "per_rank_unique_prompts_per_update": 4,
+    "steps_per_generation": 8
+  },
+  "output_dir": "outputs/math_l4_v1_fix1/engineering",
+  "config_path": "configs/math_l4.json",
+  "training_file": "data/processed/engineering.jsonl",
+  "adapter_path": "outputs/math_l4_v1_fix1/engineering/adapter",
+  "path_base": "code_root",
+  "gpu_checked": false,
+  "formal_requires_matching_pilot": false
+}
+{
+  "mode": "pilot",
+  "config_version": "math-l4-1.0",
+  "training_questions": 128,
+  "effective_batch_size": 32,
+  "unique_prompts_per_update": 4,
+  "generation_batch_size": 8,
+  "steps_per_generation": 8,
+  "unique_prompts_per_generation": 1,
+  "generation_batches_per_update": 4,
+  "expected_optimizer_steps": 96,
+  "expected_reward_groups": 384,
+  "topology": {
+    "world_size": 1,
+    "single_node": true,
+    "local_micro_batch": 1,
+    "gradient_accumulation_steps_per_rank": 32,
+    "global_effective_batch_size": 32,
+    "global_unique_prompts_per_update": 4,
+    "per_rank_generation_batch_size": 8,
+    "global_generation_batch_size": 8,
+    "per_rank_unique_prompts_per_update": 4,
+    "steps_per_generation": 8
+  },
+  "output_dir": "outputs/math_l4_v1_fix1/pilot",
+  "config_path": "configs/math_l4.json",
+  "training_file": "data/processed/pilot.jsonl",
+  "adapter_path": "outputs/math_l4_v1_fix1/pilot/adapter",
+  "path_base": "code_root",
+  "gpu_checked": false,
+  "formal_requires_matching_pilot": false
+}
+{
+  "mode": "formal",
+  "config_version": "math-l4-1.0",
+  "training_questions": 512,
+  "effective_batch_size": 32,
+  "unique_prompts_per_update": 4,
+  "generation_batch_size": 8,
+  "steps_per_generation": 8,
+  "unique_prompts_per_generation": 1,
+  "generation_batches_per_update": 4,
+  "expected_optimizer_steps": 384,
+  "expected_reward_groups": 1536,
+  "topology": {
+    "world_size": 1,
+    "single_node": true,
+    "local_micro_batch": 1,
+    "gradient_accumulation_steps_per_rank": 32,
+    "global_effective_batch_size": 32,
+    "global_unique_prompts_per_update": 4,
+    "per_rank_generation_batch_size": 8,
+    "global_generation_batch_size": 8,
+    "per_rank_unique_prompts_per_update": 4,
+    "steps_per_generation": 8
+  },
+  "output_dir": "outputs/math_l4_v1_fix1/formal",
+  "config_path": "configs/math_l4.json",
+  "training_file": "data/processed/train.jsonl",
+  "adapter_path": "outputs/math_l4_v1_fix1/formal/adapter",
+  "path_base": "code_root",
+  "gpu_checked": false,
+  "formal_requires_matching_pilot": true
+}
+========================================================================
+[EVAL 1/4] DATA | model=base | split=engineering | questions=32 | samples/question=1
+[SHARD] index=0/1 | assigned_questions=32/32 | assignment=question_index_modulo
+[BUDGET] responses=32 | max_output_tokens=8388608 | fixed independent comparison
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[GUARD POLICY] checks_every=32 tokens | answer_deadline=300s | no_token_timeout=120s | heartbeat=5s
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+========================================================================
+[EVAL 1/4] DATA | model=base | split=dev | questions=128 | samples/question=4
+[SHARD] index=0/1 | assigned_questions=128/128 | assignment=question_index_modulo
+[BUDGET] responses=512 | max_output_tokens=134217728 | fixed independent comparison
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[GUARD POLICY] checks_every=32 tokens | answer_deadline=300s | no_token_timeout=120s | heartbeat=5s
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+========================================================================
+[EVAL 1/4] DATA | model=base | split=test | questions=200 | samples/question=16
+[SHARD] index=0/1 | assigned_questions=200/200 | assignment=question_index_modulo
+[BUDGET] responses=3200 | max_output_tokens=838860800 | fixed independent comparison
+[LENGTH POLICY] each response limit = 262144 - actual prompt tokens; EOS may end earlier
+[GUARD POLICY] checks_every=32 tokens | answer_deadline=300s | no_token_timeout=120s | heartbeat=5s
+[BASE IDENTITY] required=807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181 | --plan does not read model weights
+✅ [PLAN COMPLETE] Dataset hashes and scalar gold verified; no model/GPU imported.
+✅ [PLAN COMPLETE] No model inference/training and no experiment output created

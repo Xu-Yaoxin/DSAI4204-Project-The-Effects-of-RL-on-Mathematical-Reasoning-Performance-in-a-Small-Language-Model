@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-31T14:18:52.749867+00:00",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_free_gib": 23.13067626953125,
+  "gpu_total_gib": 23.5164794921875,
+  "ram_available_gib": 55.59382629394531,
+  "cpu_capacity": 13.0,
+  "cpu_threads_per_worker": 4,
+  "concurrent_workers": 2,
+  "required_free_gpu_gib": 14,
+  "required_available_ram_gib": 28,
+  "status": "completed",
+  "supervisor_pid": 1324,
+  "evaluation_wall_seconds": 1880.2966232653707,
+  "new_answers": 400,
+  "new_output_tokens": 135788,
+  "aggregate_new_tokens_per_second": 72.21626541252152,
+  "wall_seconds": 1880.6919306889176,
+  "worker_exit_codes": [
+    0,
+    0
+  ]
+}

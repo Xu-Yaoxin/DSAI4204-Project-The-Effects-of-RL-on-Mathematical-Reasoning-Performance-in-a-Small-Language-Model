@@ -1,0 +1,16 @@
+.venv/
+.bootstrap/
+logs/
+*.log
+__pycache__/
+*.pyc
+packages/**/wheels/
+.DS_Store
+models/**
+!models/Qwen3.5-2B-Base/
+!models/Qwen3.5-2B-Base/PLACE_MODEL_HERE.md
+data/raw/**
+data/processed/**
+outputs/**
+!outputs/validation/
+!outputs/validation/**

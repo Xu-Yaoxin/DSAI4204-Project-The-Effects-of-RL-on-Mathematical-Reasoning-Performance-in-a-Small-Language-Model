@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "scope": "CPU execution of the actual upstream sampler classes",
+  "gpu_executed": false,
+  "ddp_collectives_executed": false,
+  "model_executed": false,
+  "python": "3.11.13",
+  "host_torch": "2.6.0",
+  "sources": [
+    {
+      "package": "trl",
+      "version": "1.16.0",
+      "wheel_url": "https://files.pythonhosted.org/packages/e1/4d/c5eaed26c16bfafc2f724e6be320f94a4f26bf4bb4ba62917114dd9b60c8/trl-1.16.0-py3-none-any.whl",
+      "wheel_sha256": "c4726e139dd40e1a41661511c639c8a68416782b2e3e8c0befebd77bb7ba0396",
+      "member": "trl/trainer/utils.py",
+      "member_sha256": "a3c44bd9e7f332f3087ef1943e89ea6f4ee99c0480ff64f13d586c72a51578b1",
+      "executed_class": "RepeatSampler"
+    },
+    {
+      "package": "accelerate",
+      "version": "1.10.1",
+      "wheel_url": "https://files.pythonhosted.org/packages/5f/a0/d9ef19f780f319c21ee90ecfef4431cbeeca95bec7f14071785c17b6029b/accelerate-1.10.1-py3-none-any.whl",
+      "wheel_sha256": "3621cff60b9a27ce798857ece05e2b9f56fcc71631cfb31ccf71f0359c311f11",
+      "member": "accelerate/data_loader.py",
+      "member_sha256": "21a3edfdd4bb5b85bdc291a5ef5405729496fb9ca2cf8c9ddf8d2d9598ded8d0",
+      "executed_class": "BatchSamplerShard"
+    }
+  ],
+  "cases": [
+    {
+      "questions": 32,
+      "world_size": 1,
+      "accumulation_per_rank": 32,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 24
+    },
+    {
+      "questions": 32,
+      "world_size": 2,
+      "accumulation_per_rank": 16,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 24
+    },
+    {
+      "questions": 32,
+      "world_size": 4,
+      "accumulation_per_rank": 8,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 24
+    },
+    {
+      "questions": 128,
+      "world_size": 1,
+      "accumulation_per_rank": 32,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 96
+    },
+    {
+      "questions": 128,
+      "world_size": 2,
+      "accumulation_per_rank": 16,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 96
+    },
+    {
+      "questions": 128,
+      "world_size": 4,
+      "accumulation_per_rank": 8,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 96
+    },
+    {
+      "questions": 512,
+      "world_size": 1,
+      "accumulation_per_rank": 32,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 384
+    },
+    {
+      "questions": 512,
+      "world_size": 2,
+      "accumulation_per_rank": 16,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 384
+    },
+    {
+      "questions": 512,
+      "world_size": 4,
+      "accumulation_per_rank": 8,
+      "complete_local_groups": true,
+      "unique_questions_per_update": 4,
+      "responses_per_update": 32,
+      "complete_epoch_coverage": true,
+      "optimizer_steps_for_three_full_epochs": 384
+    }
+  ],
+  "case_count": 9,
+  "engineering_note": "The 32-question case checks a complete sampler epoch; actual engineering training stops after two updates.",
+  "script_sha256": "380c6cf9f413a5c58df26923f77d0d723ffd3fd283ef466291cb554f0fd03b9c",
+  "manifest_sha256": "50039c60a256a9eacfd181e1d11ebac2c30a7f7a08dcaff07dfd2b8a683f44af"
+}

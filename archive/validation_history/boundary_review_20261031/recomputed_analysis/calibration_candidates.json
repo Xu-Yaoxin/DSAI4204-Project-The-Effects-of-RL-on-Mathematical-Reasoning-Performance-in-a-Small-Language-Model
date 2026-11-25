@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "kind": "exploratory_group_ranking_only",
+  "synthetic": false,
+  "metric": "pass_at_1",
+  "target_range": [
+    0.4,
+    0.5
+  ],
+  "automatic_selection_performed": false,
+  "fresh_confirmation_questions_required": true,
+  "exclude_calibration_families_from_confirmation": true,
+  "ranked_groups": [
+    {
+      "group_id": "gsm_symbolic",
+      "group_label": "GSM-Symbolic main",
+      "pass_at_1": {
+        "estimate": 0.5125,
+        "ci_low": 0.3875,
+        "ci_high": 0.6375,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": true,
+      "low_precision": true,
+      "length_budget_concern": false
+    },
+    {
+      "group_id": "gsm_p1",
+      "group_label": "GSM-Symbolic P1",
+      "pass_at_1": {
+        "estimate": 0.3,
+        "ci_low": 0.15,
+        "ci_high": 0.45,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": true,
+      "low_precision": true,
+      "length_budget_concern": false
+    },
+    {
+      "group_id": "math_l4_5",
+      "group_label": "MATH-500 scalar Level4-5",
+      "pass_at_1": {
+        "estimate": 0.25,
+        "ci_low": 0.1375,
+        "ci_high": 0.375,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "low_precision": true,
+      "length_budget_concern": true
+    },
+    {
+      "group_id": "gsm_p2",
+      "group_label": "GSM-Symbolic P2",
+      "pass_at_1": {
+        "estimate": 0.2375,
+        "ci_low": 0.125,
+        "ci_high": 0.3625,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "low_precision": true,
+      "length_budget_concern": false
+    },
+    {
+      "group_id": "math_l1_3",
+      "group_label": "MATH-500 scalar Level1-3",
+      "pass_at_1": {
+        "estimate": 0.6875,
+        "ci_low": 0.55,
+        "ci_high": 0.825,
+        "interval_method": "Family-cluster percentile bootstrap, 95%, linear quantiles"
+      },
+      "point_in_target": false,
+      "ci_entirely_in_target": false,
+      "ci_overlaps_target": false,
+      "low_precision": true,
+      "length_budget_concern": true
+    }
+  ]
+}

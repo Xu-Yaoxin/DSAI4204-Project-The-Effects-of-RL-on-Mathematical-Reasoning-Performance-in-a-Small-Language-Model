@@ -1,0 +1,153 @@
+{
+  "platform": "Linux-5.15.0-105-generic-x86_64-with-glibc2.35",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "scope": "training",
+  "checks": {
+    "python_3_11_or_later": true,
+    "prepared_manifest": true,
+    "prepared_split_protocol": true,
+    "verified_data_source": true,
+    "raw_train": true,
+    "raw_train_matches_prepared": true,
+    "raw_test": true,
+    "raw_test_matches_prepared": true,
+    "source_manifest_sha256": true,
+    "license_sha256": true,
+    "prepared_engineering": true,
+    "engineering_content_hash": true,
+    "engineering_rows_and_ids": true,
+    "engineering_valid_gold": true,
+    "prepared_pilot": true,
+    "pilot_content_hash": true,
+    "pilot_rows_and_ids": true,
+    "pilot_valid_gold": true,
+    "prepared_train": true,
+    "train_content_hash": true,
+    "train_rows_and_ids": true,
+    "train_valid_gold": true,
+    "prepared_dev": true,
+    "dev_content_hash": true,
+    "dev_rows_and_ids": true,
+    "dev_valid_gold": true,
+    "prepared_test": true,
+    "test_content_hash": true,
+    "test_rows_and_ids": true,
+    "test_valid_gold": true,
+    "verifier_matches_preparation": true,
+    "nested_training_subsets": true,
+    "consistent_training_subsets": true,
+    "train_dev_disjoint": true,
+    "train_test_disjoint": true,
+    "dev_test_disjoint": true,
+    "local_model_config": true,
+    "local_model_weights": true,
+    "local_tokenizer": true,
+    "official_model_architecture": true,
+    "checkpoint_layout": true,
+    "torch_version": true,
+    "transformers_version": true,
+    "peft_version": true,
+    "trl_version": true,
+    "accelerate_version": true,
+    "datasets_installed": true,
+    "safetensors_installed": true,
+    "selected_gpu_count": true,
+    "cuda_bf16": true
+  },
+  "errors": {},
+  "data": {
+    "prepared_manifest_sha256": "4c2bfb6d8f73139d5679a5b14d59a62b8b23683bc5555aa70d717cb5a1ce942b",
+    "source_provenance": {
+      "license": "MIT",
+      "license_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "repository": "https://github.com/openai/grade-school-math",
+      "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_manifest_sha256": "7ff774815d3ccf300f5b092dff62bd5ae865a14d849f04fe897c8cab639897a0",
+      "status": "verified"
+    },
+    "engineering": {
+      "rows": 32,
+      "sha256": "6cddd1919275c413acc492b147d00c569cc92e488edaff26c3844e2b4b38a63e"
+    },
+    "pilot": {
+      "rows": 128,
+      "sha256": "d9ef812110e5945d6a642d8a0d77485694c414c3891ce8cfd6acce3c85e6ab7a"
+    },
+    "train": {
+      "rows": 512,
+      "sha256": "ac3c7cf95dcd41c5df266b6791cc9f098f7a4a362bac51969ef670aa09d8d64c"
+    },
+    "dev": {
+      "rows": 200,
+      "sha256": "b6d1108c1d85e5ae8ac7c6ba331cf8e9180cc1494c4e3398d412ee1c362b1372"
+    },
+    "test": {
+      "rows": 200,
+      "sha256": "f3d0a7809a80239762973618d9ff8b54d7a3fa0e7fede14c3638bb39626087fc"
+    }
+  },
+  "data_ready": true,
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.3.0",
+    "peft": "0.18.1",
+    "trl": "1.16.0",
+    "accelerate": "1.10.1",
+    "datasets": "4.8.5",
+    "safetensors": "0.8.0"
+  },
+  "gpu": {
+    "checked": true,
+    "expected_world_size": 1,
+    "available": true,
+    "cuda_version": "12.8",
+    "visible_devices": 1,
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4090",
+        "compute_capability": [
+          8,
+          9
+        ],
+        "total_memory_bytes": 25250627584,
+        "bf16_hardware": true
+      }
+    ],
+    "name": "NVIDIA GeForce RTX 4090"
+  },
+  "ready": true,
+  "model_identity": null,
+  "model_files": {
+    "config.json": {
+      "bytes": 2908
+    },
+    "merges.txt": {
+      "bytes": 3353259
+    },
+    "model.safetensors-00001-of-00001.safetensors": {
+      "bytes": 4548221488
+    },
+    "model.safetensors.index.json": {
+      "bytes": 64460
+    },
+    "tokenizer.json": {
+      "bytes": 12807196
+    },
+    "tokenizer_config.json": {
+      "bytes": 16712
+    },
+    "vocab.json": {
+      "bytes": 6722759
+    }
+  },
+  "model_layout": {
+    "tensor_count": 632,
+    "weight_files": [
+      "model.safetensors-00001-of-00001.safetensors"
+    ],
+    "weight_bytes": 4548221488,
+    "indexed": true
+  },
+  "note": "Local integrity/readiness checks only; model weights and GPU training were not executed."
+}

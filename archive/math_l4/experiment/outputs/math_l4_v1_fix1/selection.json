@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+  "training_report_path": "outputs/math_l4_v1_fix1/formal/report.json",
+  "training_report_sha256": "cdcf6dbf808a08c80a3aceeb232c1eaf881592b05b6d230f9a1c57855b683639",
+  "training_manifest_sha256": "bfc9c57fbb0267e73c92d844dedff2e9f1fe5dc24dd2b3a399ac0eff268d90c2",
+  "prepared_manifest_sha256": "0d6dc496cc6766a910452a10de90c7ee26af68f9613ef8a9d388266b225546d7",
+  "training_protocol_id": "d1a573fd5d6224d34f92e9453e34203496a0abc4979aa320359e90f7979f427f",
+  "config_identity": "e5ae714ae92688b458c52b601ba29411093635a1fc20a0f94acd0bfadc7f4df5",
+  "selector_sha256": "da04cab3c256765195e5da7ec39291d2856e985690c5d59148026b5d19c2cc71",
+  "selection_validator_sha256": "b8c8fc384c315d34d1d64032f7bc3fa6b6e8774eee372079d8775a172c1a3d97",
+  "dev_root": "outputs/math_l4_v1_fix1/dev",
+  "selection_split": "dev",
+  "selection_rule": "maximum completed_correct/requested; ties choose smallest optimizer step",
+  "candidates": [
+    {
+      "step": 128,
+      "adapter_path": "outputs/math_l4_v1_fix1/formal/checkpoint-128",
+      "adapter_identity": "906072d5456352132babcfbc5998e526bd342057be5d5c36df3d2ec2280d8309",
+      "adapter_files": {
+        "adapter_config.json": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+        "adapter_model.safetensors": "6c24ace085876d8673d0adefd6eb45e12717f0aba62e067441a8a1643b8623df"
+      },
+      "checkpoint_seal_sha256": "01972a8c967f519f679c49c833d6ec3e59363cdaf5f87e141e8bc8df8337d08f",
+      "dev_output": "outputs/math_l4_v1_fix1/dev/checkpoint-128",
+      "dev_manifest_sha256": "ff11386a5771f641b36d11ee14e7f60089b682f44a37acd5c517377ebac8de64",
+      "dev_samples_sha256": "7d618ac03c0e9a1923b8609b1ebc5223f30e6fc365a91e88ca123345afec0ad8",
+      "correct_count": 255,
+      "requested_count": 512,
+      "timeout_count": 49,
+      "unknown_count": 30,
+      "protocol_id": "d9bd018d6a59a0f5bc29d2406cfa2fd922b03eea123f54f731debdda138fb5f5"
+    },
+    {
+      "step": 256,
+      "adapter_path": "outputs/math_l4_v1_fix1/formal/checkpoint-256",
+      "adapter_identity": "bf19ecb2c22204edfb07a3914f1bfba7cb9f1d29f468d2279cffbff0664e839f",
+      "adapter_files": {
+        "adapter_config.json": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+        "adapter_model.safetensors": "7cb3fbce1ee5cb0945a73e315680196b12e00c46fb0450e5be92f6b5fa981d6a"
+      },
+      "checkpoint_seal_sha256": "f9c83852a8d8a36ad9367c0011470b2c9644eccf3219487f1582034e7faa2f05",
+      "dev_output": "outputs/math_l4_v1_fix1/dev/checkpoint-256",
+      "dev_manifest_sha256": "9f5f333592924c6b791640bf7fcc5d1a32956a3862e3d264e66ae33740c0ea67",
+      "dev_samples_sha256": "b496e734b11f2ea5c4bba6fd9a2d35b495ea53a2bfbb8566cd34548bd8de1891",
+      "correct_count": 299,
+      "requested_count": 512,
+      "timeout_count": 46,
+      "unknown_count": 23,
+      "protocol_id": "d9bd018d6a59a0f5bc29d2406cfa2fd922b03eea123f54f731debdda138fb5f5"
+    },
+    {
+      "step": 384,
+      "adapter_path": "outputs/math_l4_v1_fix1/formal/checkpoint-384",
+      "adapter_identity": "405f6e2032962df3666ebff1b4792f676636d8eab048b043ff642ef209ac0a95",
+      "adapter_files": {
+        "adapter_config.json": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+        "adapter_model.safetensors": "b04865188d7a2d37cb43e3b32ebb09e2aa71d3818fc0888eeb301e62ccc1a063"
+      },
+      "checkpoint_seal_sha256": "f63b79e0fc99068510e2506b6e6a8bb44d5c864e0404f7e9a2e467f2e6712909",
+      "dev_output": "outputs/math_l4_v1_fix1/dev/checkpoint-384",
+      "dev_manifest_sha256": "83eb45c6d724333cae74f8a0d9dadf25fcded39ffee6d15ec4893a5fdf3ecffb",
+      "dev_samples_sha256": "bd096249a584753034eff55d65c8aee272b73d5bd5a3fe7aa435d7d26c9d561d",
+      "correct_count": 309,
+      "requested_count": 512,
+      "timeout_count": 54,
+      "unknown_count": 18,
+      "protocol_id": "d9bd018d6a59a0f5bc29d2406cfa2fd922b03eea123f54f731debdda138fb5f5"
+    }
+  ],
+  "selected_step": 384,
+  "adapter_path": "outputs/math_l4_v1_fix1/formal/checkpoint-384",
+  "adapter_identity": "405f6e2032962df3666ebff1b4792f676636d8eab048b043ff642ef209ac0a95",
+  "adapter_files": {
+    "adapter_config.json": "b30949addc3f81b8f4d50646bc4e529174e68c77ad52a47218871dbeb18aaa60",
+    "adapter_model.safetensors": "b04865188d7a2d37cb43e3b32ebb09e2aa71d3818fc0888eeb301e62ccc1a063"
+  },
+  "test_outcomes_used": false,
+  "selection_id": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396"
+}

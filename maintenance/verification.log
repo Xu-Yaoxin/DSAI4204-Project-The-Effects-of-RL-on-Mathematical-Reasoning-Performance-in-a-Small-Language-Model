@@ -1,0 +1,73 @@
+[VERIFY 1/10] 0% | relocation and final result identity
+[VERIFY 2/10] 10% | 124 frozen sources and two parent audit records
+[VERIFY 3/10] 20% | training bundle and frozen scorer/statistics source hashes
+[VERIFY 4/10] 30% | four raw-answer and selected-adapter exports
+[VERIFY 5/10] 40% | 6,400 paired records and unchanged generation fields
+[VERIFY 5/10] 45% | base: all 3,200 record pairs preserved
+[VERIFY 5/10] 50% | rl: all 3,200 record pairs preserved
+[VERIFY 6/10] 50% | exact pass@1/4/16 arithmetic and 25 change records
+[VERIFY 7/10] 60% | GSM8K identity, 33 source files, and 20 result artifacts
+[VERIFY 8/10] 70% | cleanup inventory and removed continuation state
+[VERIFY 9/10] 80% | dependency lock and complete imported checkpoint/evidence
+[VERIFY 10/10] 90% | paper metadata and unchanged PDF bytes
+[VERIFY 10/10] 100% | PASS | retained evidence and record arithmetic verified
+{
+  "read_only": true,
+  "scoring_executed": false,
+  "models_loaded": 0,
+  "tests_executed": false,
+  "bootstrap_recomputed": false,
+  "math_l4": {
+    "source_files": 124,
+    "training_bundle_files": 81,
+    "answers_per_model": 3200,
+    "correct_answers": {
+      "base": 1393,
+      "rl": 1968
+    },
+    "changed_records": 25,
+    "exact_metrics": {
+      "base_pass_at_1": "1393/3200",
+      "base_pass_at_4": "31683/45500",
+      "base_pass_at_16": "171/200",
+      "rl_pass_at_1": "123/200",
+      "rl_pass_at_4": "298217/364000",
+      "rl_pass_at_16": "47/50",
+      "delta_pass_at_1": "23/128",
+      "delta_pass_at_4": "44753/364000",
+      "delta_pass_at_16": "17/200",
+      "delta_pass_at_1_minus_delta_pass_at_16": "303/3200"
+    }
+  },
+  "gsm8k": {
+    "source_files": 33,
+    "result_artifacts": 20,
+    "scoring_source_files": 3
+  },
+  "cleanup": {
+    "deleted_files_absent": 235,
+    "strict_deleted_paths_absent": 36,
+    "removed_continuation_state_files": 24,
+    "regenerated_cache_count": 0,
+    "regenerated_cache_paths": []
+  },
+  "environment_and_imports": {
+    "locked_packages": 84,
+    "checkpoint_files": 13,
+    "sealed_state_files": 12,
+    "supplementary_files": 37,
+    "downloads_paths_read": 0,
+    "checkpoint_state_loaded": false,
+    "base_weights_loaded": false
+  },
+  "paper": {
+    "bytes_verified": true,
+    "version": "2504.13837v5",
+    "online_metadata_rechecked": false,
+    "page_count_recomputed": false
+  },
+  "passed": true,
+  "file_hash_checks": 343,
+  "bytes_hashed": 1485163374,
+  "elapsed_seconds": 4.763
+}

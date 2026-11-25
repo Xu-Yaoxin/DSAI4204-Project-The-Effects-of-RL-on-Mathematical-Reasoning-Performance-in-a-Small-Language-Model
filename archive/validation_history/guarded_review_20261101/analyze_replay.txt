@@ -1,0 +1,3 @@
+[BOUNDARY ANALYSIS 1/3] 33% | validated 200 questions / 800 terminal attempts | baseline only
+[BOUNDARY ANALYSIS 2/3] 67% | computed group metrics and uncertainty | no automatic selection
+✅ [BOUNDARY ANALYSIS 3/3] 100% | [SAVED] /Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/outputs/validation/guarded_review_20261101/replayed_analysis/report.md

@@ -1,0 +1,51 @@
+[CHECK 0/7] Python syntax and linear production structure passed
+✅ [VERIFIER V2] 114 independent/real-fixture/CLI checks; six long-output checks in 1.41s; no model or network calls
+[CHECK 1/7] 14% | test_verifier_v2.py | PASS
+✅ [REPETITION GUARD] 37 token-period, negative-control, deadline-zero-score and unknown-stop contract checks; no model/GPU/network
+[CHECK 2/7] 29% | test_repetition_guard.py | PASS
+✅ [GUARDED EVALUATION] 65 threaded CPU producer, streaming, stop, cache and resume checks; no GPU/model/network execution
+[CHECK 3/7] 43% | test_boundary_evaluation.py | PASS
+[PASS] 39 guarded merge integrity scenarios | identities, exact EOS scores, atomic publication, cached reuse and analyzer integration | no model/GPU/network
+[CHECK 4/7] 57% | test_boundary_merge.py | PASS
+[PASS] 36 guarded analysis checks | unknown bounds, 300-second policy failures, all-unknown safety, shared validation and guarded merge | no model/GPU/network
+[CHECK 5/7] 71% | test_guarded_analysis.py | PASS
+✅ [GUARDED SERIAL] 18 checks | real CPU subprocesses: timeout resume, restart limit, no parallelism, fail-fast and SIGTERM cleanup | no GPU/model
+[CHECK 6/7] 86% | test_boundary_parallel.py | PASS
+✅ [LIVE MONITOR] 11 file-only status, partial-output, follow and validation checks; no GPU/model/network
+[CHECK 7/7] 100% | test_live_monitor.py | PASS
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_verifier_v2.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_repetition_guard.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_evaluation.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_merge.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_guarded_analysis.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_boundary_parallel.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_live_monitor.py",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 29.014876582999932,
+  "gpu_inference_tested": false,
+  "network_used": false
+}

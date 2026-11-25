@@ -1,0 +1,22 @@
+[DATA 1/4] 0% | verify pinned public MATH source files
+[SOURCE 1/14] verified algebra/test-00000-of-00001.parquet
+[SOURCE 2/14] verified algebra/train-00000-of-00001.parquet
+[SOURCE 3/14] verified counting_and_probability/test-00000-of-00001.parquet
+[SOURCE 4/14] verified counting_and_probability/train-00000-of-00001.parquet
+[SOURCE 5/14] verified geometry/test-00000-of-00001.parquet
+[SOURCE 6/14] verified geometry/train-00000-of-00001.parquet
+[SOURCE 7/14] verified intermediate_algebra/test-00000-of-00001.parquet
+[SOURCE 8/14] verified intermediate_algebra/train-00000-of-00001.parquet
+[SOURCE 9/14] verified number_theory/test-00000-of-00001.parquet
+[SOURCE 10/14] verified number_theory/train-00000-of-00001.parquet
+[SOURCE 11/14] verified prealgebra/test-00000-of-00001.parquet
+[SOURCE 12/14] verified prealgebra/train-00000-of-00001.parquet
+[SOURCE 13/14] verified precalculus/test-00000-of-00001.parquet
+[SOURCE 14/14] verified precalculus/train-00000-of-00001.parquet
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[DATA 2/4] 40% | rational/text-only/history and duplicate filtering complete
+[DATA 3/4] 90% | eligible={'test': 662, 'train': 1168} | quotas={"dev": {"algebra": 35, "counting_and_probability": 16, "geometry": 7, "intermediate_algebra": 24, "number_theory": 18, "prealgebra": 20, "precalculus": 8}, "engineering": {"algebra": 9, "counting_and_probability": 4, "geometry": 2, "intermediate_algebra": 6, "number_theory": 4, "prealgebra": 5, "precalculus": 2}, "pilot": {"algebra": 35, "counting_and_probability": 16, "geometry": 7, "intermediate_algebra": 24, "number_theory": 18, "prealgebra": 21, "precalculus": 7}, "test": {"algebra": 55, "counting_and_probability": 22, "geometry": 9, "intermediate_algebra": 40, "number_theory": 30, "prealgebra": 33, "precalculus": 11}, "train": {"algebra": 139, "counting_and_probability": 64, "geometry": 28, "intermediate_algebra": 96, "number_theory": 73, "prealgebra": 82, "precalculus": 30}}
+✅ [DATA 4/4] 100% | train=512 dev=128 test=200 | [SAVED] /Users/xu./Library/Mobile Documents/com~apple~CloudDocs/PolyU/Y4/DSAI 4207/project/code/math_l4_v1/data/processed

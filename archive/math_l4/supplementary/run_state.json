@@ -1,0 +1,258 @@
+{
+  "identity": {
+    "config_sha256": "90e0697b789cd8f6e01fd8bf5457f59138a975e728434fdfbb0a11a67c59927d",
+    "bundle_sha256": "deebc68649df15c1280e36dad8a5d98f3a900bf292f0cde60976e067ca84ba32"
+  },
+  "status": "interrupted",
+  "pid": 5735,
+  "stage_requested": "all",
+  "started_utc": "2026-11-01T05:18:59.764228+00:00",
+  "budget": {
+    "train_questions": 512,
+    "dev_questions": 128,
+    "test_questions": 200,
+    "training_updates": 384,
+    "training_completion_cap": 2048,
+    "dev_samples_per_question": 4,
+    "test_samples_per_question": 16,
+    "dev_responses_all_candidates": 1536,
+    "test_responses_base_and_rl": 6400,
+    "evaluation_deadline_seconds": 300,
+    "concurrent_model_workers": 1,
+    "epoch_checkpoints": [
+      128,
+      256,
+      384
+    ]
+  },
+  "completed_commands": [
+    {
+      "phase": "BUNDLE AND DATA",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "-S",
+        "scripts/preflight.py",
+        "--config",
+        "configs/math_l4.json",
+        "--cpu-only"
+      ],
+      "finished_utc": "2026-11-01T05:19:00.265356+00:00"
+    },
+    {
+      "phase": "CPU CHECKS",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "-S",
+        "tests/run_all.py"
+      ],
+      "finished_utc": "2026-11-01T05:20:14.291645+00:00"
+    },
+    {
+      "phase": "ENVIRONMENT",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/preflight.py",
+        "--config",
+        "configs/math_l4.json",
+        "--output",
+        "outputs/math_l4_v1_fix1/environment/20261101T051859764249.json"
+      ],
+      "finished_utc": "2026-11-01T05:20:24.296192+00:00"
+    },
+    {
+      "phase": "ENGINEERING BASE",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "base",
+        "--split",
+        "engineering",
+        "--samples",
+        "1",
+        "--output",
+        "outputs/math_l4_v1_fix1/engineering_base",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-01T05:20:30.304424+00:00"
+    },
+    {
+      "phase": "ENGINEERING TRAIN",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/train_grpo.py",
+        "--config",
+        "configs/math_l4.json",
+        "--mode",
+        "engineering",
+        "--output",
+        "outputs/math_l4_v1_fix1/engineering",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-01T05:31:03.033559+00:00"
+    },
+    {
+      "phase": "PILOT TRAIN",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/train_grpo.py",
+        "--config",
+        "configs/math_l4.json",
+        "--mode",
+        "pilot",
+        "--output",
+        "outputs/math_l4_v1_fix1/pilot",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-01T13:56:43.375179+00:00"
+    },
+    {
+      "phase": "FORMAL TRAIN",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/train_grpo.py",
+        "--config",
+        "configs/math_l4.json",
+        "--mode",
+        "formal",
+        "--output",
+        "outputs/math_l4_v1_fix1/formal",
+        "--resume",
+        "--pilot-report",
+        "outputs/math_l4_v1_fix1/pilot/report.json"
+      ],
+      "finished_utc": "2026-11-02T20:46:45.356746+00:00"
+    },
+    {
+      "phase": "DEV CHECKPOINT 128",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "rl",
+        "--split",
+        "dev",
+        "--samples",
+        "4",
+        "--adapter",
+        "outputs/math_l4_v1_fix1/formal/checkpoint-128",
+        "--output",
+        "outputs/math_l4_v1_fix1/dev/checkpoint-128",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-03T05:07:32.195975+00:00"
+    },
+    {
+      "phase": "DEV CHECKPOINT 256",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "rl",
+        "--split",
+        "dev",
+        "--samples",
+        "4",
+        "--adapter",
+        "outputs/math_l4_v1_fix1/formal/checkpoint-256",
+        "--output",
+        "outputs/math_l4_v1_fix1/dev/checkpoint-256",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-03T11:56:13.878591+00:00"
+    },
+    {
+      "phase": "DEV CHECKPOINT 384",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "rl",
+        "--split",
+        "dev",
+        "--samples",
+        "4",
+        "--adapter",
+        "outputs/math_l4_v1_fix1/formal/checkpoint-384",
+        "--output",
+        "outputs/math_l4_v1_fix1/dev/checkpoint-384",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-03T19:35:30.604001+00:00"
+    },
+    {
+      "phase": "FREEZE SELECTION",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "-S",
+        "scripts/select_checkpoint.py",
+        "--config",
+        "configs/math_l4.json",
+        "--training-report",
+        "outputs/math_l4_v1_fix1/formal/report.json",
+        "--dev-root",
+        "outputs/math_l4_v1_fix1/dev",
+        "--output",
+        "outputs/math_l4_v1_fix1/selection.json"
+      ],
+      "finished_utc": "2026-11-03T19:36:33.628155+00:00"
+    },
+    {
+      "phase": "TEST BASE",
+      "command": [
+        "/root/code/math_l4_v1/../.venv/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "configs/math_l4.json",
+        "--model",
+        "base",
+        "--split",
+        "test",
+        "--samples",
+        "16",
+        "--output",
+        "outputs/math_l4_v1_fix1/test_base",
+        "--resume"
+      ],
+      "finished_utc": "2026-11-05T03:13:57.727943+00:00"
+    }
+  ],
+  "phase": "TEST RL",
+  "phase_index": 14,
+  "phase_count": 15,
+  "phase_kind": "eval",
+  "phase_output": "outputs/math_l4_v1_fix1/test_rl",
+  "child_pid": null,
+  "updated_at_unix": 1793848623.6144824,
+  "eval_restarts": 0,
+  "elapsed_seconds": 338283.04575025477,
+  "phase_elapsed_seconds": 185.08110035862774,
+  "answer": {
+    "worker_pid": 179907,
+    "id": "math-l4-test-counting_and_probability-0441",
+    "sample_index": 1,
+    "generated_tokens": 2235,
+    "started_at_unix": 1793848543.4694884,
+    "last_token_unix": 1793848618.7504792,
+    "updated_at_unix": 1793848618.754165,
+    "status": "generating",
+    "termination_reason": null,
+    "elapsed_seconds": 75.28476494690403,
+    "remaining_seconds": 224.71523505309597,
+    "tokens_per_second": 29.68728137195188,
+    "last_token_age_seconds": 0.0,
+    "partial_text": "4k$.\n\nTherefore, the events \"n is multiple of 4\" and \"n+1 is multiple of 4\" are mutually exclusive, each with probability 1/4, so total probability is 1/2.\n\nThe complementary method error: it said \"given that n is not a multiple of 4, n+1 is not a multiple",
+    "termination_counts": {
+      "eos": 1
+    }
+  },
+  "error": "KeyboardInterrupt()"
+}

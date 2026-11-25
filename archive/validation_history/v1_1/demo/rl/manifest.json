@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "model_label": "rl",
+  "n_samples": 16,
+  "split": "test",
+  "dataset_sha256": "a79c73d5fbdf53c66780ff2ca50da9c628b8d775c9a042fb6da13e0717a3dce8",
+  "protocol_id": "synthetic-fixture-v1",
+  "model_identity": "fixture-base-no-model-loaded",
+  "adapter_identity": "fixture-rl",
+  "synthetic": true,
+  "complete": true,
+  "settings": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "max_new_tokens": 512,
+    "seed": 42,
+    "prompt_template": "Synthetic fixture only: {question}",
+    "dtype": "none",
+    "backend": "synthetic-fixture"
+  },
+  "question_count": 8
+}

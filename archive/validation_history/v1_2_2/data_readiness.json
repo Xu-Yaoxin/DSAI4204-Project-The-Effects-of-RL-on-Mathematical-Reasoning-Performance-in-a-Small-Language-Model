@@ -1,0 +1,83 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "scope": "data",
+  "checks": {
+    "python_3_11_or_later": true,
+    "prepared_manifest": true,
+    "prepared_split_protocol": true,
+    "verified_data_source": true,
+    "raw_train": true,
+    "raw_train_matches_prepared": true,
+    "raw_test": true,
+    "raw_test_matches_prepared": true,
+    "source_manifest_sha256": true,
+    "license_sha256": true,
+    "prepared_engineering": true,
+    "engineering_content_hash": true,
+    "engineering_rows_and_ids": true,
+    "engineering_valid_gold": true,
+    "prepared_pilot": true,
+    "pilot_content_hash": true,
+    "pilot_rows_and_ids": true,
+    "pilot_valid_gold": true,
+    "prepared_train": true,
+    "train_content_hash": true,
+    "train_rows_and_ids": true,
+    "train_valid_gold": true,
+    "prepared_dev": true,
+    "dev_content_hash": true,
+    "dev_rows_and_ids": true,
+    "dev_valid_gold": true,
+    "prepared_test": true,
+    "test_content_hash": true,
+    "test_rows_and_ids": true,
+    "test_valid_gold": true,
+    "verifier_matches_preparation": true,
+    "nested_training_subsets": true,
+    "consistent_training_subsets": true,
+    "train_dev_disjoint": true,
+    "train_test_disjoint": true,
+    "dev_test_disjoint": true
+  },
+  "errors": {},
+  "data": {
+    "prepared_manifest_sha256": "4c2bfb6d8f73139d5679a5b14d59a62b8b23683bc5555aa70d717cb5a1ce942b",
+    "source_provenance": {
+      "license": "MIT",
+      "license_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "repository": "https://github.com/openai/grade-school-math",
+      "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_manifest_sha256": "7ff774815d3ccf300f5b092dff62bd5ae865a14d849f04fe897c8cab639897a0",
+      "status": "verified"
+    },
+    "engineering": {
+      "rows": 32,
+      "sha256": "6cddd1919275c413acc492b147d00c569cc92e488edaff26c3844e2b4b38a63e"
+    },
+    "pilot": {
+      "rows": 128,
+      "sha256": "d9ef812110e5945d6a642d8a0d77485694c414c3891ce8cfd6acce3c85e6ab7a"
+    },
+    "train": {
+      "rows": 512,
+      "sha256": "ac3c7cf95dcd41c5df266b6791cc9f098f7a4a362bac51969ef670aa09d8d64c"
+    },
+    "dev": {
+      "rows": 200,
+      "sha256": "b6d1108c1d85e5ae8ac7c6ba331cf8e9180cc1494c4e3398d412ee1c362b1372"
+    },
+    "test": {
+      "rows": 200,
+      "sha256": "f3d0a7809a80239762973618d9ff8b54d7a3fa0e7fede14c3638bb39626087fc"
+    }
+  },
+  "data_ready": true,
+  "versions": {},
+  "gpu": {
+    "checked": false,
+    "expected_world_size": 1
+  },
+  "ready": true,
+  "note": "Local integrity/readiness checks only; model weights and GPU training were not executed."
+}

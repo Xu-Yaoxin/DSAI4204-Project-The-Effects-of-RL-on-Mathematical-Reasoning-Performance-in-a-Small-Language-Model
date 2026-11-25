@@ -1,0 +1,420 @@
+{
+  "schema_version": "math-l4-posthoc-rescore-v1",
+  "posthoc": true,
+  "scorer_version": "4.0.0",
+  "scorer_sha256": "414d13ede7303e34962be08107d3f7eae74e22279af018489735d6b306b05bcc",
+  "identity_sha256": "6fc9e3f637e43749ab895e92136575cfc060ec71eccf4072252f5daa93e83279",
+  "generation_provenance": {
+    "model_identity": "807045c0c4d4abf41d3644c7587894102f9d60e219367a1ef45b30c60a05c181",
+    "adapter_identity": "405f6e2032962df3666ebff1b4792f676636d8eab048b043ff642ef209ac0a95",
+    "selection_identity": "1accd9985b422355d138b3b3eb26bbae6b03d791db9fcda844af71389ca28396",
+    "selected_step": 384,
+    "source_protocol_id": "cfff6ee294f5ed4ae7df15c5fa87e865cae23649ce602bc78a555c68340df2a6",
+    "settings": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 262144,
+      "max_prompt_length": 2048,
+      "seed": 314159,
+      "context_limit": 262144,
+      "length_policy": "native_context_minus_actual_prompt",
+      "generation_guard": {
+        "version": "exact-periodic-suffix-v1",
+        "check_every_tokens": 32,
+        "min_generated_tokens": 1024,
+        "min_repeat_span_tokens": 1024,
+        "max_period_tokens": 256,
+        "min_repeats": 4,
+        "heartbeat_seconds": 5,
+        "no_token_timeout_seconds": 120,
+        "stop_grace_seconds": 15,
+        "max_worker_restarts": 2,
+        "answer_timeout_seconds": 300
+      },
+      "prompt_template": "Solve the following math problem. Show your calculation, then give the final numerical answer on a separate line as #### <answer>.\n\nProblem: {question}\n\nSolution:\n",
+      "dtype": "bfloat16",
+      "backend": "transformers-sdpa",
+      "batch_size": 1,
+      "world_size": 1,
+      "add_special_tokens": true,
+      "stopping_rule": "tokenizer-eos-or-native-context-or-guard",
+      "repetition_penalty": 1.0,
+      "eos_token_id": 248044,
+      "package_versions": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.3.0",
+        "peft": "0.18.1",
+        "accelerate": "1.10.1",
+        "datasets": "4.8.5",
+        "trl": "1.16.0",
+        "safetensors": "0.8.0",
+        "flash-linear-attention": null,
+        "fla-core": null,
+        "causal-conv1d": null
+      }
+    },
+    "checkpoint_selection_unchanged": true,
+    "new_generation_performed": false
+  },
+  "question_count": 200,
+  "family_count": 200,
+  "n_samples": 16,
+  "bootstrap": 2000,
+  "bootstrap_seed": 42,
+  "interval_method": "paired family-cluster percentile bootstrap,95%,linear quantiles",
+  "statistics_provenance": {
+    "method": "exact checked extraction from frozen analyze.py",
+    "source_sha256": "3cfdf3dd6a650a72fb68ad1a5f3411869b8a8be2a265105a04fdb38eae08a028",
+    "block_sha256": "c08fa7f5655a7a6dc8572aed74017b721b216b88137734152c3d69f3735378ea",
+    "start_marker": "records = {label:",
+    "end_marker_exclusive": "limitations = ["
+  },
+  "metrics": {
+    "base_pass_at_1": {
+      "estimate": 0.4353125,
+      "ci95": [
+        0.387796875,
+        0.48064062499999993
+      ],
+      "unknown_bounds": [
+        0.4353125,
+        0.50125
+      ]
+    },
+    "rl_pass_at_1": {
+      "estimate": 0.615,
+      "ci95": [
+        0.5646875,
+        0.662828125
+      ],
+      "unknown_bounds": [
+        0.615,
+        0.658125
+      ]
+    },
+    "delta_pass_at_1": {
+      "estimate": 0.1796875,
+      "ci95": [
+        0.1509296875,
+        0.2090625
+      ],
+      "unknown_bounds": [
+        0.11375,
+        0.2228125
+      ]
+    },
+    "base_pass_at_4": {
+      "estimate": 0.6963296703296704,
+      "ci95": [
+        0.646258447802198,
+        0.747496771978022
+      ],
+      "unknown_bounds": [
+        0.6963296703296704,
+        0.8141840659340663
+      ]
+    },
+    "rl_pass_at_4": {
+      "estimate": 0.819277472527473,
+      "ci95": [
+        0.7754898351648349,
+        0.8596437500000004
+      ],
+      "unknown_bounds": [
+        0.819277472527473,
+        0.8918461538461545
+      ]
+    },
+    "delta_pass_at_4": {
+      "estimate": 0.1229478021978022,
+      "ci95": [
+        0.08939931318681323,
+        0.15701833791208789
+      ],
+      "unknown_bounds": [
+        0.005093406593406576,
+        0.19551648351648349
+      ]
+    },
+    "base_pass_at_16": {
+      "estimate": 0.855,
+      "ci95": [
+        0.805,
+        0.9001249999999993
+      ],
+      "unknown_bounds": [
+        0.855,
+        0.965
+      ]
+    },
+    "rl_pass_at_16": {
+      "estimate": 0.94,
+      "ci95": [
+        0.905,
+        0.97
+      ],
+      "unknown_bounds": [
+        0.94,
+        0.995
+      ]
+    },
+    "delta_pass_at_16": {
+      "estimate": 0.085,
+      "ci95": [
+        0.04,
+        0.13
+      ],
+      "unknown_bounds": [
+        -0.025,
+        0.14
+      ]
+    },
+    "delta_pass_at_1_minus_delta_pass_at_16": {
+      "estimate": 0.0946875,
+      "ci95": [
+        0.043742187499999995,
+        0.1475
+      ]
+    }
+  },
+  "observed_coverage_counts": {
+    "both": 167,
+    "rl_only": 21,
+    "neither": 8,
+    "base_only": 4
+  },
+  "diagnostics": {
+    "base": {
+      "requested_count": 3200,
+      "correct_count": 1393,
+      "completed_count": 2770,
+      "completed_only_accuracy": 0.5028880866425993,
+      "termination_counts": {
+        "eos": 2770,
+        "answer_timeout": 219,
+        "repetition_guard": 211
+      },
+      "status_counts": {
+        "incorrect": 1160,
+        "timeout": 219,
+        "correct": 1393,
+        "unscored": 211,
+        "ambiguous": 41,
+        "extraction_failed": 176
+      },
+      "unknown_count": 211,
+      "mean_output_tokens": 1441.933125,
+      "summed_answer_seconds": 113641.05081334338
+    },
+    "rl": {
+      "requested_count": 3200,
+      "correct_count": 1968,
+      "completed_count": 2742,
+      "completed_only_accuracy": 0.7177242888402626,
+      "termination_counts": {
+        "eos": 2742,
+        "answer_timeout": 320,
+        "repetition_guard": 138
+      },
+      "status_counts": {
+        "incorrect": 707,
+        "timeout": 320,
+        "correct": 1968,
+        "unscored": 138,
+        "extraction_failed": 67
+      },
+      "unknown_count": 138,
+      "mean_output_tokens": 1403.3596875,
+      "summed_answer_seconds": 183040.58411095105
+    }
+  },
+  "original_statistics": {
+    "metrics": {
+      "base_pass_at_1": {
+        "estimate": 0.4353125,
+        "ci95": [
+          0.387796875,
+          0.48064062499999993
+        ],
+        "unknown_bounds": [
+          0.4353125,
+          0.50125
+        ]
+      },
+      "rl_pass_at_1": {
+        "estimate": 0.609375,
+        "ci95": [
+          0.5590625,
+          0.6584375
+        ],
+        "unknown_bounds": [
+          0.609375,
+          0.6525
+        ]
+      },
+      "delta_pass_at_1": {
+        "estimate": 0.1740625,
+        "ci95": [
+          0.1446875,
+          0.20375
+        ],
+        "unknown_bounds": [
+          0.108125,
+          0.2171875
+        ]
+      },
+      "base_pass_at_4": {
+        "estimate": 0.6963296703296704,
+        "ci95": [
+          0.646258447802198,
+          0.747496771978022
+        ],
+        "unknown_bounds": [
+          0.6963296703296704,
+          0.8141840659340663
+        ]
+      },
+      "rl_pass_at_4": {
+        "estimate": 0.8144725274725279,
+        "ci95": [
+          0.7699141483516487,
+          0.8562936813186816
+        ],
+        "unknown_bounds": [
+          0.8144725274725279,
+          0.8889313186813195
+        ]
+      },
+      "delta_pass_at_4": {
+        "estimate": 0.11814285714285713,
+        "ci95": [
+          0.08439464285714282,
+          0.15198928571428577
+        ],
+        "unknown_bounds": [
+          0.0002884615384615241,
+          0.19260164835164836
+        ]
+      },
+      "base_pass_at_16": {
+        "estimate": 0.855,
+        "ci95": [
+          0.805,
+          0.9001249999999993
+        ],
+        "unknown_bounds": [
+          0.855,
+          0.965
+        ]
+      },
+      "rl_pass_at_16": {
+        "estimate": 0.935,
+        "ci95": [
+          0.9,
+          0.965
+        ],
+        "unknown_bounds": [
+          0.935,
+          0.995
+        ]
+      },
+      "delta_pass_at_16": {
+        "estimate": 0.08,
+        "ci95": [
+          0.035,
+          0.125
+        ],
+        "unknown_bounds": [
+          -0.03,
+          0.14
+        ]
+      },
+      "delta_pass_at_1_minus_delta_pass_at_16": {
+        "estimate": 0.0940625,
+        "ci95": [
+          0.043117187499999994,
+          0.146875
+        ]
+      }
+    },
+    "observed_coverage_counts": {
+      "both": 167,
+      "rl_only": 20,
+      "neither": 9,
+      "base_only": 4
+    },
+    "diagnostics": {
+      "base": {
+        "requested_count": 3200,
+        "correct_count": 1393,
+        "completed_count": 2770,
+        "completed_only_accuracy": 0.5028880866425993,
+        "termination_counts": {
+          "eos": 2770,
+          "answer_timeout": 219,
+          "repetition_guard": 211
+        },
+        "status_counts": {
+          "incorrect": 1160,
+          "timeout": 219,
+          "correct": 1393,
+          "unscored": 211,
+          "ambiguous": 41,
+          "extraction_failed": 176
+        },
+        "unknown_count": 211,
+        "mean_output_tokens": 1441.933125,
+        "summed_answer_seconds": 113641.05081334338
+      },
+      "rl": {
+        "requested_count": 3200,
+        "correct_count": 1950,
+        "completed_count": 2742,
+        "completed_only_accuracy": 0.7111597374179431,
+        "termination_counts": {
+          "eos": 2742,
+          "answer_timeout": 320,
+          "repetition_guard": 138
+        },
+        "status_counts": {
+          "incorrect": 700,
+          "timeout": 320,
+          "correct": 1950,
+          "unscored": 138,
+          "extraction_failed": 92
+        },
+        "unknown_count": 138,
+        "mean_output_tokens": 1403.3596875,
+        "summed_answer_seconds": 183040.58411095105
+      }
+    }
+  },
+  "changes": {
+    "base": {
+      "eos_rescored": 2770,
+      "stopped_preserved": 430
+    },
+    "rl": {
+      "eos_rescored": 2742,
+      "stopped_preserved": 458,
+      "changed_samples": 25,
+      "correctness_changes": 18,
+      "false_to_true": 18,
+      "true_to_false": 0,
+      "field_correct": 18,
+      "field_reward": 18,
+      "field_extracted": 25,
+      "field_status": 25,
+      "field_format_compliant": 14
+    }
+  },
+  "changed_samples": 25,
+  "limitations": [
+    "These are post-hoc v4 scores of fixed original generations; the original training rewards and development-selected checkpoint remain unchanged.",
+    "Only natural-EOS answers are rescored. Answer timeouts remain false/zero; repetition, context and no-token stops retain unknown correctness.",
+    "All requested attempts remain in the denominator. Unknown-outcome bounds are distinct from confidence intervals.",
+    "Intervals use paired whole-family bootstrap with 2000 replicates and seed 42; repeated answers are not independent questions.",
+    "This comparison uses one training seed and one filtered MATH Level 4 subset. Final-answer equivalence does not validate every reasoning step."
+  ]
+}

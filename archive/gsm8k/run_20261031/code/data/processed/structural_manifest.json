@@ -1,0 +1,17 @@
+{
+  "all_operation_counts": 2,
+  "comparison_note": "Operation count is matched; semantic and numerical difficulty still require manual review.",
+  "dataset_sha256": "1cda664d99b0864f901c0ddf8101e45966c876cb3a5d7654c17d3b059ec4799a",
+  "generator_sha256": "d93ebe253e81aaa2641a9c6003f9b0addfdf18bb3faba5e154d08b2053f95298",
+  "kind": "synthetic_controlled_variation",
+  "leakage_check": "Normalized questions checked against train/dev/test and within structural data.",
+  "pairs": 40,
+  "review_required": true,
+  "rows": 160,
+  "schema_version": 1,
+  "scope": "Synthetic controlled variants, not GSM-Symbolic and not evidence of unseen compositional generalization.",
+  "seed": 43,
+  "split_manifest_sha256": "4c2bfb6d8f73139d5679a5b14d59a62b8b23683bc5555aa70d717cb5a1ce942b",
+  "template_families": 4,
+  "verified": false
+}

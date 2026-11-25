@@ -1,0 +1,92 @@
+{
+  "scorer_version": "4.0.0",
+  "scorer_sha256": "2b82c60fa77fb66ef6daebb8f194c1c38d5d8bebc4f5d417654449f0ae48ff75",
+  "literal_cases": 55,
+  "real_fixtures": 6,
+  "new_checks": 183,
+  "legacy_checks": 0,
+  "total_checks": 183,
+  "failed_expectations": [
+    {
+      "label": "heading_na_claim",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "heading_uncertain_claim",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "heading_final_number_claim",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "heading_question_claim",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "17",
+        true
+      ]
+    },
+    {
+      "label": "prose_malformed_math",
+      "expected": [
+        "extraction_failed",
+        null,
+        false
+      ],
+      "actual": [
+        "correct",
+        "2500",
+        true
+      ]
+    },
+    {
+      "label": "math-l4-test-number_theory-0282:13",
+      "expected": [
+        "correct",
+        "8"
+      ],
+      "actual": {
+        "correct": false,
+        "reward": 0.0,
+        "extracted": null,
+        "status": "extraction_failed",
+        "format_compliant": false,
+        "truncated": false
+      }
+    }
+  ],
+  "passed": false
+}
